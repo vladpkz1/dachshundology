@@ -1,0 +1,4 @@
+_generator/dist
+_generator/flat
+node_modules
+.DS_Store
