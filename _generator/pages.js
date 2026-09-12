@@ -1,5 +1,5 @@
 const F=require('./build.js');
-const {PREVIEW,layout,guidePage,GUIDES,SITE,BUY,PRICE,CREST_G,DACH,DACH_CREAM,W,esc,crumbs,ORG,WEBSITE}=F;
+const {PREVIEW,layout,guidePage,photo,GUIDES,SITE,BUY,PRICE,CREST_G,DACH,DACH_CREAM,W,esc,crumbs,ORG,WEBSITE}=F;
 const MATTER=require('./content/matter.js');
 const fs=require('fs'), path=require('path');
 
@@ -7,7 +7,7 @@ const fs=require('fs'), path=require('path');
 const home=layout({
  title:'Dachshundology — The Complete Dachshund Owner’s Manual',
  desc:'The dachshund manual that shows its sources. 173 pages on the back, buying, feeding, training and cost — built on the research American owners never see.',
- url:'/',
+ url:'/', img:'home-hero',
  schema:[ORG,WEBSITE,
   {"@context":"https://schema.org","@type":"Book",name:"The Complete Dachshund Owner’s Manual",
    numberOfPages:173,inLanguage:"en-US",bookFormat:"https://schema.org/EBook",
@@ -27,7 +27,8 @@ const home=layout({
     </div>
     <p class="label" style="margin-top:26px;color:var(--brass)">173 pages · 24 printable tools · every figure sourced</p>
   </div>
-  <div style="text-align:center">${CREST_G.replace(/#1E4032/g,'#F6F1E4')}</div>
+  <div class="hero-photo">${photo('home-hero',{ratio:'3 / 4',eager:true})}
+    <div style="text-align:center;margin-top:20px;opacity:.9">${CREST_G.replace(/#1E4032/g,'#F6F1E4')}</div></div>
 </div></section>
 
 <section class="cream"><div class="wrap">
@@ -95,7 +96,7 @@ const partsList=[['I','The Breed, Decoded'],['II','Choosing and Buying'],['III',
 W('the-manual/index.html',layout({
  title:'The Complete Dachshund Owner’s Manual — 173 pages, every figure sourced',
  desc:'What is inside the manual: eight parts, 24 printable tools, forty answered questions and a full bibliography. $'+PRICE+', instant download.',
- url:'/the-manual/',
+ url:'/the-manual/', img:'manual',
  schema:[crumbs([['Home','/'],['The Manual','/the-manual/']]),
   {"@context":"https://schema.org","@type":"Product",name:"The Complete Dachshund Owner’s Manual",
    description:"A 173-page sourced manual for US dachshund owners.",brand:{"@type":"Brand",name:"Dachshundology"},
@@ -104,6 +105,8 @@ W('the-manual/index.html',layout({
 <section style="padding-top:8px"><div class="wrap narrow">
   <h1 style="font-size:clamp(34px,5.4vw,54px)">The Complete Dachshund Owner’s Manual</h1>
   <div class="sub">from the day you start looking to the day it gets hard</div>
+  ${photo('manual',{ratio:'3 / 4',cls:'lead',eager:true,
+    caption:'Eight parts, twenty-four printable tools, and a bibliography you can check line by line.'})}
   <div class="answer" style="margin:28px 0"><strong>What this is</strong>173 pages, eight parts, 24 printable
   tools and a bibliography you can check. Written for owners in the United States, built on the British,
   Swedish and Danish research that American guides never cite.</div>
@@ -133,7 +136,7 @@ W('the-manual/index.html',layout({
 W('guides/index.html',layout({
  title:'Free dachshund guides — sourced, complete, no email required',
  desc:'Eight complete guides on dachshund back problems, feeding, weight, neutering, insurance, breeders and cost. Every figure carries its source.',
- url:'/guides/',
+ url:'/guides/', img:'guides-hub',
  schema:[crumbs([['Home','/'],['Guides','/guides/']]),
   {"@context":"https://schema.org","@type":"CollectionPage",name:"Free dachshund guides",url:SITE+'/guides/'}],
  body:`<div class="wrap"><div class="crumbs"><a href="/">Home</a> › Guides</div></div>
@@ -142,6 +145,7 @@ W('guides/index.html',layout({
   <div class="sub">the whole answer, not the first paragraph of it</div>
   <p class="lede" style="max-width:66ch;margin-top:18px">No email wall, no drip sequence. If these are useful,
   the manual is the same thing at eight times the length with the printable tools attached.</p>
+  ${photo('guides-hub',{ratio:'21 / 9',cls:'lead'})}
   <div class="grid g2" style="margin-top:36px">
   ${GUIDES.map(g=>`<a class="card" href="/guides/${g.slug}/">
     <div class="label">${esc(g.keyword)}</div><h3>${esc(g.h1)}</h3>
@@ -155,7 +159,7 @@ GUIDES.forEach(g=>W(`guides/${g.slug}/index.html`,guidePage(g)));
 W('check-up/index.html',layout({
  title:'The Dachshund Check-Up — free weight, calorie and back-risk tool',
  desc:'Free five-step tool: AKC size division, body condition score, daily calories in cups, annual budget, and the back-risk levers that have published evidence behind them.',
- url:'/check-up/',
+ url:'/check-up/', img:'check-up',
  preload:`<script>window.BUY=${JSON.stringify(BUY)}</script><script defer src="/assets/checkup.js"></script>`,
  schema:[crumbs([['Home','/'],['Check-Up','/check-up/']]),
   {"@context":"https://schema.org","@type":"WebApplication",name:"The Dachshund Check-Up",
@@ -174,6 +178,7 @@ W('check-up/index.html',layout({
   <p class="lede" style="margin-top:18px">It returns his AKC size division, a body condition band from a real
   hands-on test, his daily calories converted into cups of the food you actually buy, a realistic annual budget,
   and the back-risk levers that have published studies behind them — with the studies named.</p>
+  ${photo('check-up',{cls:'lead'})}
   <div id="checkup" style="margin-top:34px"><noscript><p>This tool needs JavaScript. The same arithmetic is
     explained step by step in <a href="/guides/how-much-to-feed-a-dachshund/">the feeding guide</a>.</p></noscript></div>
   <div class="callout" style="margin-top:34px"><div class="t">What this is not</div>
@@ -207,12 +212,13 @@ W('sources/index.html',layout({
 W('about/index.html',layout({
  title:'About Dachshundology and our editorial policy',
  desc:'How this site sources its claims, how contested evidence is labeled, how corrections work, and what we do not do.',
- url:'/about/',
+ url:'/about/', img:'about',
  schema:[crumbs([['Home','/'],['About','/about/']]),ORG],
  body:`<div class="wrap"><div class="crumbs"><a href="/">Home</a> › About</div></div>
 <section style="padding-top:8px"><div class="wrap narrow">
   <h1 style="font-size:clamp(32px,5vw,50px)">About</h1>
   <div class="sub">${esc(MATTER.author.title.toLowerCase())}</div>
+  ${photo('about',{cls:'lead'})}
   <article style="margin-top:24px">${MATTER.author.paras.map(p=>`<p>${esc(p)}</p>`).join('')}</article>
   <h2>Editorial policy</h2>
   <ul>
@@ -307,4 +313,8 @@ node pages.js
   fs.mkdirSync(path.join(F.DIST,'assets'),{recursive:true});
   fs.copyFileSync(path.join(__dirname,'..','assets',f),path.join(F.DIST,'assets',f));
 });
+/* photographies */
+{ const src=path.join(__dirname,'..','assets','photos'), dst=path.join(F.DIST,'assets','photos');
+  fs.mkdirSync(dst,{recursive:true});
+  for(const f of fs.readdirSync(src)) fs.copyFileSync(path.join(src,f),path.join(dst,f)); }
 console.log('built pages:',fs.readdirSync(F.DIST).length,'entries in dist/');

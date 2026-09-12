@@ -17,7 +17,30 @@ const DACH_CREAM=K.dachSolid({w:260,fill:'rgba(246,241,228,.92)'});
 const NAV=[['/the-manual/','The Manual'],['/guides/','Free Guides'],['/check-up/','Check-Up'],
            ['/about/','About']];
 
-function layout({title,desc,url,body,schema=[],cls='',preload=''}){
+/* ---------- photographies ---------- */
+const ALT={
+ 'home-hero':'A red smooth-haired dachshund photographed front-on against a plain background',
+ 'manual':'A black-and-tan dachshund puppy cradled in a white sling, seen from above',
+ 'guides-hub':'A dapple dachshund in a harness standing up against the side of a boat, water behind',
+ 'check-up':'A red dachshund lying on a sofa with its eyes closed and tongue out',
+ 'about':'A chocolate-and-tan dachshund standing in grass, looking at the camera',
+ 'dachshund-back-problems-ivdd':'A longhaired dachshund resting on the back of a sofa beside a window',
+ 'are-stairs-bad-for-dachshunds':'A dachshund standing squarely on a fallen log in woodland, seen in profile',
+ 'when-to-neuter-a-dachshund':'A black-and-tan dachshund puppy lying on a pale blanket, looking up',
+ 'pet-insurance-for-dachshunds':'A red dachshund wearing a collar and identity tag, looking out of a car',
+ 'how-much-to-feed-a-dachshund':'A black-and-tan dachshund taking a treat from an open hand on grass',
+ 'dachshund-weight-chart':'A red dachshund walking along a woodland path, seen in full profile',
+ 'questions-to-ask-a-dachshund-breeder':'A chocolate-and-tan dachshund puppy photographed close up indoors',
+ 'how-much-does-a-dachshund-cost':'A black-and-tan dachshund sitting on grass, head raised',
+};
+function photo(name,{ratio='3 / 2',cls='',caption='',eager=false,alt=null}={}){
+  return `<figure class="ph ${cls}" style="--ar:${ratio}">
+  <img src="/assets/photos/${name}.jpg" alt="${esc(alt||ALT[name]||'')}"
+       loading="${eager?'eager':'lazy'}" decoding="async" fetchpriority="${eager?'high':'auto'}">
+  ${caption?`<figcaption>${esc(caption)}</figcaption>`:''}</figure>`;
+}
+
+function layout({title,desc,url,body,schema=[],cls='',preload='',img=''}){
   const ld=schema.map(s=>`<script type="application/ld+json">${JSON.stringify(s)}</script>`).join('');
   return `<!doctype html><html lang="en"><head>
 <meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
@@ -26,7 +49,7 @@ function layout({title,desc,url,body,schema=[],cls='',preload=''}){
 <link rel="canonical" href="${SITE}${url}">${PREVIEW?'\n<meta name="robots" content="noindex, nofollow">':''}
 <meta property="og:type" content="website"><meta property="og:site_name" content="Dachshundology">
 <meta property="og:title" content="${esc(title)}"><meta property="og:description" content="${esc(desc)}">
-<meta property="og:url" content="${SITE}${url}"><meta name="twitter:card" content="summary_large_image">
+<meta property="og:url" content="${SITE}${url}"><meta name="twitter:card" content="summary_large_image">${img?`\n<meta property="og:image" content="${SITE}/assets/photos/${img}.jpg"><meta name="twitter:image" content="${SITE}/assets/photos/${img}.jpg"><meta property="og:image:alt" content="${esc(ALT[img]||'')}">`:''}
 <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&family=EB+Garamond:ital,wght@0,400;0,500;0,600;1,400&family=Jost:wght@400;500&family=Parisienne&display=swap">
 <link rel="stylesheet" href="/assets/site.css">${preload}
@@ -96,6 +119,7 @@ function guidePage(g){
   <h1 style="font-size:clamp(32px,5vw,50px)">${esc(g.h1)}</h1>
   <div class="sub">${esc(g.keyword)}</div>
   <p class="meta" style="margin-top:14px">Updated ${esc(g.updated)} · Every figure sourced · <a href="/about/">Editorial policy</a></p>
+  ${photo(g.slug,{cls:'lead',eager:true})}
   <div class="answer" style="margin:28px 0"><strong>Short answer</strong>${esc(g.answer)}</div>
   <div class="facts"><div class="label">Key numbers</div><dl>
     ${g.facts.map(([l,v,s])=>`<dt>${l}</dt><dd>${v}</dd>`).join('')}
@@ -121,16 +145,17 @@ function guidePage(g){
       <p>${esc(r.metaDescription).slice(0,110)}…</p></a>`:''}).join('')}</div>
  </div>
 </section>`;
-  return layout({title:g.metaTitle, desc:g.metaDescription, url, body,
+  return layout({title:g.metaTitle, desc:g.metaDescription, url, body, img:g.slug,
     schema:[
       {"@context":"https://schema.org","@type":"Article",headline:g.h1,description:g.metaDescription,
        datePublished:'2026-09-12',dateModified:g.updated,inLanguage:'en-US',
        author:{"@type":"Organization",name:"Dachshundology"},
        publisher:{"@type":"Organization",name:"Dachshundology"},
        mainEntityOfPage:{"@type":"WebPage","@id":SITE+url},
+       image:[SITE+'/assets/photos/'+g.slug+'.jpg'],
        about:{"@type":"Thing",name:"Dachshund"}},
       faqSchema(g.faq),
       crumbs([['Home','/'],['Guides','/guides/'],[g.h1,url]])
     ]});
 }
-module.exports={PREVIEW,layout,guidePage,GUIDES,SITE,BUY,PRICE,CREST,CREST_G,DACH,DACH_CREAM,W,DIST,esc,crumbs,ORG,WEBSITE,slugify,blockHTML};
+module.exports={PREVIEW,layout,guidePage,photo,ALT,GUIDES,SITE,BUY,PRICE,CREST,CREST_G,DACH,DACH_CREAM,W,DIST,esc,crumbs,ORG,WEBSITE,slugify,blockHTML};

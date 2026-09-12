@@ -180,3 +180,20 @@ input[type=range]{width:100%;accent-color:var(--green);height:26px}
 @media(max-width:860px){.cu-grid{grid-template-columns:1fr}.cu-card{padding:22px}}
 @media print{header.site,footer.site,.stripe,.cu-steps,.cu-nav,.cu-actions{display:none!important}
   body{font-size:12pt}.cu-card{border:none;padding:0}}
+
+/* ===== photographies ===== */
+.ph{margin:0;border:1px solid var(--brass);padding:6px;background:var(--paper)}
+.ph img{width:100%;aspect-ratio:var(--ar,3 / 2);object-fit:cover;height:auto}
+.ph figcaption{font-family:var(--script);font-size:19px;color:var(--slate);
+  line-height:1.35;margin-top:10px;padding:0 2px}
+.ph.lead{margin:30px 0 6px}
+.ph.plain{border:0;padding:0;background:none}
+.hero .ph{border-color:rgba(246,241,228,.5);background:transparent}
+.hero-photo{max-width:380px;margin-left:auto}
+.band{display:grid;grid-template-columns:1fr 1fr;gap:44px;align-items:center}
+.band .ph{max-width:none}
+@media(max-width:860px){
+  .band{grid-template-columns:1fr;gap:28px}
+  .hero-photo{max-width:320px;margin:0 auto}
+  .ph figcaption{font-size:17px}
+}
