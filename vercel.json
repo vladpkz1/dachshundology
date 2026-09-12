@@ -1,4 +1,7 @@
 {
+  "buildCommand": "node _generator/pages.js && node _generator/flatten.js",
+  "outputDirectory": "_generator/flat",
+  "installCommand": "true",
   "cleanUrls": true,
   "trailingSlash": false,
   "headers": [
