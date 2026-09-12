@@ -305,6 +305,6 @@ node pages.js
 /* assets */
 ['site.css','checkup.js','favicon.svg'].forEach(f=>{
   fs.mkdirSync(path.join(F.DIST,'assets'),{recursive:true});
-  fs.copyFileSync(path.join(__dirname,'assets',f),path.join(F.DIST,'assets',f));
+  fs.copyFileSync(path.join(__dirname,'..','assets',f),path.join(F.DIST,'assets',f));
 });
 console.log('built pages:',fs.readdirSync(F.DIST).length,'entries in dist/');
