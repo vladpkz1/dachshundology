@@ -24,7 +24,7 @@ function dachSolid({w=200, fill=C.cream, flip=false}={}) {
 
 /* ---- crest / seal ---- */
 function crest({d=150, ring=C.cream, field='none', dog=C.cream, top='DACHSHUNDOLOGY', bottom='EST. MMXXVI'}={}) {
-  const R=100, rid='c'+Math.random().toString(36).slice(2,8);
+  const R=100, rid='c'+String(crest.n=(crest.n||0)+1).padStart(3,'0');
   return `<svg viewBox="0 0 240 240" width="${d}" xmlns="http://www.w3.org/2000/svg">
     <defs>
       <path id="${rid}t" d="M120 120 m-86 0 a86 86 0 1 1 172 0" fill="none"/>
