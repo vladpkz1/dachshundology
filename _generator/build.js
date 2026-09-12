@@ -15,7 +15,7 @@ const DACH=K.dachSolid({w:300,fill:'#1E4032'});
 const DACH_CREAM=K.dachSolid({w:260,fill:'rgba(246,241,228,.92)'});
 
 const NAV=[['/the-manual/','The Manual'],['/guides/','Free Guides'],['/check-up/','Check-Up'],
-           ['/sources/','Sources'],['/about/','About']];
+           ['/about/','About']];
 
 function layout({title,desc,url,body,schema=[],cls='',preload=''}){
   const ld=schema.map(s=>`<script type="application/ld+json">${JSON.stringify(s)}</script>`).join('');

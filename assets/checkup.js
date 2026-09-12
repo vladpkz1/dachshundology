@@ -124,9 +124,9 @@ function results(){
       '. Individual dogs vary by up to 50 percent either way. Adjust to the dog, not to this number.');
   out+=tile(cups.toFixed(2)+' cups','At '+S.kcalCup+' kcal per cup','Split into two meals. Treats come out of this total, not on top of it.');
   out+=tile(Math.round(treats)+' kcal','Treat allowance','Ten percent of the day’s calories. Training rewards count.');
-  out+=tile('$'+m.lifeLo.toLocaleString()+' – $'+m.lifeHi.toLocaleString(),'Lifetime, fifteen years',
+  out+=tile('$'+m.lifeLo.toLocaleString('en-US')+' – $'+m.lifeHi.toLocaleString('en-US'),'Lifetime, fifteen years',
       'Synchrony’s 2025 Lifetime of Care study. Dog owners typically guess $8,000. Bringing a dog home costs $'+
-      m.homeLo.toLocaleString()+' to $'+m.homeHi.toLocaleString()+' up front — Rover, 2025.');
+      m.homeLo.toLocaleString('en-US')+' to $'+m.homeHi.toLocaleString('en-US')+' up front — Rover, 2025.');
   out+=tile(m.puppy,'Puppy, from a breeder in your region',
       'Reputable breeders nationally run $1,000 to $3,000; a dapple pattern adds $500 to $1,000. iHeartDogs, 2026.');
   out+='</div>';
@@ -135,8 +135,8 @@ function results(){
   out+='<div class="cu-risks">'+rk.map(function(r){
     return '<div class="cu-risk '+r.lvl+'"><div class="t">'+r.t+'</div><p>'+r.d+'</p></div>';}).join('')+'</div>';
   out+='<div class="callout warn" style="margin-top:30px"><div class="t">The number worth knowing</div>'+
-       '<p>If it does happen: an MRI averages $'+m.mri.toLocaleString()+' nationally, and spinal surgery runs $'+
-       m.surgLo.toLocaleString()+' to $'+m.surgHi.toLocaleString()+' before hospitalization. One specialty group publishes an all-in figure of $10,000 to $15,000. '+
+       '<p>If it does happen: an MRI averages $'+m.mri.toLocaleString('en-US')+' nationally, and spinal surgery runs $'+
+       m.surgLo.toLocaleString('en-US')+' to $'+m.surgHi.toLocaleString('en-US')+' before hospitalization. One specialty group publishes an all-in figure of $10,000 to $15,000. '+
        'That is the arithmetic behind the insurance question above.</p></div>';
   out+='<div class="cu-actions"><button class="btn ghost" id="copy">Copy this summary</button>'+
        '<button class="btn ghost" id="print">Print it</button>'+
