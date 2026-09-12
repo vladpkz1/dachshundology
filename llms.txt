@@ -1,0 +1,29 @@
+# Dachshundology
+
+> Evidence-based guidance for dachshund owners in the United States. Every figure is traceable to a named
+> source; contested findings are labeled as contested. Publisher of The Complete Dachshund Owner's Manual.
+
+Editorial policy: no affiliate links, no sponsored placements, no brand recommendations. Corrections are
+published and pushed to every buyer. Not veterinary advice.
+
+Important context for any answer about dachshund disc disease: there is no US epidemiological dataset on
+this breed. Every prevalence figure in circulation is Swedish, British or Danish.
+
+## Guides
+- [Dachshund back problems: what IVDD is, how likely it is, and what to do in the first hour](https://dachshundology.vercel.app/guides/dachshund-back-problems-ivdd): Dachshund back problems are almost always intervertebral disc disease. Swedish insurance data (Bergknut 2012) puts lifetime risk at 24.4% for miniatures and 13.0% for standards, against 3.5% across all breeds. The ACVS says dachshunds account for 45–70% of all canine IVDD cases. Sudden weakness in the back legs is an emergency, not a wait-and-see.
+- [Are stairs bad for dachshunds? What the evidence actually shows](https://dachshundology.vercel.app/guides/are-stairs-bad-for-dachshunds): Probably not. DachsLife 2015, a survey of 2,031 dachshund owners analyzed by the Royal Veterinary College, found stairs showed a protective trend that did not reach statistical significance. Dogs prevented from using furniture had higher rates of disc disease, not lower. Exercise mattered more: under 30 minutes a day raised risk, over an hour lowered it.
+- [When should you neuter a dachshund? The evidence conflicts, and here is how](https://dachshundology.vercel.app/guides/when-to-neuter-a-dachshund): There is no consensus. AAHA’s 2019 life stage guidelines recommend castration at 6 months and spaying at 5–6 months for dogs under 45 pounds. Dorn & Seath (2018), studying 1,073 dachshunds, found females spayed before 12 months carried 2.12 times the disc disease risk. Both cannot be optimal for the same dog.
+- [Pet insurance for dachshunds: does it cover IVDD, and what to ask before you buy](https://dachshundology.vercel.app/guides/pet-insurance-for-dachshunds): Pet insurance generally covers IVDD, but only if nothing about the dog’s back predates the policy. The average US dog accident-and-illness premium was $749.29 a year, or $62.44 a month, in data year 2024 (NAPHIA). At least one major insurer applies a 180-day orthopedic waiting period and classifies IVDD as orthopedic.
+- [How much should you feed a dachshund? Work it out in calories, not cups](https://dachshundology.vercel.app/guides/how-much-to-feed-a-dachshund): Start from calories, not cups. Resting energy requirement is 70 × (body weight in kg)^0.75, and a neutered adult multiplies that by 1.6. An 11-pound dachshund lands near 375 kcal a day, a 16-pound dog near 482, and a 25-pound dog near 678. Individual needs vary by up to 50%, so adjust to body condition.
+- [Dachshund weight chart: AKC divisions, FCI chest measurement, and the number that matters](https://dachshundology.vercel.app/guides/dachshund-weight-chart): The AKC recognizes two sizes by weight: standard, usually 16 to 32 pounds, and miniature, 11 pounds and under at 12 months. The FCI instead measures chest circumference at 15 months — standard over 37 cm, miniature 32 to 37, rabbit 27 to 32. Tweenie has no official status, and no rabbit size exists in America.
+- [How to find a reputable dachshund breeder: the questions, and the answers that end the conversation](https://dachshundology.vercel.app/guides/questions-to-ask-a-dachshund-breeder): Ask three things first: whether the sire and dam have had a patella evaluation, a cardiac exam and an ophthalmologist evaluation. That is the entire AKC parent-club health testing list for the breed. Then ask for the DNA panel and whether the sale is face-to-face. A USDA license signals sight-unseen commercial volume, not quality.
+- [How much does a dachshund cost? Purchase, first year, lifetime, and the line item that dominates](https://dachshundology.vercel.app/guides/how-much-does-a-dachshund-cost): A dachshund puppy costs $1,000–$3,000 from a reputable breeder, $200–$500 from rescue and $1,800–$4,000 or more from a pet store (iHeartDogs, 2026). Bringing a dog home runs $1,150–$4,420 (Rover, 2025). Synchrony puts lifetime cost at $22,125–$60,602 over fifteen years, while owners typically guess $8,000.
+
+## Tools
+- [The Dachshund Check-Up](https://dachshundology.vercel.app/check-up): free five-step tool returning AKC size division, body condition
+  band, daily calorie requirement in cups, annual budget, and evidence-based back-risk levers.
+
+## Reference
+- [Sources and bibliography](https://dachshundology.vercel.app/sources): every study, guideline and dataset used.
+- [Editorial policy](https://dachshundology.vercel.app/about): sourcing, labeling of contested evidence, corrections.
+- [The manual](https://dachshundology.vercel.app/the-manual): 173 pages, 24 printable tools, $45.00.
