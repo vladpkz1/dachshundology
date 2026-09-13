@@ -1,0 +1,45 @@
+.rh{ display:flex; justify-content:space-between; align-items:baseline; }
+.rh .l{ font-family:var(--text); font-weight:600; font-size:6.9pt; letter-spacing:.2em; text-transform:uppercase; color:var(--green) }
+.rh .r{ font-family:var(--text); font-weight:500; font-size:6.9pt; letter-spacing:.2em; text-transform:uppercase; color:#A39A80 }
+.rule{ margin-top:2.4mm }
+.sechead{ margin-top:7mm; margin-bottom:5mm }
+.sechead h2{ color:var(--green); max-width:130mm }
+.body{ display:grid; grid-template-columns:1fr 47mm; gap:8mm; align-items:start; overflow:hidden }
+.body .main > *+*{ margin-top:3mm }
+.body .marg > *+*{ margin-top:5mm }
+.main p{ margin-top:2.4mm }
+.main h3{ margin-top:5mm }
+.marg p, .marg small, .marg li{ text-align:left; hyphens:none }
+.marg p{ font-size:9.6pt; line-height:14.9pt }
+.stats{ display:flex; gap:6mm; margin-top:5mm }
+.stats .fig{ font-family:var(--display); font-weight:600; font-size:21pt; color:var(--green); line-height:1; font-variant-numeric:lining-nums; letter-spacing:-.02em }
+.stats .bar{ height:1.6px; background:var(--brass); margin:2mm 0 2mm }
+ul,ol{ margin:2.4mm 0 0 5mm; font-size:10pt; line-height:16pt }
+li{ margin-top:1.4mm }
+.steps .s{ display:flex; gap:4.5mm; margin-top:3.5mm }
+.steps .num{ flex:0 0 auto; width:8.5mm; height:8.5mm; border:1px solid var(--green); border-radius:50%;
+  color:var(--green); font-family:var(--display); font-weight:600; font-size:10.5pt; font-variant-numeric:lining-nums; display:flex; align-items:center; justify-content:center }
+.steps .w{ font-family:var(--text); font-weight:700; font-size:6.4pt; letter-spacing:.18em; text-transform:uppercase; color:var(--camel) }
+.check{ columns:2; column-gap:8mm; margin-top:3mm }
+.check .i{ display:flex; gap:2.6mm; align-items:flex-start; break-inside:avoid; padding:1.5mm 0; border-bottom:.4px solid #E0D6BF }
+.check .bx{ flex:0 0 auto; width:3.2mm; height:3.2mm; border:1px solid var(--green); margin-top:1mm }
+.check .t{ font-size:9.1pt; line-height:12.9pt }
+.toolhead{ border:1px solid var(--brass); padding:4mm 5mm; margin-top:5mm; background:var(--paper) }
+.toolhead .k{ font-family:var(--text); font-weight:700; font-size:6.6pt; letter-spacing:.2em; text-transform:uppercase; color:var(--camel) }
+.toolhead h3{ margin-top:1.4mm; font-size:13pt; font-family:var(--display); font-weight:600; letter-spacing:-.012em }
+.toolhead p{ margin-top:1.6mm; font-size:9.4pt; line-height:14.2pt }
+figure{ margin:0 }
+.remember .it{ display:flex; gap:5mm; padding:3.4mm 0; border-top:.6px solid #D6CCB4 }
+.remember .rn{ font-family:var(--display); font-weight:600; font-size:19pt; color:var(--camel); min-width:10mm; line-height:1 }
+
+.main .box.wide{ margin-top:5mm }
+.main .box.wide p{ font-size:9.8pt; line-height:15.2pt }
+.main .box.wide .bt{ font-size:7.4pt }
+
+.body.solo{ grid-template-columns:1fr }
+.body.solo .marg{ display:none }
+
+.matter{ overflow:hidden }
+.matter p{ margin-top:2.4mm }
+.matter > *:first-child{ margin-top:0 }
+.page.cover .pad{ inset:16mm 20mm 16mm 20mm }

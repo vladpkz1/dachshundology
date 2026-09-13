@@ -10,10 +10,11 @@ const PRICE='45.00';
 const esc=s=>String(s==null?'':s);
 const W=(p,c)=>{const f=path.join(DIST,p);fs.mkdirSync(path.dirname(f),{recursive:true});fs.writeFileSync(f,c);};
 
-const CREST=K.crest({d:34,ring:'#F6F1E4',dog:'#F6F1E4'});
-const CREST_G=K.crest({d:120,ring:'#1E4032',dog:'#1E4032'});
-const DACH=K.dachSolid({w:300,fill:'#1E4032'});
-const DACH_CREAM=K.dachSolid({w:260,fill:'rgba(246,241,228,.92)'});
+const CREST=K.crest({d:34,ring:'#093B2F',dog:'#093B2F'});
+const CREST_G=K.crest({d:120,ring:'#093B2F',dog:'#093B2F'});
+const DACH=K.dachSolid({w:300,fill:'#093B2F'});
+const DACH_CREAM=K.dachSolid({w:260,fill:'rgba(250,240,213,.94)'});
+const CREST_C=K.crest({d:34,ring:'#FAF0D5',dog:'#FAF0D5'});
 
 const NAV=[['/the-manual/','The Manual'],['/guides/','Free Guides'],['/check-up/','Check-Up'],
            ['/about/','About']];
@@ -71,7 +72,7 @@ function layout({title,desc,url,body,schema=[],cls='',preload='',img=''}){
 <meta property="og:title" content="${esc(title)}"><meta property="og:description" content="${esc(desc)}">
 <meta property="og:url" content="${SITE}${url}"><meta name="twitter:card" content="summary_large_image">${img?`\n<meta property="og:image" content="${SITE}${asset('photos/'+img+'.jpg')}"><meta name="twitter:image" content="${SITE}${asset('photos/'+img+'.jpg')}"><meta property="og:image:alt" content="${esc(ALT[img]||'')}">`:''}
 <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&family=EB+Garamond:ital,wght@0,400;0,500;0,600;1,400&family=Jost:wght@400;500&family=Parisienne&display=swap">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,400..700;1,9..144,400..600&family=Inter:wght@400..700&display=swap">
 <link rel="stylesheet" href="${asset('site.css')}">${preload}
 <link rel="icon" href="${asset('favicon.svg')}" type="image/svg+xml">
 ${ld}</head>
@@ -85,9 +86,9 @@ ${ld}</head>
 ${body}
 <footer class="site"><div class="wrap">
   <div class="fgrid">
-    <div><div class="brandmark" style="letter-spacing:.24em">${CREST}<span>Dachshundology</span></div>
-      <p style="margin-top:14px;max-width:34ch">The dachshund manual that shows its sources. Written for American
-      owners, built on the research that never crosses the Atlantic.</p></div>
+    <div><div class="brandmark" style="letter-spacing:.24em;color:var(--cream)">${CREST_C}<span>Dachshundology</span></div>
+      <p style="margin-top:14px;max-width:34ch">The dachshund manual that shows its sources. Written in English for
+      owners anywhere, built on the research most owner guides never cite.</p></div>
     <div><h4>Read</h4><ul>${GUIDES.slice(0,4).map(g=>`<li><a href="/guides/${g.slug}/">${esc(g.h1)}</a></li>`).join('')}</ul></div>
     <div><h4>More</h4><ul>${GUIDES.slice(4).map(g=>`<li><a href="/guides/${g.slug}/">${esc(g.h1)}</a></li>`).join('')}</ul></div>
     <div><h4>The book</h4><ul>
@@ -103,7 +104,7 @@ ${body}
 
 /* ---------- schema helpers ---------- */
 const ORG={"@context":"https://schema.org","@type":"Organization","name":"Dachshundology","url":SITE,
-  "description":"Evidence-based guidance for dachshund owners in the United States.",
+  "description":"Evidence-based guidance for dachshund owners in English, naming the country behind every figure.",
   "sameAs":[]};
 const WEBSITE={"@context":"https://schema.org","@type":"WebSite","name":"Dachshundology","url":SITE};
 const crumbs=(items)=>({"@context":"https://schema.org","@type":"BreadcrumbList",
@@ -178,4 +179,4 @@ function guidePage(g){
       crumbs([['Home','/'],['Guides','/guides/'],[g.h1,url]])
     ]});
 }
-module.exports={PREVIEW,layout,guidePage,photo,ALT,asset,fingerprint,assetList,GUIDES,SITE,BUY,PRICE,CREST,CREST_G,DACH,DACH_CREAM,W,DIST,esc,crumbs,ORG,WEBSITE,slugify,blockHTML};
+module.exports={PREVIEW,layout,guidePage,photo,ALT,asset,fingerprint,assetList,GUIDES,SITE,BUY,PRICE,CREST,CREST_C,CREST_G,DACH,DACH_CREAM,W,DIST,esc,crumbs,ORG,WEBSITE,slugify,blockHTML};

@@ -1,0 +1,307 @@
+/* ═══════════════════════════════════════════════════════════════
+   PART VII — A REAL LIFE
+   Sections 7.1 – 7.7 · 13 pages · Tools 23, 24
+   ═══════════════════════════════════════════════════════════════ */
+
+module.exports = [
+
+/* ───────────────────────── 7.1 ───────────────────────── */
+{ id:'7.1', title:'How much exercise, and when', sub:'the rule everybody quotes has no author', pages:3, blocks:[
+
+  {t:'first',text:'Ask five people how far to walk a dachshund puppy and four will give you the same answer: five minutes for every month of age, twice a day. It is a tidy rule. Breeders repeat it, rescues print it, veterinary receptionists hand it over with the vaccine schedule. It also has no traceable primary source. Nobody can tell you who ran the study, on which dogs, or whether there ever was one.'},
+
+  {t:'p',text:'That does not make it useless. A twelve-week-old taken on a two-mile (3 km) hike is a bad idea, and you can see why in his gait before the first mile is done. A conservative default is a reasonable thing to hand a new owner. But you are reading a book that draws the line between a habit and a finding, so here is the line. The five-minute rule is a rule of thumb. Use it as a starting dose. Do not use it as a reason.'},
+
+  {t:'evidence',badge:'myth',paras:[
+    'Follow “five minutes per month of age” back to its origin and the trail dissolves into citation. Each source points at another source. No primary study surfaces, on this breed or any other.',
+    'What it gets right: a growing dog should not be doing forced, repetitive distance — trotting beside a bicycle, keeping pace with a runner, a long leashed march on pavement with no stopping.',
+    'What it gets wrong is how it is used. It arrives as a ceiling on everything, including the self-paced sniffing and stop-start play that a puppy regulates perfectly well on his own.'
+  ],source:'No traceable primary source. Stated here as a prudential rule of thumb, never as evidence.'},
+
+  {t:'h3',text:'The finding that points the other way'},
+
+  {t:'stats',items:[
+    ['< 30 min','a day — higher IVDD risk'],
+    ['> 1 hour','a day — lower risk'],
+    ['2,031','owners surveyed, DachsLife 2015']
+  ]},
+
+  {t:'p',text:'DachsLife 2015 put questions to the owners of 2,031 dachshunds and the Royal Veterinary College analyzed what came back. On exercise the direction is the opposite of what most owners assume. Dogs getting under thirty minutes a day carried a higher risk of disc disease. Dogs getting over an hour a day carried a lower one. The protective end of that scale is not a gentle stroll around the block.'},
+
+  {t:'evidence',badge:'contested',paras:[
+    'Almost every new owner protects the back by doing less. Shorter walks, fewer of them, no hills, nothing strenuous. The survey evidence runs against the instinct.',
+    '<strong>Under thirty minutes a day: higher risk. Over an hour a day: lower risk.</strong> Read it as an association, not as a cause, because a questionnaire cannot tell you which came first — and a dog whose back is already sore is a dog who gets walked less.',
+    'The same survey found <strong>no significant association with body condition score</strong>, and a protective trend for stairs that did not reach significance. It is British. No country has its own dataset on this breed; the figures here are Swedish, British or Danish, each one named.'
+  ],source:'DachsLife 2015, 2,031 owners, RVC analysis · dachshund-ivdd.uk, lifestyle advice'},
+
+  {t:'p',text:'Hold both things at once. Do not run a growing dog into the ground on the strength of a survey, and do not keep a healthy four-year-old on a fifteen-minute leash loop because a rule with no author told you to. The dog you want at seven is a dog with a working topline, real hindquarter drive and the stamina to use them.'},
+
+  {t:'script',text:'the goal is a fit dog, not a careful one'},
+
+  {t:'h3',text:'By age'},
+
+  {t:'table',head:['Age','A day’s movement','What to leave out'],rows:[
+    ['8–16 weeks','Short outings for the world, not for distance. Free play on grass, self-paced, measured in minutes','Stairs, jumping down, forced distance, anything repetitive'],
+    ['4–12 months','Build toward thirty to forty-five minutes across two or three outings. Sniffing counts as work','Running beside a bike or a jogger; repeated jumping on and off furniture'],
+    ['1–7 years','An hour or more, split across the day. Hills, long grass, scent work, swimming where he likes it','Nothing, if he is fit — except the three things in 7.3'],
+    ['8 and up','Shorter walks, more of them. Keep the daily total up, change its shape','See Part VIII']
+  ],note:'Adjust to the dog. A fit adult standard and an eleven-pound (5 kg) miniature are not on the same schedule.'},
+
+  {t:'note',title:'What counts',paras:[
+    'A thirty-minute sniffing walk is more tiring than a thirty-minute road march and does more for his head. Let him stop. The stopping is the point.',
+    'Frequency beats duration. Three twenty-minute outings settle a dachshund better than one long one, and they spread the load on a spine that does not like sustained anything.',
+    'Heat, not distance, is the summer limit. 7.6 explains why that is a bigger deal than most owners think.'
+  ]},
+
+  {t:'h3',text:'The months that catch people out'},
+
+  {t:'p',text:'Between roughly six and fourteen months you have a dog with adult energy, adult confidence and a skeleton that has not finished. Owners go wrong in both directions here. Some overshoot, because he can suddenly keep up — a running partner, a daily hour on pavement, stairs learned as a game. Some undershoot badly, because adolescence made him difficult and the walks quietly got shorter. Keep the volume moderate and the variety high: soft ground, hills taken at a walk, scent work, several short outings rather than one expedition. And decide in these months what he is allowed to practice, because whatever he repeats a thousand times at nine months is what his body will be doing at nine years.'},
+
+  {t:'h3',text:'Fit, not fragile'},
+
+  {t:'p',text:'You cannot change the skeleton. You can change what surrounds it. Muscle along the topline and through the hindquarters is the only structural improvement available to you, and it is built by varied ground, not by flat pavement — a hill, long grass, sand, a shallow slope taken at a walk. Swimming, if he will do it, loads the muscle and spares the joints. Ten minutes of that is worth a mile (1.6 km) of sidewalk.'},
+
+  {t:'brief',title:'How to tell fit from overdone',paras:[
+    'He should finish a walk still interested in what is ahead of him, not lagging at the end of the leash.',
+    'Watch the day after, not the hour after. Stiffness on the first morning walk, reluctance at a step he took fine yesterday, or a slower start out of bed means the day before was too much.',
+    'Build by about a tenth a week and hold there when anything looks off. Any sudden refusal to move, a hunched back, a yelp on being lifted, or dragging a hind foot is not fatigue — that is the disc chapter, and it is today’s problem.'
+  ]},
+
+  {t:'photo',n:45,note:'Adult standard smooth working up a grass slope on a long line, hind end driving, seen from behind and slightly low. Early morning, backlit.',caption:'The only part of the structure you get to improve.'}
+]},
+
+/* ───────────────────────── 7.2 ───────────────────────── */
+{ id:'7.2', title:'Scent is the sport', sub:'hire the nose and the rest of the dog goes quiet', pages:3, blocks:[
+
+  {t:'p',text:'The AKC breed standard asks for a dog “persevering in above- and below-ground work, with all the senses well-developed.” That is not decoration. The animal was built to follow a scent into a hole in the dark, without instruction, and keep at it long after a sensible dog would have come home. You have that hardware in your living room. Most owners leave it switched off and then wonder why the dog spends the evening barking at the window.'},
+
+  {t:'stats',items:[
+    ['2 weeks','of nosework was enough'],
+    ['Optimistic','judgment bias, against a heelwork control'],
+    ['0','equipment required to start']
+  ]},
+
+  {t:'evidence',badge:'settled',paras:[
+    'Sniffing looks like a lapse in concentration. It is the opposite: it is the dog doing the thing he is best at, and it changes how he reads the rest of his day.',
+    'One group of dogs did two weeks of nosework. A comparison group did two weeks of heelwork. Both were then given a judgment-bias test, which measures how a dog interprets an ambiguous outcome — the standard experimental proxy for mood.',
+    '<strong>The nosework dogs came out more optimistic.</strong> Not better behaved in the session. More optimistic afterward, on a test that had nothing to do with searching.'
+  ],source:'“Let Me Sniff!” — nosework and judgment bias, Barnard College'},
+
+  {t:'h3',text:'Why this beats fetch for this breed'},
+
+  {t:'p',text:'Fetch is a repetitive sprint with a hard stop and a twist at the end of it, done on whatever surface you happen to be standing on. For a long-backed dog with short legs and a spine you already know the history of, that is a lot of identical loading for very little mental return. He is also, being this breed, quite likely to bring it back twice and then take it under the couch.'},
+
+  {t:'p',text:'Scent work reverses the arithmetic. The physical load is low and self-paced. The mental load is high. It tires him in the way that matters, it uses the part of him that was actually selected for, and it is the one game where his independence stops being a training problem and starts being the whole point. You are not competing with the nose. You are employing it.'},
+
+  {t:'script',text:'the only game where he gets to be right and you get to be wrong'},
+
+  {t:'tool',n:23,title:'Three scent games',intro:'One for a living room, one for a yard, one for a walk. No equipment beyond food, a few containers and a scrap of cloth. Run one a day, three to five minutes. Stop while he still wants more, and never help him — pointing at the answer teaches him to watch your hands instead of using his nose.'},
+
+  {t:'h3',text:'Game one · The living room · Containers'},
+
+  {t:'steps',items:[
+    ['Setup','Six containers','Six identical cardboard boxes or plastic tubs, open side up, spaced a foot (30 cm) apart on a rug. Take a tenth of his dinner as the payment.'],
+    ['Round 1','Make it obvious','With him watching, drop food in one box. Release him with one word — “find it.” Let him eat out of the box. Do this four times, different box each time.'],
+    ['Round 2','Take yourself out','Put him behind a door. Bait one box. Bring him in and release him. Say nothing else, ever, while he works. He is allowed to be wrong.'],
+    ['Round 3','Raise it','Bait one box and touch every box, so your hands stop being a clue. Then scatter the boxes at different heights — floor, chair seat, low shelf under his shoulder height, nothing he has to jump for.'],
+    ['End','Finish early','Five finds and stop. Pick the boxes up. The game exists only when you set it out, which is what keeps it valuable.']
+  ]},
+
+  {t:'h3',text:'Game two · The yard · The scatter and the buried target'},
+
+  {t:'steps',items:[
+    ['Setup','Long grass','Pick the roughest grass you have. Short lawn is too easy and pavement is useless — scent will not hold on it.'],
+    ['Part 1','Scatter feed','Throw a handful of kibble low and wide across a ten-foot (3 m) square while he waits. Release him. This is the warm-up and, on its own, a legitimate twenty minutes of a dachshund’s day.'],
+    ['Part 2','One target','Rub a scrap of old cloth on a piece of cheese, then hide the cloth and a matching piece of cheese together under a plant pot, a log, or the edge of a step. Bring him out and release.'],
+    ['Part 3','Cold, then buried','Set the target and wait five minutes before releasing him, so the trail is cold rather than fresh. Then set it slightly under loose soil or leaves so he has to dig for it.'],
+    ['Rule','Let him dig','This is where the digging is allowed, which is the cheapest way to keep it out of the flower bed. Choose the spot on purpose and use it every time.']
+  ]},
+
+  {t:'h3',text:'Game three · The walk · Find it on cue'},
+
+  {t:'steps',items:[
+    ['Setup','Same word','Use the same release word you use indoors. The cue is what turns an hour of random sniffing into a job he does for you.'],
+    ['Step 1','Pay the ground','On the walk, stop at a patch of rough grass or leaf litter, scatter four or five pieces of food into it, and release him. Thirty seconds, then move on.'],
+    ['Step 2','Drag a trail','On a quiet stretch, walk twenty feet (6 m) dragging a scented cloth along the ground with a treat at the end, while someone holds him. Bring him to the start and release him onto the line.'],
+    ['Step 3','Let him lead','Once a walk, hand over the route. Loose leash, no direction, wherever the nose goes for five minutes. Bring him back on the recall word, pay it, and resume your walk.'],
+    ['Rule','Never correct a wrong answer','If he searches the wrong place, wait. Saying no to a dog who is working teaches him that searching is risky, and a dog who is not sure is a dog who stops trying.']
+  ]},
+
+  {t:'note',title:'Where it goes next',paras:[
+    'Every one of these is the amateur end of a real sport. AKC Scent Work and Barn Hunt organizations run titling classes open to any dog regardless of registration; ask a local club what the equivalent is where you live. All of it suits a low, sturdy, independent animal better than anything with a jump in it.',
+    'Earthdog tests are the closest thing to the original job: a dog, a tunnel and caged quarry he never reaches. Some owners want no part of it. Some dachshunds are transformed by it.'
+  ]},
+
+  {t:'photo',n:46,note:'Longhaired dachshund, head buried to the eyes under an overturned flowerpot in long grass, tail up. Natural light, close and low.',caption:'Three minutes of this outranks half an hour of fetch.'}
+]},
+
+/* ───────────────────────── 7.3 ───────────────────────── */
+{ id:'7.3', title:'What to avoid, and why', sub:'three things, and the honest reason for each', pages:1, blocks:[
+
+  {t:'p',text:'The list of prohibitions for this breed is usually long, unsourced and delivered with total confidence. Here is a short one, with the strength of the evidence attached to each item, so you can tell which lines are worth defending at a dog park.'},
+
+  {t:'p',text:'<strong>Repeated jumping down.</strong> Up is loading. Down is impact, taken through the forelimbs and into a long spine, and a dog who does it eight times a day for six years has done it many thousands of times. The reasoning is mechanical and it is sound. What it is not is a study on this breed showing that jumping causes disc extrusion. Nobody has run one.'},
+
+  {t:'p',text:'<strong>Competitive agility and the jump sports.</strong> Same reasoning, higher dose, plus tight turns at speed on a long back. The caution is drawn from conformation, not from a trial demonstrating harm in dachshunds. Say it plainly rather than dressing it up: this is an argument from how the dog is built. It is a good argument. It is not a result.'},
+
+  {t:'p',text:'<strong>Slick floors.</strong> Polished wood, tile and laminate take away the traction he needs to land, turn and push off. This one you can watch happening. Lay runners on the routes he actually uses, keep nails short, and trim the hair between the pads on longhaired and wirehaired dogs.'},
+
+  {t:'flag',title:'The combination that does the damage',paras:[
+    'A jump down from a couch onto tile is two problems at once: uncontrolled impact and no grip at the landing.',
+    'Put a rug where he lands before you buy a ramp. It costs nothing and it fixes the half of the problem that is easiest to fix.',
+    'If he yelps on landing, refuses a jump he made yesterday, or stands hunched afterward, stop the day there and read the disc chapter.'
+  ]},
+
+  {t:'p',text:'Note what is <em>not</em> on the list. In the DachsLife survey, dogs that were <strong>prevented</strong> from using furniture were at <em>higher</em> risk of disc disease, and the stairs finding was a protective trend that did not reach significance. Neither of those means banning the couch causes disc disease. What they do mean is that a blanket prohibition has no support behind it, and that the sensible reading is control, not exclusion. Build a ramp and teach him to use it. Carry him where there is no ramp. Do not stop a dog from getting to the places he was going to get to anyway.'},
+
+  {t:'script',text:'the couch was never the enemy. the drop onto bare tile was'}
+]},
+
+/* ───────────────────────── 7.4 ───────────────────────── */
+{ id:'7.4', title:'Grooming by coat', sub:'ten minutes a week, and half of it is an examination', pages:2, blocks:[
+
+  {t:'p',text:'Three coats, shown separately, groomed differently. Whichever one you have, the weekly session is doing two jobs. One is the coat. The other is a full-body check — hands down the back, over the ribs, along each leg, under the tail — which is how you catch a lump, a hot spot, a tick, or a flinch over the lumbar spine while it is still small. The grooming is the excuse. The examination is the value.'},
+
+  {t:'table',head:['Coat','Weekly','Tools','Bath'],rows:[
+    ['Smooth','Five minutes with a rubber curry or hound glove','Rubber curry, hound glove, soft cloth','Every six to eight weeks, or when he rolls in something'],
+    ['Wirehaired','Ten minutes; comb the beard and eyebrows, check for mats behind the ears and in the armpits','Stripping knife, medium comb, slicker for furnishings','Rarely. Bathing softens the jacket'],
+    ['Longhaired','Fifteen minutes, line-brushed; feathering behind the ears, on the legs, under the tail and on the chest','Pin brush, greyhound comb, dematting comb, blunt-nosed scissors','Every four to six weeks']
+  ],note:'Ear feathering and the trousers are where mats start on a longhaired dog. Both drag on the ground, and this dog is closer to the ground than most.'},
+
+  {t:'h3',text:'The wire coat, and what clipping does to it'},
+
+  {t:'p',text:'A wire jacket is a harsh outer coat over a softer undercoat, and it is designed to be plucked, not cut. Hand-stripping pulls the dead outer hairs out at the root — a few at a time, with finger and thumb or a stripping knife held against the thumb — so the follicle produces a new harsh hair behind it. Done on a schedule, usually two or three times a year with tidying in between, the jacket stays crisp, weatherproof and the color it is supposed to be.'},
+
+  {t:'p',text:'Clipping cuts the same hairs off at the surface and leaves the root in place. Over a few cycles the harsh outer coat thins out, the soft undercoat takes over, and the texture goes woolly and the color goes flat. That is not damage and it is not permanent for most dogs, but it is a decision, and plenty of groomers will make it for you without mentioning it. If the coat is the reason you chose a wire, say so before the clippers come out. If you would rather have a soft, low-maintenance dog and do not care about the jacket, clip him. Just do it on purpose.'},
+
+  {t:'note',title:'Nails, ears, eyes',paras:[
+    'Nails every two to three weeks, a little at a time. On a dog this low, long nails change the angle he stands at and cost him grip on exactly the floors described in 7.3. If you hear them on the kitchen tile, they are long.',
+    'Ears are the standard drop-ear problem: warm, closed and poorly ventilated. Look weekly, wipe the visible part with a veterinary ear cleaner, and never put a cotton swab down the canal. Head shaking, an odor, or a dog who flinches when you touch the base of the ear is a veterinary appointment, not a cleaning job.',
+    'Wipe tear staining with plain water. On a wirehaired dog, keep the eyebrows out of the eyes.'
+  ]},
+
+  {t:'p',text:'Teeth belong in the weekly session too, and they are the one piece of home grooming with a professional statement behind it. The American Veterinary Dental College is direct about the alternative on offer at grooming salons: access to the area below the gumline “is impossible in an unanesthetized patient,” and scraping off the tartar you can see “has little effect on a pet’s health, and provides a false sense of accomplishment. The effect is purely cosmetic.” A proper cleaning under anesthesia is not a cheap procedure anywhere, and the range is wide; ask your clinic for its figure in your local currency. Brushing at home lengthens the gap between them.'},
+
+  {t:'note',title:'If your dog is blue or isabella',paras:[
+    'Color dilution alopecia is genetic and recessive, and dachshunds are explicitly listed among the susceptible breeds. The coat is normal at birth; signs appear from around six months — thinning over the trunk, broken hairs, flaky skin.',
+    'It is not curable. It is managed: gentle shampoos, no harsh grooming, and veterinary treatment of the secondary skin infections that follow. The Dachshund Club of America’s warning about dilutes — thin coats and skin sensitivity among them — is on the record, and this is the mechanism behind part of it.'
+  ]},
+
+  {t:'photo',n:43,note:'Hands stripping a wirehaired dachshund on a grooming table, thumb and stripping knife, pulled hairs visible. Tight crop, side light.',caption:'Plucked, not cut — and the jacket stays the coat you paid for.'}
+]},
+
+/* ───────────────────────── 7.5 ───────────────────────── */
+{ id:'7.5', title:'Apartments, cities, neighbors', sub:'a good apartment dog with one expensive habit', pages:1, blocks:[
+
+  {t:'p',text:'A dachshund is a good apartment dog in every respect but one. He is small, he sleeps a great deal, he does not need a yard, and he is entirely happy on a couch. He also has a bark built to be heard from underground through several feet of earth, and your neighbor shares a wall with it. Everything else here is easy. That one thing is the whole job.'},
+
+  {t:'p',text:'Work the door, because in an apartment the door is the trigger. Corridor footsteps, the elevator chime and the neighbor’s key all predict nothing and all get announced. Pair each of those sounds with food, every time, until they mean cheese rather than intruders, and give him a mat away from the entrance to be sent to. Manage what you cannot train yet: white noise near the door, a film over the glass if he can see the hallway, and a crate placed away from the shared wall rather than against it. Introduce yourself to the neighbors before the barking does — a person who has met the dog complains later, and to you rather than to the building.'},
+
+  {t:'p',text:'Lobbies and elevators deserve their own rehearsal. An elevator is a small metal box in which a stranger and a dog cannot get away from each other, so teach him to sit facing the doors, on a short leash, before you need it. Carrying him through the lobby is not cheating; it is the fastest way past a small child who wants to grab, and it keeps him off the floor between two sets of automatic doors. Use a harness, never a collar, in a place where you may have to lift him without warning.'},
+
+  {t:'p',text:'Without a yard, house-training runs on the clock rather than on the door. Outings every one to two waking hours, straight out to the same patch of ground, reward the instant he finishes rather than when he gets back inside, and play only <em>after</em> he has eliminated — a dog who learns that emptying ends the fun will hold it. Expect night outings until around five months. Count eight to twelve accident-free weeks before you give him more of the apartment. Puppy pads solve the elevator problem and create a new one, since they teach him that soft absorbent things indoors are a legitimate target. If you use them, use them as a bridge, and put them by the door you leave from.'},
+
+  {t:'brief',title:'Assistance animals: three rules, not one',paras:[
+    '<strong>Public places.</strong> Under the US ADA a service animal is “a dog that has been individually trained to do work or perform tasks for an individual with a disability.” Emotional support animals are explicitly <em>not</em> service animals. Staff may ask only two questions and may not demand documentation.',
+    '<strong>Housing.</strong> A different and broader category: assistance animals, which <em>can</em> include ESAs, may qualify for a reasonable accommodation despite a no-pet policy — US fair-housing law, under HUD’s 2020 guidance. Look up the equivalent where you rent.',
+    '<strong>Flying.</strong> Since the 2021 US Department of Transportation rule, airlines there need not treat ESAs as service animals. Ask your own carrier. Your dog flies as a pet, under 7.6.',
+    'Online “ESA certificates” are sold as though they were credentials under all three. They are credentials under none of them, anywhere.'
+  ]}
+]},
+
+/* ───────────────────────── 7.6 ───────────────────────── */
+{ id:'7.6', title:'Travel, heat and cold', sub:'the risk is not where you were told it was', pages:2, blocks:[
+
+  {t:'p',text:'In a car, he is either in a crate that is strapped down or in a harness crash-tested under a program in your own country, clipped to a seatbelt, in the back, never in the front and never on a lap. A loose dog in a braking car is a projectile, and a dachshund who launches off a seat into a footwell has taken exactly the impact 7.3 is about. Crate him where you can see him, keep the windows up enough that he cannot get his head out, and stop every two hours on a long drive to let him walk and drink.'},
+
+  {t:'h3',text:'The carrier problem'},
+
+  {t:'p',text:'Flying in the cabin is a question of length, and it is decided before you buy the ticket. Every airline caps the soft carrier, the caps differ by airline and by country, and they change — which means the number that matters is not what your dog weighs but how long he is when he lies down flat, which is the only way a dachshund travels.'},
+
+  {t:'table',head:['Ask before booking','Why it matters','Ask who'],rows:[
+    ['Carrier size limits','He travels lying flat','The airline, in writing'],
+    ['Cabin or hold','Handling is the real risk','The airline'],
+    ['Weight limits, if any','Some cap dog plus bag','The airline'],
+    ['Health certificate','Timing set by destination','Your veterinarian'],
+    ['Breed or size rules','These differ by route','The airline'],
+    ['Border documents','Chip, vaccination, parasites','Your veterinarian']
+  ],note:'These differ by airline and by country and change without notice. Get the answer for your own route in writing before you book — and carry the bag on stairs, escalators and belts.'},
+
+  {t:'p',text:'A miniature generally fits. <strong>A standard generally does not.</strong> That is reasoning from published carrier dimensions against the length of the breed, not a statement any airline has made, and the published caps differ by airline and by country — and since the AKC, The Kennel Club and the FCI draw the size line differently, measure your own dog lying down rather than trusting his label, then plan to drive, or to research the hold separately, rather than arrive at the gate to have it settled by an agent with a tape measure.'},
+
+  {t:'h3',text:'Heat'},
+
+  {t:'stats',items:[
+    ['74.2%','of heatstroke cases were exercise-induced'],
+    ['5.2%','involved a vehicle'],
+    ['7.86%','overall fatality']
+  ]},
+
+  {t:'evidence',badge:'contested',paras:[
+    '“Never leave your dog in a car” is the entire public message on heat, and it is true. It is also aimed at one twentieth of the problem.',
+    'VetCompass examined 1,259 heatstroke episodes across 905,543 dogs. <strong>74.2% were exercise-induced. 12.9% were environmental. Only 5.2% involved a vehicle.</strong> Overall fatality was 7.86%.',
+    'Dogs of twenty-two pounds (ten kilograms) and over were at higher risk of the exertional form. A standard dachshund sits right on that line.',
+    'The practical consequence: the dangerous decision of a hot day is usually the walk, not the parking lot. Move it to dawn and dusk, cut the distance, and abandon it entirely when it is genuinely hot. He will not self-regulate. Bred to persevere, he will keep going while you are the one who is tired.'
+  ],source:'VetCompass, 1,259 heatstroke episodes across 905,543 dogs · Animals (MDPI)'},
+
+  {t:'p',text:'On pavement, the AVMA gives only a qualitative rule, and it is the honest one: if you are warm, the dog is likely much warmer, and grass may be the better surface on a very hot day. The seven-second hand test you see quoted everywhere is not an AVMA rule and is not attributed here to anyone. Put the back of your hand down anyway. It costs you nothing and it is better than guessing.'},
+
+  {t:'h3',text:'Cold'},
+
+  {t:'p',text:'The AVMA’s cold-weather guidance names this body type twice without naming the breed. “Short-haired pets … feel the cold faster.” And short-legged dogs have the belly and body in contact with the snow. A smooth dachshund in a hard winter is an inch (2.5 cm) off the ground with almost nothing between him and it.'},
+
+  {t:'p',text:'On coats, the AVMA’s position is measured, and so is this book’s: “if your dog has a short coat or seems bothered by the cold weather, consider a sweater or dog coat.” That is reasonable, not proven. No study says a coat lowers any risk in this breed. Buy one if he shivers, refuses the door, or lifts his feet — and keep a second, because a wet coat makes a dog colder than no coat at all. No fixed temperature cutoff is given by anyone worth citing, so use the dog. Shaking, lifted paws, a hunched stance and a sudden urgency to get home are the signal, and on a salted or chemically treated sidewalk you should rinse his feet when you get there.'},
+
+  {t:'photo',n:44,note:'Smooth standard in a fitted coat on packed snow at dusk, belly just clear of the surface, breath visible. Cold blue light, warm window behind.',caption:'One inch (2.5 cm) of clearance, and the AVMA named exactly this shape.'}
+]},
+
+/* ───────────────────────── 7.7 ───────────────────────── */
+{ id:'7.7', title:'The go-bag', sub:'packed once, kept by the door, checked twice a year', pages:1, blocks:[
+
+  {t:'tool',n:24,title:'The travel and emergency kit',intro:'One bag that covers a weekend away, a night at an emergency clinic and an evacuation. Keep it where you can pick it up on the way out, and put a reminder in your calendar twice a year to swap the food, the water and anything with an expiration date.'},
+
+  {t:'check',title:'Tool 24 · The go-bag',items:[
+    'Harness and a spare leash — harness, not collar, always',
+    'Three days of his usual food, sealed and dated, plus a collapsible bowl',
+    'Bottled water and a second bowl',
+    'Every current medication in its labeled container, plus a written list with doses and times',
+    'A printed one-page medical summary: age, weight in pounds and kilograms, conditions, drugs, your veterinarian’s number',
+    'Printed vaccination records and any pet passport or border paperwork — a kennel, a clinic or a crossing will ask',
+    'Microchip number, the registry name, and proof your contact details are current',
+    'Two current photographs of him, one showing markings clearly',
+    'Poison control, which charges a fee to call: ASPCA APCC (888) 426-4435 · Pet Poison Helpline (855) 764-7661, both US — plus the line where you live: UK 01202 509 000 · Australia 1300 869 738 · New Zealand 0800 869 738',
+    'Your regular clinic’s number and the nearest 24-hour emergency hospital to where you are going, looked up before you leave',
+    'A folded blanket or towel — also a stretcher for a dog who must not bend',
+    'A rigid carrier or a soft crate that fits the car',
+    'Gauze, self-adhering bandage, blunt scissors, tweezers, a digital thermometer, water-based lubricant',
+    'Saline eye wash and unscented wipes',
+    'Poop bags, more than you think',
+    'A worn T-shirt of yours for the crate',
+    'One high-value treat he never gets at home',
+    'A copy of your pet insurance policy number and the claims number'
+  ]},
+
+  {t:'p',text:'Two things not to put in it. No human painkillers — nothing over the counter, ever, without a veterinarian on the phone. And no medication you have not read the label on that week: some liquid gabapentin formulations contain xylitol, which is dangerous to dogs and which matters here because gabapentin is one of the standard drugs for a dachshund with a painful back.'},
+
+  {t:'script',text:'the bag is not for the trip. it is for the night you are not thinking clearly'},
+
+  {t:'remember',items:[
+    ['The five-minute rule has no author','It is a reasonable starting dose for a growing puppy and nothing more. No primary source has ever been produced for it, and it should never be quoted as evidence.'],
+    ['Under-exercising is the finding, not over-exercising','DachsLife 2015, 2,031 owners: under thirty minutes a day carried higher IVDD risk, over an hour a day lower. Association, not causation, and British — no country has its own dataset.'],
+    ['Scent is the sport','Two weeks of nosework produced a more optimistic judgment bias than two weeks of heelwork. It costs nothing, loads the spine lightly, and uses the part of him you cannot train out.'],
+    ['The jump caution is reasoning, not proof','Repeated jumping down and competitive agility are argued from conformation. No study has demonstrated the harm in this breed — and blanket furniture bans have survey evidence pointing the other way.'],
+    ['Heat comes from exercise, not parking lots','74.2% of heatstroke cases were exercise-induced and 5.2% involved a vehicle, with 7.86% fatality overall. The dangerous decision on a hot day is the walk.']
+  ]},
+
+  {t:'quiz',items:[
+    'A trainer tells you to keep your two-year-old on fifteen-minute leash walks to protect his back. What does the survey evidence say, and what is the honest caveat you should attach to it?',
+    'It is 88 °F (31 °C), you have twenty minutes before work, and he is at the door with his leash. Where is the actual risk, and what do you do?',
+    'You have booked a flight and your standard smooth weighs twenty pounds (9 kg). What is the problem, and how confident should you be about the reasoning behind it?'
+  ],answers:[
+    'DachsLife 2015 found higher IVDD risk in dogs exercised under thirty minutes a day and lower risk over an hour — the opposite direction from the advice. The caveat is that it is an owner survey: association, not causation, and a dog with an early sore back is walked less, which would produce the same pattern. It is also British; no country has a dataset of its own.',
+    'Not the car — 5.2% of heatstroke cases involve a vehicle, while 74.2% are exercise-induced. Skip the walk, take him out to eliminate and come back in, and move the real outing to after dark. He will not stop on his own; this breed was selected to keep going.',
+    'In-cabin carriers are capped by size, the cap differs by airline and by country, and what decides it for this breed is his length lying flat rather than his weight — so a standard dachshund generally does not fit. Be confident in the arithmetic but clear about its status: that is reasoning from published carrier dimensions, not a statement any airline has made about the breed — and the rules change, so get your own airline’s current figures in writing before booking.'
+  ]}
+]}
+
+];

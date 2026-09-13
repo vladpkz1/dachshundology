@@ -1,0 +1,453 @@
+/* ═══════════════════════════════════════════════════════════════
+   PART IV — TRAINING A STUBBORN DOG
+   Sections 4.1 – 4.7 · 19 pages · Tools 11, 12, 13
+   ═══════════════════════════════════════════════════════════════ */
+
+module.exports = [
+
+/* ───────────────────────── 4.1 ───────────────────────── */
+{ id:'4.1', title:'The method, and the evidence for it', sub:'why the shortcut costs more than it saves', pages:3, blocks:[
+
+  {t:'first',text:'Every book about this breed opens with the same word. <em>Stubborn.</em> It is the wrong word, and it does real damage, because it tells you the dog is refusing you. He is not refusing you. He is weighing your instruction against something more interesting and deciding for himself — which is precisely the trait he was selected for. The training problem is not how to break that. It is how to become the better offer.'},
+
+  {t:'p',text:'The method you use to do that is not a matter of taste. The American Veterinary Society of Animal Behavior holds that “only reward-based training methods are used for all dog training, including the treatment of behavior problems.” The same statement names what to avoid: choke, prong and electronic collars, intimidation, physical correction, and flooding. That is a position on evidence, not on sentiment.'},
+
+  {t:'stats',items:[
+    ['55.9','lip licks per session, dogs from aversive-based schools'],
+    ['4.1','the same count, reward-based schools'],
+    ['0.26','salivary cortisol, against 0.13']
+  ]},
+
+  {t:'evidence',badge:'settled',paras:[
+    'The trade sells a middle position: rewards for what you like, a correction for what you don’t. “Balanced training” is a marketing phrase. It has never been a finding.',
+    'Researchers in Porto compared companion dogs enrolled in aversive-based and reward-based schools. Stress signals in session: <strong>55.9 ± 4.4 lip licks against 4.1 ± 0.4</strong>. Salivary cortisol <strong>0.26 against 0.13</strong>. Then they moved the dogs to a different place with no trainer, no collar and no cues, and ran a judgment-bias test. The aversive-school dogs were measurably more pessimistic about an ambiguous outcome.',
+    'That last finding is the one that matters to you. The cost did not stay in the training session. It followed the dog home.'
+  ],source:'PLOS ONE — dogs from aversive-based and reward-based training schools · AVSAB Humane Dog Training Position Statement, 2021'},
+
+  {t:'h3',text:'A dog bred to make the call himself'},
+
+  {t:'p',text:'The AKC standard — The Kennel Club and the FCI publish their own — asks for a dog who is “clever, lively and courageous to the point of rashness, persevering in above- and below-ground work, with all the senses well-developed.” Shyness is a serious fault. Read that as a job description. The work happened at the end of a run of earth, in the dark, with the handler above ground and out of reach. A dog who stopped to ask permission was no use down there, and was not bred from.'},
+
+  {t:'p',text:'Coercion gets compliance from a dog whose first strategy is to consult his handler. This one’s first strategy is to consult his nose. Punish him and you rarely get obedience. You get a dog who offers less, who hides the early warnings you need to read, and who files you under obstacles rather than opportunities. The evidence and the breed point the same way, which is convenient, because it means you only have to learn one system.'},
+
+  {t:'script',text:'he isn’t defying you. he has found a better offer, and it smells like a rabbit'},
+
+  {t:'p',text:'None of which makes reward-based training permissive. It is not the absence of rules; it is the absence of pain and fear as teaching tools. You still decide when he eats, where he sleeps, and what he is allowed to practise. The difference is in the machinery. Instead of waiting for the mistake and punishing it, you arrange the situation so the right answer is the easy one, then pay for it until it becomes his default. Management does the work that a correction was supposed to do, and it works while you are asleep.'},
+
+  {t:'h3',text:'The marker, and why the timing beats the treat'},
+
+  {t:'p',text:'Dogs learn what happened in the half-second before the good thing arrived. Your hand cannot reach his mouth that fast, so you need a signal that can — one short word, said the same way every time, or a clicker. “Yes.” Mark the exact instant the rear end touches the floor, then take as long as you like to deliver the food. Owners who train without a marker end up paying whatever the dog did next, which is usually standing up again, and then cannot understand why the sit keeps dissolving.'},
+
+  {t:'h3',text:'What you are paying with'},
+
+  {t:'p',text:'Treats should stay at or under ten percent of daily calories. For a sixteen-pound (7.3 kg) dachshund that is roughly <strong>48 kilocalories a day</strong> — about two tablespoons of kibble, or one stick of cheese split forty ways. You are training a small dog on a small budget, so do the arithmetic before you decide to pay in cheddar. The commonest way owners wreck a dachshund is not with a training method. It is with the rewards.'},
+
+  {t:'note',title:'Paying him without fattening him',paras:[
+    'Weigh the day’s ration in the morning and train out of it. What he earns comes off dinner.',
+    'Keep a high-value tier — a pea-sized piece of chicken — reserved for recall, nail trims and the veterinarian. If the good stuff is everywhere, it is worth nothing anywhere.',
+    'Break everything smaller than you think. He is working for the event, not the volume.'
+  ]},
+
+  {t:'h3',text:'Sessions, and the nose as a paycheck'},
+
+  {t:'p',text:'Rank the rewards before you need them, because you cannot invent a ladder in the middle of an emergency. Kibble for what he already knows. Something soft and smelly for new work. One item at the top — roast chicken, cheap hot dog — that appears for recall and for the veterinarian and nowhere else. Most owners have one reward and wonder why it stops working at the curb.'},
+
+  {t:'p',text:'Two or three minutes. Five to ten repetitions. Stop while he still wants another one. Two short sessions a day will outrun one long one every time, and a session that ends because the dog quit has taught him that quitting ends work. End it yourself, on a rep he got right, and walk away first.'},
+
+  {t:'brief',title:'Stop fighting the nose. Hire it.',paras:[
+    'A controlled trial gave one group of dogs two weeks of nosework and a comparison group two weeks of heelwork. The nosework dogs came out measurably more optimistic on a judgment-bias test. Sniffing is not a lapse in concentration. It is doing something for him.',
+    'So use it as wages. Scatter a handful of kibble in long grass and release him to it after a hard repetition. For this breed, three minutes of searching is a bigger paycheck than any biscuit you can buy.'
+  ]},
+
+  {t:'photo',n:18,note:'Miniature wirehaired at eye level in long grass, nose down, tail up, mid-search. Late afternoon side light, shallow depth of field.',caption:'Paid in the only currency he never gets tired of.'}
+]},
+
+/* ───────────────────────── 4.2 ───────────────────────── */
+{ id:'4.2', title:'The window that does not reopen', sub:'three months, and no extensions', pages:4, blocks:[
+
+  {t:'first',text:'There is exactly one deadline in this book. The sensitive period for socialization runs through the first three months of life, and it closes on schedule whether or not you used it. Everything else here can be started late and still work. This cannot. A dog who met eight kinds of person before sixteen weeks and a dog who met two are not the same animal at three years old, and no amount of later effort fully closes the gap.'},
+
+  {t:'p',text:'AVSAB’s position is blunt on the part owners find hardest: socialization should begin <strong>before the vaccination series is complete</strong>, and that is the standard of care, not a risk-tolerant fringe view. Puppy classes can start at seven to eight weeks provided the puppy has had one vaccination at least seven days before. The statement also carries a sentence that reframes the whole subject: behavior problems are the leading cause of death in dogs under three years old. Not disc disease. Not cancer. Behavior.'},
+
+  {t:'stats',items:[
+    ['3 months','the sensitive period — all of it'],
+    ['7–8 weeks','earliest class, one vaccination ≥ 7 days prior'],
+    ['Leading','cause of death in dogs under three: behavior']
+  ]},
+
+  {t:'evidence',badge:'myth',paras:[
+    '“Keep him home until he’s fully vaccinated.” You will be told this, sometimes by people with a license on the wall, and it is the single most expensive piece of advice in dog ownership.',
+    'The infectious risk is real and it is managed by <em>where</em> you socialize, not by <em>whether</em> you do. Clean surfaces, known dogs, carried across parking lots. The behavioral risk of waiting is managed by nothing, because by the time the last shot goes in, the window has closed.',
+    'AVSAB’s puppy socialization statement says the process should begin before the series is finished and calls this the standard of care.'
+  ],source:'AVSAB Position Statement on Puppy Socialization'},
+
+  {t:'flag',title:'Where not to take him before the series is done',paras:[
+    'No dog parks. No pet-store floors. No highway rest stops or any ground where unknown dogs eliminate.',
+    'Carry him across those surfaces. A puppy in your arms outside a hardware store is socializing; a puppy sniffing the sidewalk there is sampling.',
+    'Choose dogs whose vaccination status you can personally verify. One healthy, tolerant adult dog in a friend’s yard does more for him than a dozen strangers ever will.'
+  ]},
+
+  {t:'h3',text:'Exposure is not socialization'},
+
+  {t:'p',text:'Socialization is the pairing of a new thing with a good outcome, at a distance and intensity the puppy can handle. Exposure is just the new thing. If you carry a nine-week-old into a farmers market and he spends forty minutes frozen against your chest, you have not socialized him to crowds. You have taught him, efficiently and permanently, that the world arrives faster than he can cope with.'},
+
+  {t:'p',text:'Read three responses and act on them. He approaches and investigates — good, let him, pay him. He notices and carries on — fine, that is neutral and neutral is a win. He freezes, tucks, backs away, or stops taking food — you are too close, and the food test is the reliable one. A puppy who will not eat is not learning anything you want him to learn. Increase the distance until he eats, then stay there.'},
+
+  {t:'script',text:'if he won’t take the chicken, the chicken isn’t the problem'},
+
+  {t:'h3',text:'Flooding, and why it looks like it worked'},
+
+  {t:'p',text:'Flooding means holding a frightened dog in the thing that frightens him until he stops reacting. AVSAB lists it among the methods to avoid. It is seductive because it produces a quiet dog inside ten minutes — and the quiet is the problem. A dog who has stopped struggling has not decided the vacuum is fine. He has stopped trying. Do it to a dachshund and you will pay for it later in growling, because you taught him that signaling gets him nowhere.'},
+
+  {t:'p',text:'The stakes are breed-specific. A fearful retriever tends to withdraw. A fearful dachshund is loud, forward and equipped with the confidence the AKC standard asks for — courageous to the point of rashness — so the same underlying fear that makes one dog hide behind the couch makes this one bark at the window for six years and lunge at a Labrador on a sidewalk. Most of the adult problems in the rest of this part were built, or prevented, before sixteen weeks.'},
+
+  {t:'h3',text:'Choosing the class'},
+
+  {t:'p',text:'A good puppy class asks for proof of one vaccination and a clean health history, keeps groups small, and spends at least as much time on handling, settling and owner questions as on free play. Ask what happens when a puppy is frightened: the answer should involve a barrier, more distance and food, never “letting him work it out.” Ask what equipment is used. If prong collars or e-collars appear anywhere on the premises, leave — see 4.1 for the reason. And ask how they group by size. A ten-pound (4.5 kg) puppy learning that dogs are terrifying because he spent six weeks being flattened by adolescent Labradors is a socialization failure wearing a certificate.'},
+
+  {t:'tool',n:11,title:'The sixty-item exposure list',intro:'Seven categories, sixty entries, one deadline. Aim to clear the list by sixteen weeks and then run the categories again through his first year — a tick is not a certificate. A box counts as ticked only if he stayed loose and took food. If he took nothing, it did not happen, and you should repeat it further away.'},
+
+  {t:'check',title:'Tool 11 · Sixty exposures before sixteen weeks',items:[
+    'Surfaces — grass, wet and dry',
+    'Surfaces — gravel',
+    'Surfaces — sand or wood chips',
+    'Surfaces — tile and polished wood',
+    'Surfaces — a metal grate or manhole cover',
+    'Surfaces — a wobble board or a sofa cushion on the floor',
+    'Surfaces — three carpeted steps, carried down, never jumped',
+    'Surfaces — a clinic scale',
+    'Surfaces — snow, ice, or cold concrete, where you have it',
+    'Sounds — vacuum running in the next room',
+    'Sounds — blender or coffee grinder',
+    'Sounds — doorbell, then a knock',
+    'Sounds — smoke-alarm test chirp',
+    'Sounds — thunder, recorded, low volume',
+    'Sounds — fireworks, recorded, low volume',
+    'Sounds — traffic, from a bench thirty feet (10 m) back',
+    'Sounds — a garbage truck working the street',
+    'Sounds — a baby crying',
+    'Sounds — a dog barking behind a fence',
+    'Sounds — hair dryer, pointed away',
+    'People — men with deep voices',
+    'People — a hat and sunglasses together',
+    'People — a hood, or a heavy winter coat',
+    'People — a beard',
+    'People — a uniform: delivery driver, postal worker',
+    'People — a cane, a walker, or a wheelchair',
+    'People — a toddler, seated and supervised',
+    'People — a child of six to ten, feeding from a flat palm',
+    'People — a crowd seen from thirty feet (10 m), no greeting',
+    'People — someone jogging past',
+    'People — a stranger who ignores him completely',
+    'Dogs — one calm vaccinated adult, in a private yard',
+    'Dogs — a dog ten times his weight, at distance, on leash',
+    'Dogs — a puppy his own size, five minutes, then done',
+    'Dogs — a dog who has no interest in him',
+    'Dogs — dogs behind a fence, walking past',
+    'Dogs — a puppy class of mixed breeds and sizes',
+    'Dogs — a cat, behind a baby gate',
+    'Handling — each paw held three seconds',
+    'Handling — clippers touched to a nail, nothing cut',
+    'Handling — one nail cut, then paid and finished',
+    'Handling — both ears looked into',
+    'Handling — lips lifted, teeth touched',
+    'Handling — toothbrush along the outside of the teeth',
+    'Handling — lifted with two hands, chest and hindquarters supported',
+    'Handling — held on his side across your lap, ten seconds',
+    'Handling — brushed along the back and flanks',
+    'Handling — harness on and off, paid both times',
+    'Handling — a stranger runs both hands over him, vet-style',
+    'Handling — a towel rubbed over a wet dog',
+    'Car — sitting in a parked car, engine off, fed',
+    'Car — engine running, no movement',
+    'Car — a two-minute drive that ends somewhere good',
+    'Car — a twenty-minute drive',
+    'Car — a trip to the clinic for a weigh-in and a cookie, nothing else',
+    'Car — carrier or crate strapped down, used every time',
+    'Alone — crate shut, you in the room',
+    'Alone — crate shut, you out of sight thirty seconds',
+    'Alone — five minutes behind a closed door',
+    'Alone — thirty minutes, filmed on your phone'
+  ]},
+
+  {t:'photo',n:19,note:'Eight-week-old smooth puppy carried in the crook of an arm outside a busy hardware store, looking out calmly at middle distance. Handler cropped at the shoulder.',caption:'Carried, not walked. At this age the parking lot is the risk and the view is the point.'}
+]},
+
+/* ───────────────────────── 4.3 ───────────────────────── */
+{ id:'4.3', title:'Eight things he needs to know', sub:'the entire curriculum, and where people break it', pages:5, blocks:[
+
+  {t:'first',text:'Eight behaviors will cover almost everything this dog has to do in a life with you. Not thirty. Eight. Two of them — go to bed, and drop it — solve more household problems than the rest combined, and both are usually skipped in favor of teaching a dachshund to shake hands.'},
+
+  {t:'p',text:'Each one below is written as a progression, with the criterion for moving on and the way people most often break it. Work one stage at a time. When a stage fails twice in a row, you have gone too fast: drop back to the last one he owned and rebuild from there. Raise one thing at a time — duration, or distance, or distraction, never two together.'},
+
+  {t:'evidence',badge:'myth',paras:[
+    '“Small dog syndrome.” The claim is that little dogs come with bossy temperaments. The data look, at first, like they agree: across 8,301 dogs of 49 breeds scored on C-BARQ, reported problem behaviors rose as height fell (p&lt;0.001).',
+    'The follow-up work is where it falls apart. Arhant and colleagues tied the pattern to <strong>owner behavior</strong> — less shared activity, less consistency in training, and more punitive handling of the small dogs. Nobody trains a Rottweiler to jump on visitors by picking him up.',
+    'It is an upbringing effect, not a temperament. Which is good news, because it is yours to change.'
+  ],source:'C-BARQ analysis, 8,301 dogs across 49 breeds · Arhant et al.'},
+
+  {t:'brief',title:'Two rules that apply to all eight',paras:[
+    'Cue once. A word repeated four times becomes a word that means “ignore me three times, then move.” If he does not respond, the answer is easier conditions, not a louder voice.',
+    'Pay in place. Deliver the food where you want the behavior to happen — between the front paws for a down, at your trouser seam for heel position. Food thrown out in front of a sit teaches a dog to stand up and travel.'
+  ]},
+
+  {t:'tool',n:12,title:'The eight-behavior curriculum',intro:'Name, sit, recall, loose leash, stay, go to bed, drop it, crate. Run two behaviors at a time in two- to three-minute sessions, twice a day. Log it with Tool 13 at the end of this part.'},
+
+  {t:'h3',text:'1 · His name'},
+
+  {t:'steps',items:[
+    ['Sessions 1–5','Charge it','Say the name once in a quiet room. The instant his head turns, mark it — “yes” — and feed. Twenty repetitions a day, no cue attached to it yet. The name means only one thing: look at me, something good follows.'],
+    ['Week 1','Add difficulty','Say it when he is mildly occupied: sniffing the rug, watching out the window. Pay heavily. If he does not turn, you are too far or he is too busy; make it easier rather than repeating it louder.'],
+    ['Criterion','Head snap, then move on','Nine times out of ten, an immediate head turn in three different rooms and once in the yard. Only then take it outdoors.']
+  ]},
+
+  {t:'p',text:'<strong>Where it goes wrong.</strong> The name gets used to scold, to interrupt, and as a general-purpose noise. Within a month it means nothing at all. Use it to buy attention, never to express irritation, and never twice in a row.'},
+
+  {t:'h3',text:'2 · Sit'},
+
+  {t:'steps',items:[
+    ['Sessions 1–3','Lure','Hold food at his nose, move it slowly back over his head. The rear end drops as the nose rises. Mark the moment it lands, feed while he is sitting.'],
+    ['Sessions 4–8','Lose the food','Same hand motion, empty hand, food delivered from the other hand afterward. Do this by the third session or the food becomes part of the cue.'],
+    ['Criterion','Name it','Add the word only when the behavior is reliable without it: say “sit”, pause one second, then give the hand signal. Eight out of ten on the word alone, in two rooms.']
+  ]},
+
+  {t:'p',text:'<strong>Where it goes wrong.</strong> Pushing down on the hindquarters. Never do it with this breed — you are loading a spine that is already the weak point of the design — and it teaches him to brace against pressure rather than to sit.'},
+
+  {t:'h3',text:'3 · Recall, the household version'},
+
+  {t:'steps',items:[
+    ['Week 1','Indoors, unmissable','Two people, ten feet (3 m) apart, in a hallway. Each calls once, in a bright voice, and pays with something better than kibble. He should be running before you finish the word.'],
+    ['Week 2','One room to another','Call from out of sight. Pay for arrival every single time, for months. This cue never goes on a variable schedule.'],
+    ['Criterion','Take it outside','Instant turn and return indoors, ten of ten, with a person moving in the room. Then it goes on a long line outdoors, and section 4.4 takes over.']
+  ]},
+
+  {t:'p',text:'<strong>Where it goes wrong.</strong> Calling him to things he dislikes — the bath, the crate at bedtime, the end of the walk. Go and get him for those. A recall cue is a promise, and this breed audits it.'},
+
+  {t:'h3',text:'4 · Loose-leash walking'},
+
+  {t:'steps',items:[
+    ['Before you start','Harness, not collar','Walk this dog on a harness. A neck that takes repeated jerks belongs to a body already carrying the highest disc-disease risk of any breed, and the harness is standard equipment for a reason.'],
+    ['Week 1','Pay the position','Indoors, no destination. Every time the leash goes slack and he is beside your left leg, feed at the seam of your trousers. You are building a place, not a punishment.'],
+    ['Week 2','Stop being towed','Outdoors, the moment the leash tightens, stop. Do not pull back. Wait for slack, then move. Turn and walk the other way when stopping does nothing.'],
+    ['Criterion','Fifty yards','Fifty yards (45 m) of loose leash past one mild distraction before you extend the route.']
+  ]},
+
+  {t:'p',text:'<strong>Where it goes wrong.</strong> Treating the walk as exercise first and training second, so the dog gets dragged along on a tight line for twenty minutes every day and rehearses pulling four hundred times a week. Split them: a short training walk, and a separate long sniffing walk on a loose line where pulling is not on the menu because you are going wherever the nose goes anyway.'},
+
+  {t:'h3',text:'5 · Stay'},
+
+  {t:'steps',items:[
+    ['Duration first','Count, do not move','Ask for a sit, count one second, mark and feed while he is still in position. Build to thirty seconds with your feet planted.'],
+    ['Distance second','Back to five seconds','Reset the clock when you add steps. One step back, return, pay. Two steps. Always return to him — never call him out of a stay in the teaching phase.'],
+    ['Distraction third','Reset again','Drop a treat a yard (1 m) away. Have someone walk past. Open the front door. Each new distraction starts at one second.'],
+    ['Criterion','Thirty seconds, ten feet (3 m), one distraction','Then add a release word, used every time, so he learns the stay ends when you say so and not when he guesses.']
+  ]},
+
+  {t:'p',text:'<strong>Where it goes wrong.</strong> Raising two criteria at once — walking away <em>and</em> waiting longer. The dog breaks, the owner repeats the cue more firmly, and the whole thing sours inside a week.'},
+
+  {t:'h3',text:'6 · Go to bed'},
+
+  {t:'steps',items:[
+    ['Sessions 1–4','Make the mat pay','Put a bed down. Mark and feed any interaction with it — a paw, a sniff, standing on it. Say nothing. Let him work out that the mat prints money.'],
+    ['Sessions 5–10','Add the down','Wait for him to lie down on it before paying. Feed between the front paws so the position gets reinforced where it happens.'],
+    ['Week 2','Name it and send it','“Bed,” then toss a treat onto the mat. Build distance until you can send him from the kitchen.'],
+    ['Criterion','The doorbell test','He goes to the mat and stays there on one cue while somebody knocks. This is the single most useful behavior in the book for a barker.']
+  ]},
+
+  {t:'p',text:'<strong>Where it goes wrong.</strong> The mat gets used as a punishment when guests arrive and the dog is being a nuisance. Then it stops being a good place. Pay him there generously, especially when nothing is happening.'},
+
+  {t:'h3',text:'7 · Drop it'},
+
+  {t:'steps',items:[
+    ['Sessions 1–5','Trade, boring for good','Give him a dull toy. Offer a piece of chicken. He opens his mouth, the toy drops, he eats — then give the toy back. The return is what makes the whole thing work.'],
+    ['Week 2','Name it','Say “drop” as he releases, not before. Once the pattern is automatic, say it first and pay the release.'],
+    ['Week 3','Raise the stakes','Practise with things he actually cares about. Pay above market rate. A dog who has been robbed once will swallow the next thing he finds.'],
+    ['Criterion','A sock, in the hallway, first time asked','Test it on something he stole, not something you handed him.']
+  ]},
+
+  {t:'p',text:'<strong>Where it goes wrong.</strong> Chasing him. Every chase teaches a fast, low, hard-to-catch dog that stolen goods start a game he always wins. Stand still, open the refrigerator, and let him come to you.'},
+
+  {t:'h3',text:'8 · The crate'},
+
+  {t:'steps',items:[
+    ['Days 1–3','Feed him in it, door open','Every meal goes in the back of the crate. He walks in, eats, walks out. No door, no fuss, no lifting him in.'],
+    ['Days 4–7','Close it for seconds','Shut the door while he chews something good. Open it before he finishes. Build to five minutes with you sitting there.'],
+    ['Week 2','Leave the room','Thirty seconds, then two minutes, then ten, then film yourself leaving the house. Watch the footage rather than guessing.'],
+    ['Criterion','An hour, settled','He goes in on cue, lies down, and sleeps. Keep it that way for life with the occasional paid session, even when you no longer need it.']
+  ]},
+
+  {t:'p',text:'<strong>Where it goes wrong.</strong> Owners stop crate training the week the house-training finishes — and then face the one situation where it is not optional. Conservative management of a disc episode calls for at least four weeks of strict rest in a space about three by four feet (90 × 120 cm). A dog who already loves his crate rests. A dog meeting it for the first time in pain does not.'},
+
+  {t:'note',title:'House-training, in one panel',paras:[
+    'Out every one to two waking hours, and after sleeping, eating and playing. Reward the instant he finishes, outside, not when he comes back in.',
+    'Play <em>after</em> elimination, never before — otherwise he learns that emptying out ends the fun and starts holding it.',
+    'Night outings may be needed until about five months. Widen his freedom in the house only after eight to twelve weeks with no accidents.',
+    'Never punish an accident. All it teaches is not to eliminate in front of you, which turns into puddles behind the couch and a dog who will not perform on leash.'
+  ]},
+
+  {t:'script',text:'two minutes, twice a day. the dog who trains for an hour on sunday learns nothing at all'},
+
+  {t:'photo',n:20,note:'Overhead shot of a smooth standard lying square on a defined mat in a kitchen doorway, human feet blurred passing behind. Natural light.',caption:'Go to bed, held while the doorbell rings. Everything else is easier once this is solid.'}
+]},
+
+/* ───────────────────────── 4.4 ───────────────────────── */
+{ id:'4.4', title:'Recall against a scent', sub:'the one that decides whether he ever runs free', pages:2, blocks:[
+
+  {t:'first',text:'A recall that works in the kitchen is not a recall. The real question in this breed is what happens when he crosses a fresh trail at forty yards (35 m) and your voice arrives second. Everything in section 4.3 was preparation for this page, and this page is where most owners find out what they actually bought.'},
+
+  {t:'p',text:'The nose beats the treat because you are competing with the part of the dog that was deliberately amplified. The AKC standard asks for a dog “persevering in above- and below-ground work, with all the senses well-developed.” Scenting drive was the product; biddability was, at best, a side consideration. When he locks on, he is not ignoring you — he has stopped processing you, in much the way you stop hearing a radio when you read.'},
+
+  {t:'h3',text:'Build it where the nose is quiet, then move'},
+
+  {t:'steps',items:[
+    ['Stage 1','Long line, boring ground','Fifteen to thirty feet (4.5 to 9 m) of line on a harness, in a mown field with nothing to find. Call once. Pay with something he never gets otherwise. Ten repetitions, then stop.'],
+    ['Stage 2','Pay before he decides','Call while he is still moving toward you anyway, or before the interesting thing registers. You are banking successes, not testing him.'],
+    ['Stage 3','Add scent deliberately','Move to rougher ground with real smells. Let him find a trail, let him work it for ten seconds, then call. If he does not turn, shorten the line and lower the difficulty. Never reel him in on a cue he ignored.'],
+    ['Stage 4','Emergency cue','Pick a second word used only for genuine recalls to safety. Pay it with something absurd — half a hot dog — every time, and use it perhaps once a month so it never gets cheap.']
+  ]},
+
+  {t:'p',text:'Three rules hold the whole thing together. Call once, never twice. Never call him for something he dislikes. And never, under any circumstances, be annoyed with the dog who came back late — the last thing that happens before the punishment is the coming back, and he will remember which one you paid.'},
+
+  {t:'evidence',badge:'contested',paras:[
+    'You will be told that any dog can be trained to a reliable off-leash recall. There is no dataset on recall reliability in dachshunds against a live trail; nobody has run that study anywhere.',
+    'What we do have is the job description — a dog selected over centuries to keep working, alone, out of contact with a handler who could not see or reach him.',
+    'So the honest position is this: many dachshunds never earn full off-leash freedom in open, unfenced country, and a long line for life is a management decision rather than a training failure. Plenty of experienced trainers with excellent dogs make exactly that call.'
+  ],source:'AKC Official Standard for the Dachshund · no published recall-reliability data for the breed'},
+
+  {t:'p',text:'Recall is also the first thing to rot. It decays quietly, because nothing announces it: the dog comes back in the yard, comes back on the sidewalk, comes back for eleven months, and then does not come back on the one hillside with a deer track across it. Pay it for life. A dog who has been paid ten thousand times for coming has a habit; a dog who was paid for six weeks in 2024 has a memory.'},
+
+  {t:'script',text:'a long line is not an admission of defeat. it is a seatbelt'},
+
+  {t:'p',text:'The fence deserves a line of its own, because this is a dog built to go under things. Check the perimeter at ground level rather than at eye level, watch for the fresh excavation at the back corner, and remember that a gap he can get his head through is a gap he can get through. A fenced yard is worth more to a dachshund owner than to almost anyone else — it is where the off-leash running happens for the dogs who will never have it anywhere else.'},
+
+  {t:'note',title:'The line itself',paras:[
+    'Fifteen feet (4.5 m) for teaching, thirty (9 m) for freedom. Biothane rather than rope — it does not soak, and it will not take the skin off your hands.',
+    'Clip to a harness, never a collar. A dog hitting the end of thirty feet at a collar is a neck injury waiting for a bad day.',
+    'Let it drag on open ground, wear gloves, and never tie it to anything.'
+  ]},
+
+  {t:'photo',n:21,note:'Standard wirehaired on a long biothane line in an open meadow, line trailing across the frame, dog looking back toward the camera. Low angle, early evening.',caption:'Thirty feet of line buys him the country and buys you the veto.'}
+]},
+
+/* ───────────────────────── 4.5 ───────────────────────── */
+{ id:'4.5', title:'Barking', sub:'the feature you are trying to return as a defect', pages:2, blocks:[
+
+  {t:'first',text:'He barks because barking was the job. A dog working a tunnel is located by his voice: the handler on the surface listens, works out where the dog has the quarry, and digs to the sound. Centuries of breeding selected for a dog who is loud, persistent, and certain he is right. You have that dog in an apartment now, but nothing about him has been recalled.'},
+
+  {t:'p',text:'Which means the goal is not silence. It is an off switch. Start by naming the trigger class, because the six of them need entirely different handling and most failed bark plans are simply the wrong plan applied confidently.'},
+
+  {t:'list',ordered:true,items:[
+    'Alarm at the window — movement outside, self-rewarding because whoever is out there always leaves.',
+    'Arrival — doorbell, knock, someone coming up the path.',
+    'Demand — directed at you, for food, a lap, or a game, and it works often enough to persist.',
+    'Frustration — behind a barrier, in a car, or on a leash he cannot get past.',
+    'Distress at being left — barking that starts within minutes of the door closing and does not settle.',
+    'Under-occupation — the bored dog narrating an empty afternoon to nobody in particular.'
+  ]},
+
+  {t:'p',text:'The Finnish survey of 13,715 dogs is worth holding in mind here: noise sensitivity ran at 32 percent, fearfulness 29 percent, and separation-related behavior at just <strong>6 percent</strong>, against the 20 to 30 percent routinely quoted in popular writing. Most barking when you leave is not separation anxiety. It is boredom, or the street outside. The distinction matters because the treatments have nothing in common: one needs a behavior plan and sometimes a veterinarian, the other needs a frosted window and something to chew.'},
+
+  {t:'h3',text:'Manage first, then teach'},
+
+  {t:'steps',items:[
+    ['First','Change the environment','Frosted film on the lower half of the window. A radio between him and the hallway. The bed moved away from the front door. Every bark he does not rehearse is a bark you never have to untrain.'],
+    ['Second','Give him a job at the trigger','Doorbell means go to bed — the behavior you built in 4.3. The doorbell now predicts a mat and a stuffed chew rather than an intruder.'],
+    ['Third','Pay the quiet you want','Reinforce the pause, not the silence after a scolding. Mark the second head-turn away from the window, before the bark. You are paying the decision, not the outcome.']
+  ]},
+
+  {t:'evidence',badge:'settled',paras:[
+    'Anti-bark collars — citronella, static, ultrasonic — are off the table here, and not on grounds of sentiment.',
+    'AVSAB names electronic collars among the tools to avoid, and the Porto comparison is the reason: aversive methods produced the stress markers in 4.1 and a pessimistic judgment bias measured away from the training context altogether.',
+    'There is a practical objection as well. The collar punishes the alarm without touching the thing that caused it. You end up with a dog who is still frightened of the street, now silent about it, and out of warnings.'
+  ],source:'AVSAB Humane Dog Training Position Statement, 2021 · PLOS ONE, aversive- and reward-based training schools'},
+
+  {t:'p',text:'Two practical notes for the people downstairs. Barking that starts the moment you leave and runs flat for an hour is a different problem from barking in bursts every twenty minutes — film it before you treat it, because the footage settles in one evening what guessing will not settle in a month. And the 2 a.m. alarm bark is worth answering in person: go and look, say nothing, come back to bed. A dog whose alarm is investigated stops escalating; a dog who is shouted at from another room learns that barking produces your voice, which was the general idea.'},
+
+  {t:'note',title:'Demand barking is the exception',paras:[
+    'This is the one class where doing nothing is the treatment. Look away, no speech, no eye contact, no touch. Reward the moment he gives up and settles.',
+    'Expect it to get worse for two or three days before it stops. That spike is the behavior being tested, and caving during it teaches him that persistence pays.',
+    'Do not confuse it with distress. Demand barking stops instantly when he gets what he wants. Distress does not.'
+  ]},
+
+  {t:'photo',n:22,note:'Longhaired dachshund standing on the back of a sofa looking out a front window, seen from behind, street softly out of focus beyond.',caption:'The back of the sofa, claimed. The height he jumps down from is the part worth thinking about.'}
+]},
+
+/* ───────────────────────── 4.6 ───────────────────────── */
+{ id:'4.6', title:'Growling, guarding, and the leash', sub:'the warnings you want him to keep', pages:2, blocks:[
+
+  {t:'first',text:'A growl is information, delivered free, by a dog trying very hard not to bite you. It is the most useful sound he makes. Punish it and you do not remove the feeling underneath — you remove the sentence before the feeling, and the next dog you own is one who goes from still to teeth with nothing in between.'},
+
+  {t:'p',text:'Resource guarding has a working definition from a panel of 85 experts: “the use of avoidance, threatening, or aggressive behaviors by a dog to retain control of food or non-food items in the presence of a person or other animal.” Note what is in it. Avoidance counts. The dog who picks up a chew and carries it behind the couch is already guarding, months before anybody hears a growl.'},
+
+  {t:'evidence',badge:'myth',paras:[
+    '“Take his bowl away while he eats, so he learns you own the food.” It is still the most commonly repeated advice on the subject, and it manufactures the problem it claims to prevent.',
+    'From the dog’s side the lesson is exact: a hand approaching the bowl means the food leaves. A dog who has learned that defends earlier and harder next time.',
+    'Do the reverse. Walk past the bowl and drop something better in it. Within a fortnight your approach predicts an upgrade, and the guarding has nothing left to do.'
+  ],source:'Resource-guarding definition, expert panel of 85 · AVSAB Humane Dog Training Position Statement, 2021'},
+
+  {t:'steps',items:[
+    ['Immediately','Manage','Pick up the contested items. Feed him where nobody walks past. You cannot counter-condition a dog who is rehearsing the guarding daily.'],
+    ['Weeks 1–3','Trade, never take','Approach, toss something better, walk away without touching the object. Repeat until he looks up hopefully when you appear.'],
+    ['Ongoing','Pay the approach','Your hand near his food, his bed, or his chew reliably predicts something good arriving. Never take the object by force — a forced removal wins the object and loses the dog’s willingness to let you near the next one.']
+  ]},
+
+  {t:'p',text:'The same definition covers guarding from other dogs, which is where multi-dog households get into trouble. Two dachshunds and one bully stick is not a lesson in sharing; it is a rehearsal. Feed in separate rooms, hand out chews in crates, and take the high-value items away when the session is over rather than letting them be negotiated. Household peace is mostly an engineering problem, and the engineering is cheaper than the behavior work that follows a fight.'},
+
+  {t:'h3',text:'The leash, and the Labrador across the street'},
+
+  {t:'p',text:'Leash reactivity toward bigger dogs is close to the house style in this breed — a confident dog, restrained, facing something twelve times his weight, with no option to leave. Distance is the currency. Find the range at which he can still eat, work there, and pay him for looking at the other dog and then back at you. Turn and walk away before he goes over threshold, not after. In the Finnish survey aggressiveness was reported in 14 percent of dogs overall, so you are dealing with a common problem, not a broken animal.'},
+
+  {t:'flag',title:'Stop training and hire someone now',paras:[
+    'A bite that breaks skin. Guarding around children. Growling that has stopped coming before the snap. A dog who redirects onto you when he cannot reach the trigger.',
+    'These are not stages to be worked through with a book. Get a credentialed professional involved this week, and keep the dog managed — leashed, gated, separated — until you have one.'
+  ]},
+
+  {t:'h3',text:'What the letters actually mean'},
+
+  {t:'p',text:'Whether “dog trainer” is a protected title depends on where you live, and in many markets it is not: anybody can print it on a card tomorrow. The same three tiers recur under different names. A <strong>veterinary behaviorist</strong> is a veterinarian with a board specialty in behavior — the only tier that can diagnose and prescribe. A <strong>certified applied animal behaviorist</strong> comes through a graduate-degree route with supervised case work. Below that sit trainer certifications, which test knowledge and require continuing education but carry no legal force. Ask what each tier is called where you live, which body awards it, and whether the title is protected there at all, then ask any candidate one question: what happens when my dog gets it wrong? If the answer involves a correction, a prong, or e-collar “stim,” keep looking.'},
+
+  {t:'script',text:'thank him for the growl. you will miss it when it stops'}
+]},
+
+/* ───────────────────────── 4.7 ───────────────────────── */
+{ id:'4.7', title:'Twelve weeks of training, logged', sub:'because memory flatters everybody', pages:1, blocks:[
+
+  {t:'tool',n:13,title:'The twelve-week training log',intro:'Two sessions a day, two or three minutes each. Mark it honestly — the value is in seeing that week six never happened.'},
+
+  {t:'table',head:['Week','Focus','Reps/day','Criterion to clear'],rows:[
+    ['1','Name · crate meals','20 · 2','Head turn 9/10; eats in crate'],
+    ['2','Sit · crate door shut','15 · 3','Hand signal; 5 min shut'],
+    ['3','Recall indoors · mat','20 · 15','Runs from another room'],
+    ['4','Drop it, traded · stay 10 sec','10 · 8','Releases a dull toy'],
+    ['5','Loose leash indoors · bed','10 min · 10','Slack 20 ft (6 m); bed on cue'],
+    ['6','Long line, empty field · stay','12 · 8','First call; 30 sec at 3 ft (1 m)'],
+    ['7','Loose leash outdoors · handling','10 min · 5','Fifty yards (45 m); nails touched'],
+    ['8','Mild scent · doorbell drill','12 · 6','Leaves a cold trail'],
+    ['9','Stolen item · stay at 10 ft (3 m)','8 · 6','Drops a sock, first ask'],
+    ['10','Emergency cue · crate 1 hr','3 · 1','Settles an hour, filmed'],
+    ['11','Live scent, long line','10','Turns off a fresh trail 7/10'],
+    ['12','Proof it, new places','2 sessions','Every cue, three locations']
+  ],note:'Blank weeks are data too. Two missed in a row is the usual reason a dog “just won’t learn recall.”'},
+
+  {t:'p',text:'Re-run weeks 11 and 12 every spring, for life.'},
+
+  {t:'remember',items:[
+    ['The method is settled','AVSAB’s position is reward-based training for everything, behavior problems included. The Porto comparison: 55.9 lip licks a session against 4.1, cortisol 0.26 against 0.13, and a pessimism that followed the dogs out of the classroom.'],
+    ['The window shuts at three months','Socialization begins before the vaccine series is finished — the standard of care, not a risk you are running. Behavior problems are the leading cause of death in dogs under three.'],
+    ['Exposure is not socialization','A puppy who will not take food is learning nothing you intended. Add distance until he eats, then work there.'],
+    ['Small dog syndrome is upbringing','Problem behaviors rise as height falls across 8,301 dogs — and the follow-up work puts it on owner behavior: less consistency, less shared activity, more punishment.'],
+    ['The long line may be permanent','Many dachshunds never earn off-leash freedom in open country. That is a management decision, not a failure, and experienced handlers make it on purpose.']
+  ]},
+
+  {t:'quiz',items:[
+    'You are told to keep the ten-week-old home until his last shot. What is AVSAB’s position, and how do you manage the infectious risk meanwhile?',
+    'He picks up a chicken bone in the street. What do you do in the next ten seconds — and what would guarantee he swallows it?',
+    'He hits a fresh rabbit trail on a thirty-foot line and ignores his recall word. What now, and what does it tell you about the stage you are at?'
+  ],answers:[
+    'AVSAB holds that socialization begins before the series is complete, and calls that the standard of care; class can start at seven to eight weeks with one vaccination seven days prior. Manage risk by location, not delay — carried across parking lots, no dog parks, verified dogs only.',
+    'Stand still, give your trade cue, produce something better, pay him. Do not walk at him or reach for his mouth. Chasing is what guarantees he swallows it: it turns theft into a game a fast, low dog always wins.',
+    'Do not repeat the cue, and never reel him in on a cue he ignored. Shorten the line, go back to easier ground, and pay recalls before the scent registers. That is not disobedience — it is evidence you raised the difficulty a stage too early.'
+  ]}
+]}
+
+];

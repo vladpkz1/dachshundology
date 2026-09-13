@@ -1,7 +1,8 @@
 /* DACHSHUNDOLOGY — dachshundology.com
    Eight free guides. Every figure traces to SOURCES.md.
    Where a figure is British, Swedish or Danish, the text says so.
-   There is no US epidemiological dataset on dachshund IVDD. */
+   Almost no country has its own dachshund IVDD dataset. Every prevalence
+   figure in circulation is Swedish, British or Danish, and we name which. */
 
 module.exports = [
 
@@ -53,7 +54,7 @@ module.exports = [
         ['Standard smooth','24.4%','Point prevalence, highest variety','DachsLife 2015'],
         ['Standard wirehaired','7.1%','Point prevalence, lowest variety','DachsLife 2015']
       ],
-      caption:'Two study designs, two different questions. Neither figure is American.'},
+      caption:'Two study designs, two different questions. Both figures come from European research.'},
 
     {t:'h2',text:'Why do two different prevalence figures circulate?'},
 
@@ -61,7 +62,7 @@ module.exports = [
 
     {t:'p',text:'So 24.4% and 15.7% are not a contradiction. Bergknut followed Swedish insurance records to the end of life. DachsLife 2015 surveyed 2,031 owners at one moment, and the Royal Veterinary College analyzed the result. Both are good studies. They answer different questions, and a page that quotes one without naming the design is not telling you enough to use it.'},
 
-    {t:'callout',tone:'evidence',title:'No American dataset exists',text:'Every prevalence figure on this page is British, Swedish or Danish. The United States has no epidemiological dataset on dachshund intervertebral disc disease. When a US site gives you a percentage, it is quoting European research, usually without saying so. We say so.'},
+    {t:'callout',tone:'evidence',title:'Three countries produced all of this data',text:'Every prevalence figure on this page is Swedish, British or Danish. Almost no other country — the United States included — has an epidemiological dataset on dachshund intervertebral disc disease at all. So the percentage you are quoted anywhere is imported research, usually passed on without being labeled. We label it.'},
 
     {t:'p',text:'Two further figures are worth carrying. Dachshunds run at roughly <strong>10 to 12 times</strong> the IVDD risk of other breeds, and the American College of Veterinary Surgeons states that dachshunds account for <strong>45 to 70% of all canine IVDD cases</strong> — one breed, most of the caseload. That is why your veterinarian recognizes the walk before you finish describing it.'},
 
@@ -77,7 +78,7 @@ module.exports = [
       '<strong>Reluctance.</strong> He stops jumping onto the sofa he has used for years. He hesitates at a step. He asks to be lifted.',
       '<strong>A changed outline.</strong> An arched back, a tucked belly, a head held low, a tense abdomen that feels like a board.',
       '<strong>Pain on handling.</strong> A yelp when you lift him under the ribs. Flinching along the spine. Trembling, panting, or refusing to settle at night.',
-      '<strong>Scuffed nails and a wobble.</strong> He is still walking, but the back end sways, the legs cross, or the nails drag on the sidewalk.',
+      '<strong>Scuffed nails and a wobble.</strong> He is still walking, but the back end sways, the legs cross, or the nails drag on the ground.',
       '<strong>Knuckling.</strong> A paw turns over and he stands on the top of it without correcting. He has lost the sense of where the foot is.',
       '<strong>He cannot stand.</strong> The back legs move but will not hold weight, or will not move at all.',
       '<strong>No bladder control.</strong> Dribbling, or a bladder that fills without emptying.'
@@ -105,7 +106,7 @@ module.exports = [
     {t:'h2',text:'What do you do in the first hour?'},
 
     {t:'ol',items:[
-      '<strong>Stop all movement.</strong> Pick him up with one hand under the chest and one under the pelvis so the spine stays level, and put him somewhere he cannot move — a crate, a laundry basket, a puppy pen. No stairs, no sofa, no yard.',
+      '<strong>Stop all movement.</strong> Pick him up with one hand under the chest and one under the pelvis so the spine stays level, and put him somewhere he cannot move — a crate, a laundry basket, a puppy pen. No stairs, no sofa, no free run of the house.',
       '<strong>Write down the time.</strong> When did you last see him normal? When did the sign appear? Your neurologist will ask, and your memory will be worse than you think.',
       '<strong>Note what he can do.</strong> Can he stand? Bear weight? Wag? Move his toes? Has he urinated? Write the answers down rather than trusting yourself to recall them at the counter.',
       '<strong>Call now.</strong> Your veterinarian in hours, the nearest emergency hospital out of hours. Say the words "dachshund", "back legs" and the time of onset in the first sentence. It changes the triage.',
@@ -113,9 +114,9 @@ module.exports = [
       '<strong>Take a harness, not a collar.</strong> And take the written notes.'
     ]},
 
-    {t:'callout',tone:'warn',title:'Four things not to do',text:'Do not give human painkillers — ibuprofen, naproxen and acetaminophen are all dangerous to dogs. Do not massage the back or manipulate the spine. Do not encourage him to walk to show you how bad it is. Do not let him sleep it off to see if the morning is better.'},
+    {t:'callout',tone:'warn',title:'Four things not to do',text:'Do not give human painkillers — ibuprofen, naproxen and acetaminophen (paracetamol) are all dangerous to dogs. Do not massage the back or manipulate the spine. Do not encourage him to walk to show you how bad it is. Do not let him sleep it off to see if the morning is better.'},
 
-    {t:'p',text:'A US emergency exam averages <strong>$135</strong> (range $107–$246) and a neurologic exam at a university teaching hospital runs about <strong>$195</strong>. That is the price of finding out. It is the cheapest part of the entire episode, and the only part where speed still buys you something.'},
+    {t:'p',text:'An emergency examination is the cheapest line item in the entire episode. A neurologic exam at a teaching or referral hospital runs about <strong>half again as much</strong>, and everything after that is a multiple of both. That is the price of finding out, in whatever currency you pay it, and it is the only part of this where speed still buys you something.'},
 
     {t:'h2',text:'Surgery or conservative management?'},
 
@@ -131,11 +132,11 @@ module.exports = [
 
     {t:'p',text:'With deep pain present, both routes work and the choice is genuinely yours — faster recovery and a higher ceiling against cost and anesthesia. With deep pain absent, the gap is enormous, and it closes with delay. That is the moment the decision stops being a preference.'},
 
-    {t:'p',text:'Cost is part of the decision and pretending otherwise helps nobody. An MRI averages <strong>$2,285</strong> nationally (range $1,811–$4,140). PetMD puts spinal surgery itself at $3,000–$8,000, and one referral neurology practice publishes an all-in figure of <strong>$10,000–$15,000</strong> covering consult, imaging, surgery, three to four nights, rehabilitation and recheck. Our <a href="/guides/pet-insurance-for-dachshunds">pet insurance guide</a> works the math before you need it.'},
+    {t:'p',text:'Cost is part of the decision and pretending otherwise helps nobody. Take an emergency examination as one unit. Published cost studies put an MRI at roughly <strong>fifteen to twenty times</strong> that unit, spinal surgery higher again, and one referral neurology practice publishes an all-in figure — consult, imaging, surgery, three to four nights, rehabilitation and recheck — of around <strong>a hundred times</strong> it. The currency changes from one country to the next. The order of those line items does not. Our <a href="/guides/pet-insurance-for-dachshunds">pet insurance guide</a> works the math before you need it.'},
 
     {t:'h2',text:'What does conservative management actually involve?'},
 
-    {t:'p',text:'Strict rest, and the word strict is doing real work. Published conservative protocols specify a <strong>minimum of four weeks</strong> of confinement, a space around three by four feet for a small dog, and three ten-minute leashed bathroom breaks a day — on a <strong>harness, never a collar</strong>. Not a room. Not the kitchen. Not supervised freedom. The dog feels better before the disc has healed, and that gap is where second episodes are made.'},
+    {t:'p',text:'Strict rest, and the word strict is doing real work. Published conservative protocols specify a <strong>minimum of four weeks</strong> of confinement, a space around three by four feet (90 × 120 cm) for a small dog, and three ten-minute leashed bathroom breaks a day — on a <strong>harness, never a collar</strong>. Not a room. Not the kitchen. Not supervised freedom. The dog feels better before the disc has healed, and that gap is where second episodes are made.'},
 
     {t:'ul',items:[
       'An anti-inflammatory: prednisone <em>or</em> an NSAID, <strong>never both together</strong>.',
@@ -158,7 +159,7 @@ module.exports = [
       '<strong>Not the CDDY DNA test.</strong> 93% of dachshunds carry two copies. It does not discriminate between individuals.'
     ]},
 
-    {t:'callout',tone:'note',title:'What the manual adds',text:'The $45 manual carries the same numbers plus the parts that need pages rather than paragraphs — a printed first-hour protocol, the full four-week crate-rest schedule week by week, the questions to ask a neurologist before you consent, and the return-to-activity ladder.'}
+    {t:'callout',tone:'note',title:'What the manual adds',text:'The manual carries the same numbers plus the parts that need pages rather than paragraphs — a printed first-hour protocol, the full four-week crate-rest schedule week by week, the questions to ask a neurologist before you consent, and the return-to-activity ladder.'}
   ],
   facts:[
     ['Lifetime risk, miniature','24.4%','Bergknut 2012, Swedish insurance'],
@@ -174,13 +175,13 @@ module.exports = [
     {q:'Can a dachshund recover from IVDD without surgery?',
      a:'Often, yes. Using the UK IVDD scheme’s grading scale, conservative recovery runs 70–100% at grade 1, 55–80% at grade 3 and 40–80% at grade 4. The ACVS puts medical management at 60–80% where deep pain is present. Below 10% where deep pain is absent, which is why that one finding drives the decision.'},
     {q:'How fast does a dachshund need to see a vet for back problems?',
-     a:'Pain alone warrants an appointment the same day. Weakness, knuckling, dragging nails, inability to stand, or loss of bladder control warrants an emergency hospital tonight. Deep pain absent is the worst prognostic category, and outcomes in that category deteriorate with delay. An emergency exam averages $135.'},
+     a:'Pain alone warrants an appointment the same day. Weakness, knuckling, dragging nails, inability to stand, or loss of bladder control warrants an emergency hospital tonight. Deep pain absent is the worst prognostic category, and outcomes in that category deteriorate with delay. The examination that tells you which category you are in is the cheapest line item in the whole episode.'},
     {q:'Do all dachshunds get back problems?',
      a:'No. Swedish insurance data puts lifetime risk at 24.4% for miniatures and 13.0% for standards. So roughly three in four miniatures and nearly nine in ten standards never have a disc episode. The risk is real and it is roughly 10–12 times other breeds, but it is not a certainty.'},
     {q:'Which dachshund variety has the lowest IVDD risk?',
      a:'In DachsLife 2015, standard wirehaired dachshunds showed the lowest point prevalence at 7.1% and standard smooths the highest at 24.4%. That is a British survey of 2,031 dogs analyzed by the Royal Veterinary College, and variety was not the only difference between those groups. Treat it as a signal, not a guarantee.'},
-    {q:'What does IVDD surgery cost in the US?',
-     a:'PetMD puts spinal surgery at $3,000–$8,000. One referral neurology practice publishes an all-in figure of $10,000–$15,000 covering consult, imaging, surgery, three to four nights of hospitalization, rehabilitation and recheck. MRI alone averages $2,285 nationally, with a range of $1,811–$4,140, and ER hospitalization runs $1,323 a day.'}
+    {q:'What does IVDD surgery cost?',
+     a:'Budget for the episode rather than the operation: consult, imaging, surgery, three or four nights of hospitalization, rehabilitation and recheck. Measured against an emergency examination as one unit, MRI alone runs roughly fifteen to twenty times it, a night of intensive hospitalization about ten times it, and the published all-in figure from one referral practice around seventy-five to a hundred times it. Currencies and veterinary markets differ. That ranking does not.'}
   ],
   related:['when-to-neuter-a-dachshund','are-stairs-bad-for-dachshunds','pet-insurance-for-dachshunds']
 },
@@ -239,12 +240,12 @@ module.exports = [
 
     {t:'h2',text:'Is a ramp a waste of money, then?'},
 
-    {t:'p',text:'No, and here is the distinction the survey does not draw. DachsLife asked whether the dog was <em>allowed</em> on furniture. It did not measure how he got up and down. A dog who launches himself off a 20-inch sofa onto a hardwood floor forty times a week is doing something different from a dog who walks down a ramp, and no published dachshund dataset separates those two dogs.'},
+    {t:'p',text:'No, and here is the distinction the survey does not draw. DachsLife asked whether the dog was <em>allowed</em> on furniture. It did not measure how he got up and down. A dog who launches himself off a 20-inch (50 cm) sofa onto a hard floor forty times a week is doing something different from a dog who walks down a ramp, and no published dachshund dataset separates those two dogs.'},
 
     {t:'p',text:'So the case for a ramp is not epidemiological. It is this:'},
 
     {t:'ul',items:[
-      'It costs less than one emergency exam, which averages <strong>$135</strong> in the US.',
+      'It costs less than a single emergency exam, and an emergency exam is the cheapest line item in an IVDD episode.',
       'It removes a repeated impact that no study has cleared, in a breed whose discs are calcifying from four months of age.',
       'If your dog ever has an episode, you will need one immediately — and a dog who already knows how to use it will use it. Teaching a ramp to a painful, confined dog is a bad week to pick.',
       'It costs him nothing. There is no downside column.'
@@ -268,9 +269,9 @@ module.exports = [
 
     {t:'h2',text:'What would change this answer?'},
 
-    {t:'p',text:'A prospective study — one that recorded stair use in healthy dachshunds and then followed them for years — would settle it. None exists. Nor is there any US dataset at all: every dachshund IVDD figure in circulation is British, Swedish or Danish. Until that changes, the honest position is that stairs are unproven in both directions, and the evidence such as it is points away from the panic rather than toward it.'},
+    {t:'p',text:'A prospective study — one that recorded stair use in healthy dachshunds and then followed them for years — would settle it. None exists anywhere. Nor does any country hold its own dachshund IVDD dataset to fall back on: every figure in circulation is British, Swedish or Danish. Until that changes, the honest position is that stairs are unproven in both directions, and the evidence such as it is points away from the panic rather than toward it.'},
 
-    {t:'callout',tone:'note',title:'What the manual adds',text:'The $45 manual takes the same evidence and turns it into a house layout — where gates actually earn their place, how to teach a ramp in a week, and the return-to-stairs ladder for a dog coming out of crate rest.'}
+    {t:'callout',tone:'note',title:'What the manual adds',text:'The manual takes the same evidence and turns it into a house layout — where gates actually earn their place, how to teach a ramp in a week, and the return-to-stairs ladder for a dog coming out of crate rest.'}
   ],
   facts:[
     ['Owners surveyed','2,031','DachsLife 2015, RVC analysis'],
@@ -288,11 +289,11 @@ module.exports = [
     {q:'Does carrying my dachshund up stairs protect his back?',
      a:'Nothing published supports it. The same survey found under-exercised dachshunds at higher risk, so a routine built on carrying rather than walking may trade an unproven benefit for a measured one. Carry a dog who is painful, weak or under crate rest. Let a healthy dog walk.'},
     {q:'Is a dog ramp worth it for a dachshund?',
-     a:'Yes, on cost-benefit rather than on evidence. A ramp costs less than a single emergency exam, which averages $135 in the US. It removes an impact no study has cleared, and a dog who already knows how to use one will keep using it during recovery, when you will need it most.'},
+     a:'Yes, on cost-benefit rather than on evidence. A ramp costs less than a single emergency exam, which is itself the smallest number in an IVDD episode. It removes an impact no study has cleared, and a dog who already knows how to use one will keep using it during recovery, when you will need it most.'},
     {q:'What actually causes IVDD in dachshunds?',
      a:'An FGF4 retrogene, identified by Brown et al. in PNAS in 2017, causes both the short legs and early disc calcification. Degeneration begins around four months and about 90% of discs show change by one year. Lifestyle modifies when a degenerated disc fails, not whether the degeneration happens.'},
-    {q:'Is DachsLife a US study?',
-     a:'No. DachsLife 2015 is British, run with UK dachshund owners and analyzed by the Royal Veterinary College. There is no US epidemiological dataset on dachshund IVDD at all. Every prevalence and lifestyle figure you will read on American sites is imported from British, Swedish or Danish research.'}
+    {q:'Where was DachsLife 2015 run?',
+     a:'In the UK. It surveyed 2,031 British dachshund owners and was analyzed by the Royal Veterinary College. Almost no country holds an epidemiological dataset on dachshund IVDD of its own, so every prevalence and lifestyle figure you meet is imported from British, Swedish or Danish research — whichever country the site quoting it happens to sit in.'}
   ],
   related:['dachshund-back-problems-ivdd','when-to-neuter-a-dachshund','how-much-to-feed-a-dachshund']
 },
@@ -306,7 +307,7 @@ module.exports = [
   metaDescription:'AAHA says 5–6 months for small dogs. Dorn & Seath found dachshunds spayed under 12 months had 2.12× the disc disease risk. Both figures, and how to raise it.',
   keyword:'when should I neuter my dachshund',
   updated:'2026-09-12',
-  answer:'There is no consensus. AAHA’s 2019 life stage guidelines recommend castration at 6 months and spaying at 5–6 months for dogs under 45 pounds. Dorn & Seath (2018), studying 1,073 dachshunds, found females spayed before 12 months carried 2.12 times the disc disease risk. Both cannot be optimal for the same dog.',
+  answer:'There is no consensus. AAHA’s 2019 life stage guidelines recommend castration at 6 months and spaying at 5–6 months for dogs under 45 lb (20 kg). Dorn & Seath (2018), studying 1,073 dachshunds in the UK, found females spayed before 12 months carried 2.12 times the disc disease risk. Both cannot be optimal for the same dog.',
   toc:[
     'When should you neuter a dachshund?',
     'What does AAHA recommend, and why?',
@@ -324,7 +325,7 @@ module.exports = [
 
     {t:'h2',text:'What does AAHA recommend, and why?'},
 
-    {t:'p',text:'The <strong>American Animal Hospital Association</strong>, in its 2019 Canine Life Stage Guidelines, recommends that dogs <strong>under 45 pounds</strong> be castrated at <strong>6 months</strong> and that females undergo ovariohysterectomy <strong>before the first heat, at 5 to 6 months</strong>. Every dachshund in America is under 45 pounds, so on paper this is the answer.'},
+    {t:'p',text:'The <strong>American Animal Hospital Association</strong>, in its 2019 Canine Life Stage Guidelines, recommends that dogs <strong>under 45 lb (20 kg)</strong> be castrated at <strong>6 months</strong> and that females undergo ovariohysterectomy <strong>before the first heat, at 5 to 6 months</strong>. Every dachshund ever born is under 45 lb, so on paper this is the answer. It is the most widely quoted small-dog guidance there is; whether your own practice follows it, or something written by another body, is worth asking.'},
 
     {t:'p',text:'The reasoning behind early small-dog neutering is not arbitrary. Small breeds finish growing early, so the orthopedic arguments for delay in large breeds carry less weight. Spaying before the first heat eliminates the heat itself, unplanned litters, and pyometra. And a clinic that sets one policy for every small dog sets a policy that is easy to follow and hard to forget. The guideline is written for small dogs as a class. It is not written for this breed.'},
 
@@ -348,7 +349,7 @@ module.exports = [
 
     {t:'p',text:'Because they are answering different questions with different evidence. AAHA is optimizing across all small dogs for a basket of outcomes — reproductive disease, population control, surgical simplicity, compliance. Dorn and Seath are optimizing one outcome, in one breed, against the condition that defines it. A dachshund is a small dog with a 24.4% lifetime risk of disc disease in the miniature (Bergknut’s Swedish insurance data), against 3.5% across all breeds. That single fact is what makes the general guidance a poor fit.'},
 
-    {t:'callout',tone:'evidence',title:'Neither body has changed its position',text:'AAHA has not revised its under-45-pound guidance in light of the dachshund data, and the dachshund data has not been replicated in the US. Anyone telling you this is settled — in either direction — is telling you something the literature does not say.'},
+    {t:'callout',tone:'evidence',title:'Neither position has moved',text:'AAHA has not revised its under-45-lb guidance in light of the dachshund data, and the dachshund data is still a single British study, with no replication in another population that we could find. Anyone telling you this is settled — in either direction — is telling you something the literature does not say.'},
 
     {t:'h2',text:'Does the study prove that waiting is safer?'},
 
@@ -357,7 +358,7 @@ module.exports = [
     {t:'ul',items:[
       '<strong>It is observational.</strong> Owners chose when to neuter. The study did not assign it.',
       '<strong>Confounding is plausible.</strong> Households that neuter early may differ in other ways — exercise, activity, how quickly a back problem gets reported.',
-      '<strong>It is one study, in one country.</strong> 1,073 dogs is a respectable sample, not a definitive one, and it is British. No American replication exists.',
+      '<strong>It is one study, in one country.</strong> 1,073 dogs is a respectable sample, not a definitive one, and the country is the UK. We could not find a replication in any other population.',
       '<strong>Relative risk is not absolute risk.</strong> 2.12 times a 24.4% baseline is a large shift. 2.12 times a small baseline would not be. The study reports the ratio.'
     ]},
 
@@ -378,7 +379,7 @@ module.exports = [
     {t:'ol',items:[
       '<strong>Email ahead.</strong> Send the citation — Dorn & Seath 2018, <em>Canine Genetics and Epidemiology</em> — a few days before the appointment, with one line: "I would like to talk about spay timing at our next visit."',
       '<strong>Open with their experience, not the paper.</strong> "How do you usually think about timing for the small chondrodystrophic breeds?"',
-      '<strong>Name the tension without assigning blame.</strong> "The AAHA small-dog guidance says five to six months. There is a dachshund study that found higher disc disease risk under twelve months. I am trying to work out how to weigh those."',
+      '<strong>Name the tension without assigning blame.</strong> "The small-dog guidance I have read says five to six months. There is a dachshund study that found higher disc disease risk under twelve months. I am trying to work out how to weigh those."',
       '<strong>Ask what changes if you wait.</strong> "If we went to twelve or fifteen months instead, what would you want to monitor, and what would worry you?"',
       '<strong>Agree a date and a review point,</strong> rather than leaving it open. An undecided decision drifts into a decision made by default.',
       '<strong>Accept a clear no.</strong> If your veterinarian has a reason specific to your dog, that reason beats a British cohort study every time. They can examine her. The paper cannot.'
@@ -388,10 +389,10 @@ module.exports = [
 
     {t:'p',text:'One more thing worth knowing before the conversation: this decision interacts with <a href="/guides/pet-insurance-for-dachshunds">insurance timing</a>. If a policy is going in, it wants to be in place and past its waiting periods long before any back sign appears — and long before a neutering decision becomes urgent.'},
 
-    {t:'callout',tone:'note',title:'What the manual adds',text:'The $45 manual gives the full decision table by sex and by household, the printable one-page summary to hand across the consulting room desk, and what to do when your veterinarian and your breeder tell you different things.'}
+    {t:'callout',tone:'note',title:'What the manual adds',text:'The manual gives the full decision table by sex and by household, the printable one-page summary to hand across the consulting room desk, and what to do when your veterinarian and your breeder tell you different things.'}
   ],
   facts:[
-    ['AAHA guidance, dogs under 45 lb','Castration 6 months; spay 5–6 months','AAHA 2019 Canine Life Stage Guidelines'],
+    ['AAHA guidance, dogs under 45 lb (20 kg)','Castration 6 months; spay 5–6 months','AAHA 2019 Canine Life Stage Guidelines'],
     ['Spayed females, any age','RR 1.81 (1.28–2.54)','Dorn & Seath 2018'],
     ['Females spayed under 12 months','RR 2.12 (1.44–3.11)','Dorn & Seath 2018'],
     ['Males neutered under 12 months','RR 1.5 (1.05–2.15)','Dorn & Seath 2018'],
@@ -400,17 +401,17 @@ module.exports = [
   ],
   faq:[
     {q:'What age should a dachshund be neutered?',
-     a:'It depends which evidence you weight. AAHA’s 2019 guidelines say 6 months for castration and 5–6 months for spaying in dogs under 45 pounds. Dorn & Seath’s 2018 dachshund study found under-12-month neutering associated with higher disc disease risk, and no significant difference for dogs done at 12 months or later.'},
+     a:'It depends which evidence you weight. AAHA’s 2019 guidelines say 6 months for castration and 5–6 months for spaying in dogs under 45 lb (20 kg). Dorn & Seath’s 2018 dachshund study found under-12-month neutering associated with higher disc disease risk, and no significant difference for dogs done at 12 months or later.'},
     {q:'Does neutering cause IVDD in dachshunds?',
-     a:'No study shows causation. Dorn & Seath found an association between early neutering and disc disease: relative risk 2.12 for females spayed under 12 months, 1.5 for males under 12 months. It is observational, British, and unreplicated in the US. It is also the best breed-specific evidence available.'},
+     a:'No study shows causation. Dorn & Seath found an association between early neutering and disc disease: relative risk 2.12 for females spayed under 12 months, 1.5 for males under 12 months. It is observational, it is British, and we could not find a replication in another population. It is also the best breed-specific evidence available.'},
     {q:'Should I let my dachshund have a first heat before spaying?',
      a:'That is one practical way to land past 12 months, and it is worth discussing with your veterinarian rather than deciding alone. Dorn & Seath found no significant difference between dogs neutered at 12 months or later and intact dogs. Against that, you are managing a heat cycle and continued pyometra risk.'},
     {q:'Is early neutering worse for male dachshunds too?',
      a:'The signal is smaller. Dorn & Seath reported a relative risk of 1.5 (95% CI 1.05–2.15) for males neutered under 12 months, against 2.12 for females spayed under 12 months. The confidence interval for males only just clears 1.0, so the male finding is weaker evidence than the female one.'},
     {q:'Why does my vet recommend 6 months?',
-     a:'Because AAHA’s 2019 Canine Life Stage Guidelines set that for dogs under 45 pounds, and most practices follow them as policy. The guidance is written for small dogs as a class, not for a breed carrying a 24.4% lifetime disc disease risk in the miniature. Raise the breed-specific data as a question, not a challenge.'},
+     a:'Usually because it is practice policy rather than a judgment about your dog. AAHA’s 2019 Canine Life Stage Guidelines set 6 months for castration and 5–6 months for spaying in dogs under 45 lb (20 kg), and that guidance is widely adopted as a default. It is written for small dogs as a class, not for a breed carrying a 24.4% lifetime disc disease risk in the miniature. Ask which guidance your practice follows, then raise the breed-specific data as a question rather than a challenge.'},
     {q:'Does waiting to neuter affect pet insurance?',
-     a:'Not directly, but timing matters for a different reason. Under the NAIC Pet Insurance Model Act, anything showing signs before the effective date or during a waiting period is preexisting. Get the policy in force and past its waiting periods early, independent of whatever you decide about surgery dates.'}
+     a:'Not directly, but timing matters for a different reason. In the US, the NAIC Pet Insurance Model Act makes anything showing signs before the effective date or during a waiting period preexisting; ask your own insurer, in writing, how it defines the term and how long its waiting periods run. Either way, get the policy in force and past those periods early, independent of whatever you decide about surgery dates.'}
   ],
   related:['dachshund-back-problems-ivdd','are-stairs-bad-for-dachshunds','questions-to-ask-a-dachshund-breeder']
 },
@@ -421,14 +422,14 @@ module.exports = [
   title:'Pet Insurance for Dachshunds',
   h1:'Pet insurance for dachshunds: does it cover IVDD, and what to ask before you buy',
   metaTitle:'Pet Insurance for Dachshunds: Does It Cover IVDD?',
-  metaDescription:'What a preexisting condition legally means, the 180-day orthopedic waiting period that catches IVDD, how to collapse it in 14 days, and the cost of an episode.',
+  metaDescription:'What a preexisting condition really means, the 180-day orthopedic waiting period that catches IVDD, how to collapse it, and what to ask your own insurer.',
   keyword:'does pet insurance cover IVDD',
   updated:'2026-09-12',
-  answer:'Pet insurance generally covers IVDD, but only if nothing about the dog’s back predates the policy. The average US dog accident-and-illness premium was $749.29 a year, or $62.44 a month, in data year 2024 (NAPHIA). At least one major insurer applies a 180-day orthopedic waiting period and classifies IVDD as orthopedic.',
+  answer:'Pet insurance generally covers IVDD, but only if nothing about the dog’s back predates the policy. A dachshund quote sits above the all-breed average rather than below it, and one surgical episode costs what well over a decade of premium costs. At least one major insurer applies a 180-day orthopedic waiting period and classifies IVDD as orthopedic.',
   toc:[
     'Does pet insurance cover IVDD?',
     'What does insuring a dachshund cost?',
-    'What legally counts as a preexisting condition?',
+    'What counts as a preexisting condition?',
     'What is the 180-day orthopedic waiting period?',
     'How do you collapse the orthopedic wait?',
     'What does an IVDD episode actually cost?',
@@ -441,33 +442,33 @@ module.exports = [
 
     {t:'p',text:'Yes, usually — with one condition that decides everything. Modern accident-and-illness policies generally do cover hereditary and breed-associated conditions, intervertebral disc disease included, <strong>provided no sign or diagnosis predates the coverage</strong>. That single qualifier is where dachshund owners get caught, because the breed’s defining condition is precisely the kind of thing that produces a vague note in a file long before it produces a diagnosis.'},
 
-    {t:'p',text:'This page names no insurer as a recommendation. It describes the practices that exist in the US market, quotes the model law that governs the definitions, and gives you the questions to ask. Which company you choose matters less than whether you understood the timing.'},
+    {t:'p',text:'This page names no insurer as a recommendation, and it is not a description of your policy. The rules quoted below are American ones — a model law and one insurer’s published waiting period — quoted because they are written down and checkable, not because they apply where you live. Your own market will have its own definitions, its own waiting periods and its own regulator. What transfers is the list of questions, and the habit of getting the answers in writing before you buy.'},
 
     {t:'h2',text:'What does insuring a dachshund cost?'},
 
-    {t:'stat',figure:'$749.29',label:'average US dog accident-and-illness premium per year, data year 2024',source:'NAPHIA State of the Industry 2025'},
+    {t:'stat',figure:'13–20 years',label:'of average premium add up to one all-in IVDD surgical episode',source:'NAPHIA State of the Industry 2025 and Southeast Veterinary Neurology, US figures'},
 
-    {t:'p',text:'That is <strong>$62.44 a month</strong>, and it is the all-breed average, not a dachshund quote. NAPHIA’s figure is for data year 2024 and should not be read as a 2026 price. By the end of 2025, 7.6 million pets were insured across North America.'},
+    {t:'p',text:'That ratio is the whole argument, and it survives translation into any currency. On the American figures we can source, an average accident-and-illness premium runs for well over a decade before it adds up to a single published all-in IVDD episode. The premium itself is an all-breed average rather than a dachshund quote, and premiums move with country, insurer, age and where in the country you live. By the end of 2025, 7.6 million pets were insured across North America.'},
 
-    {t:'p',text:'You will also see a lower number. Synchrony’s 2025 Pet Lifetime of Care Study puts insurance at <strong>$198–$313 a year</strong> and wellness plans at $422–$701. That is not a contradiction so much as a different measurement: Synchrony models what owners report spending across a lifetime, NAPHIA reports the average premium actually written for accident-and-illness cover. Expect a dachshund quote to sit above an all-breed average rather than below it, and get real quotes rather than trusting either figure as your budget.'},
+    {t:'p',text:'You will also see lower numbers quoted, and they are not a contradiction so much as a different measurement: NAPHIA reports the average premium actually written for accident-and-illness cover, while Synchrony’s 2025 Pet Lifetime of Care Study models what owners report spending across a lifetime, which lands well below it. A wellness plan is a third thing again and is not insurance. Expect a dachshund quote to sit above an all-breed average rather than below it, and get real quotes in your local currency rather than trusting any published figure as your budget.'},
 
-    {t:'h2',text:'What legally counts as a preexisting condition?'},
+    {t:'h2',text:'What counts as a preexisting condition?'},
 
-    {t:'p',text:'The <strong>NAIC Pet Insurance Model Act (#633)</strong> defines it, and the definition is broader than most owners assume. A preexisting condition is any condition for which a veterinarian gave advice, the pet received treatment, or the pet showed signs — <em>"prior to the effective date or during any waiting period."</em>'},
+    {t:'p',text:'In the US the <strong>NAIC Pet Insurance Model Act (#633)</strong> defines it, and the definition is broader than most owners assume: a preexisting condition is any condition for which a veterinarian gave advice, the pet received treatment, or the pet showed signs — <em>"prior to the effective date or during any waiting period."</em> Your policy will define the term somewhere in its wording too. Find that sentence and read it before you buy, because the breadth of it is what decides your claim.'},
 
     {t:'callout',tone:'warn',title:'Read the last seven words again',text:'"Or during any waiting period." A back problem that appears on day 40 of a 180-day orthopedic wait is not a covered claim that arrived early. It is a preexisting condition, permanently excluded, on a policy you have been paying for.'},
 
-    {t:'p',text:'Three consequences follow. <strong>Advice counts</strong> — a veterinarian saying "watch that back" in a routine exam can create the record. <strong>Signs count</strong>, diagnosed or not. And the record that matters is the clinical file, which the insurer will request and read. The Model Act also requires insurers to disclose preexisting, hereditary, congenital and chronic exclusions and every waiting period <em>before</em> purchase, and to provide a <strong>15-day free look</strong> period.'},
+    {t:'p',text:'Three consequences follow. <strong>Advice counts</strong> — a veterinarian saying "watch that back" in a routine exam can create the record. <strong>Signs count</strong>, diagnosed or not. And the record that matters is the clinical file, which the insurer will request and read. The Model Act also requires insurers to disclose preexisting, hereditary, congenital and chronic exclusions and every waiting period <em>before</em> purchase, and to provide a <strong>15-day free look</strong> period. Ask whether your own policy carries a cooling-off window, how long it runs, and what the insurer is obliged to disclose to you before you buy.'},
 
     {t:'h2',text:'What is the 180-day orthopedic waiting period?'},
 
-    {t:'p',text:'Most policies carry a short accident wait, measured in days, and an illness wait, typically a couple of weeks. Orthopedic conditions can carry a much longer one. At least one major US insurer applies a <strong>180-day orthopedic waiting period</strong> — and classifies <strong>IVDD as orthopedic</strong>.'},
+    {t:'p',text:'Most policies carry a short accident wait, measured in days, and an illness wait, typically a couple of weeks. Orthopedic conditions can carry a much longer one. At least one major US insurer applies a <strong>180-day orthopedic waiting period</strong> — and classifies <strong>IVDD as orthopedic</strong>. That is one company in one market, and it is the clearest published example of a mechanism worth checking for in any policy you are offered.'},
 
-    {t:'p',text:'For a dachshund, that is not a footnote. It is six months during which the one condition you bought the policy for is not covered, and during which any sign of it becomes permanently preexisting under the NAIC definition. Terms vary by state, and not every insurer does this. You have to ask.'},
+    {t:'p',text:'For a dachshund, that is not a footnote. It is six months during which the one condition you bought the policy for is not covered, and during which any sign of it becomes permanently preexisting under that definition. Terms vary by state in the US and by insurer everywhere, and not every insurer does this. You have to ask — by name, about IVDD, and about orthopedic conditions specifically.'},
 
     {t:'h2',text:'How do you collapse the orthopedic wait?'},
 
-    {t:'p',text:'With an exam, and with speed. Where the 180-day orthopedic wait applies, it can be <strong>waived by an orthopedic exam performed within the first 14 days</strong> of the policy — an "Orthopedic Report Card" in the insurer’s language. Done inside that window and clean, the wait collapses to zero. Done later and clean, it collapses only to the date of the exam, and everything before that date stays excluded.'},
+    {t:'p',text:'With an exam, and with speed. Where that 180-day orthopedic wait applies, it can be <strong>waived by an orthopedic exam performed within the first 14 days</strong> of the policy — an "Orthopedic Report Card" in the insurer’s language. Done inside that window and clean, the wait collapses to zero. Done later and clean, it collapses only to the date of the exam, and everything before that date stays excluded.'},
 
     {t:'ol',items:[
       'Buy the policy <strong>before</strong> anything is wrong. This is the whole game.',
@@ -484,36 +485,36 @@ module.exports = [
     {t:'p',text:'This is the number that makes the premium a math problem instead of a feeling.'},
 
     {t:'table',
-      head:['Item','US cost','Source'],
+      head:['Item','Cost, as a multiple of an emergency exam','Source'],
       rows:[
-        ['Emergency exam','$135 (range $107–$246)','2025 Synchrony Average Procedural Cost Study'],
-        ['Neurologic exam','$195','University of Missouri Veterinary Health Center'],
-        ['X-rays, 2–3 views','$334','2025 Synchrony Average Procedural Cost Study'],
-        ['CT','$1,615','2025 Synchrony Average Procedural Cost Study'],
-        ['MRI','$2,285 average (range $1,811–$4,140)','2025 Synchrony Average Procedural Cost Study'],
-        ['MRI or CT with anesthesia, bloodwork, radiographs, CSF tap','$3,000–$4,000','University of Missouri VHC'],
-        ['Spinal surgery','$3,000–$8,000','PetMD, vet-reviewed'],
-        ['ER hospitalization','$1,323 per day','2025 Synchrony Average Procedural Cost Study'],
-        ['All-in surgical episode','$10,000–$15,000','Southeast Veterinary Neurology']
+        ['Emergency exam','1× — the unit for this table','2025 Synchrony Average Procedural Cost Study'],
+        ['Neurologic exam','About 1.5×','University of Missouri Veterinary Health Center'],
+        ['X-rays, 2–3 views','About 2.5×','2025 Synchrony Average Procedural Cost Study'],
+        ['CT','About 12×','2025 Synchrony Average Procedural Cost Study'],
+        ['MRI','About 17×; 13–30× across the published range','2025 Synchrony Average Procedural Cost Study'],
+        ['MRI or CT with anesthesia, bloodwork, radiographs, CSF tap','About 22–30×','University of Missouri VHC'],
+        ['Spinal surgery','About 22–60×','PetMD, vet-reviewed'],
+        ['ER hospitalization','About 10× per day','2025 Synchrony Average Procedural Cost Study'],
+        ['All-in surgical episode','About 75–110×','Southeast Veterinary Neurology']
       ],
-      caption:'The all-in figure covers consult, imaging, surgery, three to four nights, rehabilitation and recheck.'},
+      caption:'Each row is its sourced amount expressed against the emergency exam above it. The amounts behind them are American and in dollars; what you will pay depends on your country, your currency and your city. The ranking does not change — imaging outweighs examination, surgery outweighs imaging, and the episode outweighs all of it. The all-in figure covers consult, imaging, surgery, three to four nights, rehabilitation and recheck.'},
 
-    {t:'p',text:'Set that against $749.29 a year. An owner who insures a dachshund from eight weeks and never claims has spent a few thousand dollars over a decade. An owner who does not insure and meets the all-in figure once has spent more than that in a weekend. Neither outcome is guaranteed, which is the definition of insurance; the point is that the downside here is unusually large relative to the premium, and unusually likely relative to other breeds.'},
+    {t:'p',text:'Set that against a premium. An owner who insures a dachshund from eight weeks and never claims has spent, over a decade, well under what one all-in episode costs. An owner who does not insure and meets that episode once has spent more than the decade of premiums in a single weekend. Neither outcome is guaranteed, which is the definition of insurance; the point is that the downside here is unusually large relative to the premium, and unusually likely relative to other breeds.'},
 
-    {t:'p',text:'We do not publish a total for conservative management, because no sourced US range exists. Build your own from the components above — exam, imaging, four weeks of medication, rechecks — and treat it as an estimate rather than a quote.'},
+    {t:'p',text:'We do not publish a total for conservative management, because we could not source a range for it that we would stand behind. Build your own from the components above — exam, imaging, four weeks of medication, rechecks — price them at your own clinic, and treat the result as an estimate rather than a quote.'},
 
     {t:'h2',text:'Will they pay the bill, or a schedule?'},
 
-    {t:'p',text:'Ask this before you buy, because the two models produce very different checks. Reimbursement may be calculated on <strong>the actual bill</strong>, or on a <strong>benefit schedule</strong> or "usual and customary" charges — in which case the insurer pays its own stated figure for the procedure and you pay the gap. In a market where MRI ranges from $1,811 to $4,140 depending on where you live, that gap can be substantial. The California Department of Insurance guide to pet insurance sets this out plainly, and it applies wherever you are.'},
+    {t:'p',text:'Ask this before you buy, because the two models produce very different checks. Reimbursement may be calculated on <strong>the actual bill</strong>, or on a <strong>benefit schedule</strong> or "usual and customary" charges — in which case the insurer pays its own stated figure for the procedure and you pay the gap. Where the price of an MRI can more than double between one city and the next, that gap is not a rounding error. The California Department of Insurance guide to pet insurance sets the distinction out plainly; the distinction itself is not local, so ask which of the two models your policy uses.'},
 
-    {t:'p',text:'A published example of how the arithmetic actually lands: a <strong>$8,500 claim reimbursed at $6,550</strong>, on 80% reimbursement with a $250 deductible. Note that the owner still wrote a check for nearly two thousand dollars on a fully covered claim. Insurance is a damper, not a shield.'},
+    {t:'p',text:'A published example of how the arithmetic actually lands: on <strong>80% reimbursement with a deductible</strong>, a large surgical claim came back at about <strong>77% of the invoice</strong>. The owner still wrote a check for nearly a quarter of a fully covered claim. Insurance is a damper, not a shield.'},
 
     {t:'h2',text:'What to ask before you buy'},
 
-    {t:'p',text:'Ask these in writing, and keep the answers with the policy documents.'},
+    {t:'p',text:'Ask these of your own insurer, in your own market, in writing, and keep the answers with the policy documents. Every one of them is answerable before you pay anything.'},
 
     {t:'ul',items:[
-      'Is IVDD classified as orthopedic under this policy, and what is the orthopedic waiting period in <strong>my state</strong>?',
+      'Is IVDD classified as orthopedic under this policy, and what is the orthopedic waiting period <strong>where I live</strong>?',
       'Is there an exam that waives it, what is the deadline, and what form do you need?',
       'Are hereditary and congenital conditions covered as standard, or is that a rider?',
       'Is reimbursement on the actual invoice, or on a benefit schedule or usual-and-customary basis?',
@@ -524,31 +525,31 @@ module.exports = [
       'Which of my dog’s existing file notes would you treat as preexisting today?'
     ]},
 
-    {t:'p',text:'That last question is the one that separates a brochure from a policy. Ask it before the free-look period expires, not after the first claim.'},
+    {t:'p',text:'That last question is the one that separates a brochure from a policy. Ask it before the free-look or cooling-off period expires, not after the first claim.'},
 
-    {t:'callout',tone:'note',title:'What the manual adds',text:'The $45 manual includes the printable pre-purchase questionnaire, a worked ten-year cost comparison of insuring versus self-funding a dachshund, and what to do when a claim is denied as preexisting on the strength of a single line in a file.'}
+    {t:'callout',tone:'note',title:'What the manual adds',text:'The manual includes the printable pre-purchase questionnaire, a worked ten-year cost comparison of insuring versus self-funding a dachshund, and what to do when a claim is denied as preexisting on the strength of a single line in a file.'}
   ],
   facts:[
-    ['Average US dog A&I premium','$749.29/yr ($62.44/mo), data year 2024','NAPHIA State of the Industry 2025'],
+    ['One surgical episode, priced in premiums','13–20 years of average annual premium','NAPHIA State of the Industry 2025'],
     ['Pets insured in North America','7.6 million at end of 2025','NAPHIA'],
-    ['Preexisting definition window','Before effective date or during any waiting period','NAIC Model Act #633'],
-    ['Free look period','15 days','NAIC Model Act #633'],
+    ['Preexisting definition window, US model law','Before effective date or during any waiting period','NAIC Model Act #633'],
+    ['Free look period, US model law','15 days','NAIC Model Act #633'],
     ['Orthopedic waiting period','180 days, IVDD classified as orthopedic','At least one major US insurer'],
-    ['All-in IVDD surgical episode','$10,000–$15,000','Southeast Veterinary Neurology']
+    ['All-in IVDD surgical episode','About 75–110× an emergency exam','Southeast Veterinary Neurology']
   ],
   faq:[
     {q:'Does pet insurance cover IVDD in dachshunds?',
-     a:'Generally yes, on modern accident-and-illness policies, provided no sign or diagnosis of a back problem predates the coverage. The obstacle is timing rather than breed exclusion. Watch for an orthopedic waiting period, which at least one major insurer sets at 180 days with IVDD classified as an orthopedic condition.'},
+     a:'Generally yes, on modern accident-and-illness policies, provided no sign or diagnosis of a back problem predates the coverage. The obstacle is timing rather than breed exclusion. Watch for an orthopedic waiting period, which at least one major US insurer sets at 180 days with IVDD classified as an orthopedic condition. Ask your own insurer whether it does the same.'},
     {q:'What counts as a preexisting condition for a dachshund?',
-     a:'Under the NAIC Pet Insurance Model Act #633, any condition for which a veterinarian gave advice, the pet received treatment, or the pet showed signs prior to the effective date or during any waiting period. Advice alone counts. A note reading "mild back pain, resolved" can be enough to exclude IVDD permanently.'},
+     a:'Broadly, anything the file already knows about. The US model law — NAIC #633 — covers any condition for which a veterinarian gave advice, the pet received treatment, or the pet showed signs prior to the effective date or during any waiting period. Advice alone counts. A note reading "mild back pain, resolved" can be enough to exclude IVDD permanently. Find the equivalent definition in your own policy wording and read it before you buy.'},
     {q:'Can you insure a dachshund that already has IVDD?',
      a:'You can buy a policy, but the disc disease itself will be excluded as preexisting, and so will anything the insurer links to it. Cover for unrelated illness and accidents still has value. If the diagnosis has not happened yet and you are wondering whether to wait, do not wait.'},
     {q:'When should I insure a dachshund puppy?',
      a:'Before anything is wrong, ideally at eight weeks. The ACVS puts typical IVDD presentation at three to six years, so a policy bought in puppyhood clears every waiting period years before the risk window opens. If an orthopedic waiver exam is available, book it inside the first 14 days.'},
     {q:'How much does dachshund pet insurance cost per month?',
-     a:'NAPHIA puts the average US dog accident-and-illness premium at $62.44 a month for data year 2024, across all breeds. A dachshund quote will typically sit above an all-breed average. Synchrony’s lifetime study reports lower annual insurance spend, $198–$313, because it measures something different.'},
+     a:'There is no portable figure, because premiums are set by country, insurer, age, level of coverage and where you live. Two things do carry: a dachshund quote sits above the all-breed average rather than below it, and on the American figures we can source, thirteen to twenty years of average premium adds up to one all-in surgical episode. Get real quotes in your local currency and compare them on waiting periods as well as price.'},
     {q:'Is pet insurance worth it for a dachshund?',
-     a:'The math is more favorable here than for most breeds. Lifetime IVDD risk is 24.4% in miniatures on Swedish insurance data, and one referral practice puts an all-in surgical episode at $10,000–$15,000. Against an average premium of $749.29 a year, the downside is large relative to the cost of covering it.'}
+     a:'The math is more favorable here than for most breeds. Lifetime IVDD risk is 24.4% in miniatures on Swedish insurance data, and one published all-in surgical episode costs what more than a decade of average premium costs. The downside is unusually large relative to the price of covering it, and unusually likely relative to other breeds. Whether it clears your own threshold depends on the quote in front of you.'}
   ],
   related:['dachshund-back-problems-ivdd','how-much-does-a-dachshund-cost','questions-to-ask-a-dachshund-breeder']
 },
@@ -559,10 +560,10 @@ module.exports = [
   title:'How Much to Feed a Dachshund',
   h1:'How much should you feed a dachshund? Work it out in calories, not cups',
   metaTitle:'How Much to Feed a Dachshund: Calories by Weight',
-  metaDescription:'The RER and MER formula worked for 11, 16 and 25 lb dachshunds, how to convert calories to cups, the 10% treat rule, and why the bag chart overfeeds.',
+  metaDescription:'The RER and MER formula worked for 11, 16 and 25 lb (5, 7, 11 kg) dachshunds, calories to cups, the 10% treat rule, and why the bag chart overfeeds.',
   keyword:'how much should I feed my dachshund',
   updated:'2026-09-12',
-  answer:'Start from calories, not cups. Resting energy requirement is 70 × (body weight in kg)^0.75, and a neutered adult multiplies that by 1.6. An 11-pound dachshund lands near 375 kcal a day, a 16-pound dog near 482, and a 25-pound dog near 678. Individual needs vary by up to 50%, so adjust to body condition.',
+  answer:'Start from calories, not cups. Resting energy requirement is 70 × (body weight in kg)^0.75, and a neutered adult multiplies that by 1.6. An 11 lb (5 kg) dachshund lands near 375 kcal a day, a 16 lb (7 kg) dog near 482, and a 25 lb (11 kg) dog near 678. Individual needs vary by up to 50%, so adjust to body condition.',
   toc:[
     'How much should you feed a dachshund?',
     'How do you work out the number yourself?',
@@ -592,13 +593,13 @@ module.exports = [
       ],
       caption:'RER and the neutered-adult column are from the Pet Nutrition Alliance. The other columns apply its published factors to the same RER.'},
 
-    {t:'callout',tone:'evidence',title:'The table is a starting point, and the variation is enormous',text:'The Pet Nutrition Alliance states that individual variation runs up to ±50%. Two neutered 16-pound dachshunds in the same house can genuinely need 240 and 720 calories. Adjust to body condition, not to the table.'},
+    {t:'callout',tone:'evidence',title:'The table is a starting point, and the variation is enormous',text:'The Pet Nutrition Alliance states that individual variation runs up to ±50%. Two neutered 16 lb (7 kg) dachshunds in the same house can genuinely need 240 and 720 calories. Adjust to body condition, not to the table.'},
 
     {t:'h2',text:'How do you turn calories into cups?'},
 
-    {t:'p',text:'Find the <strong>kcal per cup</strong> on your bag — it is on the label, usually near the feeding chart, sometimes stated per kilogram as well. Divide the daily calorie figure by it. Then split the result across the day’s meals.'},
+    {t:'p',text:'Find the <strong>calorie density</strong> on your bag. Depending on where the bag was printed it will be given as kcal per cup, per 100 g, or per kilogram — any of the three will do. Divide the daily calorie figure by it. Then split the result across the day’s meals.'},
 
-    {t:'p',text:'The arithmetic for a 16-pound neutered adult at 482 kcal: a food listing 400 kcal per cup gives about 1.2 cups a day; a food listing 300 kcal per cup gives about 1.6. Those two numbers are arithmetic, not a claim about any particular product — calorie density varies widely between foods, and it is the reason a cup measurement transferred from one bag to another can quietly overfeed a dog by a third.'},
+    {t:'p',text:'The arithmetic for a 16 lb (7 kg) neutered adult at 482 kcal: a food listing 400 kcal per cup gives about 1.2 cups a day; a food listing 300 kcal per cup gives about 1.6. A cup is a volume, not a weight, so the same scoop of two different foods holds different amounts of food and different numbers of calories — and there is no general gram equivalent of a cup that holds across foods, which is why the figure to work from is the kcal per cup, or kcal per kilogram, printed on your own bag. Those numbers are arithmetic, not a claim about any particular product — calorie density varies widely between foods, and it is the reason a cup measurement transferred from one bag to another can quietly overfeed a dog by a third.'},
 
     {t:'ul',items:[
       'Measure with a <strong>kitchen scale in grams</strong> if you can. A "cup" scooped from a bag varies by how you scoop it.',
@@ -612,11 +613,11 @@ module.exports = [
 
     {t:'h2',text:'How many treats can a dachshund have?'},
 
-    {t:'stat',figure:'48 kcal',label:'daily treat allowance for a 16 lb dachshund',source:'Tufts Petfoodology, 10% rule'},
+    {t:'stat',figure:'48 kcal',label:'daily treat allowance for a 16 lb (7 kg) dachshund',source:'Tufts Petfoodology, 10% rule'},
 
-    {t:'p',text:'Treats should account for <strong>no more than 10% of daily calories</strong>. For that 16-pound dog on 482 kcal, the allowance is roughly <strong>48 calories a day</strong> — which is less than most owners picture. A dachshund being trained through a session can burn through it in ten minutes, which is an argument for training with part of his measured dinner rather than with anything extra.'},
+    {t:'p',text:'Treats should account for <strong>no more than 10% of daily calories</strong>. For that 16 lb (7 kg) dog on 482 kcal, the allowance is roughly <strong>48 calories a day</strong> — which is less than most owners picture. A dachshund being trained through a session can burn through it in ten minutes, which is an argument for training with part of his measured dinner rather than with anything extra.'},
 
-    {t:'p',text:'The other 90% has to be complete and balanced, which under FDA labeling rules means the food meets an AAFCO nutrient profile or has passed an AAFCO feeding trial. Note that there is no such thing as "AAFCO approved" — AAFCO has no regulatory authority, and state feed control officials do the enforcing.'},
+    {t:'p',text:'The other 90% has to be complete and balanced, and that phrase is anchored to a standard rather than to a marketing claim. In the US, FDA labeling rules make it mean the food meets an AAFCO nutrient profile or has passed an AAFCO feeding trial — and note that there is no such thing as "AAFCO approved", because AAFCO has no regulatory authority and state feed control officials do the enforcing. Elsewhere the same words answer to a different standard. In Europe the reference document is the <strong>FEDIAF Nutritional Guidelines</strong>, published by FEDIAF, the European pet food industry federation, in Brussels — and FEDIAF sits in the same position AAFCO does: a trade body practicing self-regulation, the reference that European authorities and manufacturers work to, and an organization that approves nothing. Ask what the wording on the bag in your hand is measured against.'},
 
     {t:'h2',text:'How do you know the number is right?'},
 
@@ -639,21 +640,21 @@ module.exports = [
 
     {t:'p',text:'A growing puppy uses a factor of <strong>2 to 3 times RER</strong>, which is why a 10-week-old eats an amount that looks absurd next to an adult’s bowl, and why that amount must come down as growth slows rather than becoming the permanent ration. A dog on a formal weight-loss plan uses a factor of <strong>1.0</strong> — RER alone — and that plan belongs with your veterinarian, who should be weighing him and checking that the drop is fat rather than muscle.'},
 
-    {t:'p',text:'If he is already heavy, do not simply cut the current amount by eye. Work out RER for his <em>target</em> weight, feed to that, and re-score every two weeks. Use <a href="/guides/dachshund-weight-chart">the weight guide</a> to decide what the target should be, because the AKC divisions and the body condition scale answer different questions.'},
+    {t:'p',text:'If he is already heavy, do not simply cut the current amount by eye. Work out RER for his <em>target</em> weight, feed to that, and re-score every two weeks. Use <a href="/guides/dachshund-weight-chart">the weight guide</a> to decide what the target should be, because a registry size division and the body condition scale answer different questions.'},
 
-    {t:'callout',tone:'note',title:'What the manual adds',text:'The $45 manual carries the full calorie tables by weight and life stage, a two-page body condition scoring illustration you can hold the dog against, and a label-reading walkthrough for picking a food when every bag on the shelf makes the same claims.'}
+    {t:'callout',tone:'note',title:'What the manual adds',text:'The manual carries the full calorie tables by weight and life stage, a two-page body condition scoring illustration you can hold the dog against, and a label-reading walkthrough for picking a food when every bag on the shelf makes the same claims.'}
   ],
   facts:[
     ['RER formula','70 × (body weight in kg)^0.75','Pet Nutrition Alliance'],
     ['Neutered adult factor','×1.6 (intact ×1.8, growth ×2–3, weight loss ×1.0)','Pet Nutrition Alliance'],
-    ['11 lb dachshund, neutered adult','About 375 kcal/day','Pet Nutrition Alliance'],
-    ['16 lb dachshund, neutered adult','About 482 kcal/day','Pet Nutrition Alliance'],
-    ['25 lb dachshund, neutered adult','About 678 kcal/day','Pet Nutrition Alliance'],
-    ['Treat allowance','10% of daily calories; about 48 kcal at 16 lb','Tufts Petfoodology']
+    ['11 lb (5 kg) dachshund, neutered adult','About 375 kcal/day','Pet Nutrition Alliance'],
+    ['16 lb (7 kg) dachshund, neutered adult','About 482 kcal/day','Pet Nutrition Alliance'],
+    ['25 lb (11 kg) dachshund, neutered adult','About 678 kcal/day','Pet Nutrition Alliance'],
+    ['Treat allowance','10% of daily calories; about 48 kcal at 16 lb (7 kg)','Tufts Petfoodology']
   ],
   faq:[
     {q:'How many cups should a dachshund eat per day?',
-     a:'There is no universal cup figure, because calorie density differs between foods. Work out the calories first — about 375 a day for an 11-pound neutered adult, 482 at 16 pounds, 678 at 25 pounds — then divide by the kcal per cup printed on your bag, and re-do the arithmetic whenever you change food.'},
+     a:'There is no universal cup figure, because calorie density differs between foods. Work out the calories first — about 375 a day for an 11 lb (5 kg) neutered adult, 482 at 16 lb (7 kg), 678 at 25 lb (11 kg) — then divide by the calorie density printed on your bag, whether that is given per cup, per 100 g or per kilogram, and re-do the arithmetic whenever you change food.'},
     {q:'How often should you feed a dachshund?',
      a:'Twice a day suits most adult dachshunds, and it splits the ration into portions that feel like meals. Puppies need three or four smaller meals. Note that twice-daily feeding is good practice for other reasons, not bloat prevention: gastric dilatation and volvulus is a disease of deep, narrow chests, and dachshunds are not a listed at-risk breed.'},
     {q:'Why is my dachshund always hungry?',
@@ -663,7 +664,7 @@ module.exports = [
     {q:'Does being overweight cause IVDD in dachshunds?',
      a:'DachsLife 2015, surveying 2,031 owners, found no significant association between body condition score and disc disease. That is a British dataset and an absence of evidence rather than proof of no effect. Keep him lean for lifespan — Purina’s Labrador study found 25% calorie restriction added about 1.8 years of median life.'},
     {q:'How many treats can I give a dachshund while training?',
-     a:'Keep all treats under 10% of daily calories — around 48 kcal for a 16-pound dog, which disappears fast in a training session. The practical fix is to train with part of his measured daily ration rather than with extra food, so a heavy training week does not become a heavy dog.'}
+     a:'Keep all treats under 10% of daily calories — around 48 kcal for a 16 lb (7 kg) dog, which disappears fast in a training session. The practical fix is to train with part of his measured daily ration rather than with extra food, so a heavy training week does not become a heavy dog.'}
   ],
   related:['dachshund-weight-chart','dachshund-back-problems-ivdd','are-stairs-bad-for-dachshunds']
 },
@@ -672,18 +673,18 @@ module.exports = [
 {
   slug:'dachshund-weight-chart',
   title:'Dachshund Weight Chart',
-  h1:'Dachshund weight chart: AKC divisions, FCI chest measurement, and the number that matters',
-  metaTitle:'Dachshund Weight Chart: AKC vs FCI Sizes Explained',
-  metaDescription:'The AKC recognizes two sizes by weight. The FCI measures chest circumference. Tweenie is not official, and there is no rabbit dachshund in America.',
+  h1:'Dachshund weight chart: three registries, three answers, and the number that matters',
+  metaTitle:'Dachshund Weight Chart: AKC, KC and FCI Sizes',
+  metaDescription:'AKC weight divisions, FCI chest measurement, Kennel Club registers. Rabbit is an FCI size; neither the AKC nor The Kennel Club recognizes it.',
   keyword:'dachshund weight chart',
   updated:'2026-09-12',
-  answer:'The AKC recognizes two sizes by weight: standard, usually 16 to 32 pounds, and miniature, 11 pounds and under at 12 months. The FCI instead measures chest circumference at 15 months — standard over 37 cm, miniature 32 to 37, rabbit 27 to 32. Tweenie has no official status, and no rabbit size exists in America.',
+  answer:'The AKC recognizes two sizes by weight: standard, usually 16 to 32 lb (7–14.5 kg), and miniature, 11 lb (5 kg) and under at 12 months. The FCI instead measures chest circumference at 15 months — standard over 37 cm (about 14.6 in), miniature 32 to 37, rabbit 27 to 32. The Kennel Club registers miniature and standard as separate breeds. Tweenie has no official status anywhere.',
   toc:[
     'Is there an official dachshund weight chart?',
-    'What are the AKC weight divisions?',
+    'What are the AKC and Kennel Club divisions?',
     'How does the FCI classify dachshunds?',
     'Is tweenie a real dachshund size?',
-    'Why is there no rabbit dachshund in America?',
+    'Why is there no rabbit dachshund in the AKC?',
     'What should your dachshund actually weigh?',
     'How do you score body condition at home?',
     'Why we do not publish a puppy growth chart'
@@ -692,15 +693,15 @@ module.exports = [
 
     {t:'h2',text:'Is there an official dachshund weight chart?'},
 
-    {t:'p',text:'There are two official systems, they disagree, and neither one is a chart of what your individual dog should weigh. The American Kennel Club divides the breed by <strong>weight</strong>. The Fédération Cynologique Internationale, which governs the breed across Europe and much of the world, divides it by <strong>chest circumference</strong>. A dog that is a miniature under one system can fail to be one under the other, and both would be right.'},
+    {t:'p',text:'There are three official systems, they disagree, and not one of them is a chart of what your individual dog should weigh. The <strong>American Kennel Club</strong> divides the breed by <strong>weight</strong>. <strong>The Kennel Club</strong> in the UK does not divide the breed at all: it registers miniature and standard as <strong>separate breeds</strong>, on separate registers. The <strong>Fédération Cynologique Internationale</strong>, which governs the breed across Europe and much of the world, divides it by <strong>chest circumference</strong>. A dog that is a miniature under one system can fail to be one under another, and every one of them would be right.'},
 
-    {t:'h2',text:'What are the AKC weight divisions?'},
+    {t:'h2',text:'What are the AKC and Kennel Club divisions?'},
 
-    {t:'p',text:'Two, and only two. <strong>Standard</strong> is described in the AKC standard as "usually between 16 and 32 pounds." <strong>Miniature</strong> is defined as <strong>11 pounds and under at 12 months of age and older</strong>.'},
+    {t:'p',text:'Under the AKC, two, and only two. <strong>Standard</strong> is described in the AKC standard as "usually between 16 and 32 pounds" — 7 to 14.5 kg. <strong>Miniature</strong> is defined as <strong>11 lb (5 kg) and under at 12 months of age and older</strong>.'},
 
-    {t:'p',text:'One detail is routinely lost: in the AKC, miniature is a <strong>class division for showing, not a separate variety</strong>. The varieties are the three coats — smooth, wirehaired and longhaired — and each is shown separately. So "miniature longhaired dachshund" describes a coat variety shown in a weight division, not a distinct breed within a breed.'},
+    {t:'p',text:'One detail is routinely lost, and the AKC and The Kennel Club handle it in opposite directions. In the AKC, miniature is a <strong>class division for showing, not a separate variety</strong>: the varieties are the three coats — smooth, wirehaired and longhaired — each shown separately, so "miniature longhaired dachshund" describes a coat variety shown in a weight division, not a distinct breed within a breed. <strong>The Kennel Club goes the other way</strong>, treating miniature and standard as separate breeds on separate registers, with the three coats registered at each of the two sizes — six in all. Its line is drawn by <strong>weight</strong>: the miniature breed standard gives an ideal of <strong>10 lb (4.5 kg)</strong> and a desired maximum of <strong>11 lb (5 kg)</strong>, and, unlike the AKC, it names no age at which the dog is to be weighed. The same dog can be one breed on one side of an ocean and another on the other.'},
 
-    {t:'callout',tone:'note',title:'Note the gap between the two divisions',text:'Miniature stops at 11 pounds. Standard "usually" starts at 16. The five pounds in between are not an official category, and that gap is where the entire tweenie argument lives.'},
+    {t:'callout',tone:'note',title:'Note the gap between the two AKC divisions',text:'Miniature stops at 11 lb (5 kg). Standard "usually" starts at 16 lb (7 kg). The five pounds (2 kg) in between are not an official category, and that gap is where the entire tweenie argument lives.'},
 
     {t:'h2',text:'How does the FCI classify dachshunds?'},
 
@@ -709,29 +710,30 @@ module.exports = [
     {t:'table',
       head:['System','Standard','Miniature','Rabbit (Kaninchen)','Measured'],
       rows:[
-        ['AKC (United States)','Usually 16–32 lb','11 lb and under at 12 months','Does not exist','Weight, from 12 months'],
+        ['AKC (United States)','Usually 16–32 lb (7–14.5 kg)','11 lb (5 kg) and under at 12 months','Does not exist','Weight, from 12 months'],
+        ['The Kennel Club (UK)','A breed in its own right','A separate breed on a separate register','Does not exist','Weight, with no age given: ideal 10 lb (4.5 kg), desired maximum 11 lb (5 kg)'],
         ['FCI (Europe and most of the world)','Over 37 cm chest (standard gives 37–47 cm; about 14.6–18.5 in)','Over 32 up to 37 cm (about 12.6–14.6 in)','27 up to 32 cm (about 10.6–12.6 in)','Chest circumference at 15 months'],
-        ['US informal usage','—','—','—','"Tweenie", roughly 12–15 lb. No official status anywhere.']
+        ['Informal usage','—','—','—','"Tweenie", roughly 12–15 lb (5.5–7 kg). No official status anywhere.']
       ],
-      caption:'Inch figures are conversions of the FCI centimetre measurements, given for American readers.'},
+      caption:'Inch figures are conversions of the FCI centimeter measurements. The miniature weights are from The Kennel Club breed standard for the Dachshund (Miniature Smooth-Haired).'},
 
-    {t:'p',text:'The practical consequence: a European pedigree may describe a dog by a size class your American veterinarian has never used, and an imported miniature measured by chest may sit above 11 pounds on a US scale. Neither document is wrong. They are measuring different things.'},
+    {t:'p',text:'The practical consequence: a pedigree issued under one system may describe a dog by a size class your veterinarian has never used, and a dog registered as a miniature on a chest measurement may sit well above 11 lb (5 kg) on the scale. Neither document is wrong. They are measuring different things.'},
 
     {t:'h2',text:'Is tweenie a real dachshund size?'},
 
-    {t:'p',text:'No. <strong>"Tweenie" has no official status</strong> — not with the AKC, not with the FCI, not with the Dachshund Club of America. It is a useful piece of American shorthand for a dog of roughly 12 to 15 pounds who is too heavy to show as a miniature and lighter than a typical standard. That dog is real. The category is not.'},
+    {t:'p',text:'No. <strong>"Tweenie" has no official status</strong> — not with the AKC, not with The Kennel Club, not with the FCI, not with the Dachshund Club of America. It is a useful piece of shorthand, most common in the US, for a dog of roughly 12 to 15 lb (5.5–7 kg) who is too heavy to show as a miniature and lighter than a typical standard. That dog is real. The category is not.'},
 
     {t:'p',text:'This matters in exactly one place: a sales listing. A breeder using "tweenie" descriptively is being practical. A breeder using it as a rare or premium designation is selling you a word. There is no registry, no standard and no price justification behind it.'},
 
-    {t:'h2',text:'Why is there no rabbit dachshund in America?'},
+    {t:'h2',text:'Why is there no rabbit dachshund in the AKC?'},
 
-    {t:'p',text:'Because the AKC never adopted the third size. The <strong>rabbit, or kaninchen, dachshund does not exist in the AKC</strong> — a dog under the FCI rabbit measurement, imported to the United States, is simply registered and shown as a miniature.'},
+    {t:'p',text:'Because the AKC never adopted the third size, and neither did The Kennel Club. The <strong>rabbit, or kaninchen, dachshund exists only under the FCI</strong> — a dog under the FCI rabbit measurement, registered into the AKC system, is simply registered and shown as a miniature.'},
 
-    {t:'p',text:'So when a US listing advertises a "rabbit dachshund" at a premium, one of two things is happening. Either the breeder is accurately describing FCI paperwork on an imported or European-bred dog, in which case they will be able to show you that paperwork without being asked twice. Or the word is being used to price a very small miniature. Ask which. The answer arrives quickly.'},
+    {t:'p',text:'So when a listing outside FCI territory advertises a "rabbit dachshund" at a premium, one of two things is happening. Either the breeder is accurately describing FCI paperwork on an imported or European-bred dog, in which case they will be able to show you that paperwork without being asked twice. Or the word is being used to price a very small miniature. Ask which. The answer arrives quickly.'},
 
     {t:'h2',text:'What should your dachshund actually weigh?'},
 
-    {t:'p',text:'The question has no numerical answer, and that is not evasion. The AKC divisions exist to sort dogs into show classes; they were never designed to tell you whether the animal on your floor is the right weight. A 22-pound standard with a dense frame can be lean. A 12-pound miniature can be carrying too much. The scale cannot distinguish them. <strong>Body condition can.</strong>'},
+    {t:'p',text:'The question has no numerical answer, and that is not evasion. Registry divisions exist to sort dogs into show classes; not one of them was designed to tell you whether the animal on your floor is the right weight. A 22 lb (10 kg) standard with a dense frame can be lean. A 12 lb (5.5 kg) miniature can be carrying too much. The scale cannot distinguish them. <strong>Body condition can.</strong>'},
 
     {t:'stat',figure:'4–5 out of 9',label:'target body condition score',source:'VCA Hospitals body condition scoring'},
 
@@ -746,35 +748,36 @@ module.exports = [
       '<strong>Write it down.</strong> Weigh weekly on the same scale and log the score monthly. Gradual gain is invisible day to day and obvious in a six-month column.'
     ]},
 
-    {t:'p',text:'Then feed to that score rather than to the bag. <a href="/guides/how-much-to-feed-a-dachshund">The feeding guide</a> works the calorie arithmetic for 11, 16 and 25 pound dogs.'},
+    {t:'p',text:'Then feed to that score rather than to the bag. <a href="/guides/how-much-to-feed-a-dachshund">The feeding guide</a> works the calorie arithmetic for 11 lb (5 kg), 16 lb (7 kg) and 25 lb (11 kg) dogs.'},
 
     {t:'h2',text:'Why we do not publish a puppy growth chart'},
 
-    {t:'p',text:'Because we could not source one we would stand behind, and a fabricated growth curve is worse than none. Dachshund puppies from different lines and different sizes follow different trajectories, and the AKC’s own miniature division is not assessed until <strong>12 months</strong> — the registry itself declines to judge size before then.'},
+    {t:'p',text:'Because we could not source one we would stand behind, and a fabricated growth curve is worse than none. Dachshund puppies from different lines and different sizes follow different trajectories, and the registries themselves decline to judge size early: the AKC does not assess its miniature division until <strong>12 months</strong>, and the FCI does not take its chest measurement until <strong>15</strong>.'},
 
     {t:'p',text:'What is worth tracking is the shape of the curve rather than the numbers on it: steady gain, a puppy who stays at a body condition score of 4 to 5 throughout, and no week where he suddenly stops gaining. Bring the log to every veterinary visit in the first year. That is more informative than any chart we could print.'},
 
-    {t:'callout',tone:'note',title:'What the manual adds',text:'The $45 manual carries the full AKC standard with the disqualifications annotated, the illustrated body condition scale sized to hold against a real dog, and the growth-tracking log for the first eighteen months.'}
+    {t:'callout',tone:'note',title:'What the manual adds',text:'The manual carries the full AKC standard with the disqualifications annotated, the illustrated body condition scale sized to hold against a real dog, and the growth-tracking log for the first eighteen months.'}
   ],
   facts:[
-    ['AKC standard size','Usually 16–32 lb','AKC breed standard'],
-    ['AKC miniature division','11 lb and under at 12 months','AKC breed standard'],
-    ['FCI standard','Chest over 37 cm at 15 months (37–47 cm)','FCI standard 148'],
-    ['FCI miniature','Chest over 32 up to 37 cm','FCI standard 148'],
-    ['FCI rabbit','Chest 27 up to 32 cm; no AKC equivalent','FCI standard 148'],
+    ['AKC standard size','Usually 16–32 lb (7–14.5 kg)','AKC breed standard'],
+    ['AKC miniature division','11 lb (5 kg) and under at 12 months','AKC breed standard'],
+    ['The Kennel Club','Miniature and standard are separate breeds, on separate registers','The Kennel Club'],
+    ['FCI standard','Chest over 37 cm at 15 months (37–47 cm; about 14.6–18.5 in)','FCI standard 148'],
+    ['FCI miniature','Chest over 32 up to 37 cm (about 12.6–14.6 in)','FCI standard 148'],
+    ['FCI rabbit','Chest 27 up to 32 cm (about 10.6–12.6 in); no AKC or Kennel Club equivalent','FCI standard 148'],
     ['Target body condition score','4–5 of 9; 7 of 9 is about 30% body fat','VCA Hospitals']
   ],
   faq:[
     {q:'How much should a miniature dachshund weigh?',
-     a:'The AKC defines the miniature division as 11 pounds and under at 12 months of age and older. That is a show-class threshold, not a health target. A miniature can be 11 pounds and overweight, or 11 pounds and underweight. Score body condition on the 1-to-9 scale and aim for 4 to 5.'},
+     a:'The AKC defines the miniature division as 11 lb (5 kg) and under at 12 months of age and older. The FCI uses a chest measurement instead, and The Kennel Club registers miniature and standard as separate breeds. All three are registry thresholds, not health targets: a miniature can be 11 lb and overweight, or 11 lb and underweight. Score body condition on the 1-to-9 scale and aim for 4 to 5.'},
     {q:'What is a tweenie dachshund?',
-     a:'American shorthand for a dog of roughly 12 to 15 pounds, between the AKC miniature limit of 11 pounds and the usual standard range of 16 to 32. It has no official status with the AKC, the FCI or the Dachshund Club of America. Treat it as a description, never as a premium designation.'},
-    {q:'Are there rabbit dachshunds in the US?',
-     a:'Not as a recognized size. The FCI rabbit or kaninchen class is defined by a chest circumference of 27 to 32 cm at 15 months, and the AKC has no equivalent — such a dog is registered and shown here as a miniature. A US listing charging extra for a rabbit dachshund should be able to produce FCI paperwork.'},
-    {q:'Why does the AKC use weight when Europe uses chest size?',
+     a:'Shorthand, most common in the US, for a dog of roughly 12 to 15 lb (5.5–7 kg) — between the AKC miniature limit of 11 lb (5 kg) and the usual standard range of 16 to 32 lb (7–14.5 kg). It has no official status with the AKC, The Kennel Club, the FCI or the Dachshund Club of America. Treat it as a description, never as a premium designation.'},
+    {q:'Is the rabbit dachshund a recognized size?',
+     a:'Under the FCI, yes: the rabbit or kaninchen class is defined by a chest circumference of 27 to 32 cm (about 10.6–12.6 in) at 15 months. Under the AKC and The Kennel Club, no — such a dog is registered and shown as a miniature. A listing charging extra for a rabbit dachshund outside FCI territory should be able to produce FCI paperwork on the dog or its parents.'},
+    {q:'Why does the AKC use weight when the FCI uses chest size?',
      a:'The FCI kept the measurement that tests the breed’s original job: a chest that fits down a burrow. It is taken at 15 months. The AKC simplified to weight assessed from 12 months, with two divisions rather than three. Neither is wrong; they answer different questions and produce different classifications for the same dog.'},
-    {q:'Is my dachshund overweight at 18 pounds?',
-     a:'Eighteen pounds sits inside the AKC standard range of roughly 16 to 32 pounds, so the number alone tells you nothing. Feel the ribs with light pressure, look for a taper behind the ribs from above, and check that the belly tucks up from the side. Score 4 to 5 of 9 is the target.'},
+    {q:'Is my dachshund overweight at 18 lb (8 kg)?',
+     a:'Eighteen pounds sits inside the AKC standard range of roughly 16 to 32 lb (7–14.5 kg), so the number alone tells you nothing. Feel the ribs with light pressure, look for a taper behind the ribs from above, and check that the belly tucks up from the side. Score 4 to 5 of 9 is the target.'},
     {q:'When do dachshunds stop growing?',
      a:'The AKC assesses its miniature division at 12 months and the FCI takes its chest measurement at 15 months, which tells you where both registries consider size settled. We do not publish a week-by-week growth chart because no sourced dachshund growth curve was available. Track body condition instead.'}
   ],
@@ -787,10 +790,10 @@ module.exports = [
   title:'Questions to Ask a Dachshund Breeder',
   h1:'How to find a reputable dachshund breeder: the questions, and the answers that end the conversation',
   metaTitle:'Questions to Ask a Dachshund Breeder (and Red Flags)',
-  metaDescription:'The three-item AKC parent-club health test list, the DNA panel that matters, why the CDDY test is useless for selection, and what a USDA license really signals.',
+  metaDescription:'The three-item parent-club health test list, the DNA panel that matters, why the CDDY test is useless for selection, and what a breeder license really signals.',
   keyword:'how to find a reputable dachshund breeder',
   updated:'2026-09-12',
-  answer:'Ask three things first: whether the sire and dam have had a patella evaluation, a cardiac exam and an ophthalmologist evaluation. That is the entire AKC parent-club health testing list for the breed. Then ask for the DNA panel and whether the sale is face-to-face. A USDA license signals sight-unseen commercial volume, not quality.',
+  answer:'Ask three things first: whether the sire and dam have had a patella evaluation, a cardiac exam and an ophthalmologist evaluation. That is the entire AKC parent-club health testing list for the breed, and it is a fair minimum anywhere. Then ask for the DNA panel and whether the sale is face-to-face. In the US, a USDA license signals sight-unseen commercial volume rather than quality; ask what the equivalent license means where you are buying.',
   toc:[
     'How do you find a reputable dachshund breeder?',
     'What health testing should the parents have?',
@@ -808,15 +811,15 @@ module.exports = [
 
     {t:'h2',text:'How do you find a reputable dachshund breeder?'},
 
-    {t:'p',text:'By asking a small number of specific questions and listening to how they are answered rather than what is claimed. Price will not do it for you: the reputable breeder band of <strong>$1,000–$3,000</strong> overlaps the online marketplace band of <strong>$500–$2,000</strong>, so a broker can sit comfortably inside a breeder’s price range. Documentation and a face-to-face sale can tell them apart. A number on a listing cannot.'},
+    {t:'p',text:'By asking a small number of specific questions and listening to how they are answered rather than what is claimed. Price will not do it for you: the reputable-breeder band and the online-marketplace band <strong>overlap</strong>, whatever your currency, so a broker can sit comfortably inside a breeder’s price range. Documentation and a face-to-face sale can tell them apart. A number on a listing cannot.'},
 
     {t:'h2',text:'What health testing should the parents have?'},
 
-    {t:'p',text:'Three things, and it really is only three. The AKC parent-club health testing requirements for the Dachshund are a <strong>Patella Evaluation</strong>, a <strong>Cardiac Exam</strong>, and an <strong>Ophthalmologist Evaluation</strong>. That is the entire list.'},
+    {t:'p',text:'Three things, and it really is only three. The AKC parent-club health testing requirements for the Dachshund are a <strong>Patella Evaluation</strong>, a <strong>Cardiac Exam</strong>, and an <strong>Ophthalmologist Evaluation</strong>. That is the entire list, and nothing in it is country-specific — a patella evaluation, a cardiac exam and an eye exam are done by specialists everywhere.'},
 
-    {t:'p',text:'Ask for results for <em>both</em> parents, with dates and the examining specialist named, and verify them yourself at <strong>ofa.org</strong> rather than accepting a photograph of a certificate. A breeder who is doing this work will hand the results over before you finish the sentence. A breeder who says the line is clean, or that the vet checked them over, is describing an opinion rather than a test.'},
+    {t:'p',text:'Ask for results for <em>both</em> parents, with dates and the examining specialist named, and verify them yourself rather than accepting a photograph of a certificate. In the United States that means the OFA database at <strong>ofa.org</strong>, which is public and free. Elsewhere, ask which registry or scheme holds the result and how you look it up — and find that out before you are standing in a room full of puppies. A breeder who is doing this work will hand the results over before you finish the sentence. A breeder who says the line is clean, or that the vet checked them over, is describing an opinion rather than a test.'},
 
-    {t:'callout',tone:'evidence',title:'Check OFA yourself',text:'We do not print a CHIC requirement list for this breed, because we could not retrieve and verify the OFA page. Go to ofa.org, search the sire and dam by registered name, and read what is actually recorded. The database is public and free.'},
+    {t:'callout',tone:'evidence',title:'Check the record yourself, not the certificate',text:'We do not print a CHIC requirement list for this breed, because we could not retrieve and verify the OFA page. Go to ofa.org, search the sire and dam by registered name, and read what is actually recorded. The database is public and free. If the dogs were tested under another country’s scheme, ask the breeder to show you where that result is published.'},
 
     {t:'h2',text:'Which DNA tests matter?'},
 
@@ -834,38 +837,38 @@ module.exports = [
 
     {t:'h2',text:'What about back scoring?'},
 
-    {t:'p',text:'This is the real screening tool for disc disease, and it barely exists in America. Radiographic back scoring measures spinal calcification and is used to make breeding decisions. <strong>Denmark has run a scheme for around twenty years</strong>; since 2019 its rules require both parents to be X-rayed and permit only dogs graded <strong>K0 to K2</strong> to breed. The UK’s Royal Kennel Club launched an IVDD scheme in <strong>2021</strong>.'},
+    {t:'p',text:'This is the real screening tool for disc disease, and almost nowhere uses it. Radiographic back scoring measures spinal calcification and is used to make breeding decisions. <strong>Denmark has run a scheme for around twenty years</strong>; since 2019 its rules require both parents to be X-rayed and permit only dogs graded <strong>K0 to K2</strong> to breed. The UK’s Royal Kennel Club launched an IVDD scheme in <strong>2021</strong>. Three more Nordic countries run programs of their own, on Dachshund Health UK’s account of them: <strong>Finland</strong> made back X-rays compulsory for every dachshund before breeding on <strong>January 1, 2025</strong>; <strong>Sweden</strong>’s dachshund club launched an official program in <strong>2021</strong> and left it voluntary; <strong>Norway</strong> recommends screening without requiring it. Past that short list there is nothing — most of the world, the United States included, has no scheme at all.'},
 
-    {t:'p',text:'In the United States, <strong>neither the AKC nor the Dachshund Club of America recommends it</strong>, and only about <strong>three US breeders</strong> have been confirmed to X-ray for spinal calcification. So this is not a question you can use to filter American breeders — almost none will say yes. It is a question worth asking anyway, because the answer tells you how closely they follow the breed’s health research. A breeder who knows what you are asking about and explains why they do not do it is a different proposition from one who has never heard of it.'},
+    {t:'p',text:'In the United States, <strong>neither the AKC nor the Dachshund Club of America recommends it</strong>, and only about <strong>three breeders there</strong> have been confirmed to X-ray for spinal calcification. So outside those few countries this is not a question that filters breeders — almost none will say yes. It is a question worth asking anyway, because the answer tells you how closely they follow the breed’s health research. A breeder who knows what you are asking about and explains why they do not do it is a different proposition from one who has never heard of it.'},
 
     {t:'h2',text:'Does a USDA license mean anything good?'},
 
     {t:'p',text:'It means the opposite of what sellers imply. USDA and APHIS state that <em>"if you maintain four or fewer breeding females … you do not have to be USDA licensed"</em>, and that <em>"if you always sell pets to new owners in face-to-face transactions, you do not have to be USDA licensed, no matter how many breeding females you have."</em> Photos, videos and video calls do <strong>not</strong> count as face-to-face.'},
 
-    {t:'p',text:'Run that backwards. A breeder holding a USDA license is, by definition, either running more than four breeding females <em>and</em> shipping to buyers sight unseen. The license is a marker of <strong>sight-unseen commercial volume</strong>. A small hobby breeder who sells face to face has no reason to hold one. "We are USDA licensed and inspected," offered as reassurance, tells you what kind of operation you are talking to.'},
+    {t:'p',text:'Run that backwards. A breeder holding a USDA license is, by definition, running more than four breeding females <em>and</em> shipping to buyers sight unseen. The license is a marker of <strong>sight-unseen commercial volume</strong>. A small hobby breeder who sells face to face has no reason to hold one. "We are USDA licensed and inspected," offered as reassurance, tells you what kind of operation you are talking to. That is the American version of the question, and the question transfers even where the acronym does not: ask which authority licenses, registers or inspects this breeder, what triggers the requirement, and whether it is triggered by scale or by selling to people who never visit the dogs. A credential nobody can explain is not a credential.'},
 
     {t:'h2',text:'What does AKC Breeder of Merit prove?'},
 
-    {t:'p',text:'Participation, mostly. The program requires at least five years in AKC events, parent club membership, AKC titles on at least four dogs bred, certification that parent-club health screens are performed, and 100% of puppies AKC registered. Those are real commitments and they filter out drive-by operations. But note the word <em>certification</em>: the breeder attests that the screens are done. It is <strong>a participation credential, not an independent health audit</strong>. Verify the screens at ofa.org regardless.'},
+    {t:'p',text:'Participation, mostly. The program requires at least five years in AKC events, parent club membership, AKC titles on at least four dogs bred, certification that parent-club health screens are performed, and 100% of puppies AKC registered. Those are real commitments and they filter out drive-by operations. But note the word <em>certification</em>: the breeder attests that the screens are done. It is <strong>a participation credential, not an independent health audit</strong>. Verify the screens in the database regardless. If a breeder cites a scheme from another registry, put the same question to it: does the scheme audit the health results, or does it record that someone said they exist?'},
 
     {t:'h2',text:'What should you ask about color?'},
 
     {t:'p',text:'Ask what the sire and dam are, and specifically whether either is a dapple. A <strong>dapple × dapple</strong> mating produces roughly <strong>25% double-dapple puppies</strong>, and the Dachshund Club of America states these <em>"are more likely to carry health issues such as deafness, reduced eye size or missing eyes."</em> Red dapples can be visually ambiguous, so accidental dapple-to-dapple matings are a genuine risk rather than a theoretical one — which is why the honest answer to "is either parent a dapple" is a considered one, not a shrug.'},
 
-    {t:'p',text:'The DCA also warns that dilutes — <strong>Blue and Isabella</strong> — carry <em>"thin coats, skin sensitivity, vaccine failures and reduced lifespan."</em> Colour dilution alopecia is genetic and recessive, dachshunds are explicitly listed as susceptible, the coat is normal at birth with signs from about six months, and it is not curable.'},
+    {t:'p',text:'The DCA also warns that dilutes — <strong>Blue and Isabella</strong> — carry <em>"thin coats, skin sensitivity, vaccine failures and reduced lifespan."</em> Color dilution alopecia is genetic and recessive, dachshunds are explicitly listed as susceptible, the coat is normal at birth with signs from about six months, and it is not curable.'},
 
-    {t:'p',text:'Note the perverse incentive while you are at it. Dapple adds <strong>$500–$1,000</strong> to the price of a puppy. The two biggest premiums in the market attach to patterns the breed’s own parent club warns about, which is worth saying plainly to anyone quoting you a colour surcharge.'},
+    {t:'p',text:'Note the perverse incentive while you are at it. Dapple carries the <strong>largest color surcharge in the breed</strong>, roughly twice the longhaired premium. The two biggest premiums in the market attach to the patterns the breed’s own parent club warns about, which is worth saying plainly to anyone quoting you a color surcharge.'},
 
     {t:'h2',text:'Which answers should end the conversation?'},
 
     {t:'ul',items:[
       '"We do not health test — our line is clean." The three-test list is short and cheap. Not doing it is a choice.',
-      '"Both parents are dapple," or any version of specialising in double dapples.',
+      '"Both parents are dapple," or any version of specializing in double dapples.',
       'Refusal or reluctance to let you meet the dam, in person, where the puppies live.',
       '"We can ship him this week" for a puppy under eight weeks old.',
       'Payment by wire transfer, gift card, cryptocurrency or a peer-to-peer app only.',
-      'Several litters always available, in every colour, year round.',
-      '"We are USDA licensed" offered as a quality credential.',
+      'Several litters always available, in every color, year round.',
+      '"We are USDA licensed" — or any license anywhere — offered as a quality credential.',
       'Pressure — a deposit deadline, another buyer waiting, a discount for deciding today.',
       'No contract, or a contract with no health guarantee and no return clause.',
       'No questions asked about you. A breeder who does not interview you is not placing puppies, they are selling them.'
@@ -873,37 +876,37 @@ module.exports = [
 
     {t:'h2',text:'How do you avoid a puppy scam?'},
 
-    {t:'p',text:'By insisting on a live, in-person meeting before money moves. The BBB Scam Tracker logged <strong>2,899 puppy scam reports in 2023</strong> with a median loss of $700, <strong>2,278 in 2024</strong> at $680, and <strong>1,632 through September 2025</strong> at $600, with individual losses documented between $1,900 and $4,500. Those counts understate the problem badly: the BBB cites FTC data that only <strong>4.8%</strong> of mass-market fraud victims report at all, which puts true volume at roughly twenty times the logged figures.'},
+    {t:'p',text:'By insisting on a live, in-person meeting before money moves. In the US alone, the BBB Scam Tracker logged <strong>2,899 puppy scam reports in 2023</strong>, <strong>2,278 in 2024</strong> and <strong>1,632 through September 2025</strong>, with median losses falling slightly across those three years and individual losses running several times the median. Those counts understate the problem badly: the BBB cites FTC data that only <strong>4.8%</strong> of mass-market fraud victims report at all, which puts true volume at roughly twenty times the logged figures. Nothing about that mechanism is American — a listing, a deposit and a dog that never existed work identically in any country.'},
 
     {t:'h2',text:'What protection do you have after the sale?'},
 
-    {t:'p',text:'Some, depending on your state and who you bought from. <strong>Twenty-two states have puppy lemon laws</strong>, typically giving a short window for infectious illness and a longer one for congenital or hereditary defects, with remedies of refund, exchange or reimbursement of veterinary costs. California allows 15 days for illness and one year for congenital or hereditary conditions, with a retention remedy of up to <strong>150% of the purchase price</strong>. Florida runs 14 days and one year, Illinois 21 days, Vermont 7.'},
+    {t:'p',text:'Some, and how much depends entirely on where you bought and from whom. The clearest documented example is the United States, where <strong>twenty-two states have puppy lemon laws</strong>, typically giving a short window for infectious illness and a longer one for congenital or hereditary defects, with remedies of refund, exchange or reimbursement of veterinary costs. California allows 15 days for illness and one year for congenital or hereditary conditions, with a retention remedy of up to <strong>150% of the purchase price</strong>. Florida runs 14 days and one year, Illinois 21 days, Vermont 7. Find out what the equivalent is where you are buying, and find out before the deposit.'},
 
-    {t:'p',text:'Two limits matter. These laws bind dealers and retailers, <strong>not every hobby breeder</strong>, and remedies are usually capped at the purchase price — which will not touch the cost of a serious condition. Separately, <strong>ten states now ban retail pet store puppy sales</strong> (California was first in 2017, Colorado in 2026, Delaware the tenth), along with 530 localities across 31 states.'},
+    {t:'p',text:'Two limits matter wherever such a law exists. It binds dealers and retailers, <strong>not every hobby breeder</strong>, and remedies are usually capped at the purchase price — which will not touch the cost of a serious condition. Separately, <strong>ten US states now ban retail pet store puppy sales</strong> (California was first in 2017, Colorado in 2026, Delaware the tenth), along with 530 localities across 31 states.'},
 
-    {t:'callout',tone:'note',title:'What the manual adds',text:'The $45 manual turns this into a printable breeder interview sheet with scoring, the contract clauses worth arguing over, and a walkthrough of reading an OFA record and a DNA panel line by line.'}
+    {t:'callout',tone:'note',title:'What the manual adds',text:'The manual turns this into a printable breeder interview sheet with scoring, the contract clauses worth arguing over, and a walkthrough of reading an OFA record and a DNA panel line by line.'}
   ],
   facts:[
     ['AKC parent-club health tests','Patella, cardiac, ophthalmologist — three total','AKC breed health testing requirements'],
     ['CDDY carrier rate','93% carry two copies; allele frequency 0.98','Dachshund Health UK'],
     ['Lafora screening effect (UK)','10.4% affected in 2012 to 2.7% in 2017','Dachshund Health UK'],
-    ['USDA license threshold','Over four breeding females and sight-unseen sales','USDA/APHIS via AKC'],
+    ['USDA license threshold (US)','Over four breeding females and sight-unseen sales','USDA/APHIS via AKC'],
     ['Double dapple','About 25% of a dapple × dapple litter','Dachshund Club of America'],
-    ['Puppy scam reports, 2024','2,278 reports, $680 median loss','BBB Scam Tracker']
+    ['Puppy scam reports, 2024 (US)','2,278 logged; only 4.8% of fraud victims report at all','BBB Scam Tracker']
   ],
   faq:[
     {q:'What health tests should dachshund parents have?',
-     a:'The AKC parent-club list for the breed is exactly three: a patella evaluation, a cardiac exam and an ophthalmologist evaluation. Ask for both parents, with dates and the examining specialist named, and verify them at ofa.org rather than accepting a photo of a certificate. Add the Lafora DNA test for miniature wirehaired lines.'},
+     a:'The AKC parent-club list for the breed is exactly three: a patella evaluation, a cardiac exam and an ophthalmologist evaluation. None of the three is country-specific. Ask for both parents, with dates and the examining specialist named, and verify the record yourself — at ofa.org in the US, or in whichever scheme holds it where you are — rather than accepting a photo of a certificate. Add the Lafora DNA test for miniature wirehaired lines.'},
     {q:'Should I buy from a USDA licensed dachshund breeder?',
-     a:'A USDA license is not a quality mark. USDA and APHIS state that breeders with four or fewer breeding females, or who always sell face-to-face, need no license regardless of volume. Holding one therefore indicates larger-scale, sight-unseen selling. Photos, videos and video calls do not count as face-to-face.'},
+     a:'A USDA license is not a quality mark. USDA and APHIS state that breeders with four or fewer breeding females, or who always sell face-to-face, need no license regardless of volume. Holding one therefore indicates larger-scale, sight-unseen selling. Photos, videos and video calls do not count as face-to-face. Outside the US, ask which authority licenses the breeder and what triggered the requirement — the answer is informative in the same way.'},
     {q:'Does a CDDY DNA test tell me if a puppy will get IVDD?',
      a:'No. About 93% of dachshunds carry two copies and the allele frequency is 0.98, so the test returns the same answer for nearly every dog. Dachshund Health UK does not recommend using it for selection, warning it would exclude almost all dogs from breeding. It is not a screening tool for buyers.'},
-    {q:'Do US dachshund breeders X-ray for back problems?',
-     a:'Almost none. Denmark has scored spinal calcification for around twenty years and since 2019 requires both parents X-rayed with only K0–K2 grades permitted to breed. The UK launched a scheme in 2021. In the US neither the AKC nor the DCA recommends it, and only about three breeders are confirmed to do it.'},
+    {q:'Do dachshund breeders X-ray for back problems?',
+     a:'Almost none do. Denmark has scored spinal calcification for around twenty years and since 2019 requires both parents X-rayed with only K0–K2 grades permitted to breed. The UK launched a scheme in 2021. In the US neither the AKC nor the DCA recommends it, and only about three breeders are confirmed to do it. Those are the only schemes we could source, so expect the answer to be no and listen to how it is explained.'},
     {q:'Why do dapple dachshunds cost more?',
-     a:'Because buyers pay more for the pattern, which adds $500–$1,000 to the price. The Dachshund Club of America warns that dapple-to-dapple matings produce roughly 25% double dapples, more likely to carry deafness, reduced eye size or missing eyes. The premium and the parent club’s warning point in opposite directions.'},
+     a:'Because buyers pay more for the pattern. Dapple carries the largest color surcharge in the breed, roughly twice the longhaired premium. The Dachshund Club of America warns that dapple-to-dapple matings produce roughly 25% double dapples, more likely to carry deafness, reduced eye size or missing eyes. The premium and the parent club’s warning point in opposite directions.'},
     {q:'How do I check a dachshund breeder is legitimate?',
-     a:'Verify the parents’ health results yourself at ofa.org, meet the dam in person where the puppies live, and refuse wire transfers, gift cards or crypto. The BBB logged 2,278 puppy scam reports in 2024 at a $680 median loss, and cites FTC data that only 4.8% of fraud victims report at all.'}
+     a:'Verify the parents’ health results yourself — at ofa.org in the US, or in whichever scheme records them where you are — meet the dam in person where the puppies live, and refuse wire transfers, gift cards or crypto. In the US alone the BBB logged 2,278 puppy scam reports in 2024, and cites FTC data that only 4.8% of fraud victims report at all.'}
   ],
   related:['how-much-does-a-dachshund-cost','dachshund-back-problems-ivdd','when-to-neuter-a-dachshund']
 },
@@ -914,10 +917,10 @@ module.exports = [
   title:'How Much Does a Dachshund Cost?',
   h1:'How much does a dachshund cost? Purchase, first year, lifetime, and the line item that dominates',
   metaTitle:'How Much Does a Dachshund Cost? Purchase to Lifetime',
-  metaDescription:'Puppy prices by source and region, why dapple costs more, first-year setup, lifetime totals, and the IVDD line item that outweighs every other number.',
+  metaDescription:'What a dachshund costs by source, why dapple costs more, first-year setup, lifetime totals, and the one line item that outweighs every other number.',
   keyword:'how much does a dachshund cost',
   updated:'2026-09-12',
-  answer:'A dachshund puppy costs $1,000–$3,000 from a reputable breeder, $200–$500 from rescue and $1,800–$4,000 or more from a pet store (iHeartDogs, 2026). Bringing a dog home runs $1,150–$4,420 (Rover, 2025). Synchrony puts lifetime cost at $22,125–$60,602 over fifteen years, while owners typically guess $8,000.',
+  answer:'The purchase price is the smallest number involved. A rescue fee runs about a fifth of a reputable breeder’s price, a pet store more than either, and the first year costs several times the puppy. Lifetime studies put fifteen years of ownership at roughly three to seven times what owners guess, and one IVDD surgical episode can equal a quarter of that lifetime total.',
   toc:[
     'How much does a dachshund cost?',
     'What does the puppy itself cost?',
@@ -932,63 +935,63 @@ module.exports = [
 
     {t:'h2',text:'How much does a dachshund cost?'},
 
-    {t:'p',text:'The purchase price is the smallest number in this guide, and the one people research hardest. Over a lifetime it accounts for a few percent of the total. What follows is every figure we can source, in the order you will meet them.'},
+    {t:'p',text:'The purchase price is the smallest number in this guide, and the one people research hardest. Over a lifetime it accounts for a few percent of the total. Because currencies, veterinary markets and puppy markets differ everywhere, this guide gives you the <strong>structure</strong> rather than amounts: which line dominates, which one is bigger than you expect, and how far apart they sit. Price your own market against that shape.'},
 
     {t:'h2',text:'What does the puppy itself cost?'},
 
     {t:'table',
-      head:['Source','Price','Notes'],
+      head:['Source','Relative price','Notes'],
       rows:[
-        ['Reputable breeder','$1,000–$3,000','iHeartDogs, 2026'],
-        ['Pet store','$1,800–$4,000+','Now banned at retail in 10 states'],
-        ['Online marketplace','$500–$2,000','Overlaps the breeder band — see below'],
-        ['Rescue','$200–$500','iHeartDogs, 2026'],
-        ['Northeast and West','$1,500–$3,000','Regional variation, iHeartDogs'],
-        ['Midwest','$1,000–$2,200','Regional variation, iHeartDogs']
+        ['Reputable breeder','The reference band for everything below','iHeartDogs, 2026'],
+        ['Pet store','Above the breeder band at both ends','Now banned at retail in 10 US states'],
+        ['Online marketplace','Starts at about half the breeder band and reaches well into it','Overlaps the breeder band — see below'],
+        ['Rescue','About a fifth of the breeder band','iHeartDogs, 2026'],
+        ['Higher-cost regions','About 1.4× the lower-cost regions','Regional variation within one country, iHeartDogs'],
+        ['Lower-cost regions','The bottom of the same national market','Regional variation within one country, iHeartDogs']
       ],
-      caption:'iHeartDogs, March 2026, updated September 2026.'},
+      caption:'Ratios calculated from iHeartDogs, March 2026, updated September 2026 — American figures, in dollars. The amounts move with the country and the currency; the ranking of the sources, and the fact that geography inside one country moves the price as much as the source does, do not.'},
 
-    {t:'p',text:'Rescue figures are published rather than estimated. Dachshund Rescue of North America charges $350 under a year, $275 from one to seven, and $150 at eight and over. Coast to Coast Dachshund Rescue charges $400 under a year plus a $100 alteration deposit, $350 from one to four, $300 from four to eight and $200 at eight and over — and that fee includes the exam, vaccines, spay or neuter, parasite treatment, heartworm test and treatment, and a microchip. Priced against a spay at <strong>$455</strong> and a neuter at <strong>$487</strong>, an adult rescue dachshund arrives having already absorbed several hundred dollars of work.'},
+    {t:'p',text:'Rescue figures are published rather than estimated, and they are structured by age. Dachshund Rescue of North America and Coast to Coast Dachshund Rescue both charge most for a dog under a year and least for a dog of eight and over, cutting the fee by half or more across that span. The Coast to Coast fee includes the exam, vaccines, spay or neuter, parasite treatment, heartworm test and treatment, and a microchip — and here is the part worth carrying: <strong>the spay or neuter alone costs more than the entire adoption fee</strong>. An adult rescue dachshund arrives with a good deal of veterinary work already paid for, whatever your currency.'},
 
-    {t:'p',text:'Coat and pattern add on top. <strong>Dapple adds $500–$1,000. Longhaired adds $200–$500. Wirehaired commands a premium.</strong>'},
+    {t:'p',text:'Coat and pattern add on top, and the ranking is consistent. <strong>Dapple carries the largest surcharge, roughly twice the longhaired one. Longhaired is next. Wirehaired commands a premium of its own.</strong>'},
 
     {t:'h2',text:'Why does a dapple cost more, and why is that backwards?'},
 
     {t:'p',text:'Because it is scarcer and it photographs well, and for no other reason. Nothing about the pattern makes the dog healthier, longer-lived or easier to live with.'},
 
-    {t:'callout',tone:'warn',title:'The premium points the wrong way',text:'Dapple carries the largest colour surcharge in the breed, at $500–$1,000. It is also the pattern the Dachshund Club of America warns about: a dapple × dapple mating produces roughly 25% double-dapple puppies, which the DCA says are more likely to carry deafness, reduced eye size or missing eyes. The market is paying most for the pattern the parent club flags hardest.'},
+    {t:'callout',tone:'warn',title:'The premium points the wrong way',text:'Dapple carries the largest color surcharge in the breed. It is also the pattern the Dachshund Club of America warns about: a dapple × dapple mating produces roughly 25% double-dapple puppies, which the DCA says are more likely to carry deafness, reduced eye size or missing eyes. The market is paying most for the pattern the parent club flags hardest.'},
 
-    {t:'p',text:'The same inversion applies to dilutes. Blue and Isabella are on the DCA’s accepted colour list and are marketed as rare, but the DCA warns of thin coats, skin sensitivity, vaccine failures and reduced lifespan, and colour dilution alopecia — genetic, recessive, incurable, with signs from about six months — lists dachshunds as susceptible. You are paying a premium for a documented liability. That is worth saying out loud before a deposit moves.'},
+    {t:'p',text:'The same inversion applies to dilutes. Blue and Isabella are on the DCA’s accepted color list and are marketed as rare, but the DCA warns of thin coats, skin sensitivity, vaccine failures and reduced lifespan, and color dilution alopecia — genetic, recessive, incurable, with signs from about six months — lists dachshunds as susceptible. You are paying a premium for a documented liability. That is worth saying out loud before a deposit moves.'},
 
     {t:'h2',text:'Does price tell you anything about quality?'},
 
-    {t:'p',text:'Less than you would hope. The reputable breeder band runs $1,000–$3,000 and the online marketplace band runs $500–$2,000. <strong>They overlap.</strong> A broker can price a puppy squarely inside breeder territory, and a good breeder in the Midwest can sit below a broker on the coast.'},
+    {t:'p',text:'Less than you would hope. The reputable-breeder band and the online-marketplace band <strong>overlap</strong> — the marketplace starts lower and reaches well up into breeder territory. A broker can price a puppy squarely inside breeder range, and a good breeder in a cheap region can sit below a broker in an expensive one.'},
 
     {t:'p',text:'What separates them is not the number. It is verifiable health testing on both parents, and a face-to-face sale. <a href="/guides/questions-to-ask-a-dachshund-breeder">The breeder questions guide</a> sets out what to ask and which answers should end the conversation.'},
 
     {t:'h2',text:'What does the first year cost?'},
 
-    {t:'p',text:'Rover priced bringing home a new dog in 2025 at <strong>$1,150–$4,420</strong> — a spread of more than three thousand dollars for the same animal, most of it settled in the first two hours of shopping. Treat spending rose 85% year over year, and veterinary fees rose 11%.'},
+    {t:'p',text:'Rover priced bringing home a new dog in 2025 across a band whose <strong>top is nearly four times its bottom</strong> — for the same animal, with most of the difference settled in the first two hours of shopping. Treat spending rose 85% year over year, and veterinary fees rose 11%.'},
 
     {t:'table',
-      head:['First-year item','US cost','Source'],
+      head:['First-year item','Cost, as a multiple of one spay','Source'],
       rows:[
-        ['Setup, equipment and initial care','$1,150–$4,420','Rover, 2025'],
-        ['Spay','$455 average ($361–$829)','2025 Synchrony Average Procedural Cost Study'],
-        ['Neuter','$487 average ($385–$885)','2025 Synchrony Average Procedural Cost Study'],
-        ['Pet insurance','$749.29/yr average premium (data year 2024)','NAPHIA State of the Industry 2025'],
-        ['Pet insurance, reported annual spend','$198–$313','Synchrony 2025 Pet Lifetime of Care Study'],
-        ['Wellness plan','$422–$701/yr','Synchrony 2025 Pet Lifetime of Care Study']
+        ['Setup, equipment and initial care','About 2.5–10× — the largest first-year line by far','Rover, 2025'],
+        ['Spay','1× — the unit for this table','2025 Synchrony Average Procedural Cost Study'],
+        ['Neuter','About 1.1×','2025 Synchrony Average Procedural Cost Study'],
+        ['Pet insurance, average premium','About 1.6× per year','NAPHIA State of the Industry 2025'],
+        ['Pet insurance, reported annual spend','About 0.4–0.7× per year','Synchrony 2025 Pet Lifetime of Care Study'],
+        ['Wellness plan','About 0.9–1.5× per year','Synchrony 2025 Pet Lifetime of Care Study']
       ],
-      caption:'The two insurance rows measure different things: NAPHIA reports average premiums written, Synchrony reports owner spend inside a lifetime model.'},
+      caption:'Each row is its sourced amount expressed against an average spay. The underlying amounts are American; a spay costs something different where you live, and so does everything measured against it. What holds is the shape — setup dwarfs every other first-year line, and a year of insurance sits in the same range as a single routine operation. The two insurance rows measure different things: NAPHIA reports average premiums written, Synchrony reports owner spend inside a lifetime model.'},
 
     {t:'p',text:'We do not publish a single headline first-year figure. The commonly circulated one could not be traced to a live source, and adding unverified numbers together produces a number that looks authoritative and is not.'},
 
     {t:'h2',text:'What does a dachshund cost over a lifetime?'},
 
-    {t:'stat',figure:'$22,125–$60,602',label:'lifetime cost of a dog over 15 years',source:'Synchrony 2025 Pet Lifetime of Care Study'},
+    {t:'stat',figure:'3–7×',label:'what fifteen years of dog ownership costs, against what owners guess it will cost',source:'Synchrony 2025 Pet Lifetime of Care Study'},
 
-    {t:'p',text:'Synchrony’s 2025 study puts the fifteen-year figure at <strong>$22,125–$60,602</strong>, and reports that dog owners typically guess <strong>$8,000</strong>. The gap between the guess and the low end of the range is about fourteen thousand dollars. Rover’s ten-year figure lands at roughly <strong>$34,550</strong>, inside the Synchrony range once you adjust for the shorter horizon.'},
+    {t:'p',text:'Synchrony’s 2025 study puts fifteen years of ownership at roughly <strong>three to seven times</strong> what dog owners typically guess. Read that again: even the <em>low</em> end of the measured range is close to three times the guess, and the high end is more than seven. Rover’s ten-year figure falls inside the same range once you adjust for the shorter horizon. The amounts behind those studies are in dollars and the households are American; the size of the gap between what people expect and what they spend is the part that travels.'},
 
     {t:'p',text:'Those are all-breed figures. Nothing in them is dachshund-specific, and the breed’s defining condition sits outside them.'},
 
@@ -997,54 +1000,54 @@ module.exports = [
     {t:'p',text:'One IVDD episode can cost more than a decade of routine ownership. Swedish insurance data puts lifetime disc disease risk at <strong>24.4% in miniatures</strong> and 13.0% in standards, against 3.5% across all breeds — so this is not a remote contingency you are budgeting for out of superstition.'},
 
     {t:'table',
-      head:['IVDD item','US cost','Source'],
+      head:['IVDD item','Cost, as a multiple of an emergency exam','Source'],
       rows:[
-        ['Emergency exam','$135 (range $107–$246)','Synchrony 2025'],
-        ['Neurologic exam','$195','University of Missouri VHC'],
-        ['MRI','$2,285 average (range $1,811–$4,140)','Synchrony 2025'],
-        ['ER hospitalization','$1,323 per day','Synchrony 2025'],
-        ['Spinal surgery','$3,000–$8,000','PetMD, vet-reviewed'],
-        ['All-in surgical episode','$10,000–$15,000','Southeast Veterinary Neurology']
+        ['Emergency exam','1× — the unit for this table','Synchrony 2025'],
+        ['Neurologic exam','About 1.5×','University of Missouri VHC'],
+        ['MRI','About 17×; 13–30× across the published range','Synchrony 2025'],
+        ['ER hospitalization','About 10× per day','Synchrony 2025'],
+        ['Spinal surgery','About 22–60×','PetMD, vet-reviewed'],
+        ['All-in surgical episode','About 75–110×','Southeast Veterinary Neurology']
       ],
-      caption:'The all-in figure covers consult, imaging, surgery, three to four nights, rehabilitation and recheck.'},
+      caption:'Each row is its sourced amount expressed against the emergency exam above it. The amounts are American and in dollars; what you pay depends on your country and your city. The ordering does not change. The all-in figure covers consult, imaging, surgery, three to four nights, rehabilitation and recheck.'},
 
-    {t:'p',text:'Set the top of that table against the top of Synchrony’s lifetime range and the arithmetic is stark: a single surgical episode can represent a quarter of everything else you will ever spend on the dog. Two episodes are possible. And no sourced US range exists for conservative, non-surgical management, so build that estimate from the components — exam, imaging, four weeks of medication, rechecks — and label it an estimate when you do.'},
+    {t:'p',text:'Set the top of that table against the top of the lifetime range and the arithmetic is stark: a single surgical episode can represent <strong>a quarter of everything else you will ever spend on the dog</strong>. Two episodes are possible. And we could not source a range for conservative, non-surgical management that we would stand behind, so build that estimate from the components — exam, imaging, four weeks of medication, rechecks — priced at your own clinic, and label it an estimate when you do.'},
 
     {t:'h2',text:'How do you actually budget for this?'},
 
     {t:'ul',items:[
-      '<strong>Decide the insurance question in the first fortnight, not the fifth year.</strong> Under the NAIC model definitions anything showing signs before the effective date or during a waiting period is preexisting, and at least one major insurer applies a 180-day orthopedic waiting period with IVDD classified as orthopedic. See <a href="/guides/pet-insurance-for-dachshunds">the insurance guide</a>.',
-      '<strong>If you self-fund, fund it properly.</strong> A reserve that will not cover the low end of $10,000–$15,000 is not a plan, it is a hope.',
-      '<strong>Budget the routine separately.</strong> Dental cleaning under anesthesia averages $388, and a dog who lives fifteen years will need more than one.',
+      '<strong>Decide the insurance question in the first fortnight, not the fifth year.</strong> Insurers exclude what predates the policy: under the US model definitions that covers anything showing signs before the effective date or during a waiting period, and at least one major insurer there applies a 180-day orthopedic waiting period with IVDD classified as orthopedic. Ask your own insurer where its lines fall. See <a href="/guides/pet-insurance-for-dachshunds">the insurance guide</a>.',
+      '<strong>If you self-fund, fund it properly.</strong> A reserve that will not cover the low end of an all-in surgical episode — call it seventy-five emergency consultations — is not a plan, it is a hope. Price that in your local currency and write the number down.',
+      '<strong>Budget the routine separately.</strong> Dental cleaning under anesthesia costs around three times an emergency consultation, and a dog who lives fifteen years will need more than one.',
       '<strong>Expect the numbers to move.</strong> Veterinary fees rose 11% year over year in Rover’s 2025 data. A budget built on today’s prices will be wrong by the time the dog is five.',
-      '<strong>Do not treat prevention as optional spending.</strong> The Companion Animal Parasite Council advises year-round broad-spectrum control against heartworm, intestinal parasites, fleas and ticks, plus at least four fecal exams in the first year and two a year thereafter. It is a recurring line, every year, for fifteen years.'
+      '<strong>Do not treat prevention as optional spending.</strong> The Companion Animal Parasite Council advises year-round broad-spectrum control against heartworm, intestinal parasites, fleas and ticks, plus at least four fecal exams in the first year and two a year thereafter. Ask your veterinarian which of those parasites are a risk where you live. Whatever the local answer, it is a recurring line, every year, for fifteen years.'
     ]},
 
-    {t:'p',text:'The dachshund is the fifth most popular breed in the United States for 2025, up from sixth, and a great many people are buying one this year on the strength of the purchase price alone. The purchase price is not the cost of the dog.'},
+    {t:'p',text:'The dachshund ranked fifth most popular breed in the United States for 2025, up from sixth, and popularity on that scale means a great many people buy one each year on the strength of the purchase price alone. The purchase price is not the cost of the dog.'},
 
-    {t:'callout',tone:'note',title:'What the manual adds',text:'The $45 manual includes the full fifteen-year budget worksheet, the insure-versus-self-fund comparison run at real premiums, and the cost conversation to have with a neurologist at two in the morning when the decision is not financial yet but is about to be.'}
+    {t:'callout',tone:'note',title:'What the manual adds',text:'The manual includes the full fifteen-year budget worksheet, the insure-versus-self-fund comparison run at real premiums, and the cost conversation to have with a neurologist at two in the morning when the decision is not financial yet but is about to be.'}
   ],
   facts:[
-    ['Reputable breeder price','$1,000–$3,000','iHeartDogs, 2026'],
-    ['Rescue adoption fee','$200–$500','iHeartDogs, 2026'],
-    ['Dapple premium','Adds $500–$1,000','iHeartDogs, 2026'],
-    ['Bringing home a new dog','$1,150–$4,420','Rover, 2025'],
-    ['Lifetime cost, 15 years','$22,125–$60,602 (owners guess $8,000)','Synchrony 2025 Pet Lifetime of Care Study'],
-    ['All-in IVDD surgical episode','$10,000–$15,000','Southeast Veterinary Neurology']
+    ['Breeder price vs marketplace price','The two bands overlap; price cannot tell them apart','iHeartDogs, 2026'],
+    ['Rescue adoption fee','About a fifth of the breeder band; the spay or neuter alone costs more','iHeartDogs, 2026'],
+    ['Dapple premium','Largest color surcharge in the breed, about 2× the longhaired one','iHeartDogs, 2026'],
+    ['Bringing home a new dog','Top of the band nearly 4× the bottom','Rover, 2025'],
+    ['Lifetime cost, 15 years','Roughly 3–7× what owners guess it will be','Synchrony 2025 Pet Lifetime of Care Study'],
+    ['All-in IVDD surgical episode','About 75–110× an emergency exam; up to a quarter of lifetime cost','Southeast Veterinary Neurology']
   ],
   faq:[
-    {q:'How much is a dachshund puppy in the US?',
-     a:'Between $1,000 and $3,000 from a reputable breeder, $1,800 to $4,000 or more from a pet store, $500 to $2,000 through an online marketplace and $200 to $500 from rescue, on iHeartDogs 2026 figures. Regionally, the Northeast and West run $1,500–$3,000 and the Midwest $1,000–$2,200.'},
+    {q:'How much is a dachshund puppy?',
+     a:'The ranking is more useful than any figure: a pet store puppy costs the most, a reputable breeder next, an online marketplace overlaps the breeder band from below, and a rescue dog costs about a fifth of the breeder band. Where you live inside one country moves the price by roughly 40% on its own, so get local quotes and compare them against that shape.'},
     {q:'Why are dapple dachshunds more expensive?',
-     a:'Scarcity and appearance, not health. Dapple adds $500–$1,000. The Dachshund Club of America warns that dapple-to-dapple matings produce about 25% double-dapple puppies, more likely to carry deafness, reduced eye size or missing eyes. The largest colour premium in the breed attaches to the pattern the parent club warns about most.'},
+     a:'Scarcity and appearance, not health. Dapple carries the largest color surcharge in the breed, roughly twice the longhaired premium. The Dachshund Club of America warns that dapple-to-dapple matings produce about 25% double-dapple puppies, more likely to carry deafness, reduced eye size or missing eyes. The biggest premium in the breed attaches to the pattern the parent club warns about most.'},
     {q:'What is the lifetime cost of owning a dachshund?',
-     a:'Synchrony’s 2025 study puts a dog’s fifteen-year cost at $22,125–$60,602, and found owners typically guess $8,000. Rover’s ten-year figure is about $34,550. Those are all-breed numbers. A single IVDD surgical episode, at $10,000–$15,000 all in, sits on top of them.'},
+     a:'Synchrony’s 2025 study puts fifteen years of dog ownership at roughly three to seven times what owners guess it will cost, and Rover’s ten-year figure falls inside the same range. Those are all-breed numbers. A single IVDD surgical episode sits on top of them and can equal a quarter of the whole lifetime total.'},
     {q:'Is a rescue dachshund cheaper than a puppy?',
-     a:'Yes, substantially. Dachshund Rescue of North America charges $350 under a year down to $150 at eight and over. Coast to Coast Dachshund Rescue includes exam, vaccines, spay or neuter, parasite treatment, heartworm test and treatment and microchip in fees of $200 to $400. A spay alone averages $455.'},
+     a:'Yes, substantially — about a fifth of a reputable breeder’s price, with fees falling by half or more as the dog gets older. Coast to Coast Dachshund Rescue includes exam, vaccines, spay or neuter, parasite treatment, heartworm test and treatment and a microchip in its fee, and the spay or neuter alone costs more than the fee does.'},
     {q:'How much should I save for a dachshund emergency?',
-     a:'Enough to reach the low end of $10,000–$15,000, which is what one referral practice publishes as an all-in IVDD surgical episode. MRI alone averages $2,285 and ER hospitalization runs $1,323 a day. Lifetime disc disease risk is 24.4% in miniatures on Swedish insurance data, so this is a likely expense, not a remote one.'},
+     a:'Enough to cover the low end of an all-in IVDD surgical episode, which one referral practice publishes at around seventy-five times the price of an emergency exam. Imaging alone runs about fifteen to twenty times it, and a night of intensive hospitalization about ten. Lifetime disc disease risk is 24.4% in miniatures on Swedish insurance data, so this is a likely expense, not a remote one. Price it at your own clinic and keep the number somewhere you can find at 2am.'},
     {q:'Does a higher price mean a better dachshund breeder?',
-     a:'No. The reputable breeder band of $1,000–$3,000 overlaps the online marketplace band of $500–$2,000, so price alone cannot separate a breeder from a broker. What separates them is verifiable health testing on both parents at ofa.org and a face-to-face sale. Photos and video calls do not count as face-to-face.'}
+     a:'No. The reputable-breeder band and the online-marketplace band overlap, so price alone cannot separate a breeder from a broker. What separates them is verifiable health testing on both parents — checked in the database that holds it, not in a photograph — and a face-to-face sale. Photos and video calls do not count as face-to-face.'}
   ],
   related:['questions-to-ask-a-dachshund-breeder','pet-insurance-for-dachshunds','dachshund-back-problems-ivdd']
 }

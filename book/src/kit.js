@@ -2,8 +2,8 @@
 const C = {
   green:'#093B2F', greenDk:'#052720', greenLt:'#1B5344',
   cream:'#FAF0D5', sand:'#EFE3C2', paper:'#FFFDF6',
-  camel:'#A93B27', brass:'#C9BC95', oxblood:'#8E2F1E',
-  ink:'#1A1A16', slate:'#6F6A5C', navy:'#1F3050'
+  camel:'#A93B27', brass:'#D6C8A6', oxblood:'#8E2F1E',
+  ink:'#1A2420', slate:'#7A7259', navy:'#16324F'
 };
 
 /* ---- dachshund silhouette, solid (crest / plates) ---- */
@@ -24,7 +24,7 @@ function dachSolid({w=200, fill=C.cream, flip=false}={}) {
 
 /* ---- crest / seal ---- */
 function crest({d=150, ring=C.cream, field='none', dog=C.cream, top='DACHSHUNDOLOGY', bottom='EST. MMXXVI'}={}) {
-  const R=100, rid='c'+String(crest.n=(crest.n||0)+1).padStart(3,'0');
+  const R=100, rid='c'+Math.random().toString(36).slice(2,8);
   return `<svg viewBox="0 0 240 240" width="${d}" xmlns="http://www.w3.org/2000/svg">
     <defs>
       <path id="${rid}t" d="M120 120 m-86 0 a86 86 0 1 1 172 0" fill="none"/>
