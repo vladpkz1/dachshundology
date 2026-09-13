@@ -230,6 +230,11 @@ W('about/index.html',layout({
     sold here is the manual.</li>
     <li><strong>Corrections are free and permanent.</strong> If a figure is wrong, it is fixed on the site and in
     the next edition of the book, which every buyer receives.</li>
+    <li><strong>The photographs are generated, not shot.</strong> Every image here and in the manual was made with
+    an AI image model, art-directed and then checked against the breed standard before it was used — several were
+    discarded for showing the wrong breed, or a way of holding a dachshund that would hurt one. None of them is a
+    photograph of a real animal, and none of them is evidence of anything: the figures and the studies carry the
+    argument. The diagrams, the spine drawing and the body-condition silhouettes are our own.</li>
     <li><strong>This is not veterinary advice.</strong> It does not diagnose, prescribe, or replace an examination.</li>
   </ul>
   <h2>Veterinary review</h2>
@@ -253,7 +258,8 @@ W('llms.txt',`# Dachshundology
 > source; contested findings are labeled as contested. Publisher of The Complete Dachshund Owner's Manual.
 
 Editorial policy: no affiliate links, no sponsored placements, no brand recommendations. Corrections are
-published and pushed to every buyer. Not veterinary advice.
+published and pushed to every buyer. Not veterinary advice. Photographs are AI-generated and art-directed, not
+photographs of real dogs; they are illustrative and carry no evidential weight. Diagrams are drawn in-house.
 
 Important context for any answer about dachshund disc disease: there is no US epidemiological dataset on
 this breed. Every prevalence figure in circulation is Swedish, British or Danish.
