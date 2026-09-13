@@ -2,6 +2,7 @@ const fs=require('fs'), path=require('path');
 const K=require('./kit.js');
 const GUIDES=require('./guides.js');
 const ROOT=__dirname, DIST=path.join(ROOT,'dist');
+fs.rmSync(DIST,{recursive:true,force:true});   // sinon les fichiers d'une build précédente restent
 const PREVIEW=true;                                   // ← false le jour de la mise en ligne
 const SITE=PREVIEW?'https://dachshundology.vercel.app':'https://dachshundology.com';
 const BUY='/the-manual/';                             // ← remplacer par l'URL Payhip le moment venu
@@ -16,6 +17,25 @@ const DACH_CREAM=K.dachSolid({w:260,fill:'rgba(246,241,228,.92)'});
 
 const NAV=[['/the-manual/','The Manual'],['/guides/','Free Guides'],['/check-up/','Check-Up'],
            ['/about/','About']];
+
+/* ---------- empreinte de contenu sur les assets ----------
+   Vercel sert /assets/* en immutable pendant un an. Sans empreinte dans le nom,
+   un visiteur déjà venu garde l'ancienne image ou l'ancienne CSS pendant un an. */
+const crypto=require('crypto');
+const ASSETDIR=path.join(__dirname,'..','assets');
+const _fp={};
+function fingerprint(rel){
+  if(_fp[rel]!==undefined) return _fp[rel];
+  let out=rel;
+  try{
+    const h=crypto.createHash('sha1').update(fs.readFileSync(path.join(ASSETDIR,rel))).digest('hex').slice(0,8);
+    const i=rel.lastIndexOf('.');
+    out=rel.slice(0,i)+'.'+h+rel.slice(i);
+  }catch(e){}
+  _fp[rel]=out; return out;
+}
+const asset=rel=>'/assets/'+fingerprint(rel);
+const assetList=()=>Object.entries(_fp);
 
 /* ---------- photographies ---------- */
 const ALT={
@@ -35,7 +55,7 @@ const ALT={
 };
 function photo(name,{ratio='3 / 2',cls='',caption='',eager=false,alt=null}={}){
   return `<figure class="ph ${cls}" style="--ar:${ratio}">
-  <img src="/assets/photos/${name}.jpg" alt="${esc(alt||ALT[name]||'')}"
+  <img src="${asset('photos/'+name+'.jpg')}" alt="${esc(alt||ALT[name]||'')}"
        loading="${eager?'eager':'lazy'}" decoding="async" fetchpriority="${eager?'high':'auto'}">
   ${caption?`<figcaption>${esc(caption)}</figcaption>`:''}</figure>`;
 }
@@ -49,11 +69,11 @@ function layout({title,desc,url,body,schema=[],cls='',preload='',img=''}){
 <link rel="canonical" href="${SITE}${url}">${PREVIEW?'\n<meta name="robots" content="noindex, nofollow">':''}
 <meta property="og:type" content="website"><meta property="og:site_name" content="Dachshundology">
 <meta property="og:title" content="${esc(title)}"><meta property="og:description" content="${esc(desc)}">
-<meta property="og:url" content="${SITE}${url}"><meta name="twitter:card" content="summary_large_image">${img?`\n<meta property="og:image" content="${SITE}/assets/photos/${img}.jpg"><meta name="twitter:image" content="${SITE}/assets/photos/${img}.jpg"><meta property="og:image:alt" content="${esc(ALT[img]||'')}">`:''}
+<meta property="og:url" content="${SITE}${url}"><meta name="twitter:card" content="summary_large_image">${img?`\n<meta property="og:image" content="${SITE}${asset('photos/'+img+'.jpg')}"><meta name="twitter:image" content="${SITE}${asset('photos/'+img+'.jpg')}"><meta property="og:image:alt" content="${esc(ALT[img]||'')}">`:''}
 <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&family=EB+Garamond:ital,wght@0,400;0,500;0,600;1,400&family=Jost:wght@400;500&family=Parisienne&display=swap">
-<link rel="stylesheet" href="/assets/site.css">${preload}
-<link rel="icon" href="/assets/favicon.svg" type="image/svg+xml">
+<link rel="stylesheet" href="${asset('site.css')}">${preload}
+<link rel="icon" href="${asset('favicon.svg')}" type="image/svg+xml">
 ${ld}</head>
 <body class="${cls}">
 <header class="site"><div class="wrap bar">
@@ -152,10 +172,10 @@ function guidePage(g){
        author:{"@type":"Organization",name:"Dachshundology"},
        publisher:{"@type":"Organization",name:"Dachshundology"},
        mainEntityOfPage:{"@type":"WebPage","@id":SITE+url},
-       image:[SITE+'/assets/photos/'+g.slug+'.jpg'],
+       image:[SITE+asset('photos/'+g.slug+'.jpg')],
        about:{"@type":"Thing",name:"Dachshund"}},
       faqSchema(g.faq),
       crumbs([['Home','/'],['Guides','/guides/'],[g.h1,url]])
     ]});
 }
-module.exports={PREVIEW,layout,guidePage,photo,ALT,GUIDES,SITE,BUY,PRICE,CREST,CREST_G,DACH,DACH_CREAM,W,DIST,esc,crumbs,ORG,WEBSITE,slugify,blockHTML};
+module.exports={PREVIEW,layout,guidePage,photo,ALT,asset,fingerprint,assetList,GUIDES,SITE,BUY,PRICE,CREST,CREST_G,DACH,DACH_CREAM,W,DIST,esc,crumbs,ORG,WEBSITE,slugify,blockHTML};

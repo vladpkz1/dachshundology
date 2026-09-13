@@ -1,5 +1,5 @@
 const F=require('./build.js');
-const {PREVIEW,layout,guidePage,photo,GUIDES,SITE,BUY,PRICE,CREST_G,DACH,DACH_CREAM,W,esc,crumbs,ORG,WEBSITE}=F;
+const {PREVIEW,layout,guidePage,photo,asset,fingerprint,GUIDES,SITE,BUY,PRICE,CREST_G,DACH,DACH_CREAM,W,esc,crumbs,ORG,WEBSITE}=F;
 const MATTER=require('./content/matter.js');
 const fs=require('fs'), path=require('path');
 
@@ -160,7 +160,7 @@ W('check-up/index.html',layout({
  title:'The Dachshund Check-Up — free weight, calorie and back-risk tool',
  desc:'Free five-step tool: AKC size division, body condition score, daily calories in cups, annual budget, and the back-risk levers that have published evidence behind them.',
  url:'/check-up/', img:'check-up',
- preload:`<script>window.BUY=${JSON.stringify(BUY)}</script><script defer src="/assets/checkup.js"></script>`,
+ preload:`<script>window.BUY=${JSON.stringify(BUY)}</script><script defer src="${asset('checkup.js')}"></script>`,
  schema:[crumbs([['Home','/'],['Check-Up','/check-up/']]),
   {"@context":"https://schema.org","@type":"WebApplication",name:"The Dachshund Check-Up",
    applicationCategory:"HealthApplication",operatingSystem:"Any",url:SITE+'/check-up/',
@@ -317,10 +317,13 @@ node pages.js
 /* assets */
 ['site.css','checkup.js','favicon.svg'].forEach(f=>{
   fs.mkdirSync(path.join(F.DIST,'assets'),{recursive:true});
-  fs.copyFileSync(path.join(__dirname,'..','assets',f),path.join(F.DIST,'assets',f));
+  fs.copyFileSync(path.join(__dirname,'..','assets',f),path.join(F.DIST,'assets',fingerprint(f)));
 });
-/* photographies */
+/* photographies — nom empreinté, sinon le cache d'un an sert l'ancienne image */
 { const src=path.join(__dirname,'..','assets','photos'), dst=path.join(F.DIST,'assets','photos');
   fs.mkdirSync(dst,{recursive:true});
-  for(const f of fs.readdirSync(src)) fs.copyFileSync(path.join(src,f),path.join(dst,f)); }
+  for(const f of fs.readdirSync(src)){
+    if(!/\.(jpe?g|png|webp|svg)$/i.test(f)) continue;
+    fs.copyFileSync(path.join(src,f),path.join(F.DIST,'assets',fingerprint('photos/'+f)));
+  } }
 console.log('built pages:',fs.readdirSync(F.DIST).length,'entries in dist/');
