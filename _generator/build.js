@@ -19,19 +19,19 @@ const NAV=[['/the-manual/','The Manual'],['/guides/','Free Guides'],['/check-up/
 
 /* ---------- photographies ---------- */
 const ALT={
- 'home-hero':'A red smooth-haired dachshund photographed front-on against a plain background',
- 'manual':'A black-and-tan dachshund puppy cradled in a white sling, seen from above',
- 'guides-hub':'A dapple dachshund in a harness standing up against the side of a boat, water behind',
- 'check-up':'A red dachshund lying on a sofa with its eyes closed and tongue out',
- 'about':'A chocolate-and-tan dachshund standing in grass, looking at the camera',
- 'dachshund-back-problems-ivdd':'A longhaired dachshund resting on the back of a sofa beside a window',
- 'are-stairs-bad-for-dachshunds':'A dachshund standing squarely on a fallen log in woodland, seen in profile',
- 'when-to-neuter-a-dachshund':'A black-and-tan dachshund puppy lying on a pale blanket, looking up',
- 'pet-insurance-for-dachshunds':'A red dachshund wearing a collar and identity tag, looking out of a car',
- 'how-much-to-feed-a-dachshund':'A black-and-tan dachshund taking a treat from an open hand on grass',
- 'dachshund-weight-chart':'A red dachshund walking along a woodland path, seen in full profile',
- 'questions-to-ask-a-dachshund-breeder':'A chocolate-and-tan dachshund puppy photographed close up indoors',
- 'how-much-does-a-dachshund-cost':'A black-and-tan dachshund sitting on grass, head raised',
+ 'home-hero':'A red smooth-haired dachshund sitting front-on against a plain cream studio backdrop',
+ 'manual':'A red smooth-haired dachshund standing in full side profile, showing the long level back',
+ 'guides-hub':'A red dachshund walking along a woodland path, seen in full profile',
+ 'check-up':'A black-and-tan dachshund on grass taking a treat from an open hand',
+ 'about':'A wirehaired dachshund standing against a plain studio backdrop, beard and eyebrows visible',
+ 'dachshund-back-problems-ivdd':'A longhaired dachshund resting on the back of a green velvet sofa beside a window',
+ 'are-stairs-bad-for-dachshunds':'A dachshund walking down a low ramp from a sofa onto a wooden floor',
+ 'when-to-neuter-a-dachshund':'A black-and-tan dachshund puppy sitting in soft window light',
+ 'pet-insurance-for-dachshunds':'A dachshund secured in a car harness, looking out of the window',
+ 'how-much-to-feed-a-dachshund':'A flat lay of two ceramic bowls, a harness, a leash and a folded blanket on a pale oak table',
+ 'dachshund-weight-chart':'A standard and a miniature dachshund standing side by side, the size difference visible',
+ 'questions-to-ask-a-dachshund-breeder':'A longhaired red dachshund standing in side profile against a studio backdrop',
+ 'how-much-does-a-dachshund-cost':'A dachshund asleep in a wire crate beside a bed, one lamp lit',
 };
 function photo(name,{ratio='3 / 2',cls='',caption='',eager=false,alt=null}={}){
   return `<figure class="ph ${cls}" style="--ar:${ratio}">

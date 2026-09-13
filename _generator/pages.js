@@ -105,7 +105,7 @@ W('the-manual/index.html',layout({
 <section style="padding-top:8px"><div class="wrap narrow">
   <h1 style="font-size:clamp(34px,5.4vw,54px)">The Complete Dachshund Owner’s Manual</h1>
   <div class="sub">from the day you start looking to the day it gets hard</div>
-  ${photo('manual',{ratio:'3 / 4',cls:'lead',eager:true,
+  ${photo('manual',{ratio:'3 / 2',cls:'lead',eager:true,
     caption:'Eight parts, twenty-four printable tools, and a bibliography you can check line by line.'})}
   <div class="answer" style="margin:28px 0"><strong>What this is</strong>173 pages, eight parts, 24 printable
   tools and a bibliography you can check. Written for owners in the United States, built on the British,
