@@ -11,56 +11,78 @@ module.exports = [
   sub: 'five doors, and only two of them open onto a whelping box',
   pages: 3,
   blocks: [
-    {t:'first', text:'There are five doors into the puppy market. A breeder. A broker. An online marketplace. A pet store. A rescue. At eight weeks old the dog behind each door looks the same — same ears, same feet, same smell. The paperwork is not the same, the price is not the same, and the odds are not the same. Learning to tell the doors apart is the single highest-value hour you will spend before the dog arrives.'},
+    {t:'first', text:'There are five doors into the puppy market: a breeder, a broker, an online marketplace, a pet store, a rescue. At eight weeks old the dog behind each door looks the same — same ears, same feet, same smell. The paperwork is not the same, the price is not the same, and the odds are not the same.'},
+
+    {t:'lede', text:'Learning to tell the doors apart is the single highest-value hour you will spend before the dog arrives.'},
 
     {t:'h3', text:'The five doors'},
 
-    {t:'table', head:['Door','What it actually is','What you can verify'], rows:[
+    {t:'matrix', title:'What each door actually is', head:['Door','What it actually is','What you can verify'], rows:[
       ['Breeder','A person who owns the dam, whelped the litter, and lives with it','Everything — the dam, the premises, the records, the contract'],
       ['Broker','A middleman who buys litters and resells them, sometimes with a website that reads exactly like a breeder’s','Nothing at source. You meet the dog, not the litter'],
       ['Online marketplace','A listings platform. The platform is not the seller and does not whelp anything','Only what the seller chooses to upload'],
       ['Pet store','Retail. Supplied by brokers and commercial kennels, banned outright in a growing list of jurisdictions','The store, not the origin'],
       ['Rescue','A foster network or shelter placing dogs it did not breed','Temperament in a home, health as far as the vet got'],
-    ], note:'A broker site and a breeder site can be indistinguishable on a phone. The difference shows up the moment you ask to come over.'},
+    ], hi:[[0,2]], note:'A broker site and a breeder site can be indistinguishable on a phone. The difference shows up the moment you ask to come over.'},
 
     {t:'p', text:'The distinction that matters is not kind-hearted versus greedy. It is whether the person selling you the dog was standing there when it was born. A breeder can show you the dam, the room, the other littermates, and the vaccination card in the same visit. A broker cannot show you any of it, because none of it happened where he lives. Everything in this part is built to force that distinction into the open early, while it is still cheap to walk away.'},
 
+    {t:'decision', title:'Which door are you standing at?', items:[
+      ['Can you come to the place the litter was born and meet the dam?','Not a video call. The US regulator does not count photos or video as face to face.',
+        [['Yes → question 2',''],['No → the door is not a breeder’s','a']]],
+      ['Was the person selling you the dog standing there when it was born?','A breeder owns the dam, whelped the litter, and lives with it.',
+        [['Yes → breeder',''],['No → broker, marketplace or retail','a']]],
+    ]},
+
+    {t:'cards', title:'The two US exemptions, read together', items:[
+      ['EXEMPTION ONE','Four or fewer females','“If you maintain four or fewer breeding females … you do not have to be USDA licensed.”',''],
+      ['EXEMPTION TWO','Face-to-face sales','“If you always sell pets to new owners in face-to-face transactions, you do not have to be USDA licensed, no matter how many breeding females you have.” Photos, videos and video calls do not count.','b'],
+    ]},
+
     {t:'evidence', badge:'myth', paras:[
       '<strong>A commercial breeding license is not a quality mark. The US rules show why, and the logic travels.</strong>',
-      'USDA/APHIS, the US federal regulator, states plainly: “If you maintain four or fewer breeding females … you do not have to be USDA licensed.” And: “If you always sell pets to new owners in face-to-face transactions, you do not have to be USDA licensed, no matter how many breeding females you have.” Photos, videos and video calls do not count as face to face.',
-      'Read those two exemptions together. A serious small breeder who sells to you in person is exempt twice over. The license does not mark quality — it marks <em>sight-unseen commercial volume</em>. The same logic holds elsewhere: the trading license a seller advertises tells you how he sells, not how he breeds. Ask your own regulator which license his operation needs, and what it certifies.',
+      'Read the two USDA/APHIS exemptions together. A serious small breeder who sells to you in person is exempt twice over. The license does not mark quality — it marks <em>sight-unseen commercial volume</em>.',
+      'The same logic holds elsewhere: the trading license a seller advertises tells you how he sells, not how he breeds. Ask your own regulator which license his operation needs, and what it certifies.',
     ], source:'USDA/APHIS regulatory guidance, via AKC (2022 update)'},
 
     {t:'p', text:'The online marketplace needs separating out, because buyers routinely misread it. A listings platform is not a seller. It whelps nothing, owns nothing, examines nothing, and in most cases verifies nothing beyond a payment method. Its asking prices are the lowest of the four commercial channels, which is exactly why it is where a first-time buyer starts looking and where the fraud concentrates. The listing is an advertisement written by a stranger. Treat it as the beginning of an investigation, never as a description.'},
 
-    {t:'brief', title:'How a broker listing reads', paras:[
-      'Several litters available now, in more than one color, sometimes in more than one breed. Ages staggered so something is always ready. Stock photography of puppies in baskets alongside two real snapshots.',
-      'No dam named. No mention of which screens were run on which parent. Delivery offered as a convenience — often to an airport, sometimes to a parking lot halfway. A deposit “holds” the puppy within twenty-four hours.',
-      'Every element of that is a solution to one problem: the seller cannot let you stand in the room where the litter was born.',
-    ]},
+    {t:'signals', title:'How a broker listing reads', items:[
+      'Several litters available now, in more than one color, sometimes in more than one breed.',
+      'Ages staggered so something is always ready.',
+      'Stock photography of puppies in baskets alongside two real snapshots.',
+      'No dam named.',
+      'No mention of which screens were run on which parent.',
+      'Delivery offered as a convenience — often to an airport, sometimes to a parking lot halfway.',
+      'A deposit “holds” the puppy within twenty-four hours.',
+    ],role:'g'},
 
-    {t:'p', text:'Retail is closing. In the US, ten states now ban puppy sales in pet stores — California was first, in 2017; Colorado’s ban took effect in 2026; Delaware became the tenth — and 530 localities in 31 states have their own bans. The direction of travel is one-way, and it tells you what legislators concluded about where store puppies come from. Check what your own jurisdiction permits.'},
+    {t:'p', text:'Every element of that is a solution to one problem: the seller cannot let you stand in the room where the litter was born.'},
 
-    {t:'stats', items:[
-      ['10','US states ban retail puppy sales outright'],
-      ['530','US localities in 31 states with their own bans'],
-      ['4.8%','of mass-market fraud victims ever report it'],
-    ]},
+    {t:'tiles', title:'Retail is closing', items:[
+      ['10','US states','Ban puppy sales in pet stores outright. California was first, in 2017; Colorado’s ban took effect in 2026; Delaware became the tenth.'],
+      ['530','US localities','In 31 states, with bans of their own.'],
+    ], src:'Check what your own jurisdiction permits'},
+
+    {t:'p', text:'The direction of travel is one-way, and it tells you what legislators concluded about where store puppies come from.'},
 
     {t:'h3', text:'The scam layer sitting on top of all of it'},
 
     {t:'p', text:'Puppy fraud is not a rare misfortune. It is a standing industry with seasonal peaks, and dachshunds — fifth on the AKC’s US popularity list — are a preferred product because demand is high and buyers travel. The Better Business Bureau tracks it in the US; find your own country’s equivalent.'},
 
-    {t:'table', head:['Year','Reports to BBB Scam Tracker','Median loss (2022 = 100)'], rows:[
+    {t:'matrix', title:'Puppy fraud reports, BBB Scam Tracker', head:['Year','Reports','Median loss (2022 = 100)'], rows:[
       ['2022','680','100'],
       ['2023','2,899','93'],
       ['2024','2,278','91'],
       ['2025 (through September)','1,632','80'],
-    ], note:'Individual losses of three to six times the median appear in the same US file.'},
+    ], hi:[[1,1]], note:'Individual losses of three to six times the median appear in the same US file.'},
 
     {t:'p', text:'Read the 2023 line against 2022. Reports quadrupled in a year. Then they fell — which is not the same as the fraud falling, only the reporting. Demand explains part of the pattern: the dachshund moved to fifth on the AKC’s US popularity ranking for 2025, up from sixth, displacing the poodle from the top five. Popularity is a supply signal, and both the honest and the dishonest read it.'},
 
-    {t:'p', text:'Now the important part. Those counts are not the size of the problem. The BBB cites FTC data showing that only <strong>4.8 percent</strong> of mass-market fraud victims ever report — so the reported numbers are roughly one twentieth of reality, and the true volume is on the order of twenty times what the table shows. The median loss stays modest for a reason: the sum is set low enough that most people write it off rather than fight. That is the design, not an accident.'},
+    {t:'keyfig', title:'Why those counts are not the size of the problem', items:[
+      ['EVER REPORT','4.8%','Of mass-market fraud victims, on FTC data cited by the BBB. The reported numbers are roughly one twentieth of reality.'],
+      ['TRUE VOLUME','~20×','What the table shows. The median loss stays modest for a reason: the sum is set low enough that most people write it off rather than fight. That is the design, not an accident.'],
+    ]},
 
     {t:'note', title:'The one test that survives every disguise', paras:[
       'Every scam and every broker has the same structural weakness: the dog cannot be produced, in that house, with that mother, today.',
@@ -80,16 +102,16 @@ module.exports = [
   sub: 'the price tells you less than the receipt does',
   pages: 3,
   blocks: [
-    {t:'first', text:'A dachshund puppy can cost several times what another costs in the same country, whatever your currency, and the number alone tells you almost nothing. One price buys a health-screened litter from a woman with five years of show records; the same buys a truck-delivered puppy from a kennel you will never see. This section is about reading the price apart: what the money is buying, what raises it honestly, and what raises it for reasons that should make you close the tab.'},
+    {t:'first', text:'A dachshund puppy can cost several times what another costs in the same country, whatever your currency, and the number alone tells you almost nothing. One price buys a health-screened litter from a woman with five years of show records; the same buys a truck-delivered puppy from a kennel you will never see. This section is about reading the price apart.'},
 
     {t:'h3', text:'The bands, as they actually stand'},
 
-    {t:'table', head:['Source','Where its prices sit'], rows:[
+    {t:'matrix', title:'Where the four channels sit on price', head:['Source','Where its prices sit'], rows:[
       ['Reputable breeder','Middle, and the widest band of the four'],
       ['Pet store','Highest of the four, by a clear margin'],
       ['Online marketplace','Lowest of the commercial channels'],
       ['Rescue / adoption','Lowest overall, and by a long way'],
-    ], note:'Prices vary hugely by country and region; read the order of the bands, not the numbers. US bands: iHeartDogs, March 2026, updated September 2026.'},
+    ], hi:[[1,1]], note:'Prices vary hugely by country and region; read the order of the bands, not the numbers. US bands: iHeartDogs, March 2026, updated September 2026.'},
 
     {t:'p', text:'Look at where those bands sit relative to each other. The marketplace band and the breeder band overlap across a wide stretch, and that overlap is where most dachshunds are actually sold. Inside it, <strong>price cannot tell a breeder from a broker.</strong> It never could. A broker pricing at the top of the marketplace band reads as a bargain breeder; a breeder pricing low because she does not need the money reads as suspicious. Buyers who use price as a proxy for quality get this exactly backwards about half the time.'},
 
@@ -111,23 +133,41 @@ module.exports = [
 
     {t:'h3', text:'What illegitimately raises it'},
 
-    {t:'p', text:'Coat and color premiums. Dapple carries the largest of them — roughly double the longhaired premium. Wirehaired commands one of its own. Longhaired and wirehaired are simply coat varieties, shown separately and entirely unremarkable — if people will pay more for a beard, that is fashion, and fashion is allowed. Dapple is a different matter, and so is dilute.'},
+    {t:'cards', title:'Two premiums, read against the parent club', items:[
+      ['FASHION','Longhaired and wirehaired','Coat varieties, shown separately and entirely unremarkable. If people will pay more for a beard, that is fashion, and fashion is allowed.','b'],
+      ['THE WARNED ONES','Dapple and dilute','Dapple carries the largest premium of all — roughly double the longhaired premium. Wirehaired commands one of its own. Dapple is a different matter, and so is dilute.','a'],
+    ]},
 
     {t:'p', text:'The Dachshund Club of America, the breed’s US parent club, warns that dapple bred to dapple produces roughly <strong>25 percent double-dapple puppies</strong>, which “are more likely to carry health issues such as deafness, reduced eye size or missing eyes.” Red dapples can be visually ambiguous, so accidental dapple-to-dapple matings are a real and documented risk. Dilutes — blue and isabella — are on the accepted color list, but the DCA warns in the same breath of thin coats, skin sensitivity, vaccine failures and reduced lifespan. Color dilution alopecia is genetic, recessive, lists the dachshund as susceptible, shows from around six months, and is not curable.'},
 
-    {t:'p', text:'Geography is the other legitimate mover, and it is worth doing arithmetic on. In the US survey the dearest regions run half as much again as the cheapest. A gap like that tempts buyers into long-distance purchases — which is precisely the transaction that forfeits the one check that works. Driving six hours each way to see a litter is cheap. Shipping a puppy you have never seen, to save the difference, is how the median fraud loss happens.'},
+    {t:'keyfig', title:'Geography, and the trap inside it', items:[
+      ['REGIONAL SPREAD','+50%','The dearest US regions run half as much again as the cheapest. A gap like that tempts buyers into long-distance purchases — precisely the transaction that forfeits the one check that works.'],
+      ['WHAT IT COSTS YOU','Six hours','Driving six hours each way to see a litter is cheap. Shipping a puppy you have never seen, to save the difference, is how the median fraud loss happens.'],
+    ]},
 
     {t:'p', text:'The last legitimate premium is the one nobody itemizes: the breeder who answers the phone in year three. Support is worth more than any single test result, because it is the difference between a bad night and an emergency-clinic visit where the examination alone is billed before anyone touches the dog. A breeder who has produced forty dachshunds has seen the thing frightening you at 11 p.m. She will tell you whether it waits until morning. That service does not appear on an invoice and cannot be bought later.'},
 
     {t:'p', text:'So the market pays its two largest premiums for the two patterns the breed’s own parent club warns about. That is the perverse incentive at the center of dachshund pricing, and once you have seen it you cannot unsee it in a listing.'},
 
-    {t:'note', title:'Year one, built from components', paras:[
-      'A first-year total circulates under the ASPCA’s name. We could not trace it to a live source, so it is not in this book. Here is the arithmetic instead, in your local currency, from figures that are sourced.',
-      '<strong>The dog:</strong> a rescue costs roughly a fifth of a breeder puppy. <strong>Setup and first months:</strong> Rover puts this at the biggest line of the year — at the top end it exceeds the puppy. <strong>Spay or neuter:</strong> about a fifth to a quarter of a mid-band puppy, and dearer than most people budget. <strong>Insurance:</strong> in NAPHIA’s 2025 report, on 2024 data, a year of accident-and-illness cover cost half as much again as a spay; wellness plans add most of that again.',
-      'Year one lands at a multiple of the purchase price at both ends of the range, and the purchase price is the smallest part of it. And hold this next to it: Synchrony puts the lifetime cost of a dog over fifteen years far above what dog owners typically guess. The guess is off by a factor of three to seven. This is an estimate assembled from the sources named — not a survey.',
+    {t:'matrix', title:'Year one, built from components', head:['Line','Relative to the purchase price','Source'], rows:[
+      ['The dog','A rescue costs roughly a fifth of a breeder puppy','—'],
+      ['Setup and first months','The biggest line of the year; at the top end it exceeds the puppy','Rover'],
+      ['Spay or neuter','A fifth to a quarter of a mid-band puppy, and dearer than most people budget','—'],
+      ['Accident-and-illness insurance','Half as much again as a spay; wellness plans add most of that again','NAPHIA 2025 report, 2024 data'],
+    ], hi:[[1,1]], note:'Year one lands at a multiple of the purchase price at both ends of the range, and the purchase price is the smallest part of it. An estimate assembled from the sources named — not a survey.'},
+
+    {t:'note', title:'The figure we would not print', paras:[
+      'A first-year total circulates under the ASPCA’s name. We could not trace it to a live source, so it is not in this book. The arithmetic is in the table instead, in your local currency, from figures that are sourced.',
+      'Hold this next to it: Synchrony puts the lifetime cost of a dog over fifteen years far above what dog owners typically guess. The guess is off by a factor of three to seven.',
     ]},
 
-    {t:'p', text:'A last note on deposits. A deposit is normal, and a waitlist is a good sign — it means the litters are planned rather than produced. What is not normal is a deposit taken before you have seen anything, refunded only as credit toward a future puppy, or demanded inside twenty-four hours because “someone else is interested.” Urgency is the one sales tool that works on everybody, which is why it is the one every bad seller reaches for first.'},
+    {t:'p', text:'A last note on deposits. A deposit is normal, and a waitlist is a good sign — it means the litters are planned rather than produced. Urgency is the one sales tool that works on everybody, which is why it is the one every bad seller reaches for first.'},
+
+    {t:'signals', title:'A deposit that is not normal', items:[
+      'Taken before you have seen anything.',
+      'Refunded only as credit toward a future puppy.',
+      'Demanded inside twenty-four hours because “someone else is interested.”',
+    ]},
 
     {t:'script', text:'the premium goes to the pattern the club warns about — read that twice'},
   ]
@@ -140,9 +180,14 @@ module.exports = [
   sub: 'a good one answers all of them, then starts asking you',
   pages: 3,
   blocks: [
-    {t:'first', text:'You are not being rude. You are buying an animal that will live with you for a decade and a half, from a stranger, usually on the strength of a phone call and some photographs. A breeder worth your money has been waiting for someone to ask properly. The ones who bristle are telling you something, and they are telling you early, which is a kindness.'},
+    {t:'first', text:'You are not being rude. You are buying an animal that will live with you for a decade and a half, from a stranger, usually on the strength of a phone call and some photographs. A breeder worth your money has been waiting for someone to ask properly, and the ones who bristle are telling you something early, which is a kindness.'},
 
-    {t:'p', text:'Run it as two conversations, not one. The first is a phone call, before you have seen the puppies, when refusal costs you nothing but a Tuesday evening. Questions one through eleven belong there — the ones about the dam, the screens, the line and what has gone wrong. The second conversation happens at the house, standing in the room, where you ask the rest and watch how the answers match what is in front of you. Splitting them matters, because the first call is the only point at which you are still capable of leaving.'},
+    {t:'cards', title:'Two conversations, not one', items:[
+      ['CALL ONE','On the phone, before the puppies','Questions one through eleven: the dam, the screens, the line, and what has gone wrong. Refusal costs you nothing but a Tuesday evening.',''],
+      ['CALL TWO','At the house, in the room','You ask the rest, and watch how the answers match what is in front of you.','b'],
+    ]},
+
+    {t:'p', text:'Splitting them matters, because the first call is the only point at which you are still capable of leaving.'},
 
     {t:'tool', n:4, title:'The Twenty-Two Questions', intro:'Ask them in any order, across two conversations if you like. Write the answers down while you are still in the car — memory reorganizes itself in favor of the puppy you have just held.'},
 
@@ -173,15 +218,21 @@ module.exports = [
 
     {t:'p', text:'Question twenty-two is the one that grades the other twenty-one. A breeder who has spent nine weeks on a litter wants to know your work hours, your stairs, your children, your last dog and how it died. If she sends a puppy to anyone with a deposit, she will send one to anyone with a deposit — and one day that will be a person who returns him at fourteen months because he barks.'},
 
-    {t:'note', title:'What she should be asking you', paras:[
-      'Count these on your side of the call. A breeder placing a dachshund into a fifteen-year home wants to know your work hours and who is home in the middle of the day; whether you have stairs, and how many; what your furniture situation is, because this breed will be on the sofa; whether there are children, and how old; whether you have owned a dog before and what happened to it.',
-      'She should ask what you plan to do about insurance, and she should have an opinion about the answer. She should ask whether anyone in the house has strong feelings about barking.',
-      'If she asks none of it, you are not being interviewed. You are being invoiced.',
+    {t:'check', title:'Count these on your side of the call', items:[
+      'Your work hours, and who is home in the middle of the day.',
+      'Whether you have stairs, and how many.',
+      'What your furniture situation is, because this breed will be on the sofa.',
+      'Whether there are children, and how old.',
+      'Whether you have owned a dog before, and what happened to it.',
+      'What you plan to do about insurance — and she should have an opinion about the answer.',
+      'Whether anyone in the house has strong feelings about barking.',
     ]},
+
+    {t:'p', text:'If she asks none of it, you are not being interviewed. You are being invoiced.'},
 
     {t:'h3', text:'Six answers that end the conversation'},
 
-    {t:'table', head:['What you hear','Why you leave'], rows:[
+    {t:'matrix', title:'What you hear, and why you leave', head:['What you hear','Why you leave'], rows:[
       ['“Both parents are dapple — that’s how we get the really striking ones.”','About a quarter of that litter can be double dapple. The DCA links double dapples to deafness, reduced eye size and missing eyes. This is a known outcome, not bad luck.'],
       ['“We don’t health test. Our lines are clean.”','The parent-club list is three items long: patella, cardiac, eyes. An operation that will not spend on three exams is telling you what it spends on everything else.'],
       ['“I can ship him out Friday — just send the deposit.”','A sale that is not in person is not a face-to-face sale, and the US regulator does not count photos or video calls as one either. It is also the exact shape of every case in the fraud file.'],
@@ -207,25 +258,30 @@ module.exports = [
   sub: 'three official tests, one useless one, and a scheme most countries do not run',
   pages: 3,
   blocks: [
-    {t:'first', text:'Say this out loud, because it changes what you can reasonably demand: the AKC parent-club health testing requirement for the dachshund is three items long. A patella evaluation. A cardiac exam. An ophthalmologist evaluation. That is the list. The KC and FCI equivalents are set by their own clubs, so ask which list applies where you are buying. Not the back. Not the spine. Nothing about the one condition that defines the breed.'},
+    {t:'first', text:'Say this out loud, because it changes what you can reasonably demand: the AKC parent-club health testing requirement for the dachshund is three items long. A patella evaluation, a cardiac exam, an ophthalmologist evaluation — and the KC and FCI equivalents are set by their own clubs, so ask which list applies where you are buying. Not the back, not the spine, nothing at all about the one condition that defines the breed.'},
 
     {t:'tool', n:5, title:'The Health-Testing Ask', intro:'What to request, in what order, and what each result actually rules out. Bring this to the first phone call, not the visit.'},
 
     {t:'h3', text:'Tier one — the parent-club screens'},
 
-    {t:'list', ordered:true, items:[
-      '<strong>Patella evaluation.</strong> A hands-on exam for luxating kneecaps, graded by an examiner. On both parents.',
-      '<strong>Cardiac exam.</strong> Auscultation at minimum, by a qualified examiner. On both parents.',
-      '<strong>Ophthalmologist evaluation.</strong> A board-certified eye exam, not a glance from the family vet. On both parents.',
+    {t:'cards', title:'The three, on both parents', items:[
+      ['PATELLA','A hands-on exam','For luxating kneecaps, graded by an examiner. On both parents.',''],
+      ['CARDIAC','Auscultation at minimum','By a qualified examiner. On both parents.',''],
+      ['EYES','Ophthalmologist','A board-certified eye exam, not a glance from the family vet. On both parents.',''],
     ]},
 
     {t:'p', text:'Three exams is a low bar, and a breeder who clears it has done what her national parent club asks and no more, under whichever registry she breeds. That is the honest framing. The good breeders you will meet go well past it, and they will tell you so without being asked. Ask for the certificates in the parents’ registered names with the examiners’ names printed on them. A breeder saying “yes, all clear” is a claim; paper is a record.'},
 
-    {t:'p', text:'Be precise about what the three rule out, because breeders and buyers both overstate it. A patella evaluation describes two knees on the day they were handled. A cardiac exam is a listen, at one point in a dog’s life. An eye certification expires — most schemes require re-examination, so a certificate from four years ago describes a dog who no longer exists. None of the three says anything about the back, the disease that defines this breed and drives its costs. Clear parents are a floor. They are not a forecast.'},
+    {t:'matrix', title:'What each screen actually rules out', head:['Screen','What it describes','What it does not'], rows:[
+      ['Patella evaluation','Two knees, on the day they were handled','Anything about the knees after that day'],
+      ['Cardiac exam','A listen, at one point in a dog’s life','Anything about the heart after that point'],
+      ['Ophthalmologist evaluation','Eyes on the date of the certificate','Most schemes require re-examination, so a certificate from four years ago describes a dog who no longer exists'],
+      ['All three together','A floor','Nothing about the back — the disease that defines this breed and drives its costs'],
+    ], hi:[[3,2]], note:'Be precise about this, because breeders and buyers both overstate it. Clear parents are a floor. They are not a forecast.'},
 
     {t:'h3', text:'Tier two — the DNA panel'},
 
-    {t:'table', head:['Test','What it is for','Who should insist'], rows:[
+    {t:'matrix', title:'The panel, and who should insist', head:['Test','What it is for','Who should insist'], rows:[
       ['Lafora disease (NHLRC1)','A seizure disorder concentrated in the breed','Anyone buying a <strong>miniature wirehaired</strong> — non-negotiable'],
       ['PRA crd4/cord1 (RPGRIP1)','Progressive retinal atrophy','Every buyer'],
       ['Degenerative myelopathy','Progressive spinal cord disease','Every buyer'],
@@ -233,14 +289,23 @@ module.exports = [
       ['LGMD 2D','Muscular dystrophy','Miniature buyers'],
       ['MPS IIIA','A storage disease','Every buyer'],
       ['Narcolepsy, NCL1, NCL2','Neurological conditions on the standard panel','Every buyer'],
-    ], note:'Panel as offered by Embark. Ask which lab ran it and ask to see the report, not a summary.'},
+    ], hi:[[0,2]], note:'Panel as offered by Embark. Ask which lab ran it and ask to see the report, not a summary.'},
 
-    {t:'p', text:'Lafora is the one to be immovable about. It is concentrated in miniature wirehaired dachshunds, the DNA test is established and commercially available, and screening works: in the UK, screening cut the proportion of affected dogs from <strong>10.4 percent in 2012 to 2.7 percent in 2017</strong>. A miniature wire breeder who has not run it is either unaware of her own variety’s literature or hoping you are.'},
+    {t:'tiles', title:'What screening did to Lafora in the UK', items:[
+      ['10.4%','Affected dogs, 2012'],
+      ['2.7%','Affected dogs, 2017'],
+    ], roles:['b','g'], src:'UK screening; the DNA test is established and commercially available'},
+
+    {t:'p', text:'Lafora is the one to be immovable about. It is concentrated in miniature wirehaired dachshunds, and screening works. A miniature wire breeder who has not run it is either unaware of her own variety’s literature or hoping you are.'},
+
+    {t:'duo', title:'What the CDDY test is sold as / what it can do',
+      a:['Sold as','A screening tool. “CDDY clear” parents, advertised as a mark of a better back.'],
+      b:['Dachshund Health UK','“We do not currently recommend the use of the UC Davis DNA Test (CDDY).” Selecting on it “will have an irreversible effect on the Dachshund breed excluding almost all dogs from breeding.”'],
+      note:'93 percent of dachshunds carry two copies of the variant, and the allele frequency is 0.98. A test on which almost every dog returns the same result cannot rank dogs.'},
 
     {t:'evidence', badge:'myth', paras:[
       '<strong>The CDDY/FGF4 test is sold to buyers as a screening tool. It cannot function as one.</strong>',
       'The FGF4 retrogene is the genetic basis of the breed’s disc disease — Brown and colleagues established that in PNAS in 2017, and it is why disc degeneration begins around four months and about 90 percent of discs show change by a year old. That part is settled.',
-      'The problem is arithmetic. <strong>93 percent of dachshunds carry two copies of the variant, and the allele frequency is 0.98.</strong> A test on which almost every dog returns the same result cannot rank dogs. Dachshund Health UK is explicit: “we do not currently recommend the use of the UC Davis DNA Test (CDDY),” and warns that selecting on it “will have an irreversible effect on the Dachshund breed excluding almost all dogs from breeding.”',
       'So: a breeder who runs it has wasted some money. A breeder who advertises “CDDY clear” parents is selling you a result that, at a 0.98 allele frequency, should make you ask hard questions about what was actually tested. Neither tells you anything useful about this puppy’s back.',
     ], source:'Dachshund Health UK; Brown et al., PNAS 2017'},
 
@@ -248,24 +313,34 @@ module.exports = [
 
     {t:'h3', text:'Tier three — the test almost nobody runs'},
 
+    {t:'matrix', title:'Radiographic back scoring, by country', head:['Country','Status','What it requires'], rows:[
+      ['Denmark','Scoring spines for roughly twenty years','Since 2019 both parents must be X-rayed, and only dogs graded K0 to K2 may be bred'],
+      ['Britain','Royal Kennel Club IVDD scheme, launched 2021','Breeders can be asked for a score, and the ask is a normal one rather than a novelty'],
+      ['Finland','Compulsory before breeding since 2025','—'],
+      ['Norway','Recommended','—'],
+      ['Sweden','A voluntary scheme','—'],
+      ['United States','Neither the AKC nor the DCA recommends the procedure','Only about <em>three</em> US breeders have been confirmed to X-ray for spinal calcification at all'],
+    ], hi:[[0,2],[5,2]], note:'Ask anyway. Ask every breeder you speak to whether the parents have been radiographed, and note the answer. Almost all will say no, and that is not, by itself, disqualifying where no scheme exists. But the question travels: enough buyers asking it is how a scheme starts.'},
+
     {t:'evidence', badge:'contested', paras:[
       '<strong>Radiographic back scoring works, exists, and is unavailable to buyers in most countries.</strong>',
-      'Denmark has scored dachshund spines for roughly twenty years; since 2019 the rules require both parents to be X-rayed, and only dogs graded K0 to K2 may be bred. Britain launched a Royal Kennel Club IVDD screening scheme in 2021.',
-      'In the United States, neither the AKC nor the Dachshund Club of America recommends the procedure, and only about <em>three</em> US breeders have been confirmed to X-ray for spinal calcification at all. Finland made it compulsory before breeding in 2025; Norway recommends it and Sweden runs a voluntary scheme.',
-      'Ask anyway. Ask every breeder you speak to whether the parents have been radiographed, and note the answer. Almost all will say no, and that is not, by itself, disqualifying where no scheme exists. But the question travels: enough buyers asking it is how a scheme starts.',
-    ], source:'Danish and Royal Kennel Club screening schemes; US breeder survey; Dachshund Health UK on the Nordic programmes'},
-
-    {t:'note', title:'Where a back-scoring scheme does exist', paras:[
-      'Where a scheme exists, your position on the back is materially better. The Royal Kennel Club has run an IVDD screening scheme since 2021 and Denmark has graded spines for two decades, so radiographic back scores exist, breeders can be asked for them, and the ask is a normal one rather than a novelty.',
+      'Where a scheme exists, your position on the back is materially better: radiographic back scores exist, breeders can be asked for them, and the ask is a normal one.',
       'Dachshund Health UK’s guidance on the CDDY test is the statement this section is built on, and it binds breeders in its own country directly. Where a breeder in a country with no scheme can reasonably say none exists, a Danish or British breeder cannot.',
-    ]},
+    ], source:'Danish and Royal Kennel Club screening schemes; US breeder survey; Dachshund Health UK on the Nordic programmes'},
 
     {t:'note', title:'Verify this list against the source, not against us', paras:[
       'Health-testing requirements change, and the CHIC database is the authority on what the AKC currently requires for certification. We could not retrieve the dachshund CHIC page at the time of writing, so this book does not print one.',
       'Go to <strong>ofa.org</strong> for the breed’s current CHIC requirements, and ask your own registry for its equivalent list. Hold the breeder to that rather than to ours, then look the parents up by name.',
     ]},
 
-    {t:'p', text:'Put together, the ask is short enough to say in one breath: the three parent-club screens on both parents with certificates, the DNA panel with the laboratory named, Lafora without exception if the puppy is a miniature wirehaired, and the spinal radiograph question asked even though the answer will almost certainly be no. Four items. A breeder who meets the first three and answers the fourth honestly is doing more than her national club requires of her.'},
+    {t:'check', title:'The ask, in four items', items:[
+      'The three parent-club screens on both parents, with certificates in the parents’ registered names and the examiners’ names printed on them.',
+      'The DNA panel, with the laboratory named and the report shown rather than summarized.',
+      'Lafora without exception if the puppy is a miniature wirehaired.',
+      'The spinal radiograph question, asked even though the answer will almost certainly be no.',
+    ]},
+
+    {t:'p', text:'Four items, short enough to say in one breath. A breeder who meets the first three and answers the fourth honestly is doing more than her national club requires of her.'},
 
     {t:'script', text:'the paper, in the parents’ names, with the examiner’s name on it'},
   ]
@@ -287,11 +362,14 @@ module.exports = [
       ['Vermont','7 days','—','Among the shortest'],
     ], note:'US examples. Windows and remedies vary; several of the twenty-two have provisions this book does not print because they could not be verified. Check what your own jurisdiction gives you before you rely on it.'},
 
-    {t:'p', text:'Two limits matter more than any of the details, and both of them cut against the buyer.'},
+    {t:'cards', title:'Two limits, and both cut against the buyer', items:[
+      ['LIMIT ONE','They bind dealers, not every breeder','The statutes were written with pet stores and commercial sellers in view. The woman with one dam and two litters a year may fall entirely outside them.','a'],
+      ['LIMIT TWO','Remedies cap at the purchase price','California’s 150 percent provision is the generous outlier. At one specialty neurology practice an all-in IVDD surgery runs five to seven times the price of a mid-band puppy.','a'],
+    ]},
 
-    {t:'p', text:'<strong>First, these laws bind dealers and retailers — not every hobby breeder.</strong> The statutes were written with pet stores and commercial sellers in view. The woman with one dam and two litters a year may fall entirely outside them, which produces the awkward result that your legal protection is strongest against the channel you should not be buying from and weakest against the channel you should. If you buy from a small breeder, your protection is the contract, not the statute.'},
+    {t:'p', text:'The first produces an awkward result: your legal protection is strongest against the channel you should not be buying from and weakest against the channel you should. If you buy from a small breeder, your protection is the contract, not the statute.'},
 
-    {t:'p', text:'<strong>Second, remedies are usually capped at the purchase price.</strong> California’s 150 percent provision is the generous outlier. Set that cap against what this breed can cost: at one specialty neurology practice an all-in IVDD surgery runs <strong>five to seven times the price of a mid-band puppy</strong>; PetMD puts spinal surgery lower but still in multiples, and an MRI alone averages roughly a puppy’s price. A full refund does not touch it. The law returns your money. It does not return your dog, and it was never built to fund fifteen years of care.'},
+    {t:'p', text:'The second is worse. PetMD puts spinal surgery lower than the specialty figure but still in multiples, and an MRI alone averages roughly a puppy’s price. A full refund does not touch it. The law returns your money. It does not return your dog, and it was never built to fund fifteen years of care.'},
 
     {t:'h3', text:'What the contract has to contain'},
 
@@ -306,13 +384,27 @@ module.exports = [
       'A clause requiring you to return the dog in order to be paid is not a guarantee. It is a trade, and you will not make it.',
     ]},
 
-    {t:'note', title:'The clock that starts the day you buy', paras:[
-      'Your statutory rights are the weaker half of your protection. The stronger half is a policy bought before anything is wrong — and the purchase week is when it is worth the most.',
-      'At least one major insurer applies a <strong>180-day waiting period for orthopedic conditions and classifies IVDD as orthopedic</strong>. That period can be collapsed by an orthopedic exam — an “Orthopedic Report Card” — performed within the <strong>first 14 days</strong> of the policy. Done later and clean, it collapses to the exam date instead. Terms vary by insurer and by country.',
-      'Note also how the NAIC model act, the US insurance regulators’ template, defines a preexisting condition: anything a vet advised on, treated, or saw signs of before the effective date <em>or during any waiting period</em>. A limp in week three of a 180-day window can become permanently uncovered. Part IV works through this properly; the point here is that the window opens on purchase day, not when you get round to it.',
+    {t:'p', text:'Your statutory rights are the weaker half of your protection. The stronger half is a policy bought before anything is wrong, and the purchase week is when it is worth the most. Part IV works through this properly; the point here is that the window opens on purchase day, not when you get round to it.'},
+
+    {t:'phases', title:'The insurance clock, from purchase day', items:[
+      ['Day 0','Policy bought, before anything is wrong'],
+      ['Days 1–14','An orthopedic exam collapses the wait'],
+      ['Day 180','Otherwise, orthopedic cover starts here'],
     ]},
 
-    {t:'p', text:'Keep everything. The bill of sale, the vaccination record, the health certificates, the messages. If the dog develops something covered by your contract or by a statute where you live, the claim is won or lost on whether you can produce a date.'},
+    {t:'note', title:'The clock that starts the day you buy', paras:[
+      'At least one major insurer applies a <strong>180-day waiting period for orthopedic conditions and classifies IVDD as orthopedic</strong>. That period can be collapsed by an orthopedic exam — an “Orthopedic Report Card” — performed within the <strong>first 14 days</strong> of the policy. Done later and clean, it collapses to the exam date instead. Terms vary by insurer and by country.',
+      'Note also how the NAIC model act, the US insurance regulators’ template, defines a preexisting condition: anything a vet advised on, treated, or saw signs of before the effective date <em>or during any waiting period</em>. A limp in week three of a 180-day window can become permanently uncovered.',
+    ]},
+
+    {t:'signals', title:'Keep every one of these', role:'g', items:[
+      'The bill of sale.',
+      'The vaccination record.',
+      'The health certificates.',
+      'The messages.',
+    ]},
+
+    {t:'p', text:'If the dog develops something covered by your contract or by a statute where you live, the claim is won or lost on whether you can produce a date.'},
 
     {t:'script', text:'the contract is the protection; the statute is the backstop'},
   ]
@@ -344,14 +436,19 @@ module.exports = [
 
     {t:'p', text:'Score it alone, and score it fast — five minutes, from memory, before you discuss the visit with anyone. A visit is a social occasion, and social occasions are graded generously in hindsight. The scorecard exists to hold the numbers still while your goodwill catches up.'},
 
-    {t:'note', title:'Reading the score', paras:[
-      '<strong>27–30.</strong> Proceed. Expect to wait for a litter; that is a good sign, not an obstacle.',
-      '<strong>21–26.</strong> Something is missing. Identify exactly which criteria lost points and ask about those before any money moves.',
-      '<strong>Below 21.</strong> Leave, politely, without a deposit. The dog in that room is not the last dachshund in the country.',
-      '<strong>Any zero on the dam, the premises, or the certificates is disqualifying regardless of total.</strong> A 28 built on a missing mother is a 0.',
+    {t:'gauge', title:'Reading the score, out of thirty', items:[
+      ['27–30',100,'Proceed. Expect to wait for a litter; that is a good sign, not an obstacle.',''],
+      ['21–26',72,'Something is missing. Identify exactly which criteria lost points and ask about those before any money moves.','mid'],
+      ['BELOW 21',45,'Leave, politely, without a deposit. The dog in that room is not the last dachshund in the country.','hot'],
     ]},
 
-    {t:'p', text:'One visit, one scorecard. If you see three litters in a month, score all three and compare the sheets rather than the puppies. The puppies will all have been wonderful.'},
+    {t:'signals', title:'Disqualifying regardless of total', items:[
+      'A zero on the dam.',
+      'A zero on the premises.',
+      'A zero on the certificates.',
+    ]},
+
+    {t:'p', text:'A 28 built on a missing mother is a 0. And one visit, one scorecard: if you see three litters in a month, score all three and compare the sheets rather than the puppies. The puppies will all have been wonderful.'},
 
     {t:'script', text:'score it in the car, not in the kitchen'},
   ]
@@ -380,13 +477,30 @@ module.exports = [
 
     {t:'h3', text:'What an unknown history actually changes'},
 
-    {t:'p', text:'Less than people assume about the back, and more than people assume about behavior. Disc degeneration begins at around four months, and roughly 90 percent of discs show change by a year old — so by the time any dachshund is an adult, that process has already happened, whether you watched it or not. Buying a puppy does not let you supervise it. What you do lose is the parents’ paperwork and the early socialization record, and those are real losses.'},
+    {t:'duo', title:'Less than people assume / more than people assume',
+      a:['The back — less','Disc degeneration begins at around four months, and roughly 90 percent of discs show change by a year old. By the time any dachshund is an adult, that process has already happened, whether you watched it or not. Buying a puppy does not let you supervise it.'],
+      b:['The record — more','What you do lose is the parents’ paperwork and the early socialization record, and those are real losses.'],
+      note:'Behavior is where the unknown history actually costs you, not the spine.'},
 
-    {t:'p', text:'Be clear-eyed about age. Chondrodystrophoid breeds typically present with disc disease between three and six years, and 76 percent of cases are diagnosed between four and eight. A five-year-old rescue is being adopted inside that window. This is not an argument against adopting one — it is an argument for adopting one with insurance arranged before the paperwork is signed, and for reading Part IV before you do.'},
+    {t:'tiles', title:'When disc disease presents', items:[
+      ['3–6 yrs','Typical presentation','Chondrodystrophoid breeds typically present with disc disease inside this window.'],
+      ['76%','Diagnosed at 4 to 8 years','Of cases. A five-year-old rescue is being adopted inside that window.'],
+    ]},
+
+    {t:'p', text:'This is not an argument against adopting one. It is an argument for adopting one with insurance arranged before the paperwork is signed, and for reading Part IV before you do.'},
 
     {t:'h3', text:'The first two weeks'},
 
-    {t:'p', text:'Decompression is mostly subtraction. No visitors, no dog park, no long outings, no testing what he can handle. An open crate he can retreat into. A leash on indoors at first, so you guide rather than grab. Assume he is not house-trained whatever the listing said: outings every one to two waking hours, reward outside and immediately, and never punish an accident — punishment teaches a dog to hide the act, not to stop it.'},
+    {t:'signals', title:'Decompression is mostly subtraction', role:'g', items:[
+      'No visitors.',
+      'No dog park.',
+      'No long outings.',
+      'No testing what he can handle.',
+      'An open crate he can retreat into.',
+      'A leash on indoors at first, so you guide rather than grab.',
+      'Outings every one to two waking hours — assume he is not house-trained, whatever the listing said.',
+      'Reward outside and immediately. Never punish an accident: punishment teaches a dog to hide the act, not to stop it.',
+    ]},
 
     {t:'check', title:'Questions for the foster', items:[
       'How is he alone? For how long, and what have you actually observed?',

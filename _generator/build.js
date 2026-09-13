@@ -152,7 +152,7 @@ function guidePage(g){
   <div class="sell">
     <div class="label" style="color:var(--camel)">The long version</div>
     <h3 style="margin:8px 0 10px">The Complete Dachshund Owner’s Manual</h3>
-    <p style="margin:0 0 18px">173 pages, 24 printable tools, and the full research trail behind every number on
+    <p style="margin:0 0 18px">212 pages, 24 printable tools, and the full research trail behind every number on
     this page — including the twenty pages on the back that this guide only summarizes.</p>
     <a class="btn" href="/the-manual/">See what is inside — $${PRICE}</a>
   </div>

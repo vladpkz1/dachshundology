@@ -11,19 +11,17 @@ module.exports = [
   pages:3,
   blocks:[
 
-    {t:'first',text:'Count what the first week actually requires and the list comes to about a dozen things. A pet store will sell you sixty. Rover priced bringing home a new dog in 2025 and found the top of the range running <strong>close to four times</strong> the bottom — the same animal, and most of the difference settled in your first two hours of shopping. US treat spending alone rose 85 percent year over year. Spend where this dog is unusual, which is to say where he is long, and let the rest go.'},
+    {t:'first',text:'Count what the first week actually requires and the list comes to about a dozen things. A pet store will sell you sixty. Spend where this dog is unusual, which is to say where he is long, and let the rest go.'},
 
-    {t:'stats',items:[
-      ['≈ 4×','Rover’s 2025 new-dog range, top against bottom'],
-      ['+85%','year-over-year rise in US spending on treats'],
-      ['12','things he genuinely cannot arrive without']
-    ]},
+    {t:'tiles',title:'What the first cart costs',items:[
+      ['≈ 4×','Rover’s 2025 new-dog range','Top of the range against the bottom — the same animal, and most of the difference settles in your first two hours of shopping.'],
+      ['+85%','US treat spending, year over year',''],
+      ['12','Things he cannot arrive without','']
+    ],src:'Rover, 2025 — the cost of bringing home a new dog, in one market'},
 
     {t:'tool',n:7,title:'The Kit, Sorted',intro:'Three columns. What he cannot arrive without. What earns its keep inside the first month. And what is being sold to you rather than to him.'},
 
-    {t:'h3',text:'Essential — have it in the house before he is'},
-
-    {t:'list',ordered:false,items:[
+    {t:'check',title:'Essential — have it in the house before he is',items:[
       'A Y-front harness that fits <em>now</em>, not the one he will grow into.',
       'A flat four- to six-foot (1.2–1.8 m) leash. Not retractable.',
       'A crate long enough for the adult dog, with a divider panel.',
@@ -38,19 +36,31 @@ module.exports = [
       'A soft-sided carrier for the car and the waiting room.'
     ]},
 
-    {t:'h3',text:'Useful — buy in the first month, not the first hour'},
+    {t:'cards',title:'Useful — buy in the first month, not the first hour',items:[
+      ['COAT, PLUS A SPARE','He is the body type the AVMA names','Short-haired dogs feel the cold faster, and short-legged dogs walk with belly and body in contact with the snow.|Keep a spare, because a wet coat makes a dog colder rather than warmer.',''],
+      ['RAMP AND RUNNERS','Traction everywhere he moves fast','A ramp for the sofa or the bed, whichever he will be using.|Rug runners across any slick floor he has to cross at speed, and a second gate for the stairs.','a'],
+      ['WORK FOR THE NOSE','A snuffle mat or food puzzle','Plus a fifteen- to twenty-foot (4.5 to 6 m) long line for the yard.','b']
+    ]},
 
-    {t:'p',text:'A ramp, for the sofa or the bed, whichever he will be using. A coat: the AVMA singles out this exact body type, noting that short-haired dogs feel the cold faster and that short-legged dogs walk with belly and body in contact with the snow. Keep a spare, because a wet coat makes a dog colder rather than warmer. A snuffle mat or food puzzle. A fifteen- to twenty-foot (4.5 to 6 m) long line for the yard. Rug runners across any slick floor he has to cross at speed. A second gate, for the stairs.'},
+    {t:'signals',title:'Skip, or buy later for your own reasons',items:[
+      'Retractable leashes.',
+      'Beds shaped like hot dogs.',
+      'Puppy pads bought as a strategy rather than as a stopgap — 3.4 comes back to this.',
+      'Orthopedic memory-foam mattresses for an eleven-week-old with no orthopedic problem.',
+      'A crate for every room.',
+      'Calming collars.'
+    ],role:'g'},
 
-    {t:'h3',text:'Marketing — skip, or buy later for your own reasons'},
-
-    {t:'p',text:'Retractable leashes. Beds shaped like hot dogs. Puppy pads bought as a strategy rather than as a stopgap, which we come back to in 3.4. Orthopedic memory-foam mattresses for an eleven-week-old with no orthopedic problem. A crate for every room. And slow-feed bowls sold as bloat insurance: gastric dilatation and volvulus is a disease of deep, narrow chests — Great Danes, German Shepherds, setters, Weimaraners, standard poodles — and the dachshund is not on the at-risk list. Two meals a day is good practice for other reasons. It is not bloat prevention in this breed, and nobody should charge you for it as though it were.'},
+    {t:'duo',title:'The slow-feed bowl, sold as bloat insurance',
+      a:['What you are sold','A bowl that stops him eating fast, and two meals a day, both priced as protection against bloat.'],
+      b:['What the disease actually is','Gastric dilatation and volvulus is a disease of deep, narrow chests — Great Danes, German Shepherds, setters, Weimaraners, standard poodles. The dachshund is not on the at-risk list.'],
+      note:'Two meals a day is good practice for other reasons. It is not bloat prevention in this breed, and nobody should charge you for it as though it were.'},
 
     {t:'script',text:'buy the harness he fits today. he will outgrow it and that is fine'},
 
     {t:'h3',text:'The collar question'},
 
-    {t:'p',text:'Buy a collar for his tags and walk him on a harness. The reason is not aesthetic. When a dachshund comes home from a disc episode, the standard conservative protocol specifies a harness and not a collar, because a collar puts the whole stopping force of a lunging dog through his neck. Six percent of dachshund disc cases are cervical. It is the smaller share, but it is the share you can do something about on day one for the price of a harness, and there is no behavioral cost to the switch.'},
+    {t:'p',text:'Buy a collar for his tags and walk him on a harness. The reason is not aesthetic. When a dachshund comes home from a disc episode, the standard conservative protocol specifies a harness and not a collar, because a collar puts the whole stopping force of a lunging dog through his neck. Cervical cases are the smaller share of dachshund disc disease, but they are the share you can do something about on day one for the price of a harness, and there is no behavioral cost to the switch.'},
 
     {t:'note',title:'Fitting a Y-front harness',paras:[
       'Two fingers flat under every strap. The Y sits on the breastbone, not across the point of the shoulder. Nothing crosses the throat. On a long dog the chest strap tends to creep back toward the ribs — re-check it after ten minutes of walking, and again after every growth spurt.'
@@ -60,7 +70,10 @@ module.exports = [
 
     {t:'p',text:'Most crates are sold by the dog’s weight, which is exactly the wrong dimension here. Buy by length. He should be able to stand without ducking, turn around without folding, and lie flat on his side with his legs out and his spine straight. A crate that forces him to sleep curved is the one piece of equipment on this list that can do real harm over months.'},
 
-    {t:'p',text:'There is a second reason to buy long. If he ever needs conservative management for a disc, the confinement space described in that protocol is roughly three feet by four (about 90 × 120 cm) for a small dog, held for a minimum of four weeks. A crate bought to that standard now is a crate you will not be shopping for in a panic later, at the worst week of your year.'},
+    {t:'keyfig',title:'Two numbers that decide two purchases',items:[
+      ['CERVICAL DISC CASES','6%','The smaller share of dachshund disc disease — and the share a harness instead of a collar addresses on day one.'],
+      ['CRATE, MINIMUM FOOTPRINT','3 × 4 ft','About 90 × 120 cm for a small dog, held for a minimum of four weeks: the confinement space in the conservative disc protocol. Buy to that standard now and you will not be shopping for it in a panic later, at the worst week of your year.']
+    ]},
 
     {t:'illus',name:'dach',caption:'Measure nose to tail base, add four inches (10 cm), and buy that length. Height matters less than you think; length matters more than the label admits.'},
 
@@ -69,7 +82,7 @@ module.exports = [
       'Do not buy it believing you have bought a spine. The DachsLife survey of 2,031 owners found that dogs <em>prevented</em> from using furniture reported <strong>higher</strong> disc risk, not lower, and that stair use showed a protective trend that never reached significance. These are associations in a cross-sectional survey, not causes — sicker dogs get lifted onto sofas, and careful owners buy gates. But they are the only lifestyle data anyone has on this breed, and they point the opposite way from the advice. Part V takes the whole question apart before you rearrange your house.'
     ],source:'DachsLife 2015 lifestyle findings, 2,031 owners (RVC analysis) — dachshund-ivdd.uk/lifestyle-advice'},
 
-    {t:'table',head:['Item','Verdict','Relative outlay'],rows:[
+    {t:'matrix',title:'Essential — and where the money goes',head:['Item','Verdict','Relative outlay'],rows:[
       ['Y-front harness','Essential','Low'],
       ['Flat leash, 4–6 ft (1.2–1.8 m)','Essential','Low'],
       ['Crate, adult length, with divider','Essential','High — overspend here'],
@@ -77,7 +90,10 @@ module.exports = [
       ['Exercise pen or baby gate','Essential','Moderate'],
       ['Bowls, ID tag, poop bags, clippers','Essential','Moderate, combined'],
       ['Enzymatic cleaner, large','Essential','Low'],
-      ['Soft carrier','Essential','Moderate'],
+      ['Soft carrier','Essential','Moderate']
+    ],hi:[[2,2]]},
+
+    {t:'matrix',title:'Useful, and the lines to leave in the store',head:['Item','Verdict','Relative outlay'],rows:[
       ['Ramp','Useful','High'],
       ['Coat, plus a spare','Useful','Moderate'],
       ['Food puzzle or snuffle mat','Useful','Low'],
@@ -86,7 +102,7 @@ module.exports = [
       ['Slow-feed “anti-bloat” bowl','Skip','—'],
       ['Calming collar','Skip','—'],
       ['Retractable leash','Skip','—']
-    ],note:'The verdicts are ours and defensible. The outlay column is relative, not a price list — work it in your local currency, since the same kit varies severalfold between markets, and read it as the shape of a cart. The one sourced total we have is Rover’s 2025 figure, and it describes a single market: read it for the ratios between lines, not the amounts.'},
+    ],hi:[[5,1],[6,1],[7,1]],note:'The verdicts are ours and defensible. The outlay column is relative, not a price list — work it in your local currency, since the same kit varies severalfold between markets, and read it as the shape of a cart. The one sourced total we have is Rover’s 2025 figure, and it describes a single market: read it for the ratios between lines, not the amounts.'},
 
     {t:'script',text:'the crate is the only thing on this list worth overspending on'},
 
@@ -102,31 +118,44 @@ module.exports = [
   pages:3,
   blocks:[
 
-    {t:'first',text:'Proofing a house for a dachshund is not proofing it for a puppy. A puppy grows out of the counter-surfing phase. This dog will spend fifteen years at eight inches (20 cm) off the floor with a nose built for going down holes, and the AKC standard describes him as “persevering in above- and below-ground work,” which is breed-club language for a dog who will still be working on the problem tomorrow. Walk each room at his eye level before he arrives. What you find down there is not what you see standing up.'},
+    {t:'first',text:'Proofing a house for a dachshund is not proofing it for a puppy: a puppy grows out of the counter-surfing phase, and this dog will spend fifteen years at eight inches (20 cm) off the floor with a nose built for going down holes. The AKC standard describes him as “persevering in above- and below-ground work,” which is breed-club language for a dog who will still be working on the problem tomorrow. Walk each room at his eye level before he arrives — what you find down there is not what you see standing up.'},
 
     {t:'tool',n:8,title:'The Room-by-Room Sweep',intro:'One pass per room, in this order, the weekend before he comes home. Then one more pass the evening he arrives, because you will have missed something.'},
 
-    {t:'h3',text:'Floors and traction'},
-
-    {t:'p',text:'Hardwood, laminate and tile are the surfaces a short-legged dog with long toenails skates on. He does not skate gracefully. Lay runners along the routes he takes fast — the hallway to the door, the turn at the bottom of the stairs, the strip of kitchen where he brakes for the bowl. Keep the nails short and the hair between the pads trimmed level with the pad. This is comfort and confidence rather than proven injury prevention, and it costs a rug.'},
-
-    {t:'h3',text:'Furniture heights'},
-
-    {t:'p',text:'The jump <em>up</em> is a decision he makes at a run. The jump <em>down</em> is the one you can manage, because it happens from a standstill and you are usually in the room. Put the ramp where he already goes, not where you would prefer he went, and set a folded blanket at the base of every launch point in the meantime. We are deliberately not telling you to ban the sofa; 3.1 explains why the survey data will not support that instruction.'},
-
-    {t:'h3',text:'Stairs and gates'},
-
-    {t:'p',text:'Gates at the top and the bottom, from day one, and carry him between floors for now. The case for this is not that stairs are proven to damage a dachshund’s back — the DachsLife data actually leaned the other way, without reaching significance. The case is that a ten-week-old with no depth perception and a body longer than the tread is going to learn about stairs by falling down some. Teach them later, deliberately, one at a time, on a leash.'},
-
-    {t:'script',text:'anywhere his head fits, he fits. all of him'},
+    {t:'cards',title:'Three surfaces that decide the house',items:[
+      ['FLOORS','Runners on the routes he takes fast','Hardwood, laminate and tile are what a short-legged dog with long toenails skates on, and he does not skate gracefully.|The hallway to the door, the turn at the bottom of the stairs, the strip of kitchen where he brakes for the bowl.|Nails short, hair between the pads trimmed level with the pad. Comfort and confidence rather than proven injury prevention, and it costs a rug.',''],
+      ['FURNITURE','Manage the jump down, not the jump up','The jump up is a decision he makes at a run. The jump down happens from a standstill, with you usually in the room — that is the one you can manage.|Put the ramp where he already goes, not where you would prefer he went, and a folded blanket at the base of every launch point meanwhile.|We are deliberately not telling you to ban the sofa; 3.1 explains why the survey data will not support that instruction.','a'],
+      ['STAIRS','Gates top and bottom, from day one','Carry him between floors for now.|Not because stairs are proven to damage a dachshund’s back — the DachsLife data actually leaned the other way, without reaching significance.|Because a ten-week-old with no depth perception and a body longer than the tread is going to learn about stairs by falling down some. Teach them later, deliberately, one at a time, on a leash.','b']
+    ]},
 
     {t:'h3',text:'The yard'},
 
-    {t:'p',text:'Walk the fence line with your hand at ground level. Anywhere his head fits, he fits. Check for gaps under gates, soft ground at the corners, and the gap behind the shed you have never looked behind. He was bred to go to ground, and he will dig in the one spot you cannot see from the kitchen window. Give him a permitted digging place — a sandbox or a marked bed — and bury things in it worth finding. Check for cocoa mulch, which is chocolate, and for standing water.'},
+    {t:'signals',title:'Walk the fence line with your hand at ground level',items:[
+      'Gaps under gates.',
+      'Soft ground at the corners.',
+      'The gap behind the shed you have never looked behind.',
+      'Cocoa mulch, which is chocolate.',
+      'Standing water.'
+    ],role:'g'},
+
+    {t:'p',text:'Anywhere his head fits, he fits. He was bred to go to ground, and he will dig in the one spot you cannot see from the kitchen window, so give him a permitted digging place — a sandbox or a marked bed — and bury things in it worth finding.'},
+
+    {t:'script',text:'anywhere his head fits, he fits. all of him'},
 
     {t:'h3',text:'Cords, gaps and small objects'},
 
-    {t:'p',text:'At eight inches (20 cm), the interesting world is phone chargers, the underside of the recliner mechanism, the space behind the refrigerator, the trash can with a swing lid, socks, hair ties, coins, and the child’s craft drawer. Cord covers on everything reachable. Lidded trash. One rule for the household on socks: they are never a toy, not once, because he cannot tell your laundry from a toy shaped like your laundry.'},
+    {t:'signals',title:'At eight inches (20 cm), the interesting world',items:[
+      'Phone chargers.',
+      'The underside of the recliner mechanism.',
+      'The space behind the refrigerator.',
+      'The trash can with a swing lid.',
+      'Socks.',
+      'Hair ties.',
+      'Coins.',
+      'The child’s craft drawer.'
+    ],role:'g'},
+
+    {t:'p',text:'Cord covers on everything reachable. Lidded trash. One rule for the household on socks: they are never a toy, not once, because he cannot tell your laundry from a toy shaped like your laundry.'},
 
     {t:'p',text:'Two habits are worth building now rather than later. Trash goes behind a door or under a lid with a weight on it, and the dishwasher gets closed the moment it is loaded — an open dishwasher door is a ramp to a plate of cooked bones at his eye level. Neither is a puppy rule. Both are permanent, because he will still be eight inches off the ground at ten years old.'},
 
@@ -134,13 +163,18 @@ module.exports = [
 
     {t:'p',text:'Dose matters more than substance, and the doses are small enough to be worth learning. A 16 lb dachshund is 7.3 kg; do that conversion once and tape it inside the cupboard where the chocolate lives.'},
 
-    {t:'table',head:['Substance','The dose that matters','What happens, and when'],rows:[
+    {t:'matrix',title:'The doses that matter',head:['Substance','The dose that matters','What happens, and when'],rows:[
       ['Chocolate','Theobromine: mild GI signs at 20 mg/kg, cardiac effects at 40–50, seizures at 60 and above. Per ounce (28 g): milk chocolate 64 mg; semisweet and dark 150–160; unsweetened baker’s 440.','A 16 lb (7.3 kg) dog reaches the first threshold at about 2.3 oz (65 g) of milk chocolate — or under 0.4 oz (11 g) of baker’s. The baking cupboard is the dangerous one, not the candy dish.'],
       ['Xylitol','Hypoglycemia above 100 mg/kg. Liver injury above 500 mg/kg.','Collapse within 30 minutes, or delayed 12 to 18 hours when it arrives in gum. Of dogs that showed signs of liver injury, 62.5% died or were euthanized.'],
       ['Grapes and raisins','More than one grape or raisin per 10 pounds (4.5 kg) of dog may carry enough tartaric acid to pose a risk.','Vomiting at 6 to 12 hours. Kidney failure at 24 to 72.'],
       ['Onion and garlic','15 to 30 g/kg of raw onion produced clinical signs.','Hemolysis typically 3 to 5 days after the meal — the delay is exactly why owners never connect the two.'],
       ['Macadamia nuts','Signs from 2.4 g/kg.','Onset within 12 hours, resolving in 12 to 48. Prognosis good.']
-    ],note:'Toxic doses from the Merck Veterinary Manual. Xylitol hides in sugar-free peanut butter, mints, chewable vitamins — and in some liquid gabapentin formulations, which matters more in this breed than in most, since gabapentin is on the standard list for disc pain.'},
+    ],hi:[[0,1],[1,1]],note:'Toxic doses from the Merck Veterinary Manual. Xylitol hides in sugar-free peanut butter, mints, chewable vitamins — and in some liquid gabapentin formulations, which matters more in this breed than in most, since gabapentin is on the standard list for disc pain.'},
+
+    {t:'decision',title:'He has eaten something. The next ten minutes.',items:[
+      ['Do you have the wrapper, the packet or the plant?','Stand in the kitchen and read them the label.',[['Yes → call your poison line before you drive',''],['No → call anyway, and describe what is missing','o']]],
+      ['What did they say?','They will tell you whether this is an emergency visit, a watch-and-wait, or nothing.',[['Emergency → go, and take the case number with you','a'],['Watch and wait → on their timetable, not yours','o'],['Nothing → a fee to be told to relax is the cheapest thing in the book','']]]
+    ]},
 
     {t:'note',title:'The two cupboards people forget',paras:[
       'The medicine cabinet and the handbag. Human painkillers, chewable vitamins, sugar-free mints and nicotine gum all come in packaging a dog opens easily, and a handbag left on the floor is at exactly his working height. Xylitol is the one worth naming twice: it is in sugar-free peanut butter, in mints, in chewable supplements, and in some liquid gabapentin formulations — which is the drug most likely to be in your house later, if this dog ever has a disc episode.',
@@ -150,7 +184,7 @@ module.exports = [
     {t:'flag',title:'Two numbers on the refrigerator, before he arrives',paras:[
       'United States: ASPCA Animal Poison Control Center — <strong>(888) 426-4435</strong>. Pet Poison Helpline — <strong>(855) 764-7661</strong>. Both charge a fee per case.',
       'Anywhere else: find your own 24-hour animal poison control service, and the nearest emergency clinic that is open overnight, and put both in your phone today. Appendix E carries the national lines for the UK, Australia and New Zealand.',
-      'Call before you drive. Stand in the kitchen with the wrapper in your hand and read them the label: they will tell you whether this is an emergency visit, a watch-and-wait, or nothing. If you end up in the emergency room, the case number goes with you. A fee to be told to relax is the cheapest thing in this book.'
+      'Call before you drive. If you end up in the emergency room, the case number goes with you.'
     ]},
 
     {t:'check',title:'Before he comes through the door',items:[
@@ -179,30 +213,46 @@ module.exports = [
   pages:3,
   blocks:[
 
-    {t:'first',text:'The first twenty-four hours are not a training opportunity. They are a logistics problem with a frightened animal in the middle of it. He has just lost his mother, his littermates, the smell of the only building he has known, and the ability to predict what happens next. Everything below is designed to give him back the last one — prediction — as fast as possible. Nothing below is designed to impress anyone.'},
+    {t:'first',text:'The first twenty-four hours are not a training opportunity but a logistics problem with a frightened animal in the middle of it. He has just lost his mother, his littermates, the smell of the only building he has known, and the ability to predict what happens next. Everything below is designed to give him back the last one — prediction — as fast as possible, and none of it is designed to impress anyone.'},
 
-    {t:'h3',text:'What day one is not for'},
+    {t:'signals',title:'Not today, whatever anyone says',items:[
+      'Do not bathe him.',
+      'Do not introduce him to the neighbors.',
+      'Do not photograph him for four hours.',
+      'Do not start obedience.',
+      'Do not take him to a pet store to pick out a toy.',
+      'Do not let visiting children carry him around the house.'
+    ]},
 
-    {t:'p',text:'Do not bathe him, do not introduce him to the neighbors, do not photograph him for four hours, and do not start obedience. Do not take him to a pet store to pick out a toy. Do not let visiting children carry him around the house. Each of those is a reasonable thing to want and every one of them spends the small amount of coping he has left. The dog you meet this week is a compressed, anxious version of the dog you will have in a month; judging his temperament today is like judging a house by its moving day.'},
+    {t:'p',text:'Each of those is a reasonable thing to want and every one of them spends the small amount of coping he has left. The dog you meet this week is a compressed, anxious version of the dog you will have in a month; judging his temperament today is like judging a house by its moving day.'},
 
     {t:'steps',items:[
-      ['The night before','Set the room, not the dog','One room, gated. Crate open, bedding in, water down, cleaner within reach. Put an old sweatshirt you have slept in inside the crate. Decide tonight who does the 2 a.m. outing, because you will not negotiate well at 2 a.m.'],
-      ['Pickup','Two people, one job each','One drives, one sits with the carrier. He rides in the carrier or a crate, belted, on the floor or the seat — not on a lap, not loose. Nothing on his neck. Bring paper towels, a bag, and the food he has been eating. Ask for a blanket that smells of the litter and take it.'],
-      ['Minute 0','The yard before the house','Carry him from the car to the spot in the yard you have chosen as the spot. Put him down. Say nothing. Wait. If he goes, pay him instantly. If he does not, go inside and try again in twenty minutes. This is the first repetition of the routine in 3.4, and it starts before he has been in the house.'],
-      ['Hour 0–1','One room, no audience','No welcome party. No children queueing for a turn. Let him out in the single prepared room and let him explore it at his own pace while you sit on the floor and ignore him. He will come to you. If neighbors are coming, they can come Thursday.'],
-      ['Hour 1–2','The first meal, same as yesterday’s','Feed the food he arrived on, the amount he arrived on, split across the day. Change nothing this week; a diet transition on top of everything else buys you diarrhea you cannot interpret. Two meals a day is sound practice — just not, in this breed, bloat prevention. Take him out ten minutes after he eats.'],
-      ['Hour 2–8','The loop','Out every one to two waking hours, and after every sleep, meal, drink and play session. In between: short sniffing games, a food puzzle, and long naps in the open crate. He needs far more sleep than you expect. Guard it.'],
-      ['Evening','Wind down early','Last meal about three hours before bed. Water stays down until bedtime, then goes up. A long, boring last outing in the dark. No wrestling, no new people, no bath. Dim the lights an hour before you want him asleep.'],
-      ['Bedtime','The crate goes next to your bed','Not the laundry room. Not the kitchen. Beside the bed, at head height if you can manage it, so he can hear you breathing and you can put two fingers through the door. You can move the crate ten feet (3 m) a week later on. You cannot un-teach a first night spent screaming alone in a dark room.'],
-      ['00:00–05:00','Expect to be up twice','When he wakes and cries after sleeping, assume bladder. Lift him out with no talking, straight outside, no play, no light if you can help it, back in the crate. The whole trip is four minutes and deadly dull. Boring night outings are what stop the 2 a.m. trip becoming a social event he books nightly.'],
-      ['Day two, 06:00','Start the same routine','Same wake time, same first stop in the yard, same breakfast. The protocol is the point. The dog learns the day is predictable roughly four days before you feel like a competent person again.']
+      ['The night before','Set the room, not the dog','One room, gated. Crate open, bedding in, water down, cleaner within reach. Put an old sweatshirt you have slept in inside the crate. Decide tonight who does the 2 a.m. outing, because you will not negotiate well at 2 a.m.',''],
+      ['Pickup','Two people, one job each','One drives, one sits with the carrier. He rides in the carrier or a crate, belted, on the floor or the seat — not on a lap, not loose. Nothing on his neck. Bring paper towels, a bag, and the food he has been eating. Ask for a blanket that smells of the litter and take it.',''],
+      ['Minute 0','The yard before the house','Carry him from the car to the spot in the yard you have chosen as the spot. Put him down. Say nothing. Wait. If he goes, pay him instantly. If he does not, go inside and try again in twenty minutes. This is the first repetition of the routine in 3.4, and it starts before he has been in the house.','20 MIN'],
+      ['Hour 0–1','One room, no audience','No welcome party. No children queueing for a turn. Let him out in the single prepared room and let him explore it at his own pace while you sit on the floor and ignore him. He will come to you. If neighbors are coming, they can come Thursday.',''],
+      ['Hour 1–2','The first meal, same as yesterday’s','Feed the food he arrived on, the amount he arrived on, split across the day. Change nothing this week; a diet transition on top of everything else buys you diarrhea you cannot interpret. Two meals a day is sound practice — just not, in this breed, bloat prevention. Take him out ten minutes after he eats.','10 MIN'],
+      ['Hour 2–8','The loop','Out every one to two waking hours, and after every sleep, meal, drink and play session. In between: short sniffing games, a food puzzle, and long naps in the open crate. He needs far more sleep than you expect. Guard it.','1–2 HRS'],
+      ['Evening','Wind down early','Last meal about three hours before bed. Water stays down until bedtime, then goes up. A long, boring last outing in the dark. No wrestling, no new people, no bath. Dim the lights an hour before you want him asleep.','3 HRS'],
+      ['Bedtime','The crate goes next to your bed','Not the laundry room. Not the kitchen. Beside the bed, at head height if you can manage it, so he can hear you breathing and you can put two fingers through the door. You can move the crate ten feet (3 m) a week later on. You cannot un-teach a first night spent screaming alone in a dark room.',''],
+      ['00:00–05:00','Expect to be up twice','When he wakes and cries after sleeping, assume bladder. Lift him out with no talking, straight outside, no play, no light if you can help it, back in the crate. The whole trip is four minutes and deadly dull. Boring night outings are what stop the 2 a.m. trip becoming a social event he books nightly.','4 MIN'],
+      ['Day two, 06:00','Start the same routine','Same wake time, same first stop in the yard, same breakfast. The protocol is the point. The dog learns the day is predictable roughly four days before you feel like a competent person again.','4 DAYS']
     ]},
 
     {t:'h3',text:'When he cries'},
 
-    {t:'p',text:'He will cry. Say it plainly: <strong>the first night is bad.</strong> Most dachshund puppies protest the crate loudly for somewhere between twenty minutes and two hours the first night, in bursts, and it sounds far worse than it is. This is normal, it is not damage, and it is the single most common reason people abandon a plan that would have worked by Thursday.'},
+    {t:'keyfig',title:'The first night, in two numbers',items:[
+      ['PROTEST, NIGHT ONE','20 min – 2 hrs','Most dachshund puppies protest the crate loudly the first night, in bursts, and it sounds far worse than it is.'],
+      ['WHAT IT IS NOT','Damage','It is normal — and it is the single most common reason people abandon a plan that would have worked by Thursday.']
+    ]},
 
-    {t:'p',text:'The rule that keeps you sane is about timing, not about hardness. Do not lift him out <em>because</em> he is screaming — wait for a breath of quiet, even two seconds of it, and move then. Fingers through the crate door, a hand resting on top, a word, are all fine and none of them teach him that noise opens doors. If the crying has a different quality — frantic, escalating, drooling, bar-biting, soiling a clean crate — that is panic rather than protest, and the answer is to lower the difficulty, not to hold the line. Put the crate against the bed, take the door off, gate the room instead. You can rebuild the crate over the next two weeks. Section 3.5 does exactly that.'},
+    {t:'decision',title:'Protest, or panic?',items:[
+      ['Is the crying in bursts, with pauses in it?','Loud, rhythmic, tapering. This is protest, and the rule that keeps you sane is about timing, not hardness.',[['Yes → move on a breath of quiet, never on the scream',''],['No → read the next question','o']]],
+      ['Is it frantic and escalating — drooling, biting the bars, soiling a clean crate?','That quality of noise is panic, not protest, and holding the line is the wrong answer to it.',[['Yes → lower the difficulty tonight','a'],['No → hold the plan','']]],
+      ['How do you lower it without losing the crate?','You can rebuild it over the next two weeks; 3.5 does exactly that.',[['Crate against the bed','o'],['Door off','o'],['Gate the room instead','o']]]
+    ]},
+
+    {t:'p',text:'Do not lift him out <em>because</em> he is screaming — wait for a breath of quiet, even two seconds of it, and move then. Fingers through the crate door, a hand resting on top, a word, are all fine and none of them teach him that noise opens doors. Say it plainly: <strong>the first night is bad.</strong>'},
 
     {t:'p',text:'Two people should hear this before it happens. The first is whoever sleeps in the next room, so the noise is expected rather than alarming. The second is you, at 3 a.m., when the plan will seem cruel and the obvious solution will be to bring him into the bed. Bringing him into the bed on night one is not a moral failure and plenty of good dachshund households end up there deliberately — but decide it in daylight, as a household, not alone at 3 a.m. as a way of stopping a noise. That is the version that becomes permanent by accident.'},
 
@@ -228,36 +278,40 @@ module.exports = [
 
     {t:'tool',n:9,title:'The Three-Week House Protocol',intro:'A method, a timetable, and a log sheet. Run all three. The log is the part people skip and the part that actually shortens the process.'},
 
-    {t:'h3',text:'The method'},
-
-    {t:'list',ordered:true,items:[
-      'Out every <strong>one to two waking hours</strong>, and always after sleeping, eating, drinking and playing.',
-      'Same door, same route, same patch of yard, on a leash. The leash is not for control; it stops the outing becoming a walk.',
-      'Say nothing while he circles. Talking is a distraction, and “go potty” said forty times is background noise.',
-      'The instant he finishes — not ten seconds later, not at the back door — pay him. Food, outside, at the spot, within about two seconds.',
-      'Play <em>after</em> elimination, never before. Get this backwards and you teach a dog to hold on, because emptying ends the fun.',
-      'Nothing in three to five minutes: inside, into the crate or pen for ten minutes, straight back out. Do not give him the run of the kitchen on a full bladder.',
-      'Night outings as needed. In a small dog these may run to about <strong>five months</strong>, and that is not failure.',
-      'Widen his freedom only after <strong>eight to twelve weeks with no accidents</strong> — one room at a time, supervised, then unsupervised.'
+    {t:'steps',items:[
+      ['The interval','Out every one to two waking hours','And always after sleeping, eating, drinking and playing.','1–2 HRS'],
+      ['The route','Same door, same route, same patch of yard','On a leash. The leash is not for control; it stops the outing becoming a walk.',''],
+      ['While he circles','Say nothing','Talking is a distraction, and “go potty” said forty times is background noise.',''],
+      ['The instant he finishes','Pay him where he stands','Food, outside, at the spot — not ten seconds later, not at the back door.','2 SEC'],
+      ['Order of operations','Play after elimination, never before','Get this backwards and you teach a dog to hold on, because emptying ends the fun.',''],
+      ['If nothing happens','Inside, then straight back out','Into the crate or pen for ten minutes, then out again. Do not give him the run of the kitchen on a full bladder.','3–5 MIN'],
+      ['Nights','Outings as needed','In a small dog these may run to about five months, and that is not failure.','TO 5 MONTHS'],
+      ['Widening his freedom','One room at a time, supervised, then not','Only after eight to twelve weeks with no accidents.','8–12 WKS']
     ]},
 
-    {t:'table',head:['','Week 1','Week 2','Week 3'],rows:[
-      ['Daytime outings','Every 60 minutes awake','Every 90 minutes','Every 2 hours'],
-      ['Night','Two wakings, set an alarm','One waking','One, or sleeping through'],
-      ['Where he is loose','One room, on-leash or in sight','One room, off-leash, supervised','Two rooms, supervised'],
-      ['Expected accidents','Several a day','Perhaps one a day','Rare — and each one is data'],
-      ['What you are watching','The clock','The log','Him — circling, sniffing, leaving the room']
-    ],note:'A schedule, not a promise. Some dogs are reliable by week three and some take until five months, which the night-outing guidance already anticipates.'},
+    {t:'gauge',title:'The interval, week by week',items:[
+      ['WEEK 1',100,'Out every 60 minutes awake. Two night wakings — set an alarm.',''],
+      ['WEEK 2',67,'Every 90 minutes. One night waking.','mid'],
+      ['WEEK 3',50,'Every two hours. One waking, or sleeping through.','mid']
+    ]},
+
+    {t:'cards',title:'What else changes each week',items:[
+      ['WEEK 1','One room, on-leash or in sight','Expect several accidents a day.|You are watching the clock.',''],
+      ['WEEK 2','One room, off-leash, supervised','Expect perhaps one accident a day.|You are watching the log.','a'],
+      ['WEEK 3','Two rooms, supervised','Accidents rare — and each one is data.|You are watching him: circling, sniffing, leaving the room.','b']
+    ]},
+
+    {t:'p',text:'A schedule, not a promise. Some dogs are reliable by week three and some take until five months, which the night-outing guidance already anticipates.'},
 
     {t:'h3',text:'The log sheet'},
 
-    {t:'table',head:['Time','Out / accident','Result','Note'],rows:[
+    {t:'matrix',title:'One sheet, one refrigerator, every pair of hands',head:['Time','Out / accident','Result','Note'],rows:[
       ['06:10','Out','Both','Woke and circled first'],
       ['07:05','Out','Urine','10 min after breakfast'],
       ['08:40','Accident','Urine','Hall — 95 min since last out'],
       ['09:30','Out','Urine','Paid within 2 sec'],
       ['—','—','—','—']
-    ],note:'Redraw this on one sheet and tape it to the refrigerator; everyone in the house writes on the same one. Two weeks in, the pattern is visible on paper — his real interval, the meal that moves things, the hour you keep missing. Almost every “stubborn” dachshund turns out to be a log sheet nobody kept.'},
+    ],hi:[[2,1],[2,3]],note:'Redraw this on one sheet and tape it to the refrigerator; everyone in the house writes on the same one. Two weeks in, the pattern is visible on paper — his real interval, the meal that moves things, the hour you keep missing. Almost every “stubborn” dachshund turns out to be a log sheet nobody kept.'},
 
     {t:'evidence',badge:'settled',paras:[
       'Never punish an accident — not a scolding, not the newspaper, not the nose. The mechanism is well described: punishment after the fact does not teach the dog where to go, it teaches him <em>not to eliminate in front of you</em>. He then goes behind the sofa, and he stops performing on a leash in the yard, which removes your only opportunity to reward the right answer.',
@@ -272,9 +326,26 @@ module.exports = [
 
     {t:'h3',text:'Reading him, and the three ways this goes wrong'},
 
-    {t:'p',text:'The tells are small and they come about four seconds before the event: a sudden stop mid-play, a tight circle, a hard sniff at one spot on the floor, or simply leaving the room. A puppy who quietly goes next door is not being sneaky. He is doing exactly what he has been taught, which is to go somewhere you are not.'},
+    {t:'signals',title:'Four seconds of warning, and that is all you get',items:[
+      'A sudden stop mid-play.',
+      'A tight circle.',
+      'A hard sniff at one spot on the floor.',
+      'Simply leaving the room.'
+    ],role:'g'},
 
-    {t:'p',text:'Almost every stalled house-training case is one of three things. The interval is too long — you are running ninety minutes on a dog who has sixty. The reward is too slow or in the wrong place, so the paycheck arrives at the back door and he learns that coming inside is what pays. Or freedom was widened too early, usually after one good week, and the accidents that follow read as a relapse when they are simply a dog being asked for more than he has. Fix them in that order.'},
+    {t:'p',text:'A puppy who quietly goes next door is not being sneaky. He is doing exactly what he has been taught, which is to go somewhere you are not.'},
+
+    {t:'cards',title:'Almost every stalled case is one of three things — fix them in this order',items:[
+      ['ONE · THE INTERVAL','Too long','You are running ninety minutes on a dog who has sixty.',''],
+      ['TWO · THE REWARD','Too slow, or in the wrong place','The paycheck arrives at the back door, so he learns that coming inside is what pays.','a'],
+      ['THREE · THE FREEDOM','Widened too early','Usually after one good week. The accidents that follow read as a relapse when they are simply a dog being asked for more than he has.','b']
+    ]},
+
+    {t:'decision',title:'Is he ready for more of the house?',items:[
+      ['Has he gone eight to twelve weeks with no accidents?','Count accidents, not days without one. Three clean weeks means the schedule is working, not that the dog is finished.',[['Yes → open one more room, supervised',''],['No → keep the schedule and keep the log','o']]],
+      ['Has he been reliable in that room, unsupervised, for a week?','',[['Yes → add the next room, one at a time',''],['No → back to supervised','o']]],
+      ['Did accidents appear as soon as you widened?','',[['Yes → you asked for more than he has. Go back one room','a'],['No → carry on, slowly','o']]]
+    ]},
 
     {t:'note',title:'Paying him without feeding him',paras:[
       'Treats should stay at or under 10% of daily calories. For a 16 lb (7.3 kg) dachshund that is roughly 48 kcal a day — a genuinely small amount once you are marking eight to ten outings. Break training treats to the size of a pea, use part of his measured meal as currency, and subtract what you hand over from the bowl.'
@@ -286,7 +357,10 @@ module.exports = [
 
     {t:'p',text:'Clean accidents with an enzymatic cleaner and nothing else. Ammonia-based household products leave a smell that reads, to him, like a marked toilet. Say nothing while you clean, do not let him watch you do it with any particular energy, and write the time on the log — an accident you record is worth more than an accident you resent.'},
 
-    {t:'p',text:'On pads: they are a stopgap for a specific problem — a fifth-floor apartment, a night you physically cannot get downstairs, a dog on crate rest. Used as a strategy they teach the dog that indoors is a legitimate place to go, and you then get to untrain that as well. If you must use them, keep them by the exit door and move them outward.'}
+    {t:'duo',title:'Puppy pads',
+      a:['Used as a strategy','They teach the dog that indoors is a legitimate place to go, and you then get to untrain that as well.'],
+      b:['Used as a stopgap','A fifth-floor apartment, a night you physically cannot get downstairs, a dog on crate rest.'],
+      note:'If you must use them, keep them by the exit door and move them outward.'}
   ]
 },
 
@@ -298,7 +372,7 @@ module.exports = [
   pages:2,
   blocks:[
 
-    {t:'first',text:'The week you bring him home is the week you are most available and least inclined to leave the room. That is the trap. A dog who spends fourteen days never once out of sight learns that constant company is the baseline, and everything after is a loss. Build absence from day three, in seconds, while it is still cheap.'},
+    {t:'first',text:'The week you bring him home is the week you are most available and least inclined to leave the room, and that is the trap. A dog who spends fourteen days never once out of sight learns that constant company is the baseline, and everything after is a loss. Build absence from day three, in seconds, while it is still cheap.'},
 
     {t:'evidence',badge:'contested',paras:[
       'Popular writing puts separation anxiety at 20 to 30 percent of dogs. The largest survey of canine behavior yet published — Salonen and colleagues, 13,715 dogs — reports separation-related behavior at <strong>6%</strong>.',
@@ -308,18 +382,29 @@ module.exports = [
 
     {t:'h3',text:'The graded protocol'},
 
+    {t:'gauge',title:'Absence, built in seconds',items:[
+      ['DAY 3',12,'In sight, gated, five minutes.',''],
+      ['DAY 4–6',20,'Out of sight, seconds at a time.',''],
+      ['DAY 7–10',35,'Departure cues broken, going nowhere.','mid'],
+      ['DAY 10–14',60,'One minute outside the real door.','mid'],
+      ['WEEK 3–4',100,'Twenty minutes, filmed and watched back.','hot']
+    ]},
+
     {t:'steps',items:[
-      ['Day 3','Out of reach, in sight','Gate him in his room with a food puzzle while you sit on the other side reading. Five minutes. He should be eating, not watching the gate. If he watches the gate, move closer and shorten it.'],
-      ['Day 4–6','Out of sight, seconds','Step behind the door frame for ten seconds while he works on the puzzle. Return before he finishes and before he looks for you. Build to thirty seconds in a dozen repetitions across the day. You are never trying to prove he can cope; you are trying never to find out.'],
-      ['Day 7–10','Break the departure cues','Pick up the keys and put them down. Put on your shoes and cook dinner. Take the coat off the hook, walk to the door, hang it back up. Twenty times a day, going nowhere, until the sound of keys means nothing at all.'],
-      ['Day 10–14','One minute outside the door','Leave by the actual door you use. Wait one minute on the step. Come back in and ignore him for thirty seconds — no reunion scene. Then three minutes. Then five.'],
-      ['Week 3–4','Twenty minutes, on camera','Point a phone at the room and go get coffee. Watch it back. Settling within two or three minutes is the result you want; escalating vocalization, pacing, or scratching at the exit means you went too far too fast — halve it and rebuild.'],
-      ['Ongoing','Return only into quiet','Never open the door during a bark. Wait for a pause, however short, and come in then. The rule is the same as night one and it does the same work.']
+      ['Day 3','Out of reach, in sight','Gate him in his room with a food puzzle while you sit on the other side reading. He should be eating, not watching the gate. If he watches the gate, move closer and shorten it.','5 MIN'],
+      ['Day 4–6','Out of sight, seconds','Step behind the door frame while he works on the puzzle. Return before he finishes and before he looks for you. Build to thirty seconds in a dozen repetitions across the day. You are never trying to prove he can cope; you are trying never to find out.','10–30 SEC'],
+      ['Day 7–10','Break the departure cues','Pick up the keys and put them down. Put on your shoes and cook dinner. Take the coat off the hook, walk to the door, hang it back up. Going nowhere, until the sound of keys means nothing at all.','20× A DAY'],
+      ['Day 10–14','One minute outside the door','Leave by the actual door you use. Wait one minute on the step. Come back in and ignore him for thirty seconds — no reunion scene. Then three minutes. Then five.','1 MIN'],
+      ['Week 3–4','Twenty minutes, on camera','Point a phone at the room and go get coffee. Watch it back. Settling within two or three minutes is the result you want; escalating vocalization, pacing, or scratching at the exit means you went too far too fast — halve it and rebuild.','20 MIN'],
+      ['Ongoing','Return only into quiet','Never open the door during a bark. Wait for a pause, however short, and come in then. The rule is the same as night one and it does the same work.','FOR LIFE']
     ]},
 
     {t:'p',text:'Give him something to do in your absence rather than something to endure. Frozen food puzzles, scatter-feeding his breakfast in a snuffle mat, and simple find-the-treat games all work, and there is decent evidence that nose work does more than fill time: two weeks of scent work produced a measurably more optimistic judgment bias in dogs, compared against a heelwork control group. An optimistic dog copes better with a closed door.'},
 
-    {t:'p',text:'Two things this protocol is not. It is not crate training by another name — he can learn to be alone behind a gate, in a pen, or in a closed room, and the crate is only one furniture choice among several. And it is not a test of how long he can hold out. Every repetition should end while he is still comfortable, because the thing you are conditioning is the expectation that you come back, not the endurance of your absence. If you have to guess, go shorter.'},
+    {t:'cards',title:'Two things this protocol is not',items:[
+      ['NOT CRATE TRAINING','A gate, a pen or a closed room does the same work','He can learn to be alone behind any of them.|The crate is one furniture choice among several.','b'],
+      ['NOT AN ENDURANCE TEST','Every repetition ends while he is still comfortable','What you are conditioning is the expectation that you come back, not the endurance of your absence.|If you have to guess, go shorter.','']
+    ]},
 
     {t:'script',text:'come back before he wonders where you went'},
 
@@ -343,6 +428,17 @@ module.exports = [
     {t:'first',text:'The socialization window is the first three months of his life, and a good part of it is gone before he reaches you. That single fact sets the whole calendar: health care and social exposure run in parallel, not in sequence.'},
 
     {t:'tool',n:10,title:'The Four-Week Calendar',intro:'Vet, vaccines, outings, training, sleep. Copy it, date it, pin it up where everyone can see what is already done.'},
+
+    {t:'keyfig',title:'The two deadlines in month one',items:[
+      ['SOCIALIZATION WINDOW','3 months','The first three months of his life. It closes on schedule, and a good part of it is spent before he reaches you.'],
+      ['EARLIEST PUPPY CLASS','7–8 weeks','AVSAB endorses classes from seven to eight weeks with one vaccination at least 7 days prior, and says socialization should not wait for the full series.']
+    ]},
+
+    {t:'tiles',title:'The numbers on the calendar',items:[
+      ['4','Fecal exams in year one','What CAPC wants. Bring a stool sample to the first visit, inside 72 hours.'],
+      ['3+','DAPP doses, 6 to 16 weeks','Two to four weeks apart.'],
+      ['2','Leptospirosis doses','Core since 2024 under AAHA, two to four weeks apart from 12 weeks.']
+    ],src:'AAHA 2022 guidelines, updated 2024 · CAPC · all written for one market — ask which vaccines are core where you live'},
 
     {t:'table',head:['','Health','Socialization','Training & sleep'],rows:[
       ['Week 1','Vet visit inside 72 hours, with a stool sample — CAPC wants four fecal exams in year one. Confirm the DAPP series: three doses or more between 6 and 16 weeks, 2–4 weeks apart. Register the microchip in your name.','Carry him. Curbside, parking lots, the hardware store doorway. Nothing on the ground in unknown places yet.','Name, crate, the housetraining loop. Absence work from day three. Sleep is the priority.'],
@@ -369,13 +465,21 @@ module.exports = [
 
     {t:'first',text:'Every rule in this part fails the same way: not by being wrong, but by being kept by three people out of four. A rule held nine times in ten is not a rule. It is a lottery, and it pays out often enough to be worth playing — which is why the dog who is fed from the table once a week begs harder than the dog who is fed from it every night.'},
 
-    {t:'p',text:'This is not a metaphor. Arhant and colleagues, looking for the source of the small-dog behavior effect, landed on exactly three owner variables: less shared activity, less consistency, and more punitive methods. Consistency is the one with no cost attached. It is free, and households give it away because nobody wrote the rules down and the person who broke one did it out of affection.'},
+    {t:'signals',title:'The three owner variables Arhant found behind the small-dog effect',items:[
+      'Less shared activity.',
+      'Less consistency.',
+      'More punitive methods.'
+    ],role:'g'},
+
+    {t:'p',text:'This is not a metaphor. Consistency is the one of the three with no cost attached. It is free, and households give it away because nobody wrote the rules down and the person who broke one did it out of affection.'},
 
     {t:'h3',text:'Getting a household to actually agree'},
 
-    {t:'p',text:'Hold one conversation, before he arrives, with everyone who lives there and anyone who visits weekly. Twenty minutes. Write the answers on one sheet and put it on the refrigerator next to the log. Then two rules about the rules: any rule can be changed, but only by agreement and only out loud; and nobody enforces a rule on another adult in front of the dog, because the argument is more interesting to him than the rule.'},
-
-    {t:'p',text:'Children need their own version, shorter. Three things: he is not woken when he is asleep in his crate, he is never picked up by a child under ten, and food is given only from the labeled jar, never from a plate. The first two protect the dog. The third protects your calorie count, since his entire daily treat allowance is roughly 48 kcal.'},
+    {t:'cards',title:'One conversation, three parts',items:[
+      ['THE CONVERSATION','Twenty minutes, before he arrives','Everyone who lives there, and anyone who visits weekly.|Write the answers on one sheet and put it on the refrigerator next to the log.',''],
+      ['TWO RULES ABOUT RULES','Changed out loud, or not at all','Any rule can be changed, but only by agreement and only out loud.|Nobody enforces a rule on another adult in front of the dog — the argument is more interesting to him than the rule.','a'],
+      ['THE CHILDREN’S VERSION','Three things, and shorter','He is not woken when he is asleep in his crate. He is never picked up by a child under ten. Food comes only from the labeled jar, never from a plate.|The first two protect the dog. The third protects your calorie count, since his entire daily treat allowance is roughly 48 kcal.','b']
+    ]},
 
     {t:'table',head:['The question','Our answer','Agreed by'],rows:[
       ['Sofa — yes, no, or by invitation?','','' ],

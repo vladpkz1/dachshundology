@@ -8,7 +8,7 @@ module.exports = [
 /* ───────────────────────── 7.1 ───────────────────────── */
 { id:'7.1', title:'How much exercise, and when', sub:'the rule everybody quotes has no author', pages:3, blocks:[
 
-  {t:'first',text:'Ask five people how far to walk a dachshund puppy and four will give you the same answer: five minutes for every month of age, twice a day. It is a tidy rule. Breeders repeat it, rescues print it, veterinary receptionists hand it over with the vaccine schedule. It also has no traceable primary source. Nobody can tell you who ran the study, on which dogs, or whether there ever was one.'},
+  {t:'first',text:'Ask five people how far to walk a dachshund puppy and four will give you the same answer: five minutes for every month of age, twice a day. Breeders repeat it, rescues print it, veterinary receptionists hand it over with the vaccine schedule. It also has no traceable primary source — nobody can tell you who ran the study, on which dogs, or whether there ever was one.'},
 
   {t:'p',text:'That does not make it useless. A twelve-week-old taken on a two-mile (3 km) hike is a bad idea, and you can see why in his gait before the first mile is done. A conservative default is a reasonable thing to hand a new owner. But you are reading a book that draws the line between a habit and a finding, so here is the line. The five-minute rule is a rule of thumb. Use it as a starting dose. Do not use it as a reason.'},
 
@@ -20,13 +20,13 @@ module.exports = [
 
   {t:'h3',text:'The finding that points the other way'},
 
-  {t:'stats',items:[
-    ['< 30 min','a day — higher IVDD risk'],
-    ['> 1 hour','a day — lower risk'],
-    ['2,031','owners surveyed, DachsLife 2015']
-  ]},
+  {t:'tiles',title:'Daily exercise, against disc risk',roles:['b','g','s'],items:[
+    ['< 30 min','a day · higher IVDD risk','The end of the scale most owners aim for when they set out to protect the back.'],
+    ['> 1 hour','a day · lower risk','The protective end of that scale is not a gentle stroll around the block.'],
+    ['2,031','owners surveyed','DachsLife 2015. The Royal Veterinary College analyzed what came back.']
+  ],src:'DachsLife 2015, 2,031 owners, RVC analysis · dachshund-ivdd.uk, lifestyle advice'},
 
-  {t:'p',text:'DachsLife 2015 put questions to the owners of 2,031 dachshunds and the Royal Veterinary College analyzed what came back. On exercise the direction is the opposite of what most owners assume. Dogs getting under thirty minutes a day carried a higher risk of disc disease. Dogs getting over an hour a day carried a lower one. The protective end of that scale is not a gentle stroll around the block.'},
+  {t:'p',text:'On exercise the direction is the opposite of what most owners assume. Dogs getting under thirty minutes a day carried a higher risk of disc disease; dogs getting over an hour a day carried a lower one.'},
 
   {t:'evidence',badge:'contested',paras:[
     'Almost every new owner protects the back by doing less. Shorter walks, fewer of them, no hills, nothing strenuous. The survey evidence runs against the instinct.',
@@ -40,12 +40,12 @@ module.exports = [
 
   {t:'h3',text:'By age'},
 
-  {t:'table',head:['Age','A day’s movement','What to leave out'],rows:[
+  {t:'matrix',title:'A day’s movement, by age',head:['Age','A day’s movement','What to leave out'],rows:[
     ['8–16 weeks','Short outings for the world, not for distance. Free play on grass, self-paced, measured in minutes','Stairs, jumping down, forced distance, anything repetitive'],
     ['4–12 months','Build toward thirty to forty-five minutes across two or three outings. Sniffing counts as work','Running beside a bike or a jogger; repeated jumping on and off furniture'],
     ['1–7 years','An hour or more, split across the day. Hills, long grass, scent work, swimming where he likes it','Nothing, if he is fit — except the three things in 7.3'],
     ['8 and up','Shorter walks, more of them. Keep the daily total up, change its shape','See Part VIII']
-  ],note:'Adjust to the dog. A fit adult standard and an eleven-pound (5 kg) miniature are not on the same schedule.'},
+  ],hi:[[2,1]],note:'Adjust to the dog. A fit adult standard and an eleven-pound (5 kg) miniature are not on the same schedule.'},
 
   {t:'note',title:'What counts',paras:[
     'A thirty-minute sniffing walk is more tiring than a thirty-minute road march and does more for his head. Let him stop. The stopping is the point.',
@@ -55,11 +55,26 @@ module.exports = [
 
   {t:'h3',text:'The months that catch people out'},
 
-  {t:'p',text:'Between roughly six and fourteen months you have a dog with adult energy, adult confidence and a skeleton that has not finished. Owners go wrong in both directions here. Some overshoot, because he can suddenly keep up — a running partner, a daily hour on pavement, stairs learned as a game. Some undershoot badly, because adolescence made him difficult and the walks quietly got shorter. Keep the volume moderate and the variety high: soft ground, hills taken at a walk, scent work, several short outings rather than one expedition. And decide in these months what he is allowed to practice, because whatever he repeats a thousand times at nine months is what his body will be doing at nine years.'},
+  {t:'cards',title:'Six to fourteen months · the two ways it goes wrong',items:[
+    ['OVERSHOOTING','He can suddenly keep up','Adult energy and adult confidence on a skeleton that has not finished.|A running partner, a daily hour on pavement, stairs learned as a game.','a'],
+    ['UNDERSHOOTING','Adolescence made him difficult','Nobody decided to cut the walks.|They quietly got shorter, and the dog that comes out the other side is unfit.','a'],
+    ['WHAT TO DO INSTEAD','Moderate volume, high variety','Soft ground, hills taken at a walk, scent work.|Several short outings rather than one expedition.','']
+  ]},
+
+  {t:'p',text:'And decide in these months what he is allowed to practice, because whatever he repeats a thousand times at nine months is what his body will be doing at nine years.'},
 
   {t:'h3',text:'Fit, not fragile'},
 
-  {t:'p',text:'You cannot change the skeleton. You can change what surrounds it. Muscle along the topline and through the hindquarters is the only structural improvement available to you, and it is built by varied ground, not by flat pavement — a hill, long grass, sand, a shallow slope taken at a walk. Swimming, if he will do it, loads the muscle and spares the joints. Ten minutes of that is worth a mile (1.6 km) of sidewalk.'},
+  {t:'p',text:'You cannot change the skeleton. You can change what surrounds it. Muscle along the topline and through the hindquarters is the only structural improvement available to you, and it is built by varied ground, not by flat pavement.'},
+
+  {t:'signals',title:'Ground that builds the muscle',role:'g',items:[
+    'A hill, taken at a walk',
+    'Long grass',
+    'Sand',
+    'A shallow slope',
+    'Swimming, if he will do it — it loads the muscle and spares the joints',
+    'Ten minutes of swimming is worth a mile (1.6 km) of sidewalk'
+  ]},
 
   {t:'brief',title:'How to tell fit from overdone',paras:[
     'He should finish a walk still interested in what is ahead of him, not lagging at the end of the leash.',
@@ -75,11 +90,11 @@ module.exports = [
 
   {t:'p',text:'The AKC breed standard asks for a dog “persevering in above- and below-ground work, with all the senses well-developed.” That is not decoration. The animal was built to follow a scent into a hole in the dark, without instruction, and keep at it long after a sensible dog would have come home. You have that hardware in your living room. Most owners leave it switched off and then wonder why the dog spends the evening barking at the window.'},
 
-  {t:'stats',items:[
+  {t:'tiles',title:'Nosework against heelwork',items:[
     ['2 weeks','of nosework was enough'],
     ['Optimistic','judgment bias, against a heelwork control'],
     ['0','equipment required to start']
-  ]},
+  ],src:'“Let Me Sniff!” — nosework and judgment bias, Barnard College'},
 
   {t:'evidence',badge:'settled',paras:[
     'Sniffing looks like a lapse in concentration. It is the opposite: it is the dog doing the thing he is best at, and it changes how he reads the rest of his day.',
@@ -89,13 +104,20 @@ module.exports = [
 
   {t:'h3',text:'Why this beats fetch for this breed'},
 
-  {t:'p',text:'Fetch is a repetitive sprint with a hard stop and a twist at the end of it, done on whatever surface you happen to be standing on. For a long-backed dog with short legs and a spine you already know the history of, that is a lot of identical loading for very little mental return. He is also, being this breed, quite likely to bring it back twice and then take it under the couch.'},
-
-  {t:'p',text:'Scent work reverses the arithmetic. The physical load is low and self-paced. The mental load is high. It tires him in the way that matters, it uses the part of him that was actually selected for, and it is the one game where his independence stops being a training problem and starts being the whole point. You are not competing with the nose. You are employing it.'},
+  {t:'duo',title:'Fetch against scent work, on this body',
+    a:['WHAT FETCH IS','A repetitive sprint with a hard stop and a twist at the end of it, on whatever surface you happen to be standing on. For a long-backed dog with short legs, that is a lot of identical loading for very little mental return. He is also quite likely to bring it back twice and then take it under the couch.'],
+    b:['WHAT SCENT WORK IS','The physical load is low and self-paced. The mental load is high. It tires him in the way that matters, and it uses the part of him that was actually selected for.'],
+    note:'Scent work is the one game where his independence stops being a training problem and starts being the whole point. You are not competing with the nose. You are employing it.'},
 
   {t:'script',text:'the only game where he gets to be right and you get to be wrong'},
 
   {t:'tool',n:23,title:'Three scent games',intro:'One for a living room, one for a yard, one for a walk. No equipment beyond food, a few containers and a scrap of cloth. Run one a day, three to five minutes. Stop while he still wants more, and never help him — pointing at the answer teaches him to watch your hands instead of using his nose.'},
+
+  {t:'cards',title:'Three games, three places',items:[
+    ['GAME ONE · INDOORS','Containers','Six boxes on a rug, a tenth of his dinner.|Five finds and stop.',''],
+    ['GAME TWO · THE YARD','Scatter and target','The roughest grass you have, then one scented target he has to dig for.','b'],
+    ['GAME THREE · THE WALK','Find it on cue','The same release word, paid ground, a dragged trail, and five minutes where he leads.','s']
+  ]},
 
   {t:'h3',text:'Game one · The living room · Containers'},
 
@@ -111,9 +133,9 @@ module.exports = [
 
   {t:'steps',items:[
     ['Setup','Long grass','Pick the roughest grass you have. Short lawn is too easy and pavement is useless — scent will not hold on it.'],
-    ['Part 1','Scatter feed','Throw a handful of kibble low and wide across a ten-foot (3 m) square while he waits. Release him. This is the warm-up and, on its own, a legitimate twenty minutes of a dachshund’s day.'],
+    ['Part 1','Scatter feed','Throw a handful of kibble low and wide across a ten-foot (3 m) square while he waits. Release him. This is the warm-up and, on its own, a legitimate twenty minutes of a dachshund’s day.','20 MIN'],
     ['Part 2','One target','Rub a scrap of old cloth on a piece of cheese, then hide the cloth and a matching piece of cheese together under a plant pot, a log, or the edge of a step. Bring him out and release.'],
-    ['Part 3','Cold, then buried','Set the target and wait five minutes before releasing him, so the trail is cold rather than fresh. Then set it slightly under loose soil or leaves so he has to dig for it.'],
+    ['Part 3','Cold, then buried','Set the target and wait five minutes before releasing him, so the trail is cold rather than fresh. Then set it slightly under loose soil or leaves so he has to dig for it.','5 MIN'],
     ['Rule','Let him dig','This is where the digging is allowed, which is the cheapest way to keep it out of the flower bed. Choose the spot on purpose and use it every time.']
   ]},
 
@@ -121,9 +143,9 @@ module.exports = [
 
   {t:'steps',items:[
     ['Setup','Same word','Use the same release word you use indoors. The cue is what turns an hour of random sniffing into a job he does for you.'],
-    ['Step 1','Pay the ground','On the walk, stop at a patch of rough grass or leaf litter, scatter four or five pieces of food into it, and release him. Thirty seconds, then move on.'],
+    ['Step 1','Pay the ground','On the walk, stop at a patch of rough grass or leaf litter, scatter four or five pieces of food into it, and release him. Thirty seconds, then move on.','30 SEC'],
     ['Step 2','Drag a trail','On a quiet stretch, walk twenty feet (6 m) dragging a scented cloth along the ground with a treat at the end, while someone holds him. Bring him to the start and release him onto the line.'],
-    ['Step 3','Let him lead','Once a walk, hand over the route. Loose leash, no direction, wherever the nose goes for five minutes. Bring him back on the recall word, pay it, and resume your walk.'],
+    ['Step 3','Let him lead','Once a walk, hand over the route. Loose leash, no direction, wherever the nose goes for five minutes. Bring him back on the recall word, pay it, and resume your walk.','5 MIN'],
     ['Rule','Never correct a wrong answer','If he searches the wrong place, wait. Saying no to a dog who is working teaches him that searching is risky, and a dog who is not sure is a dog who stops trying.']
   ]},
 
@@ -140,11 +162,11 @@ module.exports = [
 
   {t:'p',text:'The list of prohibitions for this breed is usually long, unsourced and delivered with total confidence. Here is a short one, with the strength of the evidence attached to each item, so you can tell which lines are worth defending at a dog park.'},
 
-  {t:'p',text:'<strong>Repeated jumping down.</strong> Up is loading. Down is impact, taken through the forelimbs and into a long spine, and a dog who does it eight times a day for six years has done it many thousands of times. The reasoning is mechanical and it is sound. What it is not is a study on this breed showing that jumping causes disc extrusion. Nobody has run one.'},
-
-  {t:'p',text:'<strong>Competitive agility and the jump sports.</strong> Same reasoning, higher dose, plus tight turns at speed on a long back. The caution is drawn from conformation, not from a trial demonstrating harm in dachshunds. Say it plainly rather than dressing it up: this is an argument from how the dog is built. It is a good argument. It is not a result.'},
-
-  {t:'p',text:'<strong>Slick floors.</strong> Polished wood, tile and laminate take away the traction he needs to land, turn and push off. This one you can watch happening. Lay runners on the routes he actually uses, keep nails short, and trim the hair between the pads on longhaired and wirehaired dogs.'},
+  {t:'cards',title:'Three things to avoid, and what each one rests on',items:[
+    ['REASONING, NOT PROOF','Repeated jumping down','Up is loading. Down is impact, taken through the forelimbs into a long spine — eight times a day for six years is many thousands of repetitions.|The mechanics are sound. No study on this breed shows that jumping causes disc extrusion. Nobody has run one.','a'],
+    ['REASONING, NOT PROOF','Competitive agility, and the jump sports','Same reasoning, higher dose, plus tight turns at speed on a long back.|The caution is drawn from conformation, not from a trial demonstrating harm in dachshunds. It is a good argument. It is not a result.','a'],
+    ['YOU CAN WATCH IT HAPPEN','Slick floors','Polished wood, tile and laminate take away the traction he needs to land, turn and push off.|Lay runners on the routes he uses, keep nails short, trim the hair between the pads on longhaired and wirehaired dogs.','']
+  ]},
 
   {t:'flag',title:'The combination that does the damage',paras:[
     'A jump down from a couch onto tile is two problems at once: uncontrolled impact and no grip at the landing.',
@@ -152,7 +174,10 @@ module.exports = [
     'If he yelps on landing, refuses a jump he made yesterday, or stands hunched afterward, stop the day there and read the disc chapter.'
   ]},
 
-  {t:'p',text:'Note what is <em>not</em> on the list. In the DachsLife survey, dogs that were <strong>prevented</strong> from using furniture were at <em>higher</em> risk of disc disease, and the stairs finding was a protective trend that did not reach significance. Neither of those means banning the couch causes disc disease. What they do mean is that a blanket prohibition has no support behind it, and that the sensible reading is control, not exclusion. Build a ramp and teach him to use it. Carry him where there is no ramp. Do not stop a dog from getting to the places he was going to get to anyway.'},
+  {t:'duo',title:'What is <em>not</em> on the list',
+    a:['THE BLANKET BAN','Block him off the furniture, permanently, on the grounds that he is a dachshund. Delivered with total confidence, and never with a citation.'],
+    b:['WHAT DACHSLIFE FOUND','Dogs that were <strong>prevented</strong> from using furniture were at <em>higher</em> risk of disc disease. The stairs finding was a protective trend that did not reach significance.'],
+    note:'Neither of those means banning the couch causes disc disease. What they do mean is that a blanket prohibition has no support behind it, and that the sensible reading is control, not exclusion. Build a ramp and teach him to use it. Carry him where there is no ramp. Do not stop a dog from getting to the places he was going to get to anyway.'},
 
   {t:'script',text:'the couch was never the enemy. the drop onto bare tile was'}
 ]},
@@ -160,7 +185,7 @@ module.exports = [
 /* ───────────────────────── 7.4 ───────────────────────── */
 { id:'7.4', title:'Grooming by coat', sub:'ten minutes a week, and half of it is an examination', pages:2, blocks:[
 
-  {t:'p',text:'Three coats, shown separately, groomed differently. Whichever one you have, the weekly session is doing two jobs. One is the coat. The other is a full-body check — hands down the back, over the ribs, along each leg, under the tail — which is how you catch a lump, a hot spot, a tick, or a flinch over the lumbar spine while it is still small. The grooming is the excuse. The examination is the value.'},
+  {t:'p',text:'Three coats, shown separately, groomed differently. Whichever one you have, the weekly session is doing two jobs. One is the coat. The other is a full-body check, which is how you catch a lump, a hot spot, a tick, or a flinch over the lumbar spine while it is still small. The grooming is the excuse. The examination is the value.'},
 
   {t:'table',head:['Coat','Weekly','Tools','Bath'],rows:[
     ['Smooth','Five minutes with a rubber curry or hound glove','Rubber curry, hound glove, soft cloth','Every six to eight weeks, or when he rolls in something'],
@@ -168,11 +193,22 @@ module.exports = [
     ['Longhaired','Fifteen minutes, line-brushed; feathering behind the ears, on the legs, under the tail and on the chest','Pin brush, greyhound comb, dematting comb, blunt-nosed scissors','Every four to six weeks']
   ],note:'Ear feathering and the trousers are where mats start on a longhaired dog. Both drag on the ground, and this dog is closer to the ground than most.'},
 
+  {t:'check',title:'The half of it that is an examination',items:[
+    'Hands down the back — a flinch over the lumbar spine is the one you are looking for',
+    'Over the ribs, both sides',
+    'Along each leg, down to the foot',
+    'Under the tail',
+    'Anything you find: a lump, a hot spot, a tick — while it is still small'
+  ]},
+
   {t:'h3',text:'The wire coat, and what clipping does to it'},
 
   {t:'p',text:'A wire jacket is a harsh outer coat over a softer undercoat, and it is designed to be plucked, not cut. Hand-stripping pulls the dead outer hairs out at the root — a few at a time, with finger and thumb or a stripping knife held against the thumb — so the follicle produces a new harsh hair behind it. Done on a schedule, usually two or three times a year with tidying in between, the jacket stays crisp, weatherproof and the color it is supposed to be.'},
 
-  {t:'p',text:'Clipping cuts the same hairs off at the surface and leaves the root in place. Over a few cycles the harsh outer coat thins out, the soft undercoat takes over, and the texture goes woolly and the color goes flat. That is not damage and it is not permanent for most dogs, but it is a decision, and plenty of groomers will make it for you without mentioning it. If the coat is the reason you chose a wire, say so before the clippers come out. If you would rather have a soft, low-maintenance dog and do not care about the jacket, clip him. Just do it on purpose.'},
+  {t:'duo',title:'Stripped against clipped',
+    a:['WHAT THE CLIPPERS DO','Cut the same hairs off at the surface and leave the root in place. Over a few cycles the harsh outer coat thins out, the soft undercoat takes over, the texture goes woolly and the color goes flat.'],
+    b:['WHAT THE KNIFE DOES','Takes the dead hair out at the root so the follicle replaces it with a harsh one. Two or three times a year, with tidying in between, and the jacket stays the coat you paid for.'],
+    note:'Clipping is not damage and it is not permanent for most dogs, but it is a decision, and plenty of groomers will make it for you without mentioning it. If the coat is the reason you chose a wire, say so before the clippers come out. If you would rather have a soft, low-maintenance dog and do not care about the jacket, clip him. Just do it on purpose.'},
 
   {t:'note',title:'Nails, ears, eyes',paras:[
     'Nails every two to three weeks, a little at a time. On a dog this low, long nails change the angle he stands at and cost him grip on exactly the floors described in 7.3. If you hear them on the kitchen tile, they are long.',
@@ -195,11 +231,29 @@ module.exports = [
 
   {t:'p',text:'A dachshund is a good apartment dog in every respect but one. He is small, he sleeps a great deal, he does not need a yard, and he is entirely happy on a couch. He also has a bark built to be heard from underground through several feet of earth, and your neighbor shares a wall with it. Everything else here is easy. That one thing is the whole job.'},
 
-  {t:'p',text:'Work the door, because in an apartment the door is the trigger. Corridor footsteps, the elevator chime and the neighbor’s key all predict nothing and all get announced. Pair each of those sounds with food, every time, until they mean cheese rather than intruders, and give him a mat away from the entrance to be sent to. Manage what you cannot train yet: white noise near the door, a film over the glass if he can see the hallway, and a crate placed away from the shared wall rather than against it. Introduce yourself to the neighbors before the barking does — a person who has met the dog complains later, and to you rather than to the building.'},
+  {t:'cards',title:'The bark, worked in three places',items:[
+    ['THE DOOR','Pair the trigger with food','Corridor footsteps, the elevator chime and the neighbor’s key all predict nothing and all get announced.|Pair each sound with food, every time, until it means cheese rather than intruders. Give him a mat away from the entrance to be sent to.',''],
+    ['THE ROOM','Manage what you cannot train yet','White noise near the door. A film over the glass if he can see the hallway.|The crate placed away from the shared wall rather than against it.','b'],
+    ['THE NEIGHBORS','Introduce yourself before the barking does','A person who has met the dog complains later — and to you, rather than to the building.','s']
+  ]},
 
-  {t:'p',text:'Lobbies and elevators deserve their own rehearsal. An elevator is a small metal box in which a stranger and a dog cannot get away from each other, so teach him to sit facing the doors, on a short leash, before you need it. Carrying him through the lobby is not cheating; it is the fastest way past a small child who wants to grab, and it keeps him off the floor between two sets of automatic doors. Use a harness, never a collar, in a place where you may have to lift him without warning.'},
+  {t:'signals',title:'Lobbies and elevators, rehearsed before you need them',role:'g',items:[
+    'An elevator is a small metal box in which a stranger and a dog cannot get away from each other',
+    'Teach him to sit facing the doors, on a short leash, before you need it',
+    'Carrying him through the lobby is not cheating',
+    'It is the fastest way past a small child who wants to grab',
+    'It keeps him off the floor between two sets of automatic doors',
+    'A harness, never a collar, in a place where you may have to lift him without warning'
+  ]},
 
-  {t:'p',text:'Without a yard, house-training runs on the clock rather than on the door. Outings every one to two waking hours, straight out to the same patch of ground, reward the instant he finishes rather than when he gets back inside, and play only <em>after</em> he has eliminated — a dog who learns that emptying ends the fun will hold it. Expect night outings until around five months. Count eight to twelve accident-free weeks before you give him more of the apartment. Puppy pads solve the elevator problem and create a new one, since they teach him that soft absorbent things indoors are a legitimate target. If you use them, use them as a bridge, and put them by the door you leave from.'},
+  {t:'h3',text:'House-training without a yard'},
+
+  {t:'steps',items:[
+    ['The clock','Out every one to two waking hours','Without a yard, house-training runs on the clock rather than on the door. Straight out to the same patch of ground, every time. Expect night outings until around five months.','1–2 HRS'],
+    ['The payment','Reward the instant he finishes','Not when he gets back inside. And play only <em>after</em> he has eliminated — a dog who learns that emptying ends the fun will hold it.'],
+    ['The pads','A bridge, not a destination','Puppy pads solve the elevator problem and create a new one: they teach him that soft absorbent things indoors are a legitimate target. If you use them, put them by the door you leave from.'],
+    ['The graduation','Eight to twelve accident-free weeks','Count them before you give him more of the apartment. Not one week fewer.','8–12 WEEKS']
+  ]},
 
   {t:'brief',title:'Assistance animals: three rules, not one',paras:[
     '<strong>Public places.</strong> Under the US ADA a service animal is “a dog that has been individually trained to do work or perform tasks for an individual with a disability.” Emotional support animals are explicitly <em>not</em> service animals. Staff may ask only two questions and may not demand documentation.',
@@ -212,30 +266,50 @@ module.exports = [
 /* ───────────────────────── 7.6 ───────────────────────── */
 { id:'7.6', title:'Travel, heat and cold', sub:'the risk is not where you were told it was', pages:2, blocks:[
 
-  {t:'p',text:'In a car, he is either in a crate that is strapped down or in a harness crash-tested under a program in your own country, clipped to a seatbelt, in the back, never in the front and never on a lap. A loose dog in a braking car is a projectile, and a dachshund who launches off a seat into a footwell has taken exactly the impact 7.3 is about. Crate him where you can see him, keep the windows up enough that he cannot get his head out, and stop every two hours on a long drive to let him walk and drink.'},
+  {t:'cards',title:'In the car',items:[
+    ['THE RESTRAINT','A strapped-down crate, or a crash-tested harness','Tested under a program in your own country, clipped to a seatbelt.|A loose dog in a braking car is a projectile.',''],
+    ['THE PLACE','In the back. Never the front, never a lap','A dachshund who launches off a seat into a footwell has taken exactly the impact 7.3 is about.|Crate him where you can see him.','b'],
+    ['THE DRIVE','Windows up, and stop every two hours','Up enough that he cannot get his head out.|On a long drive, stop to let him walk and drink.','s']
+  ]},
 
   {t:'h3',text:'The carrier problem'},
 
   {t:'p',text:'Flying in the cabin is a question of length, and it is decided before you buy the ticket. Every airline caps the soft carrier, the caps differ by airline and by country, and they change — which means the number that matters is not what your dog weighs but how long he is when he lies down flat, which is the only way a dachshund travels.'},
 
-  {t:'table',head:['Ask before booking','Why it matters','Ask who'],rows:[
-    ['Carrier size limits','He travels lying flat','The airline, in writing'],
+  {t:'matrix',title:'What to ask before you book',head:['Ask before booking','Why it matters','Get it in writing from'],rows:[
+    ['Carrier size limits','He travels lying flat','The airline'],
     ['Cabin or hold','Handling is the real risk','The airline'],
     ['Weight limits, if any','Some cap dog plus bag','The airline'],
     ['Health certificate','Timing set by destination','Your veterinarian'],
     ['Breed or size rules','These differ by route','The airline'],
     ['Border documents','Chip, vaccination, parasites','Your veterinarian']
-  ],note:'These differ by airline and by country and change without notice. Get the answer for your own route in writing before you book — and carry the bag on stairs, escalators and belts.'},
+  ],hi:[[0,2],[1,2],[2,2],[3,2],[4,2],[5,2]],note:'These differ by airline and by country and change without notice. Get the answer for your own route in writing before you book — and carry the bag on stairs, escalators and belts.'},
 
-  {t:'p',text:'A miniature generally fits. <strong>A standard generally does not.</strong> That is reasoning from published carrier dimensions against the length of the breed, not a statement any airline has made, and the published caps differ by airline and by country — and since the AKC, The Kennel Club and the FCI draw the size line differently, measure your own dog lying down rather than trusting his label, then plan to drive, or to research the hold separately, rather than arrive at the gate to have it settled by an agent with a tape measure.'},
+  {t:'phases',title:'Flying, in three moves',items:[
+    ['Before booking','Carrier cap · cabin or hold · breed and size rules'],
+    ['Before the date','Health certificate · timing set by destination'],
+    ['On the day','Carry the bag on stairs, escalators and belts']
+  ]},
+
+  {t:'decision',title:'Cabin, hold, or drive',items:[
+    ['Measure him lying down flat. Does he fit the cap your airline publishes?','Length, not weight, is what decides it, because lying flat is the only way a dachshund travels. A miniature generally fits. A standard generally does not.',
+      [['Yes → book it',''],['No → the hold, or the road','o']]],
+    ['Are you going by his label or by the tape?','The AKC, The Kennel Club and the FCI draw the size line differently, so measure your own dog rather than trusting what he is called.',
+      [['Measure the dog',''],['Never the label alone','a']]],
+    ['Do you have this route’s current figures in writing?','Published caps differ by airline and by country and they change without notice.',
+      [['Yes → you are booking on a fact',''],['No → do not let the gate decide it','a']]]
+  ]},
+
+  {t:'p',text:'Be clear about the status of that reasoning. <strong>A standard generally does not fit</strong> is arithmetic from published carrier dimensions against the length of the breed — it is not a statement any airline has made about the breed. Plan to drive, or to research the hold separately, rather than arrive at the gate to have it settled by an agent with a tape measure.'},
 
   {t:'h3',text:'Heat'},
 
-  {t:'stats',items:[
-    ['74.2%','of heatstroke cases were exercise-induced'],
+  {t:'tiles',title:'1,259 heatstroke episodes, by trigger',roles:['b','s','','b'],items:[
+    ['74.2%','were exercise-induced'],
+    ['12.9%','were environmental'],
     ['5.2%','involved a vehicle'],
     ['7.86%','overall fatality']
-  ]},
+  ],src:'VetCompass, 1,259 heatstroke episodes across 905,543 dogs · Animals (MDPI)'},
 
   {t:'evidence',badge:'contested',paras:[
     '“Never leave your dog in a car” is the entire public message on heat, and it is true. It is also aimed at one twentieth of the problem.',
@@ -244,13 +318,24 @@ module.exports = [
     'The practical consequence: the dangerous decision of a hot day is usually the walk, not the parking lot. Move it to dawn and dusk, cut the distance, and abandon it entirely when it is genuinely hot. He will not self-regulate. Bred to persevere, he will keep going while you are the one who is tired.'
   ],source:'VetCompass, 1,259 heatstroke episodes across 905,543 dogs · Animals (MDPI)'},
 
-  {t:'p',text:'On pavement, the AVMA gives only a qualitative rule, and it is the honest one: if you are warm, the dog is likely much warmer, and grass may be the better surface on a very hot day. The seven-second hand test you see quoted everywhere is not an AVMA rule and is not attributed here to anyone. Put the back of your hand down anyway. It costs you nothing and it is better than guessing.'},
+  {t:'duo',title:'The pavement test',
+    a:['WHAT IS QUOTED','The seven-second back-of-the-hand test, repeated everywhere as though somebody official had published it. It is not an AVMA rule and it is not attributed here to anyone.'],
+    b:['WHAT THE AVMA ACTUALLY SAYS','A qualitative rule, and the honest one: if you are warm, the dog is likely much warmer, and grass may be the better surface on a very hot day.'],
+    note:'Put the back of your hand down anyway. It costs you nothing and it is better than guessing.'},
 
   {t:'h3',text:'Cold'},
 
   {t:'p',text:'The AVMA’s cold-weather guidance names this body type twice without naming the breed. “Short-haired pets … feel the cold faster.” And short-legged dogs have the belly and body in contact with the snow. A smooth dachshund in a hard winter is an inch (2.5 cm) off the ground with almost nothing between him and it.'},
 
-  {t:'p',text:'On coats, the AVMA’s position is measured, and so is this book’s: “if your dog has a short coat or seems bothered by the cold weather, consider a sweater or dog coat.” That is reasonable, not proven. No study says a coat lowers any risk in this breed. Buy one if he shivers, refuses the door, or lifts his feet — and keep a second, because a wet coat makes a dog colder than no coat at all. No fixed temperature cutoff is given by anyone worth citing, so use the dog. Shaking, lifted paws, a hunched stance and a sudden urgency to get home are the signal, and on a salted or chemically treated sidewalk you should rinse his feet when you get there.'},
+  {t:'p',text:'On coats, the AVMA’s position is measured, and so is this book’s: “if your dog has a short coat or seems bothered by the cold weather, consider a sweater or dog coat.” That is reasonable, not proven. No study says a coat lowers any risk in this breed. Buy one if he shivers, refuses the door, or lifts his feet — and keep a second, because a wet coat makes a dog colder than no coat at all. On a salted or chemically treated sidewalk, rinse his feet when you get home.'},
+
+  {t:'signals',title:'No fixed cutoff is given by anyone worth citing — so use the dog',items:[
+    'Shaking',
+    'Lifted paws',
+    'A hunched stance',
+    'A sudden urgency to get home',
+    'A refusal at the door'
+  ],role:'g'},
 
   {t:'photo',n:44,note:'Smooth standard in a fitted coat on packed snow at dusk, belly just clear of the surface, breath visible. Cold blue light, warm window behind.',caption:'One inch (2.5 cm) of clearance, and the AVMA named exactly this shape.'}
 ]},
@@ -258,30 +343,52 @@ module.exports = [
 /* ───────────────────────── 7.7 ───────────────────────── */
 { id:'7.7', title:'The go-bag', sub:'packed once, kept by the door, checked twice a year', pages:1, blocks:[
 
-  {t:'tool',n:24,title:'The travel and emergency kit',intro:'One bag that covers a weekend away, a night at an emergency clinic and an evacuation. Keep it where you can pick it up on the way out, and put a reminder in your calendar twice a year to swap the food, the water and anything with an expiration date.'},
+  {t:'tool',n:24,title:'The travel and emergency kit',intro:'One bag that covers a weekend away, a night at an emergency clinic and an evacuation.'},
 
-  {t:'check',title:'Tool 24 · The go-bag',items:[
+  {t:'phases',title:'The bag’s year',items:[
+    ['Packed once','Everything on the three lists below'],
+    ['Kept by the door','Where you can pick it up on the way out'],
+    ['Twice a year','Swap the food, the water and anything dated']
+  ]},
+
+  {t:'check',title:'Tool 24 · The bag itself',items:[
     'Harness and a spare leash — harness, not collar, always',
+    'A rigid carrier or a soft crate that fits the car',
+    'A folded blanket or towel — also a stretcher for a dog who must not bend',
+    'Poop bags, more than you think',
+    'A worn T-shirt of yours for the crate',
+    'One high-value treat he never gets at home'
+  ]},
+
+  {t:'check',title:'Tool 24 · Food, water, medicine',items:[
     'Three days of his usual food, sealed and dated, plus a collapsible bowl',
     'Bottled water and a second bowl',
     'Every current medication in its labeled container, plus a written list with doses and times',
+    'Gauze, self-adhering bandage, blunt scissors, tweezers, a digital thermometer, water-based lubricant',
+    'Saline eye wash and unscented wipes'
+  ]},
+
+  {t:'check',title:'Tool 24 · Paper and numbers',items:[
     'A printed one-page medical summary: age, weight in pounds and kilograms, conditions, drugs, your veterinarian’s number',
     'Printed vaccination records and any pet passport or border paperwork — a kennel, a clinic or a crossing will ask',
     'Microchip number, the registry name, and proof your contact details are current',
     'Two current photographs of him, one showing markings clearly',
-    'Poison control, which charges a fee to call: ASPCA APCC (888) 426-4435 · Pet Poison Helpline (855) 764-7661, both US — plus the line where you live: UK 01202 509 000 · Australia 1300 869 738 · New Zealand 0800 869 738',
     'Your regular clinic’s number and the nearest 24-hour emergency hospital to where you are going, looked up before you leave',
-    'A folded blanket or towel — also a stretcher for a dog who must not bend',
-    'A rigid carrier or a soft crate that fits the car',
-    'Gauze, self-adhering bandage, blunt scissors, tweezers, a digital thermometer, water-based lubricant',
-    'Saline eye wash and unscented wipes',
-    'Poop bags, more than you think',
-    'A worn T-shirt of yours for the crate',
-    'One high-value treat he never gets at home',
-    'A copy of your pet insurance policy number and the claims number'
+    'A copy of your pet insurance policy number and the claims number',
+    'Poison control for where you live: UK 01202 509 000 · Australia 1300 869 738 · New Zealand 0800 869 738'
   ]},
 
-  {t:'p',text:'Two things not to put in it. No human painkillers — nothing over the counter, ever, without a veterinarian on the phone. And no medication you have not read the label on that week: some liquid gabapentin formulations contain xylitol, which is dangerous to dogs and which matters here because gabapentin is one of the standard drugs for a dachshund with a painful back.'},
+  {t:'keyfig',title:'The two numbers you do not want to be looking up at two in the morning',items:[
+    ['ASPCA ANIMAL POISON CONTROL','(888) 426-4435','United States. A fee is charged to call.'],
+    ['PET POISON HELPLINE','(855) 764-7661','United States. A fee is charged to call.']
+  ]},
+
+  {t:'signals',title:'Two things that do not go in the bag',items:[
+    'No human painkillers — nothing over the counter, ever, without a veterinarian on the phone',
+    'No medication you have not read the label on that week',
+    'Some liquid gabapentin formulations contain xylitol, which is dangerous to dogs',
+    'Gabapentin is one of the standard drugs for a dachshund with a painful back, which is why that one matters here'
+  ]},
 
   {t:'script',text:'the bag is not for the trip. it is for the night you are not thinking clearly'},
 

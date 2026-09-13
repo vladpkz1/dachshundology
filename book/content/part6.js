@@ -8,19 +8,22 @@ module.exports = [
 /* ───────────────────────── 6.1 ───────────────────────── */
 { id:'6.1', title:'The year in health care', sub:'six fixed points, and memory holds five', pages:3, blocks:[
 
-  {t:'first',text:'A dachshund’s medical year has about six fixed points in it, and most owners run them from memory. That is how a leptospirosis booster slides by eighteen months, how a heartworm test gets skipped in the year the dog seemed fine, and how a rabies certificate turns out to have expired the week a boarding kennel asks to see it. Put the year on paper once and it runs itself. Tool 18, at the end of this section, is that piece of paper.'},
+  {t:'first',text:'A dachshund’s medical year has about six fixed points in it, and most owners run them from memory. That is how a leptospirosis booster slides by eighteen months, how a heartworm test gets skipped in the year the dog seemed fine, and how a rabies certificate turns out to have expired the week a boarding kennel asks to see it. Put the year on paper once and it runs itself — Tool 18, at the end of this section, is that piece of paper.'},
+
+  {t:'tiles',title:'Three fixed points to start from',items:[
+    ['2024','The year leptospirosis moved to core','AAHA, for all dogs regardless of breed or size.'],
+    ['50 of 50','US states with diagnosed heartworm','American Heartworm Society.'],
+    ['6 · 12 · annual','The heartworm testing cadence','Months, months, then every year for life.']
+  ]},
 
   {t:'p',text:'Three bodies publish the schedules this section follows: the American Animal Hospital Association for canine vaccination — 2022, updated 2024 — the Companion Animal Parasite Council for parasites, and the American Heartworm Society for heartworm. Your country may run a different schedule, and your veterinarian will tailor it to where you live and what your dog does. You should still know what the tailoring is departing from.'},
 
-  {t:'stats',items:[
-    ['2024','the year leptospirosis moved to core'],
-    ['50 of 50','US states with diagnosed heartworm'],
-    ['6 · 12 · annual','the heartworm testing cadence']
-  ]},
-
   {t:'h3',text:'What “core” means now'},
 
-  {t:'p',text:'Core means every dog, not every dog with a particular lifestyle. The current core list is DAP or DAPP, <em>Leptospira</em>, and rabies — the last of these given, in AAHA’s own phrase, “as required by law.” Everything else is a judgment call made on exposure, and the list differs by region: kennel cough, canine influenza, Lyme, rattlesnake. Those are worth a conversation. The core three are not a conversation.'},
+  {t:'cards',title:'Core, and everything else',items:[
+    ['CORE · EVERY DOG','DAP or DAPP, <em>Leptospira</em>, rabies','Core means every dog, not every dog with a particular lifestyle.|Rabies is given, in AAHA’s own phrase, “as required by law.”|The core three are not a conversation.',''],
+    ['BY EXPOSURE · A JUDGMENT CALL','Kennel cough, canine influenza, Lyme, rattlesnake','The list differs by region and by what your dog actually does.|Those are worth a conversation.','b']
+  ]},
 
   {t:'evidence',badge:'settled',paras:[
     'For years leptospirosis was noncore. It went to dogs who swam, hunted or lived rurally, and it was routinely skipped for small dogs in cities — which is to say, for most dachshunds.',
@@ -31,27 +34,45 @@ module.exports = [
   {t:'h3',text:'The puppy series, and why it is a series'},
 
   {t:'steps',items:[
-    ['6–16 weeks','DAPP, at least three doses','Two to four weeks apart, with the last dose at sixteen weeks or later. The series is not three shots because three is lucky. It is three because maternal antibody blocks the vaccine for an unknown number of weeks, and nobody knows which dose was the one that took.'],
-    ['From 12 weeks','Leptospira, two doses','Two to four weeks apart. This is the one most likely to be missing from a puppy bought before 2024.'],
-    ['3–6 months','Rabies','Four months is the commonest first dose. Local law governs the age and the interval, not your veterinarian’s preference.'],
-    ['Within 1 year','Boost DAPP and Leptospira','Then DAPP every three years for life; leptospirosis every year, without exception.']
+    ['6–16 weeks','DAPP, at least three doses','Two to four weeks apart, with the last dose at sixteen weeks or later. The series is not three shots because three is lucky. It is three because maternal antibody blocks the vaccine for an unknown number of weeks, and nobody knows which dose was the one that took.','×3 DOSES'],
+    ['From 12 weeks','Leptospira, two doses','Two to four weeks apart. This is the one most likely to be missing from a puppy bought before 2024.','×2 DOSES'],
+    ['3–6 months','Rabies','Four months is the commonest first dose. Local law governs the age and the interval, not your veterinarian’s preference.','LOCAL LAW'],
+    ['Within 1 year','Boost DAPP and Leptospira','Then DAPP every three years for life; leptospirosis every year, without exception.','THEN FOR LIFE']
   ]},
 
   {t:'h3',text:'Rabies is local law, and it varies'},
 
-  {t:'p',text:'There is no international rabies rule. In the United States roughly forty states mandate vaccination; about ten set none of their own — Colorado, Hawaii, Idaho, Kansas, Minnesota, Missouri, Montana, North Dakota, Ohio, South Dakota and Utah — and several delegate the question to counties, so a local ordinance may bind you where the state does not. Elsewhere the rule may be national, regional or absent. Ask the authority where you live what it requires now, because these rules change. After the first dose, boosters run on a one-year or three-year cycle depending on the product and the statute.'},
+  {t:'keyfig',title:'One country, no single rule',items:[
+    ['UNITED STATES','~40 states','Mandate vaccination. About ten set none of their own, and several delegate the question to counties.'],
+    ['AFTER THE FIRST DOSE','1 or 3 years','Depending on the product and the statute. Elsewhere the rule may be national, regional or absent.']
+  ]},
+
+  {t:'p',text:'There is no international rabies rule. The states that set none of their own are Colorado, Hawaii, Idaho, Kansas, Minnesota, Missouri, Montana, North Dakota, Ohio, South Dakota and Utah — and a local ordinance may bind you where the state does not. Ask the authority where you live what it requires now, because these rules change.'},
 
   {t:'p',text:'“No legal requirement” is not the same as “no reason.” Boarding kennels, groomers, daycare, training classes and border crossings ask for the certificate. So does any bite investigation, and a dog with no documented rabies vaccine occupies a far worse position in one than a dog with a current tag.'},
 
   {t:'h3',text:'Parasites: year-round, not seasonal'},
 
-  {t:'p',text:'CAPC’s position is broad-spectrum parasite control, every month, all year, covering heartworm, intestinal parasites, fleas and ticks together. Fecal examinations at least four times in the first year and at least twice a year after that. Puppies dewormed from two weeks of age and every two weeks thereafter. The seasonal approach — start in April, stop in October — is an old habit, and it assumes a frost line that no longer does what it used to.'},
+  {t:'signals',title:'CAPC, in four lines',items:[
+    'Broad-spectrum parasite control every month, all year',
+    'Heartworm, intestinal parasites, fleas and ticks covered together',
+    'Fecal examinations at least four times in the first year, at least twice a year after that',
+    'Puppies dewormed from two weeks of age, and every two weeks thereafter'
+  ],role:'g'},
+
+  {t:'p',text:'The seasonal approach — start in April, stop in October — is an old habit, and it assumes a frost line that no longer does what it used to.'},
 
   {t:'h3',text:'Heartworm, done properly'},
 
   {t:'p',text:'Heartworm varies with geography more than anything else here, and a book written elsewhere may skip it. In the US it has been diagnosed in <strong>all fifty states</strong>; ask your veterinarian whether it is endemic where you live. The adult worm is about twelve inches long (30 cm), lives in the heart and pulmonary arteries, and survives five to seven years. It arrives by mosquito, which is why geography and season are weaker protection than they sound.'},
 
-  {t:'p',text:'The protocol has two halves and owners keep only the first. Prevention runs monthly, year-round. Testing runs at <strong>six months, twelve months, then annually</strong> — for life, on prevention, forever. A puppy under seven months can start prevention without a test; after that, you test before you start.'},
+  {t:'phases',title:'The half owners forget: testing',items:[
+    ['6 months','First heartworm test'],
+    ['12 months','Second test, with the boosters'],
+    ['Every year after','For life, on prevention, forever']
+  ]},
+
+  {t:'p',text:'The protocol has two halves and owners keep only the first. Prevention runs monthly, year-round. A puppy under seven months can start prevention without a test; after that, you test before you start.'},
 
   {t:'p',text:'The reason the test never stops is simple. Preventives are highly effective. They are not one hundred percent. Add a dose given late, a chewable spat out behind the sofa, a tablet vomited an hour later, and the annual test stops being paperwork and starts being the audit on a year of your own compliance.'},
 
@@ -85,12 +106,14 @@ module.exports = [
 /* ───────────────────────── 6.2 ───────────────────────── */
 { id:'6.2', title:'The ideal-weight check', sub:'two hands, one minute, once a month', pages:3, blocks:[
 
-  {t:'first',text:'The scale is not the test. It is a trend line, and it is useful only next to something that measures the dog rather than his mass. A sixteen-pound (7 kg) dachshund can be lean, correct or overweight, and the number will not tell you which. What tells you is the nine-point body condition score, which takes both hands and about a minute, and which you can learn in the time it takes to read this page.'},
+  {t:'first',text:'The scale is not the test — it is a trend line, and it is useful only next to something that measures the dog rather than his mass. A sixteen-pound (7 kg) dachshund can be lean, correct or overweight, and the number will not tell you which. What tells you is the nine-point body condition score, which takes both hands and about a minute, and which you can learn in the time it takes to read this page.'},
 
-  {t:'stats',items:[
-    ['4–5','the target, on a nine-point scale'],
-    ['7/9','roughly 30 percent body fat'],
-    ['1.8 yrs','median lifespan added by a 25 percent calorie restriction']
+  {t:'gauge',title:'Where he should sit on the nine-point scale',items:[
+    ['1–3',22,'Under. Ribs visible with no fat cover, bones prominent.','mid'],
+    ['4–5',55,'Target. Ribs felt under a thin layer, clear waist, belly rises to the groin.',''],
+    ['6',72,'Over. Waist faint, tuck reduced; pressure needed to find the ribs.','mid'],
+    ['7',85,'Over. Fat over the spine — roughly 30 percent body fat.','hot'],
+    ['8–9',100,'Well over. Ribs not palpable, wider at the loin than at the ribs.','hot']
   ]},
 
   {t:'h3',text:'Why a breed standard cannot give you a target'},
@@ -105,7 +128,12 @@ module.exports = [
     'That is an owner survey, and association is not causation in either direction. But it is the largest dataset of its kind, and it does not support the claim. Keep him lean for his joints, his teeth, his heart and his years. Do not tell yourself it is armor for his back.'
   ],source:'DachsLife 2015, 2,031 owners, Royal Veterinary College analysis · dachshund-ivdd.uk, lifestyle advice'},
 
-  {t:'p',text:'One of those four has a number behind it. In a lifetime study of 48 Labradors, restricting calories by twenty-five percent added about <strong>1.8 years</strong> of median lifespan. That is the case for lean, and it is a good one. It is simply not a case about spines.'},
+  {t:'keyfig',title:'The case for lean, and what it is not',items:[
+    ['WHAT LEAN BUYS','1.8 years','Median lifespan added by restricting calories twenty-five percent, in a lifetime study of 48 Labradors.'],
+    ['WHAT IT DOES NOT BUY','No link found','DachsLife found no significant association between body condition score and IVDD.']
+  ]},
+
+  {t:'p',text:'One of those four reasons has a number behind it, and it is a good one. It is simply not a case about spines.'},
 
   {t:'illus',name:'bcs',caption:'The nine-point scale on a long dog. At 4–5 the last two ribs show faintly in a smooth coat, the waist is visible from above, and the belly rises from ribcage to groin.'},
 
@@ -113,10 +141,10 @@ module.exports = [
 
   {t:'p',text:'Do it with your hands, not your eyes, and do it the same way every time. A longhaired or wirehaired dachshund can hide two pounds under coat, and a smooth one in a flattering light can look leaner than he is. Flat palm, light pressure, three checks.'},
 
-  {t:'list',ordered:true,items:[
-    'Ribs. Lay a flat hand along his side with no pressure at all. You should feel the ribs under a thin layer, the way you feel the backs of your own fingers through skin. If you have to press to find them, he is over. If they feel like knuckles, he is under.',
-    'Waist, from above. Stand over him and look down. There should be a visible narrowing behind the ribcage. A straight line from ribs to hips is a 6 or worse; a bulge is a 7.',
-    'Tuck, from the side. At his level, the underline should rise from the back of the ribcage toward the groin. Flat or dropping is over.'
+  {t:'steps',items:[
+    ['Check 1','Ribs','Lay a flat hand along his side with no pressure at all. You should feel the ribs under a thin layer, the way you feel the backs of your own fingers through skin. If you have to press to find them, he is over. If they feel like knuckles, he is under.','FLAT PALM'],
+    ['Check 2','Waist, from above','Stand over him and look down. There should be a visible narrowing behind the ribcage. A straight line from ribs to hips is a 6 or worse; a bulge is a 7.','FROM ABOVE'],
+    ['Check 3','Tuck, from the side','At his level, the underline should rise from the back of the ribcage toward the groin. Flat or dropping is over.','AT HIS LEVEL']
   ]},
 
   {t:'note',title:'Weighing a small dog at home',paras:[
@@ -134,11 +162,11 @@ module.exports = [
     ['8–9','Not palpable','Wider at the loin than the ribs','Underline flat or hanging']
   ],note:'Target 4–5. A 7 is roughly thirty percent body fat.'},
 
-  {t:'table',head:['AKC division','Definition','What it is'],rows:[
+  {t:'matrix',title:'The AKC divisions, and what they are not',head:['AKC division','Definition','What it is'],rows:[
     ['Miniature','11 lb (5 kg) and under at 12 months and older','A show-class division'],
     ['Standard','Usually 16 to 32 lb (7–15 kg)','A show-class division'],
     ['“Tweenie”','12–15 lb (5.5–7 kg)','No official status at all']
-  ],note:'Neither line is a health target, and the KC and FCI draw them differently. The score is the target; the weight is only how you track it.'},
+  ],hi:[[2,2]],note:'Neither line is a health target, and the KC and FCI draw them differently. The score is the target; the weight is only how you track it.'},
 
   {t:'table',head:['Month','Weight','Score','Ribs easily felt?','Change'],rows:[
     ['Jan','','','',''],['Feb','','','',''],['Mar','','','',''],
@@ -159,42 +187,48 @@ module.exports = [
 
   {t:'p',text:'Resting energy requirement is <strong>RER = 70 × (body weight in kilograms)<sup>0.75</sup></strong>. That is what he burns doing nothing. Maintenance energy requirement is RER multiplied by a factor for what he actually is. Pounds divided by 2.2 gives kilograms; the exponent needs a calculator, which is why the three worked cases below cover most of this breed.'},
 
-  {t:'table',head:['Situation','Multiply RER by'],rows:[
+  {t:'matrix',title:'Maintenance multipliers',head:['Situation','Multiply RER by'],rows:[
     ['Neutered adult','1.6'],
     ['Intact adult','1.8'],
     ['Weight loss','1.0'],
     ['Prone to obesity','1.2–1.4'],
     ['Growth','2–3']
-  ]},
+  ],hi:[[0,1]]},
 
   {t:'tool',n:20,title:'The three worked cases',intro:'A miniature at the AKC ceiling, a typical tweenie-to-small standard, and a solid standard. Find the line nearest your dog, then adjust it — the number is a starting point, not a prescription.'},
 
-  {t:'table',head:['Dog','Kilograms','RER','Neutered adult, ×1.6'],rows:[
+  {t:'matrix',title:'Three worked cases',head:['Dog','Kilograms','RER','Neutered adult, ×1.6'],rows:[
     ['11 lb miniature','5.0','234 kcal','≈ 375 kcal/day'],
     ['16 lb','7.3','301 kcal','≈ 482 kcal/day'],
     ['25 lb standard','11.3','424 kcal','≈ 678 kcal/day']
-  ],note:'Intact, multiply the RER by 1.8 instead. On a weight-loss plan, feed the RER itself and reassess monthly.'},
+  ],hi:[[1,3]],note:'Intact, multiply the RER by 1.8 instead. On a weight-loss plan, feed the RER itself and reassess monthly.'},
 
   {t:'h3',text:'Then correct it against the dog'},
 
-  {t:'p',text:'Individual variation on these numbers runs to <strong>plus or minus fifty percent</strong>. That is not a rounding error; it is the difference between 240 and 720 calories for the same sixteen-pound (7 kg) dog. Two littermates at the same weight can need ration sizes that look like a mistake side by side. The formula gives you where to start. The body condition score, checked monthly with Tool 19, tells you where to go from there. Adjust in increments of ten percent, then wait four weeks before judging.'},
+  {t:'tiles',title:'How far the formula can be off',items:[
+    ['± 50%','Individual variation on these numbers','Not a rounding error.'],
+    ['240 – 720','Kilocalories, the same 16 lb (7 kg) dog','Two littermates at the same weight can need ration sizes that look like a mistake side by side.']
+  ]},
+
+  {t:'p',text:'The formula gives you where to start. The body condition score, checked monthly with Tool 19, tells you where to go from there. Adjust in increments of ten percent, then wait four weeks before judging.'},
 
   {t:'h3',text:'Calories into cups, for your actual bag'},
 
   {t:'steps',items:[
-    ['1','Find the kilocalories per cup','It is on the bag, usually near the feeding chart, given as metabolizable energy per cup or per 100 grams. It is not the same across two bags of the same brand, and it changes when a formula is reformulated.'],
-    ['2','Divide','Daily calories ÷ kcal per cup = cups per day, or ÷ kcal per 100 g × 100 = grams. Say the bag reads 380 kcal per cup and your dog’s number is 482: that is 1.27 cups, two-thirds of a cup twice a day. A cup is a volume, not a weight — read your own bag.'],
-    ['3','Weigh it once','Fill your measuring cup the way you normally would and put it on a kitchen scale. Scoop-to-scoop variation of twenty grams is ordinary, and on a 482-calorie dog that is real food. Note the grams and use the scale from then on.'],
-    ['4','Subtract the treats','Training rewards come out of this number, not in addition to it. Section 6.6 does that arithmetic.']
+    ['1','Find the kilocalories per cup','It is on the bag, usually near the feeding chart, given as metabolizable energy per cup or per 100 grams. It is not the same across two bags of the same brand, and it changes when a formula is reformulated.','ON THE BAG'],
+    ['2','Divide','Daily calories ÷ kcal per cup = cups per day, or ÷ kcal per 100 g × 100 = grams. Say the bag reads 380 kcal per cup and your dog’s number is 482: that is 1.27 cups, two-thirds of a cup twice a day. A cup is a volume, not a weight — read your own bag.','ARITHMETIC'],
+    ['3','Weigh it once','Fill your measuring cup the way you normally would and put it on a kitchen scale. Scoop-to-scoop variation of twenty grams is ordinary, and on a 482-calorie dog that is real food. Note the grams and use the scale from then on.','ONCE'],
+    ['4','Subtract the treats','Training rewards come out of this number, not in addition to it. Section 6.6 does that arithmetic.','EVERY DAY']
   ]},
 
   {t:'h3',text:'Two meals, and a claim attached to them'},
 
-  {t:'evidence',badge:'myth',paras:[
-    'Split the ration into two meals. It is good practice — steadier portions, easier to spot the day he goes off his food, and a simpler structure to train around.',
-    'What it is not, in this breed, is bloat prevention. Gastric dilatation and volvulus is a disease of deep, narrow chests: Great Dane, German Shepherd, the Setters, Weimaraner, St Bernard, Standard Poodle, Basset. The dachshund is <strong>not a listed at-risk breed</strong>.',
-    'Feed him twice a day for the reasons that are real. Do not accept it as insurance against a condition his body shape does not set him up for, and do not let the claim distract you from the one that is: the ration size itself.'
-  ],source:'Merck Veterinary Manual — gastric dilation and volvulus in small animals'},
+  {t:'duo',title:'Myth / what the at-risk list actually says',
+    a:['The claim','Two meals a day prevents bloat in a dachshund.'],
+    b:['Merck Veterinary Manual','Gastric dilatation and volvulus is a disease of deep, narrow chests: Great Dane, German Shepherd, the Setters, Weimaraner, St Bernard, Standard Poodle, Basset. The dachshund is <strong>not a listed at-risk breed</strong>.'],
+    note:'Merck Veterinary Manual — gastric dilation and volvulus in small animals.'},
+
+  {t:'p',text:'Split the ration into two meals anyway. It is good practice — steadier portions, easier to spot the day he goes off his food, and a simpler structure to train around. Feed him twice a day for the reasons that are real, and do not let the bloat claim distract you from the one that is: the ration size itself.'},
 
   {t:'note',title:'When the bag changes',paras:[
     'Re-check the kilocalories per cup every time you buy a different formula, a different life stage, or the same food in a new bag design. Cups are a volume; calories are the thing you are actually feeding.'
@@ -206,35 +240,34 @@ module.exports = [
 /* ───────────────────────── 6.4 ───────────────────────── */
 { id:'6.4', title:'Kibble, home-cooked, raw', sub:'three arguments, one standard', pages:3, blocks:[
 
-  {t:'first',text:'This is the subject where owners lose their manners, and almost none of the argument is about evidence. So set the ideology aside and ask a narrower question of each option: does this food meet a published nutrient standard, who verified that it does, and what can go wrong with it in my kitchen. Three answers, three different shapes. None of the three is disqualifying on its own.'},
+  {t:'first',text:'This is the subject where owners lose their manners, and almost none of the argument is about evidence. So set the ideology aside and ask a narrower question of each option: does this food meet a published nutrient standard, who verified that it does, and what can go wrong with it in my kitchen. Three answers, three different shapes, and none of the three is disqualifying on its own.'},
 
   {t:'h3',text:'What AAFCO is, and what it is not'},
 
-  {t:'evidence',badge:'myth',paras:[
-    'You will see “AAFCO approved” on packaging, in store displays and in half the blog posts written about pet food. There is no such thing.',
-    'The Association of American Feed Control Officials is a voluntary membership body. It writes model regulations and nutrient profiles. <strong>It has no regulatory authority.</strong> It approves nothing, certifies nothing, and inspects nothing. Enforcement sits with state feed control officials, working from laws their own states adopted.',
-    'What a label can legitimately claim is that the food meets an AAFCO nutrient profile, or that it passed an AAFCO feeding trial. That claim lives in the nutritional adequacy statement, and it is the sentence worth finding.'
-  ],source:'AAFCO — “AAFCO’s role,” consumer guidance on understanding pet food'},
+  {t:'duo',title:'Myth / what AAFCO actually is',
+    a:['“AAFCO approved”','You will see it on packaging, in store displays and in half the blog posts written about pet food. There is no such thing.'],
+    b:['The Association of American Feed Control Officials','A voluntary membership body that writes model regulations and nutrient profiles. <strong>It has no regulatory authority.</strong> It approves nothing, certifies nothing, and inspects nothing. Enforcement sits with state feed control officials, working from laws their own states adopted.'],
+    note:'AAFCO — “AAFCO’s role,” consumer guidance on understanding pet food.'},
+
+  {t:'p',text:'What a label can legitimately claim is that the food meets an AAFCO nutrient profile, or that it passed an AAFCO feeding trial. That claim lives in the nutritional adequacy statement, and it is the sentence worth finding.'},
 
   {t:'p',text:'“Complete and balanced” is not a mood. It is a defined claim, and it requires one of two things: the formula meets an AAFCO nutrient profile, or the food passed an AAFCO feeding trial. There are two canine profiles — growth and reproduction, and adult maintenance — and a food may be formulated for one, the other, or both. Other markets set the same claim under other names. In Europe it is the FEDIAF Nutritional Guidelines, which approve nothing either. A food carrying no adequacy statement is not making the claim, whatever the front of the bag implies.'},
 
-  {t:'stats',items:[
-    ['7.7%','of 196 raw pet food samples, positive for Salmonella'],
-    ['16.3%','the same samples, Listeria monocytogenes'],
-    ['Dec 2022','the FDA’s last word on grain-free and DCM']
+  {t:'tiles',title:'What the FDA measured, and when it last spoke',items:[
+    ['7.7%','Raw samples positive for <em>Salmonella</em>','196 raw pet food samples tested by the FDA.'],
+    ['16.3%','The same samples, <em>Listeria monocytogenes</em>','Against zero or minimal contamination in the other pet food types sampled.'],
+    ['Dec 2022','The FDA’s last word on grain-free and DCM','No causal relationship established, and no recall issued.']
   ]},
 
-  {t:'h3',text:'Kibble'},
+  {t:'h3',text:'Three foods, one question each'},
 
-  {t:'p',text:'A complete-and-balanced dry food is the default for a reason: the adequacy question is answered on the label, the calories per cup are printed, and portioning a dog whose correct ration is a cup and a quarter becomes trivial. Its weaknesses are the ones you can manage — it is easy to overfeed by volume, and it tells you nothing about ingredient quality beyond the ingredient list itself.'},
+  {t:'cards',title:'Does this food answer the adequacy question, and who verified it',items:[
+    ['KIBBLE','Answered on the label','The default for a reason: calories per cup are printed, so portioning a cup-and-a-quarter dog is trivial.|Easy to overfeed by volume.|Tells you nothing about ingredient quality beyond the ingredient list itself.',''],
+    ['HOME-COOKED','Answered only if someone formulated it','The failure mode is the arithmetic, not the ingredients.|Have the diet formulated by a board-certified veterinary nutritionist and follow it.|Including the supplement, which is usually the part that gets dropped.','b'],
+    ['RAW','Answered the same way any other food is','A contamination finding, not a nutrition finding.|7.7 percent of FDA samples positive for <em>Salmonella</em>, 16.3 percent for <em>Listeria monocytogenes</em>.|Enough to require handling discipline rather than enthusiasm.','a']
+  ]},
 
-  {t:'h3',text:'Home-cooked'},
-
-  {t:'p',text:'The failure mode of home cooking is not the ingredients. It is the arithmetic. A bowl of chicken, rice and carrots is food; whether it meets a nutrient profile across calcium, phosphorus, trace minerals and the fat-soluble vitamins is a question the recipe has to answer, and a recipe pulled off a website carries no adequacy statement because nobody formulated it against one. If you want to cook, have the diet formulated by a board-certified veterinary nutritionist and follow it, including the supplement, which is usually the part that gets dropped.'},
-
-  {t:'h3',text:'Raw'},
-
-  {t:'p',text:'The FDA tested 196 samples of raw pet food. <strong>7.7 percent were positive for Salmonella and 16.3 percent for Listeria monocytogenes</strong>, against zero or minimal contamination in the other pet food types sampled. That is the whole of the case against raw as a public health matter, and it is enough to require handling discipline rather than enthusiasm. It is a contamination finding, not a nutrition finding — a raw diet still has to answer the same adequacy question as any other.'},
+  {t:'p',text:'The home-cooking arithmetic deserves spelling out. A bowl of chicken, rice and carrots is food; whether it meets a nutrient profile across calcium, phosphorus, trace minerals and the fat-soluble vitamins is a question the recipe has to answer, and a recipe pulled off a website carries no adequacy statement because nobody formulated it against one.'},
 
   {t:'flag',title:'Who is actually at risk in the raw scenario',paras:[
     'The pathogens do not stay in the bowl. They reach the counter, the sink, the bowl you wash with your other dishes, and the dog’s face.',
@@ -268,15 +301,16 @@ module.exports = [
   {t:'tool',n:21,title:'The ninety-second label check',intro:'In this order, every time. If a bag fails step one, you can put it down without reading the rest.'},
 
   {t:'steps',items:[
-    ['1','The nutritional adequacy statement','Find the sentence that says the food is complete and balanced — formulated to meet an AAFCO nutrient profile, or the equivalent where you buy, or substantiated by a feeding trial. No statement means no claim.'],
-    ['2','The life stage','Two canine profiles exist: growth and reproduction, and adult maintenance. A food for “all life stages” meets the growth profile, which is the richer of the two. For an adult dachshund with a weight to hold, that is a reason to read the calories carefully rather than a reason to avoid it.'],
-    ['3','The guaranteed analysis','Minimum crude protein, minimum crude fat, maximum crude fiber, maximum moisture. Four numbers, and they are floors and ceilings rather than actual contents.'],
-    ['4','The ingredient list','Listed in descending order by weight, as the ingredients went into the batch.']
+    ['1','The nutritional adequacy statement','Find the sentence that says the food is complete and balanced — formulated to meet an AAFCO nutrient profile, or the equivalent where you buy, or substantiated by a feeding trial. No statement means no claim.','PASS OR STOP'],
+    ['2','The life stage','Two canine profiles exist: growth and reproduction, and adult maintenance. A food for “all life stages” meets the growth profile, which is the richer of the two. For an adult dachshund with a weight to hold, that is a reason to read the calories carefully rather than a reason to avoid it.','WHICH PROFILE'],
+    ['3','The guaranteed analysis','Minimum crude protein, minimum crude fat, maximum crude fiber, maximum moisture. Four numbers, and they are floors and ceilings rather than actual contents.','FOUR NUMBERS'],
+    ['4','The ingredient list','Listed in descending order by weight, as the ingredients went into the batch.','BY WEIGHT']
   ]},
 
-  {t:'p',text:'“Crude” is the single most misread word on a pet food label. It does not mean coarse, unrefined or low-grade. It names the analytical method used to measure the nutrient. Crude protein tells you how much nitrogen was found, not what the protein was or how well a dog can use it.'},
-
-  {t:'p',text:'Descending order by weight has a wrinkle worth knowing. Weight is measured as ingredients go in, so a fresh meat listed first carries its water with it, and after cooking may contribute less dry matter than an item further down. That is a reason to read the whole list rather than the first word of it.'},
+  {t:'cards',title:'Two words on that label that get misread',items:[
+    ['“CRUDE”','It names a method, not a grade','It does not mean coarse, unrefined or low-grade.|It names the analytical method used to measure the nutrient.|Crude protein tells you how much nitrogen was found, not what the protein was or how well a dog can use it.','b'],
+    ['“DESCENDING ORDER”','Weight as it went into the batch','A fresh meat listed first carries its water with it.|After cooking it may contribute less dry matter than an item further down.|A reason to read the whole list rather than the first word of it.','b']
+  ]},
 
   {t:'note',title:'Two things the label will not tell you',paras:[
     'Ingredient quality. The list gives you names and an order, not grades.',
@@ -287,18 +321,23 @@ module.exports = [
 /* ───────────────────────── 6.6 ───────────────────────── */
 { id:'6.6', title:'Treats, and the ten percent rule', sub:'forty-eight calories, and where they go', pages:1, blocks:[
 
-  {t:'first',text:'The commonest way an owner ruins a dachshund is not the food. It is everything given outside the bowl, by four people in a household, none of whom is counting. The rule is that treats stay at or under ten percent of daily calories. On this breed, the arithmetic is brutal enough to be worth writing on the refrigerator.'},
+  {t:'first',text:'The commonest way an owner ruins a dachshund is not the food. It is everything given outside the bowl, by four people in a household, none of whom is counting. The rule is that treats stay at or under ten percent of daily calories, and on this breed the arithmetic is brutal enough to be worth writing on the refrigerator.'},
 
-  {t:'p',text:'A sixteen-pound (7 kg) neutered adult needs roughly <strong>482 calories a day</strong>. Ten percent of that is about <strong>48 calories</strong> — the entire training and affection budget, for the whole day, for the whole household. That is roughly two tablespoons of his own kibble, or one stick of cheese split forty ways. It is not one commercial biscuit and a corner of toast.'},
+  {t:'tiles',title:'The whole treat budget, for the whole household',items:[
+    ['482','Calories a day','A sixteen-pound (7 kg) neutered adult, from Tool 20.'],
+    ['48','Calories of treats','Ten percent — the entire training and affection budget, for the whole day, for everyone in the house.'],
+    ['2 tbsp','Or one stick of cheese split forty ways','Roughly two tablespoons of his own kibble. Not one commercial biscuit and a corner of toast.']
+  ]},
 
   {t:'p',text:'Which is why the ten percent comes <em>out</em> of the ration rather than on top of it. Weigh the day’s food in the morning into one container. Anything used for training comes from that container; what he earns is not extra. Dinner is whatever is left. Do this and the budget enforces itself without anyone having to say no.'},
 
-  {t:'list',ordered:false,items:[
-    'His own kibble, counted, for everything he already knows.',
-    'One high-value tier reserved for recall, nail trims and the veterinarian — a pea-sized piece of plain chicken. Reserved means reserved.',
-    'Green beans, carrot, cucumber, plain and unseasoned, when you want volume for very few calories.',
-    'Break everything smaller than feels reasonable. He is working for the event, not the portion.'
-  ]},
+  {t:'signals',title:'What the forty-eight calories should be spent on',items:[
+    'His own kibble, counted, for everything he already knows',
+    'One high-value tier reserved for recall, nail trims and the veterinarian',
+    'A pea-sized piece of plain chicken — reserved means reserved',
+    'Green beans, carrot, cucumber, plain and unseasoned, when you want volume for very few calories',
+    'Break everything smaller than feels reasonable — he is working for the event, not the portion'
+  ],role:'g'},
 
   {t:'flag',title:'Xylitol, and where it hides',paras:[
     'Xylitol causes hypoglycemia above 100 mg/kg and liver injury above 500 mg/kg. Signs can appear within thirty minutes, or be delayed twelve to eighteen hours when the source is gum. Of dogs showing signs of liver injury, <strong>62.5 percent died or were euthanized.</strong>',
@@ -312,29 +351,35 @@ module.exports = [
 /* ───────────────────────── 6.7 ───────────────────────── */
 { id:'6.7', title:'Teeth', sub:'the problem nobody photographs', pages:2, blocks:[
 
-  {t:'first',text:'Dental disease is the most under-rated problem in small dogs, and the dachshund gets a full set of teeth arranged in a jaw that was drawn long and narrow for other reasons. Crowding follows, plaque sits where crowding is, and the whole process runs silently for years because a dog in pain from his mouth does not stop eating. He simply chews on the other side. There is no dachshund-specific prevalence figure worth quoting here, so take the mechanism instead of a number.'},
+  {t:'first',text:'Dental disease is the most under-rated problem in small dogs, and the dachshund gets a full set of teeth arranged in a jaw that was drawn long and narrow for other reasons. Crowding follows, plaque sits where crowding is, and the whole process runs silently for years because a dog in pain from his mouth does not stop eating — he simply chews on the other side. There is no dachshund-specific prevalence figure worth quoting here, so take the mechanism instead of a number.'},
 
-  {t:'p',text:'The tell is not the tooth. It is breath that has changed, a dog who drops a chew and picks it up differently, a face rubbed on the carpet after meals, or a quantity of tartar you notice when you finally look. By the time you are noticing, the process below the gum line has been running a while.'},
+  {t:'signals',title:'The tell is not the tooth',items:[
+    'Breath that has changed',
+    'A dog who drops a chew and picks it up differently',
+    'A face rubbed on the carpet after meals',
+    'A quantity of tartar you notice when you finally look'
+  ],role:'g'},
 
-  {t:'p',text:'Two things make this a small-dog problem in particular. The teeth are close to full size while the jaw is not, so they sit tight against one another with less bone between them and less room for anything to clean the gaps. And small dogs live long enough for a slow process to finish. Nothing here happens in a month. All of it happens over years, quietly, if nobody interrupts it.'},
+  {t:'p',text:'By the time you are noticing any of those, the process below the gum line has been running a while. Two things make this a small-dog problem in particular. The teeth are close to full size while the jaw is not, so they sit tight against one another with less bone between them and less room for anything to clean the gaps. And small dogs live long enough for a slow process to finish. Nothing here happens in a month. All of it happens over years, quietly, if nobody interrupts it.'},
 
   {t:'h3',text:'The thing that is sold to avoid the anesthetic'},
 
-  {t:'evidence',badge:'myth',paras:[
-    'Anesthesia-free dental cleaning is offered at groomers, pet stores and mobile clinics, and it is sold on exactly the fear you already have: that an anesthetic is the risky part.',
-    'The American Veterinary Dental College is unambiguous. “Access to the subgingival area of every tooth is impossible in an unanesthetized patient.” Removing the tartar you can see “has little effect on a pet’s health, and provides a false sense of accomplishment. The effect is purely cosmetic.”',
-    'Read that carefully. The objection is not that it is second best. It is that disease lives under the gum, the procedure cannot go there, and a clean-looking mouth then buys another year of not investigating. You pay to be reassured.'
-  ],source:'American Veterinary Dental College — Dental Scaling Without Anesthesia, position statement'},
+  {t:'duo',title:'Myth / the position statement',
+    a:['Anesthesia-free cleaning','Offered at groomers, pet stores and mobile clinics, and sold on exactly the fear you already have: that the anesthetic is the risky part.'],
+    b:['American Veterinary Dental College','“Access to the subgingival area of every tooth is impossible in an unanesthetized patient.” Removing the tartar you can see “has little effect on a pet’s health, and provides a false sense of accomplishment. The effect is purely cosmetic.”'],
+    note:'AVDC — Dental Scaling Without Anesthesia, position statement.'},
+
+  {t:'p',text:'Read that carefully. The objection is not that it is second best. It is that disease lives under the gum, the procedure cannot go there, and a clean-looking mouth then buys another year of not investigating. You pay to be reassured.'},
 
   {t:'h3',text:'Home care that actually does something'},
 
   {t:'p',text:'Brushing is the only home measure that addresses the gum line directly, and it works on frequency rather than effort. Thirty seconds daily beats ten minutes on a Sunday. Use a toothpaste made for dogs — human paste is not formulated to be swallowed — and build the habit over two weeks rather than starting with a brush in his mouth.'},
 
   {t:'steps',items:[
-    ['Days 1–3','Just the flavor','Let him lick dog toothpaste off your finger. That is the entire session. Stop while he wants more.'],
-    ['Days 4–7','Lift the lip','Finger with paste along the outside of the canines and the big cheek teeth, three seconds, then done. The inside surfaces do not matter much; his tongue handles them.'],
-    ['Days 8–14','Introduce the brush','A finger brush or a small soft brush, same three seconds, same spot, building to both sides.'],
-    ['Then, daily','Thirty seconds, outside surfaces only','Same time of day, ideally before something he likes. Daily is the target; every other day still works. Weekly does not.']
+    ['Days 1–3','Just the flavor','Let him lick dog toothpaste off your finger. That is the entire session. Stop while he wants more.','LICK ONLY'],
+    ['Days 4–7','Lift the lip','Finger with paste along the outside of the canines and the big cheek teeth, three seconds, then done. The inside surfaces do not matter much; his tongue handles them.','3 SECONDS'],
+    ['Days 8–14','Introduce the brush','A finger brush or a small soft brush, same three seconds, same spot, building to both sides.','SAME 3 SEC'],
+    ['Then, daily','Thirty seconds, outside surfaces only','Same time of day, ideally before something he likes. Daily is the target; every other day still works. Weekly does not.','30 SECONDS']
   ]},
 
   {t:'note',title:'Chews, and what they are worth',paras:[
@@ -344,7 +389,12 @@ module.exports = [
 
   {t:'h3',text:'The professional clean, and what it costs'},
 
-  {t:'p',text:'A dental cleaning under anesthesia is a plannable expense, with roughly a <strong>two-to-one</strong> spread between the cheapest and the dearest cases — get a quote in your local currency rather than a number from a book. The anesthetic is what buys access to the subgingival area, which is the part that determines whether the procedure was treatment or decoration. Extractions, if teeth are already lost, sit on top of that. Budget for one every year or two once the dog is middle-aged, and treat it as a line item rather than a surprise.'},
+  {t:'keyfig',title:'A plannable expense, not a surprise',items:[
+    ['CHEAPEST TO DEAREST','About 2 : 1','Get a quote in your local currency rather than a number from a book. Extractions, if teeth are already lost, sit on top of that.'],
+    ['HOW OFTEN TO BUDGET','Every 1–2 years','Once the dog is middle-aged. Treat it as a line item.']
+  ]},
+
+  {t:'p',text:'The anesthetic is what buys access to the subgingival area, which is the part that determines whether the procedure was treatment or decoration.'},
 
   {t:'photo',n:42,note:'Owner’s hand lifting the lip of a smooth dachshund to expose the upper cheek teeth, finger brush visible in the other hand, dog relaxed. Soft daylight, tight crop, no clinical setting.',caption:'Thirty seconds a day, on the outside surfaces. That is the whole protocol.'}
 ]},
@@ -356,7 +406,12 @@ module.exports = [
 
   {t:'h3',text:'Lafora disease — miniature wirehaireds'},
 
-  {t:'p',text:'Lafora is an inherited late-onset form of epilepsy caused by a mutation in NHLRC1, and in dachshunds it is concentrated in the <strong>miniature wirehaired</strong>. A DNA test is established and commercially available, which makes this the clearest case in the breed for testing before purchase rather than watching afterward. It also works: UK screening cut the proportion of affected dogs from <strong>10.4 percent in 2012 to 2.7 percent in 2017</strong>. If you are buying a miniature wirehaired, this is the question you ask first.'},
+  {t:'tiles',title:'Lafora — what screening did in Britain',items:[
+    ['10.4%','Affected dogs, 2012'],
+    ['2.7%','Affected dogs, 2017']
+  ],roles:['b','g'],src:'UK screening, miniature wirehaired dachshunds · DNA test on NHLRC1'},
+
+  {t:'p',text:'Lafora is an inherited late-onset form of epilepsy caused by a mutation in NHLRC1, and in dachshunds it is concentrated in the <strong>miniature wirehaired</strong>. A DNA test is established and commercially available, which makes this the clearest case in the breed for testing before purchase rather than watching afterward. It also works, as those two numbers show. If you are buying a miniature wirehaired, this is the question you ask first.'},
 
   {t:'h3',text:'Eyes — PRA cord1'},
 
@@ -368,16 +423,20 @@ module.exports = [
 
   {t:'p',text:'Color dilution alopecia is genetic and recessive, and dachshunds are explicitly listed among the susceptible breeds. The coat is normal at birth; thinning and hair loss appear from around <strong>six months</strong>, and there is no cure — only management of the skin that is left. It attaches to the dilute colors, blue and Isabella, which the Dachshund Club of America accepts while warning of “thin coats, skin sensitivity, vaccine failures and reduced lifespan.” Note the market you are buying in: dapple carries the largest color surcharge of any pattern, and those premiums attach to precisely the patterns the parent club warns about.'},
 
-  {t:'p',text:'Sort the list by when you can act on it. Lafora and PRA are answered before purchase, by a DNA test on the parents, and cost you nothing afterward if you asked in time. Patella and cardiac problems are found at the annual exam, which is a reason to keep the exam even in the years the dog seems perfectly well. Color dilution alopecia is decided the day you choose a color. And dental disease is the only item on the list you can actively lower with thirty seconds a day.'},
+  {t:'cards',title:'Sort the list by when you can act on it',items:[
+    ['BEFORE YOU BUY','Lafora and PRA','Answered by a DNA test on the parents.|They cost you nothing afterward if you asked in time.',''],
+    ['AT THE ANNUAL EXAM','Patella and cardiac','Found on examination — a reason to keep the exam even in the years the dog seems perfectly well.','b'],
+    ['THE DAY YOU CHOOSE','Color, and then the teeth','Color dilution alopecia is decided the day you choose a color.|Dental disease is the only item you can actively lower, with thirty seconds a day.','a']
+  ]},
 
-  {t:'table',head:['Condition','Test or screen','What you would see, and when'],rows:[
+  {t:'matrix',title:'The short list, and where to check it',head:['Condition','Test or screen','What you would see, and when'],rows:[
     ['Lafora','DNA test, NHLRC1','Late-onset seizure activity; miniature wirehaireds'],
     ['PRA cord1','DNA test, RPGRIP1 · eye exam','Night vision loss first, progressive'],
     ['Patellar luxation','Patella evaluation','Skipping step, held-up hind leg'],
     ['Cardiac disease','Cardiac exam','Murmur found on a routine exam'],
     ['Color dilution alopecia','None — coat color predicts it','Thinning from ~6 months, dilutes only'],
     ['Dental disease','Oral exam at every visit','Breath, tartar, chewing on one side']
-  ],note:'Other tests exist on commercial panels — degenerative myelopathy, osteogenesis imperfecta, LGMD 2D in minis, MPS IIIA, narcolepsy, NCL1 and NCL2. Ask which of them a given breeder runs.'},
+  ],hi:[[0,1],[1,1]],note:'Other tests exist on commercial panels — degenerative myelopathy, osteogenesis imperfecta, LGMD 2D in minis, MPS IIIA, narcolepsy, NCL1 and NCL2. Ask which of them a given breeder runs.'},
 
   {t:'brief',title:'Verify it yourself, at the source',paras:[
     'The AKC parent-club screening list for the dachshund is three items long: patella evaluation, cardiac exam, ophthalmologist evaluation.',
@@ -392,13 +451,13 @@ module.exports = [
 
   {t:'first',text:'Insurance is the one purchase in this book where the decision has a deadline attached that nobody mentions at the point of sale. For most breeds the fine print is tedious. For a dachshund it is the entire product, because the condition you are insuring against is the one the waiting periods are written around.'},
 
-  {t:'stats',items:[
-    ['13–20×','a surgical episode, counted in annual premiums'],
-    ['180 days','orthopedic waiting period at one major insurer'],
-    ['14 days','the window that collapses it']
+  {t:'tiles',title:'Three numbers that decide the purchase',items:[
+    ['13–20×','A surgical episode, in annual premiums','NAPHIA State of the Industry, data year 2024. The advanced imaging alone costs about three years of premium.'],
+    ['180 days','Orthopedic waiting period at one major insurer','Not the fourteen-day illness wait you were quoted.'],
+    ['14 days','The window that collapses it','An orthopedic examination completed inside the first fourteen days waives the remainder.']
   ]},
 
-  {t:'p',text:'Premiums are not comparable across countries, so the useful figure is a ratio. In the one market with a published average — NAPHIA’s State of the Industry report, data year 2024 — an all-in IVDD surgical episode costs roughly <strong>thirteen to twenty years</strong> of accident-and-illness premium for one dog, and the advanced imaging alone costs about <strong>three years</strong> of it. Price your own policy against your own surgical quote, in your local currency.'},
+  {t:'p',text:'Premiums are not comparable across countries, so the useful figure is a ratio, and the market above is the one with a published average. Price your own policy against your own surgical quote, in your local currency.'},
 
   {t:'h3',text:'Two definitions that decide every claim'},
 
@@ -412,7 +471,12 @@ module.exports = [
 
   {t:'h3',text:'How they pay, which is not one question'},
 
-  {t:'p',text:'Modern accident-and-illness policies generally do cover hereditary and breed-related conditions, IVDD included, provided no sign or diagnosis predates coverage. A published claim example returned <strong>77 percent</strong> of the bill: eighty percent cover, applied after a deductible worth about three percent of the invoice. But reimbursement may be calculated on your actual bill, or on a benefit schedule — a fixed payout per condition, or “usual and customary” charges for your area. On a benefit schedule, the gap between the schedule and your invoice is yours, and in a specialty neurology hospital that gap is not small.'},
+  {t:'cards',title:'Two ways a policy pays',items:[
+    ['ON YOUR ACTUAL BILL','Reimbursement calculated on the invoice','A published claim example returned <strong>77 percent</strong> of the bill.|Eighty percent cover, applied after a deductible worth about three percent of the invoice.',''],
+    ['ON A BENEFIT SCHEDULE','A fixed payout per condition, or “usual and customary” charges for your area','The gap between the schedule and your invoice is yours.|In a specialty neurology hospital that gap is not small.','a']
+  ]},
+
+  {t:'p',text:'Modern accident-and-illness policies generally do cover hereditary and breed-related conditions, IVDD included, provided no sign or diagnosis predates coverage. Which of the two columns above you are buying is a separate question, and it is not always on the quote.'},
 
   {t:'tool',n:22,title:'The comparison grid, and the questions to ask first',intro:'Three quotes, one page. Fill the grid from the policy document rather than the sales page, and ask every question below in writing before you sign anything.'},
 

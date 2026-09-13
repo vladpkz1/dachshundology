@@ -1,7 +1,8 @@
 const fs=require('fs'), path=require('path');
 const {CSS}=require('./theme.js');
 const K=require('./kit.js');
-const ROOT='/home/claude/dachshundology';
+/* racine du livre = dossier parent de src/ — portable entre le conteneur et le dépôt */
+const ROOT=path.join(__dirname,'..');
 
 const PARTS=[
  {n:'I',   slug:'part1', title:'The Breed, Decoded',        sub:'what you actually bought'},
@@ -36,6 +37,8 @@ const ILLUS={
 };
 
 const matter=require(path.join(ROOT,'content','matter.js'));
+let CHECKPOINTS={};
+try{ CHECKPOINTS=require(path.join(ROOT,'content','checkpoints.js')); }catch(e){}
 /* une seule source de vérité : le site rend la note d'auteur, l'index des outils et la
    bibliographie depuis cette même matière. Vercel ne construit que depuis repo/, donc on
    y recopie le fichier à chaque build du livre. */
@@ -45,7 +48,7 @@ try{
     fs.copyFileSync(path.join(ROOT,'content','matter.js'), SITE_MATTER);
   }
 }catch(e){ console.warn('matter.js non synchronisé vers repo/:', e.message); }
-const payload={ book, have, haveAR, ILLUS, matter, stripe:K.stripe({h:11}), rule:K.dblRule(K.C.green), ruleFlip:K.dblRule(K.C.green,true) };
+const payload={ book, have, haveAR, ILLUS, matter, CHECKPOINTS, stripe:K.stripe({h:11}), rule:K.dblRule(K.C.green), ruleFlip:K.dblRule(K.C.green,true) };
 
 const ENGINE = fs.readFileSync(path.join(ROOT,'src','engine.js'),'utf8');
 const MATTER = fs.readFileSync(path.join(ROOT,'src','matter.js'),'utf8');

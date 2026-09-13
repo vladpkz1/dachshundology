@@ -6,11 +6,11 @@ const fs=require('fs'), path=require('path');
 /* ---------- HOME ---------- */
 const home=layout({
  title:'Dachshundology — The Complete Dachshund Owner’s Manual',
- desc:'The dachshund manual that shows its sources. 173 pages on the back, buying, feeding, training and cost — built on research most owner guides never cite.',
+ desc:'The dachshund manual that shows its sources. 212 pages on the back, buying, feeding, training and cost — built on research most owner guides never cite.',
  url:'/', img:'home-hero',
  schema:[ORG,WEBSITE,
   {"@context":"https://schema.org","@type":"Book",name:"The Complete Dachshund Owner’s Manual",
-   numberOfPages:173,inLanguage:"en-US",bookFormat:"https://schema.org/EBook",
+   numberOfPages:212,inLanguage:"en-US",bookFormat:"https://schema.org/EBook",
    author:{"@type":"Organization",name:"Dachshundology"},
    offers:{"@type":"Offer",price:PRICE,priceCurrency:"USD",availability:"https://schema.org/InStock",url:BUY}}],
  body:`
@@ -26,7 +26,7 @@ const home=layout({
       <a class="btn" href="/the-manual/">What is in the manual</a>
       <a class="btn ghost" href="/check-up/">Try the free Check-Up</a>
     </div>
-    <p class="label" style="margin-top:26px;color:var(--camel)">173 pages · 24 printable tools · every figure sourced</p>
+    <p class="label" style="margin-top:26px;color:var(--camel)">212 pages · 24 printable tools · every figure sourced</p>
   </div>
   <div class="hero-photo">${photo('home-hero',{ratio:'3 / 4',eager:true})}
     <div style="text-align:center;margin-top:22px">${CREST_G}</div></div>
@@ -82,12 +82,12 @@ const home=layout({
 
 <section class="dark"><div class="wrap" style="text-align:center">
   ${DACH_CREAM}
-  <h2 style="margin-top:20px">173 pages. 24 tools. One bibliography.</h2>
+  <h2 style="margin-top:20px">212 pages. 24 tools. One bibliography.</h2>
   <p style="max-width:58ch;margin:18px auto 28px;color:#DCD6C6">Everything on this site, plus the twenty pages on
   the back, the thirty days after you bring him home, the training progressions, and the printable sheets you
   hand to a sitter or a veterinarian.</p>
   <a class="btn" href="/the-manual/">See the full contents</a>
-  <p class="label" style="margin-top:20px;color:rgba(246,241,228,.55)">173 pages · instant PDF download · updates included</p>
+  <p class="label" style="margin-top:20px;color:rgba(246,241,228,.55)">212 pages · instant PDF download · updates included</p>
 </div></section>`});
 W('index.html',home);
 
@@ -96,12 +96,12 @@ const partsList=[['I','The Breed, Decoded'],['II','Choosing and Buying'],['III',
  ['IV','Training a Stubborn Dog'],['V','The Back'],['VI','Health, Food and Weight'],
  ['VII','A Real Life'],['VIII','The Older Dachshund']];
 W('the-manual/index.html',layout({
- title:'The Complete Dachshund Owner’s Manual — 173 pages, every figure sourced',
+ title:'The Complete Dachshund Owner’s Manual — 212 pages, every figure sourced',
  desc:'What is inside the manual: eight parts, 24 printable tools, forty answered questions and a full bibliography. $'+PRICE+', instant download.',
  url:'/the-manual/', img:'manual',
  schema:[crumbs([['Home','/'],['The Manual','/the-manual/']]),
   {"@context":"https://schema.org","@type":"Product",name:"The Complete Dachshund Owner’s Manual",
-   description:"A 173-page sourced manual for dachshund owners in English, naming the country behind every figure.",brand:{"@type":"Brand",name:"Dachshundology"},
+   description:"A 212-page sourced manual for dachshund owners in English, naming the country behind every figure.",brand:{"@type":"Brand",name:"Dachshundology"},
    offers:{"@type":"Offer",price:PRICE,priceCurrency:"USD",availability:"https://schema.org/InStock",url:BUY}}],
  body:`<div class="wrap"><div class="crumbs"><a href="/">Home</a> › The Manual</div></div>
 <section style="padding-top:8px"><div class="wrap narrow">
@@ -109,7 +109,7 @@ W('the-manual/index.html',layout({
   <div class="sub">from the day you start looking to the day it gets hard</div>
   ${photo('manual',{ratio:'3 / 2',cls:'lead',eager:true,
     caption:'Eight parts, twenty-four printable tools, and a bibliography you can check line by line.'})}
-  <div class="answer" style="margin:28px 0"><strong>What this is</strong>173 pages, eight parts, 24 printable
+  <div class="answer" style="margin:28px 0"><strong>What this is</strong>212 pages, eight parts, 24 printable
   tools and a bibliography you can check. Written in English for owners anywhere, built on the British, Swedish
   and Danish research that owner guides rarely cite — and naming the country behind every figure it uses.</div>
   <div class="grid g2" style="margin:34px 0">
@@ -128,7 +128,7 @@ W('the-manual/index.html',layout({
   against the <a href="/sources/">bibliography</a>, and eight of the chapters are published free on this site so
   you can judge the writing before you pay for it.</p>
   <div class="sell"><div class="label" style="color:var(--camel)">Instant download</div>
-    <h3 style="margin:8px 0 10px">$${PRICE} — PDF, 173 pages</h3>
+    <h3 style="margin:8px 0 10px">$${PRICE} — PDF, 212 pages</h3>
     <p style="margin:0 0 18px">Revisions are free for life. If a figure changes, you get the corrected edition.</p>
     <p class="label" style="color:var(--slate);border:1px solid var(--line);padding:14px 18px;display:inline-block">
       Checkout opens with the first edition · ${PREVIEW?'preview build':'coming shortly'}</p></div>
@@ -289,7 +289,7 @@ ${GUIDES.map(g=>`- [${g.h1}](${SITE}/guides/${g.slug}/): ${g.answer}`).join('\n'
 ## Reference
 - [Sources and bibliography](${SITE}/sources/): every study, guideline and dataset used.
 - [Editorial policy](${SITE}/about/): sourcing, labeling of contested evidence, corrections.
-- [The manual](${SITE}/the-manual/): 173 pages, 24 printable tools, $${PRICE}.
+- [The manual](${SITE}/the-manual/): 212 pages, 24 printable tools, $${PRICE}.
 `);
 W('vercel.json',JSON.stringify({
  cleanUrls:true, trailingSlash:true,

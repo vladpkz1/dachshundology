@@ -14,9 +14,9 @@ function R(b){
         `<div style="flex:1"><div class="fig">${esc(f)}</div><div class="bar"></div><small>${esc(c)}</small></div>`).join('')}</div>`;
     case 'list':{ const T=b.ordered?'ol':'ul';
       return `<${T}>${(b.items||[]).map(i=>`<li>${esc(i)}</li>`).join('')}</${T}>`; }
-    case 'steps': return `<div class="steps">${(b.items||[]).map(([w,t,x],i)=>
+    case 'steps': return `<div class="steps">${(b.items||[]).map(([w,t,x,d],i)=>
         `<div class="s"><div class="num">${i+1}</div><div><div class="w">${esc(w)}</div>
-         <h3 style="margin-top:.8mm">${esc(t)}</h3><p style="margin-top:1.2mm;font-size:9.6pt;line-height:14.6pt">${esc(x)}</p></div></div>`).join('')}</div>`;
+         <h3 style="margin-top:.8mm">${esc(t)}${d?`<span class="dur">${esc(d)}</span>`:''}</h3><p style="margin-top:1.2mm;font-size:9.6pt;line-height:14.6pt">${esc(x)}</p></div></div>`).join('')}</div>`;
     case 'check': return `<div>${b.title?`<h3>${esc(b.title)}</h3>`:''}<div class="check">${(b.items||[]).map(i=>
         `<div class="i"><span class="bx"></span><span class="t">${esc(i)}</span></div>`).join('')}</div></div>`;
     case 'table': return `<div>${b.title?`<h3>${esc(b.title)}</h3>`:''}<table style="margin-top:2.6mm">
@@ -58,6 +58,63 @@ function R(b){
     case 'remember': return `<div class="remember">${(b.items||[]).map(([t,x],i)=>
         `<div class="it"><span class="rn">${['I','II','III','IV','V'][i]||i+1}</span>
          <div><h3>${esc(t)}</h3><p style="margin-top:1.2mm;font-size:9.8pt;line-height:15pt">${esc(x)}</p></div></div>`).join('')}</div>`;
+
+    /* ─── grammaire de modules ─── */
+    case 'tiles':{ const it=b.items||[], n=Math.min(4,Math.max(2,it.length));
+      const role=['g','s','','b'];
+      return `<div class="mod">${b.title?`<div class="modh${b.acc?' acc':''}">${esc(b.title)}</div>`:''}
+        <div class="tiles n${n}">${it.map(([f,l,x],i)=>`<div class="tile ${b.roles&&b.roles[i]!==undefined?b.roles[i]:role[i]||''}">
+          <div class="fig">${esc(f)}</div><div class="lab">${esc(l)}</div>
+          ${x?`<div class="sub">${esc(x)}</div>`:''}</div>`).join('')}</div>
+        ${b.src?`<div class="msrc">${esc(b.src)}</div>`:''}</div>`; }
+
+    case 'cards':{ const it=b.items||[], n=it.length>=3?3:2;
+      return `<div class="mod">${b.title?`<div class="modh${b.acc?' acc':''}">${esc(b.title)}</div>`:''}
+        <div class="cards n${n}">${it.map(([k,h,x,r])=>`<div class="mcard ${r||''}">
+          ${k?`<div class="t">${esc(k)}</div>`:''}${h?`<h4>${esc(h)}</h4>`:''}
+          ${String(x||'').split('|').map(q=>`<p>${esc(q)}</p>`).join('')}</div>`).join('')}</div></div>`; }
+
+    case 'matrix':{ const hi=new Set((b.hi||[]).map(([r,c])=>r+':'+c));
+      return `<div class="mod">${b.title?`<div class="modh">${esc(b.title)}</div>`:''}
+        <table class="mx">${b.head?`<tr>${b.head.map(h=>`<th>${esc(h)}</th>`).join('')}</tr>`:''}
+        ${(b.rows||[]).map((r,ri)=>`<tr>${r.map((c,ci)=>`<td class="${hi.has(ri+':'+ci)?'hi':''}">${esc(c)}</td>`).join('')}</tr>`).join('')}
+        </table>${b.note?`<small style="margin-top:2.2mm">${esc(b.note)}</small>`:''}</div>`; }
+
+    case 'decision':{
+      return `<div class="mod">${b.title?`<div class="modh">${esc(b.title)}</div>`:''}
+        <div class="dec">${(b.items||[]).map(([q,hint,branches])=>`<div class="dq">
+          <div class="q">${esc(q)}</div>${hint?`<div class="hint">${esc(hint)}</div>`:''}
+          <div class="br">${(branches||[]).map(([l,r])=>`<span class="chip ${r||''}">${esc(l)}</span>`).join('')}</div>
+        </div>`).join('')}</div></div>`; }
+
+    case 'gauge':{
+      return `<div class="mod">${b.title?`<div class="modh">${esc(b.title)}</div>`:''}
+        <div class="gauge">${(b.items||[]).map(([k,pct,c,r])=>`<div class="grow ${r||''}">
+          <div class="k">${esc(k)}</div><div class="bar"><i style="width:${Math.max(0,Math.min(100,+pct||0))}%"></i></div>
+          <div class="c">${esc(c)}</div></div>`).join('')}</div></div>`; }
+
+    case 'phases':{
+      return `<div class="mod">${b.title?`<div class="modh">${esc(b.title)}</div>`:''}
+        <div class="phases">${(b.items||[]).map(([v,l])=>`<div class="phase">
+          <div class="b">${esc(v)}</div><div class="l">${esc(l)}</div></div>`).join('')}</div></div>`; }
+
+    case 'signals':{
+      return `<div class="signals ${b.role||''}${(b.items||[]).length<4?' one':''}">
+        ${b.title?`<div class="t">${esc(b.title)}</div>`:''}
+        <ul>${(b.items||[]).map(i=>`<li>${esc(i)}</li>`).join('')}</ul></div>`; }
+
+    case 'duo':{
+      return `<div class="mod">${b.title?`<div class="modh">${esc(b.title)}</div>`:''}
+        <div class="duo"><div><div class="t">${esc((b.a||[])[0]||'')}</div><p>${esc((b.a||[])[1]||'')}</p></div>
+        <div><div class="t">${esc((b.b||[])[0]||'')}</div><p>${esc((b.b||[])[1]||'')}</p></div></div>
+        ${b.note?`<div class="msrc">${esc(b.note)}</div>`:''}</div>`; }
+
+    case 'keyfig':{
+      return `<div class="mod">${b.title?`<div class="modh">${esc(b.title)}</div>`:''}
+        <div class="keyfigs">${(b.items||[]).map(([k,v,x])=>`<div class="keyfig">
+          <span class="k">${esc(k)}</span><div class="v">${esc(v)}</div>
+          ${x?`<p>${esc(x)}</p>`:''}</div>`).join('')}</div></div>`; }
+
     case 'quiz': return `<div class="box" style="margin-top:5mm"><div class="bt" style="color:var(--green)">Three questions</div>
         ${(b.items||[]).map((q,i)=>`<p><strong>${i+1}.</strong> ${esc(q)}</p>`).join('')}
         <small style="margin-top:3mm">Answers on page 146.</small></div>`;
@@ -121,8 +178,8 @@ function splittable(b){
   }
   if(b.t==='steps'){
     return {shell:`<div class="steps"></div>`, sel:null,
-      kids:(b.items||[]).map(([w,t,x],i)=>`<div class="s"><div class="num">${i+1}</div><div><div class="w">${esc2(w)}</div>
-        <h3 style="margin-top:.8mm">${esc2(t)}</h3><p style="margin-top:1.2mm;font-size:9.6pt;line-height:14.6pt">${esc2(x)}</p></div></div>`),
+      kids:(b.items||[]).map(([w,t,x,d],i)=>`<div class="s"><div class="num">${i+1}</div><div><div class="w">${esc2(w)}</div>
+        <h3 style="margin-top:.8mm">${esc2(t)}${d?`<span class="dur">${esc2(d)}</span>`:''}</h3><p style="margin-top:1.2mm;font-size:9.6pt;line-height:14.6pt">${esc2(x)}</p></div></div>`),
       cont:`<div class="steps" style="margin-top:0"></div>`, contSel:null};
   }
   if(b.t==='remember'){
@@ -273,6 +330,30 @@ D.book.forEach((part,pi)=>{
     const before=deferred.length+wide.length; drain();
     if(deferred.length+wide.length===before){ page=newPage(part,page.startOf); page.startOf=page.startOf; drain();
       if(deferred.length+wide.length===before) break; } }
+
+  /* ---- page Checkpoint de fin de partie ---- */
+  const cp=(D.CHECKPOINTS||{})[part.slug];
+  if(cp){
+    const el=document.createElement('section'); el.className='page cp';
+    el.innerHTML=`<div class="pad">
+      <div class="rh"><span class="l">${part.n} · ${part.title}</span><span class="r">Checkpoint</span></div>
+      <div class="cp">
+        <div class="cp-k">End of Part ${part.n}</div>
+        <h2>Checkpoint</h2>
+        <div class="cp-grid">
+          <div class="cp-list"><div class="t">What should be done</div>
+            ${(cp.done||[]).map(x=>`<div class="i"><span class="bx"></span><span class="x">${esc(x)}</span></div>`).join('')}</div>
+          <div class="cp-tiles">${(cp.tiles||[]).map(([f,l])=>`<div class="cp-tile"><div class="f">${esc(f)}</div><div class="l">${esc(l)}</div></div>`).join('')}</div>
+        </div>
+        ${(cp.errors||[]).length?`<div class="cp-err"><div class="h">The three mistakes to avoid</div>
+          <div class="row">${cp.errors.map(([t,x])=>`<div class="e"><div class="t">${esc(t)}</div><p>${esc(x)}</p></div>`).join('')}</div></div>`:''}
+        ${cp.next?`<div class="cp-next"><div class="k">Next</div>
+          <div><h4>${esc(cp.next[0])}</h4><p>${esc(cp.next[1])}</p></div></div>`:''}
+      </div>
+      <div class="folio"><span>${part.title}</span><b></b><span>Dachshundology</span></div>
+    </div>`;
+    out.appendChild(el); pages.push({el, part, checkpoint:true});
+  }
 });
 
 /* ---------- back matter ---------- */

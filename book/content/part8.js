@@ -8,13 +8,22 @@ module.exports = [
 /* ───────────────────────── 8.1 ───────────────────────── */
 { id:'8.1', title:'What changes after eight', sub:'old is not a diagnosis', pages:2, blocks:[
 
-  {t:'first',text:'Somewhere around eight or nine you will notice he takes the last step more slowly, sleeps through the mail, and stands in the kitchen for a second before deciding where he was going. Most of what happens next is ordinary aging and needs no treatment. Some of it is treatable and gets missed, because “he’s just getting old” is the sentence under which a painful joint, a rotten tooth and a treatable disease all quietly disappear. Age is not a diagnosis. It is the reason to look harder.'},
+  {t:'first',text:'Somewhere around eight or nine you will notice he takes the last step more slowly, sleeps through the mail, and stands in the kitchen for a second before deciding where he was going. Most of what happens next is ordinary aging and needs no treatment, but some of it is treatable and gets missed, because “he’s just getting old” is the sentence under which a painful joint, a rotten tooth and a treatable disease all quietly disappear. Age is not a diagnosis — it is the reason to look harder.'},
 
-  {t:'p',text:'Two veterinary visits a year from about eight, rather than one, with bloodwork and a blood pressure check at least annually. That is the single change with the best return. Everything below is what you are watching for between the visits.'},
+  {t:'keyfig',title:'The single change with the best return',items:[
+    ['FROM ABOUT EIGHT','Twice a year','Two veterinary visits rather than one. Everything below is what you are watching for between them.'],
+    ['AT LEAST ANNUALLY','Bloods and blood pressure','Bloodwork and a blood pressure check, once a year at minimum.']
+  ]},
 
   {t:'h3',text:'Sight and hearing'},
 
-  {t:'p',text:'The lens hardens with age and the pupil takes on a bluish haze. That is usually not a cataract, it dims vision rather than removing it, and a dog copes with it well until you rearrange the furniture. Hearing goes first at the high frequencies, which is why the recall word stops working before the door does. Train a hand signal for “come” while he can still see you clearly, stop startling him awake with a hand on his back, and use a light flicked on and off across a dark yard instead of shouting.'},
+  {t:'p',text:'The lens hardens with age and the pupil takes on a bluish haze. That is usually not a cataract, it dims vision rather than removing it, and a dog copes with it well until you rearrange the furniture. Hearing goes first at the high frequencies, which is why the recall word stops working before the door does.'},
+
+  {t:'signals',title:'Three adaptations, made before he needs them',role:'g',items:[
+    'Train a hand signal for “come” while he can still see you clearly',
+    'Stop startling him awake with a hand on his back',
+    'Flick a light on and off across a dark yard instead of shouting'
+  ]},
 
   {t:'h3',text:'Teeth'},
 
@@ -22,7 +31,18 @@ module.exports = [
 
   {t:'h3',text:'Sleep, and the head'},
 
-  {t:'p',text:'Older dachshunds sleep more in the day and less at night. Watch for the pattern that is not simple sleep: pacing after dark, standing in corners, staring at nothing, getting stuck behind a chair he can plainly walk out of, greeting you as though you had been away, or losing house-training that was solid for a decade. Canine cognitive dysfunction is a recognized veterinary diagnosis with management options, and the options work better early. Raise it as a specific question rather than mentioning in passing that he seems confused.'},
+  {t:'p',text:'Older dachshunds sleep more in the day and less at night. That much is ordinary. What you are watching for is the pattern that is not simple sleep.'},
+
+  {t:'signals',title:'Not sleep — the signs of canine cognitive dysfunction',items:[
+    'Pacing after dark',
+    'Standing in corners',
+    'Staring at nothing',
+    'Getting stuck behind a chair he can plainly walk out of',
+    'Greeting you as though you had been away',
+    'Losing house-training that was solid for a decade'
+  ],role:'g'},
+
+  {t:'p',text:'Canine cognitive dysfunction is a recognized veterinary diagnosis with management options, and the options work better early. Raise it as a specific question rather than mentioning in passing that he seems confused.'},
 
   {t:'h3',text:'Muscle'},
 
@@ -30,7 +50,7 @@ module.exports = [
 
   {t:'h3',text:'The spine, later'},
 
-  {t:'stats',items:[
+  {t:'tiles',title:'Three numbers for an older back',items:[
     ['76%','of IVDD cases diagnosed between 4 and 8 years'],
     ['3–6 yrs','typical presentation, chondrodystrophoid breeds'],
     ['4–5','target body condition score, on a 1–9 scale']
@@ -55,15 +75,30 @@ module.exports = [
 /* ───────────────────────── 8.2 ───────────────────────── */
 { id:'8.2', title:'Adapting the house, the walk, the bowl', sub:'change the shape of the day, not the amount of it', pages:1, blocks:[
 
-  {t:'p',text:'Traction first, because it is the cheapest thing on the list and it buys the most. Runners along the routes he actually uses — bed to door, couch to bowl — nails kept short, and the hair trimmed between the pads. An older dog who slips once will start hesitating at the doorway, and the hesitation costs him more muscle, which costs him more confidence.'},
-
-  {t:'p',text:'Then ramps, and be clear about what a ramp is for. It is not a ban on the furniture. The DachsLife survey found that dogs <em>prevented</em> from using furniture were at higher risk of disc disease, not lower, so the aim is a controlled route up and down rather than an exclusion zone he will try to beat. A low, wide ramp with a grippy surface, taught with food, used every time. Drop the bed height if you can. Put a bed on the floor in whichever room the family actually sits in, out of the draft, and expect him to want a warm spot — older dogs feel the cold sooner, and this body type was already feeling it sooner than most.'},
+  {t:'cards',title:'Three changes to the house, cheapest first',items:[
+    ['TRACTION','Runners on the routes he actually uses','Bed to door, couch to bowl. Nails kept short, hair trimmed between the pads.|An older dog who slips once starts hesitating at the doorway, and the hesitation costs him muscle, then confidence.',''],
+    ['THE RAMP','A controlled route, not an exclusion zone','Low, wide, grippy, taught with food, used every time. Drop the bed height if you can.|The DachsLife survey found dogs <em>prevented</em> from using furniture were at higher risk of disc disease, not lower.','b'],
+    ['WARMTH','A bed on the floor where the family sits','Out of the draft. Older dogs feel the cold sooner, and this body type was already feeling it sooner than most.','s']
+  ]},
 
   {t:'p',text:'On walks, keep the daily total and change its shape. Three short outings beat one long one: he warms up slowly, stiffens when he stops, and does better with frequent, gentle movement than with a single expedition. Let him set the pace and let him sniff. Scent work outlasts speed, eyes and ears, and it is the last piece of his job he gives up.'},
 
   {t:'h3',text:'The bowl'},
 
-  {t:'p',text:'Less movement and less muscle means fewer calories for the same dog. Do the arithmetic rather than eyeballing it. Resting energy requirement is <strong>70 × (body weight in kg) to the power 0.75</strong>; a 16-pound (7 kg) dachshund comes out at 301, and at the neutered-adult factor of 1.6 that is about <strong>482 kcal a day</strong>. If he needs to lose, the factor drops to 1.0. Individual variation runs up to fifty percent either way, so the number is a starting point and the body is the instrument: score him on the 1–9 scale and steer for <strong>4 to 5</strong>. Treats stay at or under a tenth of the day’s calories.'},
+  {t:'p',text:'Less movement and less muscle means fewer calories for the same dog. Do the arithmetic rather than eyeballing it.'},
+
+  {t:'keyfig',title:'The arithmetic, for a 16-pound (7 kg) dachshund',items:[
+    ['RESTING ENERGY REQUIREMENT','70 × kg^0.75','Body weight in kilograms, to the power 0.75. Seven kilograms comes out at 301.'],
+    ['NEUTERED ADULT','482 kcal a day','RER at the neutered-adult factor of 1.6. If he needs to lose, the factor drops to 1.0.']
+  ]},
+
+  {t:'p',text:'Individual variation runs up to fifty percent either way, so the number is a starting point and the body is the instrument. Treats stay at or under a tenth of the day’s calories.'},
+
+  {t:'gauge',title:'Body condition, on the 1–9 scale',items:[
+    ['Lean 1–3',20,'Below the target.','mid'],
+    ['Ideal 4–5',50,'Where you steer. Score him on the scale rather than eyeballing him.',''],
+    ['Heavy 7–9',85,'Above the target, on a dog who has to get his own chest off the floor.','hot']
+  ]},
 
   {t:'note',title:'The case for keeping him lean',paras:[
     'Restricting calories by 25% added about <strong>1.8 years</strong> of median lifespan in a lifetime study of 48 Labradors. Not a dachshund study, and not about backs — but it is the strongest evidence here that a lean dog lives longer than a fat one.',
@@ -78,8 +113,8 @@ module.exports = [
 
   {t:'p',text:'The signs are behavioral before they are physical, and they are ordinary enough to be dismissed one at a time. It is the accumulation that tells you.'},
 
-  {t:'list',ordered:false,items:[
-    'Hesitating before a step, a jump, or the car — and taking the long way around instead',
+  {t:'signals',title:'Eight signs, each one easy to explain away alone',items:[
+    'Hesitating before a step, a jump or the car — and taking the long way around instead',
     'Sitting down slowly, or standing up in stages',
     'Sleeping in a new place, usually a flatter or firmer one',
     'Less interest in greeting you at the door, or in the walk he used to demand',
@@ -87,7 +122,7 @@ module.exports = [
     'Licking one spot repeatedly, or a wet patch of fur over a joint',
     'Panting at rest, or restlessness at night with no other cause',
     'Eating more slowly, chewing on one side, or dropping food — that is teeth, and teeth hurt'
-  ]},
+  ],role:'g'},
 
   {t:'check',title:'The monthly five minutes',items:[
     'Weigh him on the same scale and write the number down',
@@ -108,7 +143,17 @@ module.exports = [
 
   {t:'h3',text:'Assessing, before you need to'},
 
-  {t:'p',text:'Ask your veterinarian for a quality-of-life scale. Several are in routine use, they are short, and the point of one is not the total — it is that it forces you to score the same categories every week rather than re-deciding from scratch each morning. You are rating pain, appetite, drinking, breathing, whether he can keep himself clean, whether he can get up and move, and whether he still does anything he chooses to do for its own sake.'},
+  {t:'p',text:'Ask your veterinarian for a quality-of-life scale. Several are in routine use, they are short, and the point of one is not the total — it is that it forces you to score the same categories every week rather than re-deciding from scratch each morning.'},
+
+  {t:'signals',title:'What a scale asks you to score, every week',role:'g',items:[
+    'Pain',
+    'Appetite',
+    'Drinking',
+    'Breathing',
+    'Whether he can keep himself clean',
+    'Whether he can get up and move',
+    'Whether he still does anything he chooses to do for its own sake'
+  ]},
 
   {t:'p',text:'Score it weekly and write it down. A file of eight weekly scores tells you something no single day can: which way the line is going, and how fast. Owners who keep one are rarely surprised by the answer, and almost never say afterward that they left it too long.'},
 
@@ -118,7 +163,13 @@ module.exports = [
 
   {t:'p',text:'The conversation with a veterinarian usually goes better than people expect, and it is entirely acceptable to open it long before it is needed. Ask directly: is he in pain we are not controlling, what would you do if he were yours, and what does the next three months most likely look like. Most veterinarians will not raise euthanasia first. Most will answer honestly and with relief when you do, because they have spent their careers watching families wait too long and rarely watching one act too soon.'},
 
-  {t:'p',text:'Ask the practical questions in the same conversation, so nothing has to be decided on the day. Whether they offer home visits. Whether you can book a quiet appointment at the start or end of a clinic day, and come in through a side door. Whether you can pay in advance so there is no counter to stand at afterward. Whether you may stay in the room for all of it, which you may.'},
+  {t:'signals',title:'Ask these in the same conversation, so nothing has to be decided on the day',role:'g',items:[
+    'Whether they offer home visits',
+    'Whether you can book a quiet appointment at the start or end of a clinic day',
+    'Whether you can come in through a side door',
+    'Whether you can pay in advance, so there is no counter to stand at afterward',
+    'Whether you may stay in the room for all of it — you may'
+  ]},
 
   {t:'h3',text:'The day'},
 
@@ -126,7 +177,9 @@ module.exports = [
 
   {t:'p',text:'A few things are normal and unnerving if you have not been warned. His eyes usually stay open. There may be a last deep breath, or a twitch, after his heart has stopped; neither is awareness. His bladder or bowels may empty. Bring his own blanket, feed him whatever you like beforehand, and hold whichever part of him you always hold. Children can be present, and generally do better present than waiting at home with a guess. You can also decide you cannot be in the room, and that choice is yours to make without anybody’s commentary.'},
 
-  {t:'p',text:'Afterward you will be asked about aftercare, so decide before the day. Communal cremation with no ashes returned, private cremation with ashes returned, or home burial where local law allows it. Those are the options and there is no correct one.'},
+  {t:'h3',text:'Aftercare'},
+
+  {t:'p',text:'You will be asked about aftercare, so decide before the day. Communal cremation with no ashes returned, private cremation with ashes returned, or home burial where local law allows it. Those are the options and there is no correct one.'},
 
   {t:'h3',text:'After'},
 
