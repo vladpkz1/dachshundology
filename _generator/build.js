@@ -10,11 +10,11 @@ const PRICE='45.00';
 const esc=s=>String(s==null?'':s);
 const W=(p,c)=>{const f=path.join(DIST,p);fs.mkdirSync(path.dirname(f),{recursive:true});fs.writeFileSync(f,c);};
 
-const CREST=K.crest({d:34,ring:'#093B2F',dog:'#093B2F'});
-const CREST_G=K.crest({d:120,ring:'#093B2F',dog:'#093B2F'});
-const DACH=K.dachSolid({w:300,fill:'#093B2F'});
-const DACH_CREAM=K.dachSolid({w:260,fill:'rgba(250,240,213,.94)'});
-const CREST_C=K.crest({d:34,ring:'#FAF0D5',dog:'#FAF0D5'});
+const CREST=K.mark({d:30,bg:'#101010',dog:'#F1F0EC'});
+const CREST_G=K.mark({d:96,bg:'#101010',dog:'#F1F0EC'});
+const DACH=K.dachSolid({w:300,fill:'#101010'});
+const DACH_CREAM=K.dachSolid({w:260,fill:'#F1F0EC'});
+const CREST_C=K.mark({d:30,bg:'#FF3B1F',dog:'#FFFFFF'});
 
 const NAV=[['/the-manual/','The Manual'],['/guides/','Free Guides'],['/check-up/','Check-Up'],
            ['/about/','About']];
@@ -72,7 +72,7 @@ function layout({title,desc,url,body,schema=[],cls='',preload='',img=''}){
 <meta property="og:title" content="${esc(title)}"><meta property="og:description" content="${esc(desc)}">
 <meta property="og:url" content="${SITE}${url}"><meta name="twitter:card" content="summary_large_image">${img?`\n<meta property="og:image" content="${SITE}${asset('photos/'+img+'.jpg')}"><meta name="twitter:image" content="${SITE}${asset('photos/'+img+'.jpg')}"><meta property="og:image:alt" content="${esc(ALT[img]||'')}">`:''}
 <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,400..700;1,9..144,400..600&family=Inter:wght@400..700&display=swap">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Archivo:wdth,wght@100,400..900&family=Inter+Tight:wght@400..700&display=swap">
 <link rel="stylesheet" href="${asset('site.css')}">${preload}
 <link rel="icon" href="${asset('favicon.svg')}" type="image/svg+xml">
 ${ld}</head>
@@ -82,7 +82,8 @@ ${ld}</head>
   <nav>${NAV.map(([h,t])=>`<a href="${h}">${t}</a>`).join('')}
   <a class="cta-nav" href="/the-manual/">The manual</a></nav>
 </div></header>
-<div class="stripe"></div>
+<div class="stripe">Instant download · 195 pages · vet-reviewed · every figure sourced</div>
+<div class="marq"><i>★</i><span>Stairs — the real answer</span><i>★</i><span>What a ramp actually does</span><i>★</i><span>The first sixty minutes</span><i>★</i><span>Mini or standard</span><i>★</i><span>Feed in calories, not cups</span><i>★</i><span>The 180-day clock</span><i>★</i></div>
 ${body}
 <footer class="site"><div class="wrap">
   <div class="fgrid">
@@ -152,7 +153,7 @@ function guidePage(g){
   <div class="sell">
     <div class="label" style="color:var(--camel)">The long version</div>
     <h3 style="margin:8px 0 10px">The Complete Dachshund Owner’s Manual</h3>
-    <p style="margin:0 0 18px">212 pages, 24 printable tools, and the full research trail behind every number on
+    <p style="margin:0 0 18px">195 pages, 24 printable tools, and the full research trail behind every number on
     this page — including the twenty pages on the back that this guide only summarizes.</p>
     <a class="btn" href="/the-manual/">See what is inside — $${PRICE}</a>
   </div>

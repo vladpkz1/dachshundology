@@ -8,14 +8,14 @@ module.exports = [
 /* ───────────────────────── 4.1 ───────────────────────── */
 { id:'4.1', title:'The method, and the evidence for it', sub:'why the shortcut costs more than it saves', pages:3, blocks:[
 
-  {t:'first',text:'Every book about this breed opens with the same word. <em>Stubborn.</em> It is the wrong word, and it does real damage, because it tells you the dog is refusing you.'},
+  {t:'first',text:'Every book about this breed opens with the same word. <em>Stubborn.</em> It is the wrong word, and it does damage, because it tells you the dog is refusing you.'},
 
   {t:'duo',title:'Stubborn, or self-employed',
     a:['What the word says','He is refusing you, and the job is to break the refusal.'],
     b:['What is actually happening','He is weighing your instruction against something more interesting and deciding for himself — which is precisely the trait he was selected for.'],
     note:'The training problem is not how to break that. It is how to become the better offer.'},
 
-  {t:'p',text:'The method you use to do that is not a matter of taste. The American Veterinary Society of Animal Behavior holds that “only reward-based training methods are used for all dog training, including the treatment of behavior problems.” That is a position on evidence, not on sentiment.'},
+  {t:'p',text:'The American Veterinary Society of Animal Behavior holds that “only reward-based training methods are used for all dog training, including the treatment of behavior problems.”'},
 
   {t:'signals',title:'What the same statement names to avoid',items:[
     'Choke collars.',
@@ -40,13 +40,13 @@ module.exports = [
 
   {t:'h3',text:'A dog bred to make the call himself'},
 
-  {t:'p',text:'The AKC standard — The Kennel Club and the FCI publish their own — asks for a dog who is “clever, lively and courageous to the point of rashness, persevering in above- and below-ground work, with all the senses well-developed.” Shyness is a serious fault. Read that as a job description. The work happened at the end of a run of earth, in the dark, with the handler above ground and out of reach. A dog who stopped to ask permission was no use down there, and was not bred from.'},
+  {t:'p',text:'The AKC standard — The Kennel Club and the FCI publish their own — asks for a dog who is “clever, lively and courageous to the point of rashness, persevering in above- and below-ground work, with all the senses well-developed.” Shyness is a serious fault. That work happened in the dark, out of the handler’s reach.'},
 
-  {t:'p',text:'Coercion gets compliance from a dog whose first strategy is to consult his handler. This one’s first strategy is to consult his nose. Punish him and you rarely get obedience. You get a dog who offers less, who hides the early warnings you need to read, and who files you under obstacles rather than opportunities. The evidence and the breed point the same way, which is convenient, because it means you only have to learn one system.'},
+  {t:'p',text:'Coercion gets compliance from a dog whose first strategy is to consult his handler. This one consults his nose. Punish him and you get a dog who offers less and hides the early warnings you need to read.'},
 
   {t:'script',text:'he isn’t defying you. he has found a better offer, and it smells like a rabbit'},
 
-  {t:'p',text:'None of which makes reward-based training permissive. It is not the absence of rules; it is the absence of pain and fear as teaching tools. You still decide when he eats, where he sleeps, and what he is allowed to practise. The difference is in the machinery. Instead of waiting for the mistake and punishing it, you arrange the situation so the right answer is the easy one, then pay for it until it becomes his default. Management does the work that a correction was supposed to do, and it works while you are asleep.'},
+  {t:'p',text:'Reward-based training is not the absence of rules; it is the absence of pain and fear as teaching tools. Arrange the situation so the right answer is the easy one, then pay for it until it is his default.'},
 
   {t:'h3',text:'The marker, and why the timing beats the treat'},
 
@@ -64,8 +64,6 @@ module.exports = [
     ['10%','Ceiling, as a share of daily calories','Treats stay at or under it.']
   ],src:'Do the arithmetic before you decide to pay in cheddar'},
 
-  {t:'p',text:'You are training a small dog on a small budget. The commonest way owners wreck a dachshund is not with a training method. It is with the rewards.'},
-
   {t:'note',title:'Paying him without fattening him',paras:[
     'Weigh the day’s ration in the morning and train out of it. What he earns comes off dinner.',
     'Keep a high-value tier — a pea-sized piece of chicken — reserved for recall, nail trims and the veterinarian. If the good stuff is everywhere, it is worth nothing anywhere.',
@@ -79,8 +77,6 @@ module.exports = [
     ['TIER TWO','Something soft and smelly','For new work.','a'],
     ['TIER THREE','Roast chicken, cheap hot dog','One item at the top. It appears for recall and for the veterinarian and nowhere else.','']
   ]},
-
-  {t:'p',text:'You cannot invent a ladder in the middle of an emergency. Most owners have one reward and wonder why it stops working at the curb.'},
 
   {t:'keyfig',title:'The shape of a session',items:[
     ['LENGTH','2–3 min','Five to ten repetitions, twice a day. Two short sessions will outrun one long one every time.'],
@@ -98,15 +94,13 @@ module.exports = [
 /* ───────────────────────── 4.2 ───────────────────────── */
 { id:'4.2', title:'The window that does not reopen', sub:'three months, and no extensions', pages:4, blocks:[
 
-  {t:'first',text:'There is exactly one deadline in this book. The sensitive period for socialization runs through the first three months of life, and it closes on schedule whether or not you used it — everything else here can be started late and still work. A dog who met eight kinds of person before sixteen weeks and a dog who met two are not the same animal at three years old, and no amount of later effort fully closes the gap.'},
+  {t:'first',text:'There is exactly one deadline in this book: the sensitive period for socialization runs through the first three months of life. Everything else here can be started late and still work.'},
 
   {t:'tiles',title:'The one deadline',items:[
     ['3 months','The sensitive period — all of it','It closes on schedule whether or not you used it.'],
     ['7–8 weeks','Earliest puppy class','Provided the puppy has had one vaccination at least seven days before.'],
     ['Leading','Cause of death in dogs under three','Behavior problems. Not disc disease. Not cancer. Behavior.']
   ],src:'AVSAB Position Statement on Puppy Socialization'},
-
-  {t:'p',text:'AVSAB’s position is blunt on the part owners find hardest: socialization should begin <strong>before the vaccination series is complete</strong>, and that is the standard of care, not a risk-tolerant fringe view.'},
 
   {t:'evidence',badge:'myth',paras:[
     '“Keep him home until he’s fully vaccinated.” You will be told this, sometimes by people with a license on the wall, and it is the single most expensive piece of advice in dog ownership.',
@@ -122,7 +116,7 @@ module.exports = [
 
   {t:'h3',text:'Exposure is not socialization'},
 
-  {t:'p',text:'Socialization is the pairing of a new thing with a good outcome, at a distance and intensity the puppy can handle. Exposure is just the new thing. If you carry a nine-week-old into a farmers market and he spends forty minutes frozen against your chest, you have not socialized him to crowds. You have taught him, efficiently and permanently, that the world arrives faster than he can cope with.'},
+  {t:'p',text:'Socialization is the pairing of a new thing with a good outcome, at a distance the puppy can handle. Exposure is just the new thing — a nine-week-old frozen against your chest at a farmers market is being taught that the world arrives faster than he can cope with.'},
 
   {t:'decision',title:'Read the response, then act on it',items:[
     ['Does he approach and investigate?','',[['Yes → let him, and pay him',''],['No → read the next question','o']]],
@@ -134,14 +128,12 @@ module.exports = [
 
   {t:'h3',text:'Flooding, and why it looks like it worked'},
 
-  {t:'p',text:'Flooding means holding a frightened dog in the thing that frightens him until he stops reacting. AVSAB lists it among the methods to avoid. It is seductive because it produces a quiet dog inside ten minutes — and the quiet is the problem. A dog who has stopped struggling has not decided the vacuum is fine. He has stopped trying. Do it to a dachshund and you will pay for it later in growling, because you taught him that signaling gets him nowhere.'},
+  {t:'p',text:'Flooding means holding a frightened dog in the thing that frightens him until he stops reacting; AVSAB lists it among the methods to avoid. A dog who has stopped struggling has not decided the vacuum is fine, he has stopped trying. Do it to a dachshund and you pay later in growling, because you taught him that signaling gets him nowhere.'},
 
   {t:'cards',title:'The stakes are breed-specific',items:[
     ['A FEARFUL RETRIEVER','Tends to withdraw','He hides behind the couch, and the household calls him shy.','b'],
     ['A FEARFUL DACHSHUND','Loud, forward, and certain','He has the confidence the AKC standard asks for — courageous to the point of rashness — so the same underlying fear barks at the window for six years and lunges at a Labrador on a sidewalk.','a']
   ]},
-
-  {t:'p',text:'Most of the adult problems in the rest of this part were built, or prevented, before sixteen weeks.'},
 
   {t:'h3',text:'Choosing the class'},
 
@@ -235,7 +227,7 @@ module.exports = [
 /* ───────────────────────── 4.3 ───────────────────────── */
 { id:'4.3', title:'Eight things he needs to know', sub:'the entire curriculum, and where people break it', pages:5, blocks:[
 
-  {t:'first',text:'Eight behaviors will cover almost everything this dog has to do in a life with you. Not thirty — eight. Two of them, go to bed and drop it, solve more household problems than the rest combined, and both are usually skipped in favor of teaching a dachshund to shake hands.'},
+  {t:'first',text:'Eight behaviors cover almost everything this dog has to do in a life with you. Two of them — go to bed and drop it — solve more household problems than the rest combined.'},
 
   {t:'tiles',title:'The whole curriculum, in three numbers',items:[
     ['8','Behaviors, total','Name, sit, recall, loose leash, stay, go to bed, drop it, crate.'],
@@ -243,7 +235,7 @@ module.exports = [
     ['1','Criterion raised at a time','Duration, or distance, or distraction — never two together.']
   ]},
 
-  {t:'p',text:'Each one below is written as a progression, with the criterion for moving on and the way people most often break it. Work one stage at a time. When a stage fails twice in a row, you have gone too fast: drop back to the last one he owned and rebuild from there.'},
+  {t:'p',text:'Work one stage at a time. A stage that fails twice in a row means you went too fast: drop back to the last one he owned.'},
 
   {t:'evidence',badge:'myth',paras:[
     '“Small dog syndrome.” The claim is that little dogs come with bossy temperaments. The data look, at first, like they agree: across 8,301 dogs of 49 breeds scored on C-BARQ, reported problem behaviors rose as height fell (p&lt;0.001).',
@@ -310,6 +302,8 @@ module.exports = [
 
   {t:'signals',title:'Where it goes wrong · loose leash',items:['Treating the walk as exercise first and training second, so he is dragged along on a tight line for twenty minutes a day and rehearses pulling four hundred times a week.','Split them: a short training walk, and a separate long sniffing walk on a loose line, where pulling is not on the menu because you are going wherever the nose goes anyway.'],role:'g'},
 
+  {t:'plate',name:'harness',title:'Where the leash pulls from',tag:'4 · Loose leash',caption:'A neck that takes repeated jerks belongs to the body carrying the highest disc-disease risk of any breed.'},
+
   {t:'h3',text:'5 · Stay'},
 
   {t:'steps',items:[
@@ -354,6 +348,8 @@ module.exports = [
 
   {t:'signals',title:'Where it goes wrong · the crate',items:['Owners stop crate training the week the house-training finishes — and then face the one situation where it is not optional.','Conservative management of a disc episode calls for at least four weeks of strict rest in a space about three by four feet (90 × 120 cm).','A dog who already loves his crate rests. A dog meeting it for the first time in pain does not.'],role:'g'},
 
+  {t:'plate',name:'crate',title:'The space he will need later',tag:'8 · The crate',caption:'Buy the pen, not the room. This is the footprint conservative disc management asks for, and it is a bad week to be meeting it for the first time.'},
+
   {t:'note',title:'House-training, in one panel',paras:[
     'Out every one to two waking hours, and after sleeping, eating and playing. Reward the instant he finishes, outside, not when he comes back in.',
     'Play <em>after</em> elimination, never before — otherwise he learns that emptying out ends the fun and starts holding it.',
@@ -369,9 +365,9 @@ module.exports = [
 /* ───────────────────────── 4.4 ───────────────────────── */
 { id:'4.4', title:'Recall against a scent', sub:'the one that decides whether he ever runs free', pages:2, blocks:[
 
-  {t:'first',text:'A recall that works in the kitchen is not a recall. The real question in this breed is what happens when he crosses a fresh trail at forty yards (35 m) and your voice arrives second. Everything in section 4.3 was preparation for this page, and this page is where most owners find out what they actually bought.'},
+  {t:'first',text:'A recall that works in the kitchen is not a recall. The question is what happens when he crosses a fresh trail at forty yards (35 m) and your voice arrives second.'},
 
-  {t:'p',text:'The nose beats the treat because you are competing with the part of the dog that was deliberately amplified. The AKC standard asks for a dog “persevering in above- and below-ground work, with all the senses well-developed.” Scenting drive was the product; biddability was, at best, a side consideration. When he locks on, he is not ignoring you — he has stopped processing you, in much the way you stop hearing a radio when you read.'},
+  {t:'p',text:'You are competing with the part of the dog that was deliberately amplified: the AKC standard asks for a dog with “all the senses well-developed,” and scenting drive was the product. When he locks on he is not ignoring you — he has stopped processing you.'},
 
   {t:'h3',text:'Build it where the nose is quiet, then move'},
 
@@ -400,7 +396,7 @@ module.exports = [
     ['Have you rebuilt it for a season and still not got that answer?','Many dachshunds never earn full off-leash freedom in open, unfenced country.',[['Then the long line is the plan, not the failure','a']]]
   ]},
 
-  {t:'p',text:'Recall is also the first thing to rot. It decays quietly, because nothing announces it: the dog comes back in the yard, comes back on the sidewalk, comes back for eleven months, and then does not come back on the one hillside with a deer track across it. Pay it for life. A dog who has been paid ten thousand times for coming has a habit; a dog who was paid for six weeks in 2024 has a memory.'},
+  {t:'p',text:'Recall is the first thing to rot, and it decays quietly: he comes back for eleven months, then not on the one hillside with a deer track across it. A dog paid ten thousand times has a habit; a dog paid for six weeks in 2024 has a memory.'},
 
   {t:'script',text:'a long line is not an admission of defeat. it is a seatbelt'},
 
@@ -423,9 +419,9 @@ module.exports = [
 /* ───────────────────────── 4.5 ───────────────────────── */
 { id:'4.5', title:'Barking', sub:'the feature you are trying to return as a defect', pages:2, blocks:[
 
-  {t:'first',text:'He barks because barking was the job. A dog working a tunnel is located by his voice: the handler on the surface listens, works out where the dog has the quarry, and digs to the sound. Centuries of breeding selected for a dog who is loud, persistent and certain he is right, and you have that dog in an apartment now — but nothing about him has been recalled.'},
+  {t:'first',text:'He barks because barking was the job: a dog working a tunnel is located by his voice, and the handler digs to the sound. Nothing about him has been recalled.'},
 
-  {t:'p',text:'Which means the goal is not silence. It is an off switch. Start by naming the trigger class, because the six of them need entirely different handling and most failed bark plans are simply the wrong plan applied confidently.'},
+  {t:'p',text:'The goal is not silence but an off switch. Name the trigger class first: the six need entirely different handling.'},
 
   {t:'signals',title:'Six trigger classes — name yours before you treat it',items:[
     'Alarm at the window — movement outside, self-rewarding because whoever is out there always leaves.',
@@ -442,7 +438,7 @@ module.exports = [
     ['6%','Separation-related behavior','Against the 20 to 30 percent routinely quoted in popular writing.']
   ],roles:['s','s','g'],src:'Finnish survey of 13,715 dogs — Salonen et al., Scientific Reports 2020'},
 
-  {t:'p',text:'Most barking when you leave is not separation anxiety. It is boredom, or the street outside. The distinction matters because the treatments have nothing in common: one needs a behavior plan and sometimes a veterinarian, the other needs a frosted window and something to chew.'},
+  {t:'p',text:'Most barking when you leave is not separation anxiety but boredom, or the street outside. One needs a behavior plan and sometimes a veterinarian; the other needs a frosted window and something to chew.'},
 
   {t:'h3',text:'Manage first, then teach'},
 
@@ -480,7 +476,7 @@ module.exports = [
 /* ───────────────────────── 4.6 ───────────────────────── */
 { id:'4.6', title:'Growling, guarding, and the leash', sub:'the warnings you want him to keep', pages:2, blocks:[
 
-  {t:'first',text:'A growl is information, delivered free, by a dog trying very hard not to bite you. It is the most useful sound he makes. Punish it and you do not remove the feeling underneath — you remove the sentence before the feeling, and the next dog you own is one who goes from still to teeth with nothing in between.'},
+  {t:'first',text:'A growl is information, delivered free, by a dog trying very hard not to bite you. Punish it and you remove the sentence, not the feeling — and what you own next is a dog who goes from still to teeth with nothing in between.'},
 
   {t:'keyfig',title:'What counts as resource guarding',items:[
     ['THE DEFINITION','85 experts','“The use of avoidance, threatening, or aggressive behaviors by a dog to retain control of food or non-food items in the presence of a person or other animal.”'],
@@ -505,8 +501,6 @@ module.exports = [
     'Take the high-value items away when the session is over, rather than letting them be negotiated.'
   ],role:'g'},
 
-  {t:'p',text:'The same definition covers guarding from other dogs, which is where multi-dog households get into trouble. Household peace is mostly an engineering problem, and the engineering is cheaper than the behavior work that follows a fight.'},
-
   {t:'h3',text:'The leash, and the Labrador across the street'},
 
   {t:'tiles',title:'The arithmetic on the sidewalk',items:[
@@ -514,7 +508,7 @@ module.exports = [
     ['14%','Dogs reported aggressive, Finnish survey','You are dealing with a common problem, not a broken animal.']
   ],src:'Finnish survey of 13,715 dogs — Salonen et al., Scientific Reports 2020'},
 
-  {t:'p',text:'Leash reactivity toward bigger dogs is close to the house style in this breed. Distance is the currency. Find the range at which he can still eat, work there, and pay him for looking at the other dog and then back at you. Turn and walk away before he goes over threshold, not after.'},
+  {t:'p',text:'Leash reactivity toward bigger dogs is close to house style here, and distance is the currency. Work at the range where he can still eat, pay him for looking at the other dog and back at you, and turn away before threshold.'},
 
   {t:'flag',title:'Stop training and hire someone now',paras:[
     'A bite that breaks skin. Guarding around children. Growling that has stopped coming before the snap. A dog who redirects onto you when he cannot reach the trigger.',
@@ -529,7 +523,7 @@ module.exports = [
     ['TRAINER CERTIFICATIONS','Knowledge tested, continuing education required','No legal force. Whether “dog trainer” is a protected title depends on where you live, and in many markets it is not: anybody can print it on a card tomorrow.','b']
   ]},
 
-  {t:'p',text:'Ask what each tier is called where you live, which body awards it, and whether the title is protected there at all. Then ask any candidate one question: what happens when my dog gets it wrong? If the answer involves a correction, a prong, or e-collar “stim,” keep looking.'},
+  {t:'p',text:'Ask what each tier is called where you live and which body awards it. Then ask any candidate: what happens when my dog gets it wrong? If the answer involves a correction, a prong, or e-collar “stim,” keep looking.'},
 
   {t:'script',text:'thank him for the growl. you will miss it when it stops'}
 ]},

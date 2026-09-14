@@ -34,10 +34,15 @@ const ILLUS={
   dachCream: K.dachSolid({w:150,fill:'rgba(246,241,228,.9)',flip:true}),
   crest: K.crest({d:126}),
   crestGreen: K.crest({d:150,ring:K.C.green,dog:K.C.green}),
+  mark: K.mark({d:74,bg:'#FF3B1F',dog:'#FFFFFF'}),
+  markInk: K.mark({d:52,bg:'#101010',dog:'#F1F0EC'}),
+  markPaper: K.mark({d:52,bg:'#F1F0EC',dog:'#101010'}),
 };
 
 const matter=require(path.join(ROOT,'content','matter.js'));
 let CHECKPOINTS={};
+let PLATES={};
+try{ PLATES=require(path.join(ROOT,'src','plates.js')); }catch(e){}
 try{ CHECKPOINTS=require(path.join(ROOT,'content','checkpoints.js')); }catch(e){}
 /* une seule source de vérité : le site rend la note d'auteur, l'index des outils et la
    bibliographie depuis cette même matière. Vercel ne construit que depuis repo/, donc on
@@ -48,14 +53,14 @@ try{
     fs.copyFileSync(path.join(ROOT,'content','matter.js'), SITE_MATTER);
   }
 }catch(e){ console.warn('matter.js non synchronisé vers repo/:', e.message); }
-const payload={ book, have, haveAR, ILLUS, matter, CHECKPOINTS, stripe:K.stripe({h:11}), rule:K.dblRule(K.C.green), ruleFlip:K.dblRule(K.C.green,true) };
+const payload={ book, have, haveAR, ILLUS, matter, CHECKPOINTS, PLATES, stripe:K.stripe({h:11}), rule:K.dblRule(K.C.green), ruleFlip:K.dblRule(K.C.green,true) };
 
 const ENGINE = fs.readFileSync(path.join(ROOT,'src','engine.js'),'utf8');
 const MATTER = fs.readFileSync(path.join(ROOT,'src','matter.js'),'utf8');
 const html=`<!doctype html><html lang="en"><head><meta charset="utf-8">
 <title>Dachshundology — The Complete Dachshund Owner’s Manual</title>
 <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,400..700;1,9..144,400..600&family=Inter:wght@400..700&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Archivo:wdth,wght@100,400..900&family=Inter+Tight:wght@400..700&display=swap" rel="stylesheet">
 <style>${CSS}${fs.readFileSync(path.join(ROOT,'src','book.css'),'utf8')}</style></head>
 <body><div id="out"></div>
 <script>window.DATA=${JSON.stringify(payload)};</script>

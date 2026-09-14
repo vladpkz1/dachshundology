@@ -8,9 +8,9 @@ module.exports = [
 /* ───────────────────────── 7.1 ───────────────────────── */
 { id:'7.1', title:'How much exercise, and when', sub:'the rule everybody quotes has no author', pages:3, blocks:[
 
-  {t:'first',text:'Ask five people how far to walk a dachshund puppy and four will give you the same answer: five minutes for every month of age, twice a day. Breeders repeat it, rescues print it, veterinary receptionists hand it over with the vaccine schedule. It also has no traceable primary source — nobody can tell you who ran the study, on which dogs, or whether there ever was one.'},
+  {t:'first',text:'Ask five people how far to walk a dachshund puppy and four give the same answer: five minutes for every month of age, twice a day. It has no traceable primary source — nobody can tell you who ran the study, on which dogs, or whether there ever was one.'},
 
-  {t:'p',text:'That does not make it useless. A twelve-week-old taken on a two-mile (3 km) hike is a bad idea, and you can see why in his gait before the first mile is done. A conservative default is a reasonable thing to hand a new owner. But you are reading a book that draws the line between a habit and a finding, so here is the line. The five-minute rule is a rule of thumb. Use it as a starting dose. Do not use it as a reason.'},
+  {t:'p',text:'That does not make it useless: a twelve-week-old taken on a two-mile (3 km) hike is a bad idea. It is a rule of thumb — a starting dose, not a reason.'},
 
   {t:'evidence',badge:'myth',paras:[
     'Follow “five minutes per month of age” back to its origin and the trail dissolves into citation. Each source points at another source. No primary study surfaces, on this breed or any other.',
@@ -26,15 +26,13 @@ module.exports = [
     ['2,031','owners surveyed','DachsLife 2015. The Royal Veterinary College analyzed what came back.']
   ],src:'DachsLife 2015, 2,031 owners, RVC analysis · dachshund-ivdd.uk, lifestyle advice'},
 
-  {t:'p',text:'On exercise the direction is the opposite of what most owners assume. Dogs getting under thirty minutes a day carried a higher risk of disc disease; dogs getting over an hour a day carried a lower one.'},
-
   {t:'evidence',badge:'contested',paras:[
     'Almost every new owner protects the back by doing less. Shorter walks, fewer of them, no hills, nothing strenuous. The survey evidence runs against the instinct.',
     '<strong>Under thirty minutes a day: higher risk. Over an hour a day: lower risk.</strong> Read it as an association, not as a cause, because a questionnaire cannot tell you which came first — and a dog whose back is already sore is a dog who gets walked less.',
     'The same survey found <strong>no significant association with body condition score</strong>, and a protective trend for stairs that did not reach significance. It is British. No country has its own dataset on this breed; the figures here are Swedish, British or Danish, each one named.'
   ],source:'DachsLife 2015, 2,031 owners, RVC analysis · dachshund-ivdd.uk, lifestyle advice'},
 
-  {t:'p',text:'Hold both things at once. Do not run a growing dog into the ground on the strength of a survey, and do not keep a healthy four-year-old on a fifteen-minute leash loop because a rule with no author told you to. The dog you want at seven is a dog with a working topline, real hindquarter drive and the stamina to use them.'},
+  {t:'p',text:'Do not run a growing dog into the ground on the strength of a survey — and do not keep a healthy four-year-old on a fifteen-minute leash loop because a rule with no author told you to.'},
 
   {t:'script',text:'the goal is a fit dog, not a careful one'},
 
@@ -61,11 +59,11 @@ module.exports = [
     ['WHAT TO DO INSTEAD','Moderate volume, high variety','Soft ground, hills taken at a walk, scent work.|Several short outings rather than one expedition.','']
   ]},
 
-  {t:'p',text:'And decide in these months what he is allowed to practice, because whatever he repeats a thousand times at nine months is what his body will be doing at nine years.'},
+  {t:'p',text:'Decide in these months what he is allowed to practice: what he repeats a thousand times at nine months is what his body will be doing at nine years.'},
 
   {t:'h3',text:'Fit, not fragile'},
 
-  {t:'p',text:'You cannot change the skeleton. You can change what surrounds it. Muscle along the topline and through the hindquarters is the only structural improvement available to you, and it is built by varied ground, not by flat pavement.'},
+  {t:'p',text:'You cannot change the skeleton; you can change what surrounds it. Muscle along the topline and hindquarters is the only structural improvement available, and it is built by varied ground, not flat pavement.'},
 
   {t:'signals',title:'Ground that builds the muscle',role:'g',items:[
     'A hill, taken at a walk',
@@ -88,7 +86,7 @@ module.exports = [
 /* ───────────────────────── 7.2 ───────────────────────── */
 { id:'7.2', title:'Scent is the sport', sub:'hire the nose and the rest of the dog goes quiet', pages:3, blocks:[
 
-  {t:'p',text:'The AKC breed standard asks for a dog “persevering in above- and below-ground work, with all the senses well-developed.” That is not decoration. The animal was built to follow a scent into a hole in the dark, without instruction, and keep at it long after a sensible dog would have come home. You have that hardware in your living room. Most owners leave it switched off and then wonder why the dog spends the evening barking at the window.'},
+  {t:'p',text:'The AKC breed standard asks for a dog “persevering in above- and below-ground work, with all the senses well-developed.” He was built to follow a scent into a hole in the dark and keep at it long after a sensible dog would have come home. Most owners leave that hardware switched off.'},
 
   {t:'tiles',title:'Nosework against heelwork',items:[
     ['2 weeks','of nosework was enough'],
@@ -160,13 +158,15 @@ module.exports = [
 /* ───────────────────────── 7.3 ───────────────────────── */
 { id:'7.3', title:'What to avoid, and why', sub:'three things, and the honest reason for each', pages:1, blocks:[
 
-  {t:'p',text:'The list of prohibitions for this breed is usually long, unsourced and delivered with total confidence. Here is a short one, with the strength of the evidence attached to each item, so you can tell which lines are worth defending at a dog park.'},
+  {t:'p',text:'The list of prohibitions for this breed is usually long, unsourced and delivered with total confidence. Here is a short one, with the strength of the evidence attached to each item.'},
 
   {t:'cards',title:'Three things to avoid, and what each one rests on',items:[
     ['REASONING, NOT PROOF','Repeated jumping down','Up is loading. Down is impact, taken through the forelimbs into a long spine — eight times a day for six years is many thousands of repetitions.|The mechanics are sound. No study on this breed shows that jumping causes disc extrusion. Nobody has run one.','a'],
     ['REASONING, NOT PROOF','Competitive agility, and the jump sports','Same reasoning, higher dose, plus tight turns at speed on a long back.|The caution is drawn from conformation, not from a trial demonstrating harm in dachshunds. It is a good argument. It is not a result.','a'],
     ['YOU CAN WATCH IT HAPPEN','Slick floors','Polished wood, tile and laminate take away the traction he needs to land, turn and push off.|Lay runners on the routes he uses, keep nails short, trim the hair between the pads on longhaired and wirehaired dogs.','']
   ]},
+
+  {t:'plate',name:'drop',title:'The drop, not the couch',tag:'MEASURE BOTH',caption:'Measure the sofa tonight, and measure the clearance under his chest. The ratio between them is the point.'},
 
   {t:'flag',title:'The combination that does the damage',paras:[
     'A jump down from a couch onto tile is two problems at once: uncontrolled impact and no grip at the landing.',
@@ -185,7 +185,7 @@ module.exports = [
 /* ───────────────────────── 7.4 ───────────────────────── */
 { id:'7.4', title:'Grooming by coat', sub:'ten minutes a week, and half of it is an examination', pages:2, blocks:[
 
-  {t:'p',text:'Three coats, shown separately, groomed differently. Whichever one you have, the weekly session is doing two jobs. One is the coat. The other is a full-body check, which is how you catch a lump, a hot spot, a tick, or a flinch over the lumbar spine while it is still small. The grooming is the excuse. The examination is the value.'},
+  {t:'p',text:'Three coats, groomed differently. Whichever one you have, the grooming is the excuse; the full-body examination underneath it is the value.'},
 
   {t:'table',head:['Coat','Weekly','Tools','Bath'],rows:[
     ['Smooth','Five minutes with a rubber curry or hound glove','Rubber curry, hound glove, soft cloth','Every six to eight weeks, or when he rolls in something'],
@@ -203,7 +203,7 @@ module.exports = [
 
   {t:'h3',text:'The wire coat, and what clipping does to it'},
 
-  {t:'p',text:'A wire jacket is a harsh outer coat over a softer undercoat, and it is designed to be plucked, not cut. Hand-stripping pulls the dead outer hairs out at the root — a few at a time, with finger and thumb or a stripping knife held against the thumb — so the follicle produces a new harsh hair behind it. Done on a schedule, usually two or three times a year with tidying in between, the jacket stays crisp, weatherproof and the color it is supposed to be.'},
+  {t:'p',text:'A wire jacket is a harsh outer coat over a softer undercoat, designed to be plucked, not cut. Hand-stripping pulls the dead outer hairs out at the root — finger and thumb, or a stripping knife held against the thumb — so the follicle produces a new harsh hair behind it.'},
 
   {t:'duo',title:'Stripped against clipped',
     a:['WHAT THE CLIPPERS DO','Cut the same hairs off at the surface and leave the root in place. Over a few cycles the harsh outer coat thins out, the soft undercoat takes over, the texture goes woolly and the color goes flat.'],
@@ -216,7 +216,7 @@ module.exports = [
     'Wipe tear staining with plain water. On a wirehaired dog, keep the eyebrows out of the eyes.'
   ]},
 
-  {t:'p',text:'Teeth belong in the weekly session too, and they are the one piece of home grooming with a professional statement behind it. The American Veterinary Dental College is direct about the alternative on offer at grooming salons: access to the area below the gumline “is impossible in an unanesthetized patient,” and scraping off the tartar you can see “has little effect on a pet’s health, and provides a false sense of accomplishment. The effect is purely cosmetic.” A proper cleaning under anesthesia is not a cheap procedure anywhere, and the range is wide; ask your clinic for its figure in your local currency. Brushing at home lengthens the gap between them.'},
+  {t:'p',text:'Teeth belong in the weekly session too. On the anesthesia-free cleaning offered at grooming salons, the American Veterinary Dental College is direct: access to the area below the gumline “is impossible in an unanesthetized patient,” and scraping off the tartar you can see “has little effect on a pet’s health, and provides a false sense of accomplishment.” Ask your clinic what a proper cleaning under anesthesia costs in your local currency; brushing at home lengthens the gap between them.'},
 
   {t:'note',title:'If your dog is blue or isabella',paras:[
     'Color dilution alopecia is genetic and recessive, and dachshunds are explicitly listed among the susceptible breeds. The coat is normal at birth; signs appear from around six months — thinning over the trunk, broken hairs, flaky skin.',
@@ -229,7 +229,7 @@ module.exports = [
 /* ───────────────────────── 7.5 ───────────────────────── */
 { id:'7.5', title:'Apartments, cities, neighbors', sub:'a good apartment dog with one expensive habit', pages:1, blocks:[
 
-  {t:'p',text:'A dachshund is a good apartment dog in every respect but one. He is small, he sleeps a great deal, he does not need a yard, and he is entirely happy on a couch. He also has a bark built to be heard from underground through several feet of earth, and your neighbor shares a wall with it. Everything else here is easy. That one thing is the whole job.'},
+  {t:'p',text:'A dachshund is a good apartment dog in every respect but one: he has a bark built to be heard from underground through several feet of earth, and your neighbor shares a wall with it.'},
 
   {t:'cards',title:'The bark, worked in three places',items:[
     ['THE DOOR','Pair the trigger with food','Corridor footsteps, the elevator chime and the neighbor’s key all predict nothing and all get announced.|Pair each sound with food, every time, until it means cheese rather than intruders. Give him a mat away from the entrance to be sent to.',''],
@@ -245,6 +245,8 @@ module.exports = [
     'It keeps him off the floor between two sets of automatic doors',
     'A harness, never a collar, in a place where you may have to lift him without warning'
   ]},
+
+  {t:'plate',name:'lift',title:'How to pick him up',tag:'LOBBY · ELEVATOR',caption:'One hand under the chest, one under the rear, the back held level. Lifted by the front legs, the whole spine hangs from one point.'},
 
   {t:'h3',text:'House-training without a yard'},
 
@@ -274,8 +276,6 @@ module.exports = [
 
   {t:'h3',text:'The carrier problem'},
 
-  {t:'p',text:'Flying in the cabin is a question of length, and it is decided before you buy the ticket. Every airline caps the soft carrier, the caps differ by airline and by country, and they change — which means the number that matters is not what your dog weighs but how long he is when he lies down flat, which is the only way a dachshund travels.'},
-
   {t:'matrix',title:'What to ask before you book',head:['Ask before booking','Why it matters','Get it in writing from'],rows:[
     ['Carrier size limits','He travels lying flat','The airline'],
     ['Cabin or hold','Handling is the real risk','The airline'],
@@ -300,7 +300,9 @@ module.exports = [
       [['Yes → you are booking on a fact',''],['No → do not let the gate decide it','a']]]
   ]},
 
-  {t:'p',text:'Be clear about the status of that reasoning. <strong>A standard generally does not fit</strong> is arithmetic from published carrier dimensions against the length of the breed — it is not a statement any airline has made about the breed. Plan to drive, or to research the hold separately, rather than arrive at the gate to have it settled by an agent with a tape measure.'},
+  {t:'plate',name:'sizes',title:'Measure the dog, not the label',tag:'AKC · KC · FCI',caption:'The AKC and The Kennel Club draw the size line by weight; the FCI draws it by chest circumference at fifteen months. What he is called is not a measurement.'},
+
+  {t:'p',text:'<strong>A standard generally does not fit</strong> is arithmetic from published carrier dimensions against the length of the breed — not a statement any airline has made. Plan to drive, or research the hold, rather than let an agent with a tape measure settle it at the gate.'},
 
   {t:'h3',text:'Heat'},
 
@@ -325,9 +327,9 @@ module.exports = [
 
   {t:'h3',text:'Cold'},
 
-  {t:'p',text:'The AVMA’s cold-weather guidance names this body type twice without naming the breed. “Short-haired pets … feel the cold faster.” And short-legged dogs have the belly and body in contact with the snow. A smooth dachshund in a hard winter is an inch (2.5 cm) off the ground with almost nothing between him and it.'},
+  {t:'p',text:'The AVMA’s cold-weather guidance names this body type twice without naming the breed: “Short-haired pets … feel the cold faster,” and short-legged dogs have the belly and body in contact with the snow. A smooth dachshund in a hard winter is an inch (2.5 cm) off the ground.'},
 
-  {t:'p',text:'On coats, the AVMA’s position is measured, and so is this book’s: “if your dog has a short coat or seems bothered by the cold weather, consider a sweater or dog coat.” That is reasonable, not proven. No study says a coat lowers any risk in this breed. Buy one if he shivers, refuses the door, or lifts his feet — and keep a second, because a wet coat makes a dog colder than no coat at all. On a salted or chemically treated sidewalk, rinse his feet when you get home.'},
+  {t:'p',text:'On coats the AVMA’s position is measured: “if your dog has a short coat or seems bothered by the cold weather, consider a sweater or dog coat.” That is reasonable, not proven — no study says a coat lowers any risk in this breed. Keep a second one, because a wet coat makes a dog colder than no coat at all, and rinse his feet after a salted sidewalk.'},
 
   {t:'signals',title:'No fixed cutoff is given by anyone worth citing — so use the dog',items:[
     'Shaking',

@@ -8,7 +8,7 @@ const {chromium}=require('playwright');
   const stats=await p.evaluate(()=>{
     const r=[]; document.querySelectorAll('.page').forEach((pg,i)=>{
       const body=pg.querySelector('.body'); if(!body) return;
-      const pad=pg.querySelector('.pad');
+      const pad=(pg.querySelector('.pad2')||pg.querySelector('.pad'));
       const avail=pad.getBoundingClientRect().bottom-body.getBoundingClientRect().top;
       const m=body.querySelector('.main'), g=body.querySelector('.marg');
       r.push({i:i+1, fillMain:+(m.scrollHeight/avail).toFixed(2), fillMarg:+(g.scrollHeight/avail).toFixed(2),

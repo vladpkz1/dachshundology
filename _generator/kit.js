@@ -45,6 +45,15 @@ function crest({d=150, ring=C.cream, field='none', dog=C.cream, top='DACHSHUNDOL
   </svg>`;
 }
 
+
+/* ---- CLINIC : marque brutaliste (carré plein + teckel en réserve) ---- */
+function mark({d=34, bg='#101010', dog='#F1F0EC'}={}) {
+  return `<svg viewBox="0 0 100 100" width="${d}" height="${d}" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+    <rect width="100" height="100" fill="${bg}"/>
+    <g transform="translate(9,31) scale(0.164)">${dachSolid({w:500,fill:dog}).replace(/^<svg[^>]*>/,'').replace(/<\/svg>$/,'').replace(/<circle cx="407"[^>]*\/>/,`<circle cx="407" cy="60" r="5" fill="${bg}"/>`)}</g>
+  </svg>`;
+}
+
 /* ---- repp stripe band ---- */
 function stripe({h=14, a=C.green, b=C.brass, c=C.cream, w='100%'}={}) {
   return `<div style="height:${h}px;width:${w};background:repeating-linear-gradient(115deg,
@@ -118,4 +127,4 @@ function spine({w=520, on=C.green}={}) {
   }
   return `<svg viewBox="0 0 520 130" width="${w}" xmlns="http://www.w3.org/2000/svg">${v}</svg>`;
 }
-module.exports={C,dachSolid,crest,stripe,dblRule,photo,script,bcs,spine,DACH_PATH};
+module.exports={mark,C,dachSolid,crest,stripe,dblRule,photo,script,bcs,spine,DACH_PATH};

@@ -8,9 +8,9 @@ const f=process.argv[2], out=process.argv[3];
   const over = await p.evaluate(()=>{
     const r=[];
     document.querySelectorAll('.page').forEach((pg,i)=>{
-      const pad=pg.querySelector('.pad'); if(!pad) return;
+      const pad=(pg.querySelector('.pad2')||pg.querySelector('.pad')); if(!pad) return;
       const pb=pad.getBoundingClientRect();
-      pg.querySelectorAll('.pad > *').forEach(el=>{
+      pg.querySelectorAll('.pad > *, .pad2 > *').forEach(el=>{
         if(getComputedStyle(el).position==='absolute') return;
         const b=el.getBoundingClientRect();
         if(b.bottom > pb.bottom+1 || b.right > pb.right+1)

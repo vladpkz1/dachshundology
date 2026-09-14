@@ -11,7 +11,7 @@ module.exports = [
   pages:3,
   blocks:[
 
-    {t:'first',text:'Count what the first week actually requires and the list comes to about a dozen things. A pet store will sell you sixty. Spend where this dog is unusual, which is to say where he is long, and let the rest go.'},
+    {t:'first',text:'The first week takes about a dozen things. A pet store will sell you sixty. Spend where he is long, and let the rest go.'},
 
     {t:'tiles',title:'What the first cart costs',items:[
       ['≈ 4×','Rover’s 2025 new-dog range','Top of the range against the bottom — the same animal, and most of the difference settles in your first two hours of shopping.'],
@@ -60,7 +60,9 @@ module.exports = [
 
     {t:'h3',text:'The collar question'},
 
-    {t:'p',text:'Buy a collar for his tags and walk him on a harness. The reason is not aesthetic. When a dachshund comes home from a disc episode, the standard conservative protocol specifies a harness and not a collar, because a collar puts the whole stopping force of a lunging dog through his neck. Cervical cases are the smaller share of dachshund disc disease, but they are the share you can do something about on day one for the price of a harness, and there is no behavioral cost to the switch.'},
+    {t:'p',text:'Buy a collar for his tags and walk him on a harness. The conservative disc protocol specifies a harness, not a collar: a collar puts the stopping force of a lunging dog through his neck. Cervical cases are the smaller share of dachshund disc disease, and the share a harness answers on day one.'},
+
+    {t:'plate',name:'harness',title:'Where the load goes',tag:'Harness · collar',caption:'A collar carries his tags. The leash clips to the harness, every walk of his life.'},
 
     {t:'note',title:'Fitting a Y-front harness',paras:[
       'Two fingers flat under every strap. The Y sits on the breastbone, not across the point of the shoulder. Nothing crosses the throat. On a long dog the chest strap tends to creep back toward the ribs — re-check it after ten minutes of walking, and again after every growth spurt.'
@@ -68,14 +70,14 @@ module.exports = [
 
     {t:'h3',text:'Crate sizing for a long dog'},
 
-    {t:'p',text:'Most crates are sold by the dog’s weight, which is exactly the wrong dimension here. Buy by length. He should be able to stand without ducking, turn around without folding, and lie flat on his side with his legs out and his spine straight. A crate that forces him to sleep curved is the one piece of equipment on this list that can do real harm over months.'},
+    {t:'p',text:'Crates are sold by the dog’s weight, which is the wrong dimension here. Buy by length: he should stand without ducking, turn without folding, and lie flat with his spine straight.'},
 
     {t:'keyfig',title:'Two numbers that decide two purchases',items:[
       ['CERVICAL DISC CASES','6%','The smaller share of dachshund disc disease — and the share a harness instead of a collar addresses on day one.'],
       ['CRATE, MINIMUM FOOTPRINT','3 × 4 ft','About 90 × 120 cm for a small dog, held for a minimum of four weeks: the confinement space in the conservative disc protocol. Buy to that standard now and you will not be shopping for it in a panic later, at the worst week of your year.']
     ]},
 
-    {t:'illus',name:'dach',caption:'Measure nose to tail base, add four inches (10 cm), and buy that length. Height matters less than you think; length matters more than the label admits.'},
+    {t:'plate',name:'crate',title:'The crate, at actual size',tag:'Minimum footprint',caption:'Measure nose to tail base, add four inches (10 cm), and buy that length. Height matters less than you think; length matters more than the label admits.'},
 
     {t:'evidence',badge:'contested',paras:[
       'Buy the ramp. Buy it for his hips, his knees, your carpet, and the fact that a dog who can get onto the sofa unaided is a dog you are not lifting eleven times an evening.',
@@ -118,7 +120,7 @@ module.exports = [
   pages:3,
   blocks:[
 
-    {t:'first',text:'Proofing a house for a dachshund is not proofing it for a puppy: a puppy grows out of the counter-surfing phase, and this dog will spend fifteen years at eight inches (20 cm) off the floor with a nose built for going down holes. The AKC standard describes him as “persevering in above- and below-ground work,” which is breed-club language for a dog who will still be working on the problem tomorrow. Walk each room at his eye level before he arrives — what you find down there is not what you see standing up.'},
+    {t:'first',text:'This dog will spend fifteen years at eight inches (20 cm) off the floor with a nose built for going down holes — the AKC standard describes him as “persevering in above- and below-ground work.” Walk every room at his eye level before he arrives.'},
 
     {t:'tool',n:8,title:'The Room-by-Room Sweep',intro:'One pass per room, in this order, the weekend before he comes home. Then one more pass the evening he arrives, because you will have missed something.'},
 
@@ -127,6 +129,8 @@ module.exports = [
       ['FURNITURE','Manage the jump down, not the jump up','The jump up is a decision he makes at a run. The jump down happens from a standstill, with you usually in the room — that is the one you can manage.|Put the ramp where he already goes, not where you would prefer he went, and a folded blanket at the base of every launch point meanwhile.|We are deliberately not telling you to ban the sofa; 3.1 explains why the survey data will not support that instruction.','a'],
       ['STAIRS','Gates top and bottom, from day one','Carry him between floors for now.|Not because stairs are proven to damage a dachshund’s back — the DachsLife data actually leaned the other way, without reaching significance.|Because a ten-week-old with no depth perception and a body longer than the tread is going to learn about stairs by falling down some. Teach them later, deliberately, one at a time, on a leash.','b']
     ]},
+
+    {t:'plate',name:'stairs',title:'Stairs, and the survey data',tag:'DachsLife 2015',caption:'Gate them top and bottom anyway for now — not for his spine, but because a ten-week-old with a body longer than the tread learns about stairs by falling down some.'},
 
     {t:'h3',text:'The yard'},
 
@@ -138,7 +142,7 @@ module.exports = [
       'Standing water.'
     ],role:'g'},
 
-    {t:'p',text:'Anywhere his head fits, he fits. He was bred to go to ground, and he will dig in the one spot you cannot see from the kitchen window, so give him a permitted digging place — a sandbox or a marked bed — and bury things in it worth finding.'},
+    {t:'p',text:'He will dig in the one spot you cannot see from the kitchen window. Give him a permitted digging place and bury things in it worth finding.'},
 
     {t:'script',text:'anywhere his head fits, he fits. all of him'},
 
@@ -155,13 +159,9 @@ module.exports = [
       'The child’s craft drawer.'
     ],role:'g'},
 
-    {t:'p',text:'Cord covers on everything reachable. Lidded trash. One rule for the household on socks: they are never a toy, not once, because he cannot tell your laundry from a toy shaped like your laundry.'},
-
-    {t:'p',text:'Two habits are worth building now rather than later. Trash goes behind a door or under a lid with a weight on it, and the dishwasher gets closed the moment it is loaded — an open dishwasher door is a ramp to a plate of cooked bones at his eye level. Neither is a puppy rule. Both are permanent, because he will still be eight inches off the ground at ten years old.'},
+    {t:'p',text:'Cord covers on everything reachable, lidded trash, and the dishwasher closed the moment it is loaded — an open door is a ramp to cooked bones at his eye level. Socks are never a toy, not once: he cannot tell your laundry from a toy shaped like it.'},
 
     {t:'h3',text:'The things that actually poison dogs'},
-
-    {t:'p',text:'Dose matters more than substance, and the doses are small enough to be worth learning. A 16 lb dachshund is 7.3 kg; do that conversion once and tape it inside the cupboard where the chocolate lives.'},
 
     {t:'matrix',title:'The doses that matter',head:['Substance','The dose that matters','What happens, and when'],rows:[
       ['Chocolate','Theobromine: mild GI signs at 20 mg/kg, cardiac effects at 40–50, seizures at 60 and above. Per ounce (28 g): milk chocolate 64 mg; semisweet and dark 150–160; unsweetened baker’s 440.','A 16 lb (7.3 kg) dog reaches the first threshold at about 2.3 oz (65 g) of milk chocolate — or under 0.4 oz (11 g) of baker’s. The baking cupboard is the dangerous one, not the candy dish.'],
@@ -213,7 +213,7 @@ module.exports = [
   pages:3,
   blocks:[
 
-    {t:'first',text:'The first twenty-four hours are not a training opportunity but a logistics problem with a frightened animal in the middle of it. He has just lost his mother, his littermates, the smell of the only building he has known, and the ability to predict what happens next. Everything below is designed to give him back the last one — prediction — as fast as possible, and none of it is designed to impress anyone.'},
+    {t:'first',text:'The first twenty-four hours are a logistics problem with a frightened animal in the middle of it. He has just lost his mother, his littermates, the smell of the only building he knows, and the ability to predict what happens next.'},
 
     {t:'signals',title:'Not today, whatever anyone says',items:[
       'Do not bathe him.',
@@ -224,7 +224,7 @@ module.exports = [
       'Do not let visiting children carry him around the house.'
     ]},
 
-    {t:'p',text:'Each of those is a reasonable thing to want and every one of them spends the small amount of coping he has left. The dog you meet this week is a compressed, anxious version of the dog you will have in a month; judging his temperament today is like judging a house by its moving day.'},
+    {t:'p',text:'Every one of those spends the small amount of coping he has left. Judging his temperament this week is like judging a house by its moving day.'},
 
     {t:'steps',items:[
       ['The night before','Set the room, not the dog','One room, gated. Crate open, bedding in, water down, cleaner within reach. Put an old sweatshirt you have slept in inside the crate. Decide tonight who does the 2 a.m. outing, because you will not negotiate well at 2 a.m.',''],
@@ -252,9 +252,9 @@ module.exports = [
       ['How do you lower it without losing the crate?','You can rebuild it over the next two weeks; 3.5 does exactly that.',[['Crate against the bed','o'],['Door off','o'],['Gate the room instead','o']]]
     ]},
 
-    {t:'p',text:'Do not lift him out <em>because</em> he is screaming — wait for a breath of quiet, even two seconds of it, and move then. Fingers through the crate door, a hand resting on top, a word, are all fine and none of them teach him that noise opens doors. Say it plainly: <strong>the first night is bad.</strong>'},
+    {t:'p',text:'Do not lift him out <em>because</em> he is screaming: wait for a breath of quiet, even two seconds of it. Fingers through the crate door, a hand on top, a word — none of those teach him that noise opens doors.'},
 
-    {t:'p',text:'Two people should hear this before it happens. The first is whoever sleeps in the next room, so the noise is expected rather than alarming. The second is you, at 3 a.m., when the plan will seem cruel and the obvious solution will be to bring him into the bed. Bringing him into the bed on night one is not a moral failure and plenty of good dachshund households end up there deliberately — but decide it in daylight, as a household, not alone at 3 a.m. as a way of stopping a noise. That is the version that becomes permanent by accident.'},
+    {t:'p',text:'Bringing him into the bed on night one is not a moral failure, and plenty of good dachshund households end up there deliberately. But decide it in daylight, as a household — not at 3 a.m. to stop a noise. That is the version that becomes permanent by accident.'},
 
     {t:'note',title:'If crates are uncommon where you live',paras:[
       'Crate use is routine in some countries and rare in others, and readers from the second kind will find this chapter jarring. The underlying goal — a small, defined, safe place he can be left in, that he likes — is the same. A gated utility room or a pen does the same work. The rest of the protocol is unchanged.'
@@ -274,7 +274,7 @@ module.exports = [
   pages:3,
   blocks:[
 
-    {t:'first',text:'Housetraining is not a thing you teach a dog. It is a schedule you keep until his bladder catches up with it, and the only variable you control is your own consistency. The method below is the one in the standard veterinary guidance, and it works on dachshunds at the same speed it works on anything else — provided nobody in the house is quietly running a different version of it.'},
+    {t:'first',text:'Housetraining is a schedule you keep until his bladder catches up, and the only variable you control is your own consistency. The method below is the one in the standard veterinary guidance.'},
 
     {t:'tool',n:9,title:'The Three-Week House Protocol',intro:'A method, a timetable, and a log sheet. Run all three. The log is the part people skip and the part that actually shortens the process.'},
 
@@ -301,7 +301,7 @@ module.exports = [
       ['WEEK 3','Two rooms, supervised','Accidents rare — and each one is data.|You are watching him: circling, sniffing, leaving the room.','b']
     ]},
 
-    {t:'p',text:'A schedule, not a promise. Some dogs are reliable by week three and some take until five months, which the night-outing guidance already anticipates.'},
+    {t:'p',text:'A schedule, not a promise: some dogs are reliable by week three and some take until five months.'},
 
     {t:'h3',text:'The log sheet'},
 
@@ -333,7 +333,7 @@ module.exports = [
       'Simply leaving the room.'
     ],role:'g'},
 
-    {t:'p',text:'A puppy who quietly goes next door is not being sneaky. He is doing exactly what he has been taught, which is to go somewhere you are not.'},
+    {t:'p',text:'A puppy who quietly goes next door is not being sneaky. He is doing what he has been taught: go somewhere you are not.'},
 
     {t:'cards',title:'Almost every stalled case is one of three things — fix them in this order',items:[
       ['ONE · THE INTERVAL','Too long','You are running ninety minutes on a dog who has sixty.',''],
@@ -355,7 +355,7 @@ module.exports = [
 
     {t:'script',text:'the dog is not stubborn. the interval is wrong'},
 
-    {t:'p',text:'Clean accidents with an enzymatic cleaner and nothing else. Ammonia-based household products leave a smell that reads, to him, like a marked toilet. Say nothing while you clean, do not let him watch you do it with any particular energy, and write the time on the log — an accident you record is worth more than an accident you resent.'},
+    {t:'p',text:'Clean accidents with an enzymatic cleaner and nothing else: ammonia-based products leave a smell that reads, to him, like a marked toilet. Write the time on the log.'},
 
     {t:'duo',title:'Puppy pads',
       a:['Used as a strategy','They teach the dog that indoors is a legitimate place to go, and you then get to untrain that as well.'],
@@ -372,7 +372,7 @@ module.exports = [
   pages:2,
   blocks:[
 
-    {t:'first',text:'The week you bring him home is the week you are most available and least inclined to leave the room, and that is the trap. A dog who spends fourteen days never once out of sight learns that constant company is the baseline, and everything after is a loss. Build absence from day three, in seconds, while it is still cheap.'},
+    {t:'first',text:'The week you bring him home is the week you are least inclined to leave the room. A dog who spends fourteen days never once out of sight learns that constant company is the baseline. Build absence from day three, while it is still cheap.'},
 
     {t:'evidence',badge:'contested',paras:[
       'Popular writing puts separation anxiety at 20 to 30 percent of dogs. The largest survey of canine behavior yet published — Salonen and colleagues, 13,715 dogs — reports separation-related behavior at <strong>6%</strong>.',
@@ -399,7 +399,7 @@ module.exports = [
       ['Ongoing','Return only into quiet','Never open the door during a bark. Wait for a pause, however short, and come in then. The rule is the same as night one and it does the same work.','FOR LIFE']
     ]},
 
-    {t:'p',text:'Give him something to do in your absence rather than something to endure. Frozen food puzzles, scatter-feeding his breakfast in a snuffle mat, and simple find-the-treat games all work, and there is decent evidence that nose work does more than fill time: two weeks of scent work produced a measurably more optimistic judgment bias in dogs, compared against a heelwork control group. An optimistic dog copes better with a closed door.'},
+    {t:'p',text:'Give him something to do in your absence rather than something to endure: frozen food puzzles, breakfast scattered in a snuffle mat, find-the-treat games. Two weeks of scent work produced a measurably more optimistic judgment bias in dogs than a heelwork control group.'},
 
     {t:'cards',title:'Two things this protocol is not',items:[
       ['NOT CRATE TRAINING','A gate, a pen or a closed room does the same work','He can learn to be alone behind any of them.|The crate is one furniture choice among several.','b'],
@@ -425,7 +425,7 @@ module.exports = [
   pages:1,
   blocks:[
 
-    {t:'first',text:'The socialization window is the first three months of his life, and a good part of it is gone before he reaches you. That single fact sets the whole calendar: health care and social exposure run in parallel, not in sequence.'},
+    {t:'first',text:'The socialization window is the first three months of his life. That single fact sets the whole calendar: health care and social exposure run in parallel, not in sequence.'},
 
     {t:'tool',n:10,title:'The Four-Week Calendar',intro:'Vet, vaccines, outings, training, sleep. Copy it, date it, pin it up where everyone can see what is already done.'},
 
@@ -463,7 +463,7 @@ module.exports = [
   pages:2,
   blocks:[
 
-    {t:'first',text:'Every rule in this part fails the same way: not by being wrong, but by being kept by three people out of four. A rule held nine times in ten is not a rule. It is a lottery, and it pays out often enough to be worth playing — which is why the dog who is fed from the table once a week begs harder than the dog who is fed from it every night.'},
+    {t:'first',text:'A rule kept by three people out of four is not a rule. It is a lottery that pays out often enough to be worth playing — which is why the dog fed from the table once a week begs harder than the dog fed from it every night.'},
 
     {t:'signals',title:'The three owner variables Arhant found behind the small-dog effect',items:[
       'Less shared activity.',
@@ -471,7 +471,7 @@ module.exports = [
       'More punitive methods.'
     ],role:'g'},
 
-    {t:'p',text:'This is not a metaphor. Consistency is the one of the three with no cost attached. It is free, and households give it away because nobody wrote the rules down and the person who broke one did it out of affection.'},
+    {t:'p',text:'Consistency is the one of the three with no cost attached. Households give it away because nobody wrote the rules down.'},
 
     {t:'h3',text:'Getting a household to actually agree'},
 

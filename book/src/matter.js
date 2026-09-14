@@ -7,29 +7,48 @@ const esc=s=>String(s==null?'':s);
 /* ---------- 1. COUVERTURE ---------- */
 function cover(){
   const el=document.createElement('section'); el.className='page cover';
-  el.style.cssText='background:var(--green);color:var(--cream)';
+  el.style.cssText='background:var(--ink);color:var(--paper)';
   el.innerHTML=`
-  <div style="position:absolute;inset:9mm;border:1.6px solid rgba(246,241,228,.55)"></div>
-  <div style="position:absolute;inset:11.5mm;border:.6px solid rgba(246,241,228,.35)"></div>
-  <div class="pad" style="inset:16mm 20mm 16mm 20mm;display:flex;flex-direction:column;align-items:center;text-align:center">
-    <div style="margin-top:1mm">${D.ILLUS.crest}</div>
-    <div class="script" style="font-size:20pt;margin-top:7mm;color:var(--brass)">The Complete</div>
-    <h1 style="font-size:59pt;line-height:.95;letter-spacing:.05em;margin-top:1mm">DACHSHUND</h1>
-    <div class="script" style="font-size:26pt;margin-top:1mm">Owner’s Manual</div>
-    <div style="width:52mm;margin-top:6mm">${D.rule.replace(/#1E4032/g,'rgba(246,241,228,.7)')}</div>
-    <div class="label" style="margin-top:4mm;color:var(--brass)">Miniature &amp; Standard &nbsp;·&nbsp; Smooth, Wire &amp; Long</div>
-    <div style="width:104mm;margin-top:6mm">${D.photoHTML({n:1,h:'74mm',shape:'arch',
-      note:'Cover portrait — standard smooth red, three-quarter view, shallow depth of field, warm window light, neutral background.'})}</div>
-    <div style="margin-top:auto;width:100%">
-      ${D.stripe}
-      <div style="display:flex;justify-content:space-between;align-items:flex-end;margin-top:5mm">
-        <div style="text-align:left">
-          <div class="label" style="color:var(--brass)">First Edition · MMXXVI</div>
-          <div class="script" style="font-size:12.5pt;margin-top:1.5mm;color:rgba(246,241,228,.85)">reviewed by a licensed veterinarian</div>
-        </div>
-        <div class="label-sm" style="text-align:right;color:rgba(246,241,228,.6);line-height:11pt">
-          <span data-pagecount>—</span> PAGES · 24 TOOLS<br>EVERY FIGURE SOURCED</div>
+  <div style="position:absolute;inset:0;display:flex;flex-direction:column">
+
+    <div style="display:flex;align-items:center;justify-content:space-between;
+                padding:11mm 14mm 0 14mm">
+      <div style="display:flex;align-items:center;gap:4mm">
+        ${D.ILLUS.markPaper}
+        <span style="font-family:var(--display);font-weight:800;font-size:12pt;letter-spacing:.02em;
+                     text-transform:uppercase">Dachshundology</span>
       </div>
+      <span style="font-family:var(--text);font-weight:700;font-size:7pt;letter-spacing:.22em;
+                   text-transform:uppercase;color:rgba(241,240,236,.55)">First edition · 2026</span>
+    </div>
+
+    <div style="padding:14mm 14mm 0 14mm">
+      <span style="display:inline-block;background:var(--sig);color:#fff;font-family:var(--text);
+                   font-weight:800;font-size:7.4pt;letter-spacing:.2em;text-transform:uppercase;
+                   padding:1.8mm 3.4mm">The complete</span>
+      <h1 style="font-family:var(--display);font-weight:800;font-size:63pt;line-height:.83;
+                 letter-spacing:-.045em;text-transform:uppercase;margin-top:5mm;color:var(--paper)">
+        Dachshund<br>Owner’s<br>Manual</h1>
+      <div style="display:flex;gap:2.4mm;flex-wrap:wrap;margin-top:7mm">
+        ${['Miniature &amp; standard','Smooth, wire &amp; long','Every figure sourced']
+          .map(t=>`<span style="font-family:var(--text);font-weight:700;font-size:6.6pt;letter-spacing:.16em;
+            text-transform:uppercase;border:1.2px solid rgba(241,240,236,.4);padding:1.6mm 3mm;
+            color:rgba(241,240,236,.82)">${t}</span>`).join('')}
+      </div>
+    </div>
+
+    <div style="flex:1;margin-top:9mm;overflow:hidden">
+      ${D.photoHTML({n:1,h:'100%',shape:'rect',bleed:true,
+        note:'Cover portrait — standard smooth red, three-quarter view, shallow depth of field, warm window light, neutral background.'})}
+    </div>
+
+    <div style="display:grid;grid-template-columns:1fr auto;align-items:center;gap:6mm;
+                background:var(--sig);color:#fff;padding:5.6mm 14mm">
+      <span style="font-family:var(--display);font-weight:800;font-size:13pt;letter-spacing:-.02em;
+                   text-transform:uppercase">Reviewed by a licensed veterinarian</span>
+      <span style="font-family:var(--text);font-weight:700;font-size:7pt;letter-spacing:.18em;
+                   text-transform:uppercase;text-align:right;line-height:11pt">
+        <span data-pagecount>—</span> pages · 24 tools<br>every figure sourced</span>
     </div>
   </div>`;
   out.appendChild(el); return el;
@@ -37,11 +56,15 @@ function cover(){
 
 /* ---------- 2. FAUX-TITRE ---------- */
 function halfTitle(){
-  const el=newPlain('cream');
-  el.querySelector('.pad').innerHTML=`<div style="height:100%;display:flex;flex-direction:column;align-items:center;justify-content:center;text-align:center">
-    ${D.ILLUS.crestGreen}
-    <div class="label" style="margin-top:9mm;color:var(--green);font-size:9pt;letter-spacing:.34em">DACHSHUNDOLOGY</div>
-    <div class="script" style="font-size:15pt;color:var(--camel);margin-top:4mm">the science of the world’s most stubborn dog</div>
+  const el=newPlain();
+  el.querySelector('.pad').innerHTML=`<div style="height:100%;display:flex;flex-direction:column;justify-content:center">
+    ${D.ILLUS.mark}
+    <div style="font-family:var(--display);font-weight:800;font-size:26pt;line-height:.92;
+                letter-spacing:-.04em;text-transform:uppercase;margin-top:8mm;max-width:120mm">
+      The science of the world’s most stubborn dog</div>
+    <div style="height:1.4px;background:var(--ink);margin-top:8mm;width:58mm"></div>
+    <div style="font-family:var(--text);font-weight:700;font-size:7.4pt;letter-spacing:.24em;
+                text-transform:uppercase;color:var(--sig);margin-top:5mm">Dachshundology</div>
   </div>`;
   return el;
 }
@@ -50,29 +73,31 @@ function halfTitle(){
 function titlePage(){
   const el=newPlain();
   el.querySelector('.pad').innerHTML=`<div style="height:100%;display:flex;flex-direction:column">
-    <div style="margin-top:24mm;text-align:center">
-      <div class="script" style="font-size:19pt;color:var(--camel)">The Complete</div>
-      <h1 style="font-size:46pt;line-height:1;letter-spacing:.045em;color:var(--green);margin-top:1mm">DACHSHUND</h1>
-      <div class="script" style="font-size:23pt;color:var(--green);margin-top:1mm">Owner’s Manual</div>
-      <div style="width:60mm;margin:7mm auto 0">${D.rule}</div>
-      <div class="label" style="margin-top:5mm;color:var(--slate)">Dachshundology · First Edition · 2026</div>
+    <div>
+      <span style="display:inline-block;background:var(--sig);color:#fff;font-family:var(--text);
+        font-weight:800;font-size:7pt;letter-spacing:.2em;text-transform:uppercase;padding:1.6mm 3mm">The complete</span>
+      <h1 style="font-family:var(--display);font-weight:800;font-size:44pt;line-height:.86;
+                 letter-spacing:-.045em;text-transform:uppercase;margin-top:4mm">Dachshund<br>Owner’s Manual</h1>
+      <div style="font-family:var(--text);font-weight:700;font-size:7.4pt;letter-spacing:.2em;
+                  text-transform:uppercase;color:var(--grey);margin-top:6mm">
+        Dachshundology · First edition · 2026</div>
     </div>
-    <div style="margin-top:auto;display:grid;grid-template-columns:1fr 1fr;gap:9mm">
-      <div>
-        <div class="label" style="color:var(--camel)">A note on what this is</div>
-        <p style="margin-top:2.5mm;font-size:9pt;line-height:13.6pt">This manual is a work of reporting and
-        synthesis. It is written for owners, not for clinicians, and it does not replace an examination.
-        Nothing here diagnoses, prescribes, or authorizes you to withhold veterinary care. Where a decision
-        is medical, the book tells you what to ask and who to ask.</p>
-        <p style="margin-top:2.5mm;font-size:9pt;line-height:13.6pt">Figures are current as of September 2026.
+    <div style="margin-top:auto;border-top:1.4px solid var(--ink);display:grid;grid-template-columns:1fr 1fr">
+      <div style="padding:6mm 6mm 0 0;border-right:1.4px solid var(--ink)">
+        <div class="label-sm" style="color:var(--sig);font-weight:700;letter-spacing:.18em">A note on what this is</div>
+        <p style="margin-top:3mm;font-size:9pt;line-height:13.6pt">A work of reporting and synthesis, written for
+        owners and not for clinicians. It does not replace an examination. Nothing here diagnoses, prescribes, or
+        authorizes you to withhold veterinary care. Where a decision is medical, the book tells you what to ask
+        and who to ask.</p>
+        <p style="margin-top:3mm;font-size:9pt;line-height:13.6pt">Figures are current as of September 2026.
         Prices, statutes and airline rules change; verify anything you are about to act on.</p>
       </div>
-      <div>
-        <div class="label" style="color:var(--camel)">Sources and corrections</div>
-        <p style="margin-top:2.5mm;font-size:9pt;line-height:13.6pt">Every figure in this book is traceable to a
-        named source listed in the bibliography. Claims that the evidence does not settle are labeled as such.
-        If you find an error, it will be corrected in the next revision and every buyer receives it.</p>
-        <p style="margin-top:2.5mm;font-size:9pt;line-height:13.6pt">© 2026 Dachshundology. All rights reserved.
+      <div style="padding:6mm 0 0 6mm">
+        <div class="label-sm" style="color:var(--sig);font-weight:700;letter-spacing:.18em">Sources and corrections</div>
+        <p style="margin-top:3mm;font-size:9pt;line-height:13.6pt">Every figure is traceable to a named source in
+        the bibliography. Claims the evidence does not settle are labeled as such. If you find an error it will be
+        corrected in the next revision, and every buyer receives it.</p>
+        <p style="margin-top:3mm;font-size:9pt;line-height:13.6pt">© 2026 Dachshundology. All rights reserved.
         No part of this publication may be reproduced or redistributed without written permission.</p>
       </div>
     </div>
@@ -82,9 +107,26 @@ function titlePage(){
 
 /* ---------- 4. NOTE DE L'AUTEUR ---------- */
 function authorNote(){
-  const items=M.author.paras.map((p,i)=>i===0?`<p class="first">${esc(p)}</p>`:`<p>${esc(p)}</p>`);
-  return flowInto({title:M.author.title, sub:'and what is wrong with everything else', head:'Front matter',
-                   width:'132mm', items});
+  const A=M.author;
+  const items=[
+    `<p class="first">${esc(A.paras[0])}</p>`,
+    `<div class="modh" style="margin-top:6mm">Three ways the answer is not there</div>`,
+    `<div class="cards n3">${A.problem.map(([t,d],i)=>
+      `<div class="mcard${i===2?' s':''}"><div class="t">${esc(t)}</div><p>${esc(d)}</p></div>`).join('')}</div>`,
+    `<p style="margin-top:5.5mm">${esc(A.paras[1])}</p>`,
+    `<p>${esc(A.paras[2])}</p>`,
+    `<div class="numrule"><div class="nh">The rule</div><ol>${A.rule.map(r=>`<li>${esc(r)}</li>`).join('')}</ol></div>`,
+    `<div class="modh acc" style="margin-top:6.5mm">Pages that will contradict somebody who meant well</div>`,
+    `<div class="signals one"><ul>${A.contradict.map(c=>`<li>${esc(c)}</li>`).join('')}</ul></div>`,
+    ...A.closing.map(p=>`<p>${esc(p)}</p>`),
+    `<div class="cards n3" style="margin-top:6mm">${A.limits.map(([t,d],i)=>
+      `<div class="mcard${i===0?' a':''}"><div class="t">${esc(t)}</div><p>${esc(d)}</p></div>`).join('')}</div>`,
+    `<div class="endnote"><div class="k">The whole of it, in one line</div>
+      <div class="s">You are not told what to think. You are shown what is known, and where it stops.</div>
+      <p>Every figure in these pages names its study, its country and its year. Where nobody has measured it yet,
+      the page says so and moves on.</p></div>`
+  ];
+  return flowInto({title:A.title, sub:'and what is wrong with everything else', head:'Front matter', items});
 }
 
 /* ---------- 5. MODE D'EMPLOI ---------- */
@@ -112,25 +154,25 @@ function howTo(){
 function contents(){
   const items=[];
   D.book.forEach(p=>{
-    items.push(`<div style="break-inside:avoid;margin-top:5mm">
-      <div style="display:flex;align-items:baseline;gap:3mm;border-bottom:1.4px solid var(--green);padding-bottom:1.6mm">
-        <span style="font-family:var(--display);font-size:15pt;color:var(--green)">${p.n}</span>
-        <span style="font-family:var(--display);font-size:13pt;flex:1">${esc(p.title)}</span>
+    items.push(`<div style="break-inside:avoid;margin-top:3.6mm">
+      <div style="display:flex;align-items:baseline;gap:3mm;border-bottom:1.4px solid var(--green);padding-bottom:1.2mm">
+        <span style="font-family:var(--display);font-size:13.5pt;color:var(--green)">${p.n}</span>
+        <span style="font-family:var(--display);font-size:11.8pt;flex:1">${esc(p.title)}</span>
         <span class="n label-sm" data-part="${p.slug}" style="color:var(--slate)">—</span></div></div>`);
-    p.sections.forEach(s=>items.push(`<div class="leader" style="break-inside:avoid;padding:1.5mm 0">
+    p.sections.forEach(s=>items.push(`<div class="leader" style="break-inside:avoid;padding:0.84mm 0">
       <span class="label-sm" style="color:var(--camel);letter-spacing:.08em">${s.id}</span>
       <span>${esc(s.title)}</span><span class="dots"></span><span class="n" data-sec2="${s.id}">—</span></div>`));
   });
-  items.push(`<div style="break-inside:avoid;margin-top:5mm">
-      <div style="display:flex;align-items:baseline;gap:3mm;border-bottom:1.4px solid var(--green);padding-bottom:1.6mm">
-        <span style="font-family:var(--display);font-size:15pt;color:var(--green)">—</span>
-        <span style="font-family:var(--display);font-size:13pt;flex:1">Reference</span></div></div>`);
+  items.push(`<div style="break-inside:avoid;margin-top:3.6mm">
+      <div style="display:flex;align-items:baseline;gap:3mm;border-bottom:1.4px solid var(--green);padding-bottom:1.2mm">
+        <span style="font-family:var(--display);font-size:13.5pt;color:var(--green)">—</span>
+        <span style="font-family:var(--display);font-size:11.8pt;flex:1">Reference</span></div></div>`);
   [['A','The forty questions owners ask'],['B','Toxic foods — the sheet for the refrigerator'],
    ['C','Answers'],['D','Glossary'],['E','Where to call'],['F','The tools, indexed'],['G','Sources']]
-   .forEach(([k,t])=>items.push(`<div class="leader" style="break-inside:avoid;padding:1.5mm 0">
+   .forEach(([k,t])=>items.push(`<div class="leader" style="break-inside:avoid;padding:0.84mm 0">
       <span class="label-sm" style="color:var(--camel)">${k}</span><span>${esc(t)}</span>
       <span class="dots"></span><span class="n" data-app="${k}">—</span></div>`));
-  return flowInto({title:'Contents', sub:'one hundred and sixty-odd pages, and the eight that matter most',
+  return flowInto({title:'Contents', sub:'eight parts, fifty-five sections, and the twenty-four tools',
                    head:'Front matter', cols:2, items});
 }
 
@@ -146,13 +188,14 @@ function faq(){
 function toxic(){
   const t=M.toxic;
   const items=[`<p class="lede">${esc(t.intro)}</p>`,
-   `<table style="margin-top:5mm"><tr><th>What</th><th>How much matters</th><th>What it does</th><th>How fast</th></tr>
-    ${t.rows.map(r=>`<tr>${r.map(c=>`<td>${esc(c)}</td>`).join('')}</tr>`).join('')}</table>`,
-   `<div style="display:grid;grid-template-columns:1fr 1fr;gap:8mm;margin-top:7mm">${
-     t.hotlines.map(([n,num,fee])=>`<div class="box"><div class="bt" style="color:var(--oxblood)">${esc(n)}</div>
-       <div style="font-family:var(--display);font-size:22pt;color:var(--green);margin-top:1mm">${esc(num)}</div>
-       <small style="margin-top:1.6mm">${esc(fee)}</small></div>`).join('')}</div>`,
-   `<div class="box blood" style="margin-top:6mm"><div class="bt">Before you call</div><p>${esc(t.note)}</p></div>`];
+   `<div style="display:grid;grid-template-columns:1fr 1fr;gap:0;margin-top:5mm;border:1.4px solid var(--ink)">${
+     t.hotlines.map(([n,num,fee],i)=>`<div style="padding:4.4mm 4.6mm;${i===0?'border-right:1.4px solid var(--ink);':''}background:${i===0?'var(--ink)':'var(--white)'};color:${i===0?'var(--paper)':'var(--ink)'}">
+       <div class="label-sm" style="color:var(--sig);font-weight:700;letter-spacing:.16em">${esc(n)}</div>
+       <div style="font-family:var(--display);font-weight:800;font-size:21pt;letter-spacing:-.03em;margin-top:2.2mm">${esc(num)}</div>
+       <div style="font-size:8.2pt;line-height:11.8pt;margin-top:1.8mm;opacity:.72">${esc(fee)}</div></div>`).join('')}</div>`,
+   `<div class="box blood" style="margin-top:5mm"><div class="bt">Before you call</div><p>${esc(t.note)}</p></div>`,
+   `<table style="margin-top:6mm"><tr><th>What</th><th>How much matters</th><th>What it does</th><th>How fast</th></tr>
+    ${t.rows.map(r=>`<tr>${r.map(c=>`<td>${esc(c)}</td>`).join('')}</tr>`).join('')}</table>`];
   return flowInto({title:'Toxic foods', sub:'print this one and put it on the refrigerator',
                    head:'Appendix B', items, app:'B'});
 }

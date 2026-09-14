@@ -10,15 +10,13 @@ module.exports = [
   sub:'the dog is a consequence of the skeleton',
   pages:4,
   blocks:[
-    {t:'first',text:'Every argument you will ever have about this breed starts in the same place — the furniture, the stairs, the weight, the recall. A dachshund is not a small dog with short legs. He is a normally proportioned dog whose leg bones stopped growing early, and almost everything that follows — the shape, the gait, the back, the way he gets onto your couch — is downstream of that one fact.'},
+    {t:'first',text:'A dachshund is not a small dog with short legs. He is a normally proportioned dog whose leg bones stopped growing early. The gait, the back, the way he gets onto your couch: all of it follows from that.'},
 
-    {t:'p',text:'The AKC standard opens by naming it: <em>“Low to ground, long in body and short of leg, with robust muscular development.”</em> That is a description of a tool. The dog was built to go down a hole after an animal that did not want him there, and the shape is the reason he fits. You bought the tool. The tool came with terms.'},
+    {t:'p',text:'The AKC standard names it: <em>“Low to ground, long in body and short of leg, with robust muscular development.”</em> That is a description of a tool. It came with terms.'},
 
     {t:'h3',text:'Why the legs are short'},
 
-    {t:'p',text:'Long bones lengthen at growth plates near each end, where cartilage is laid down and steadily converted into bone. In a chondrodystrophic dog that conversion runs early and stops early. The legs finish short. The spine does not get the same instruction, so it keeps its length. What you end up with is a dog of ordinary body length standing on legs that quit at a fraction of their intended height.'},
-
-    {t:'p',text:'This is not a defect that crept into the breed. It is the breed. It was selected for, deliberately, over generations, because it worked. The cost was not visible for a very long time, because nobody was looking at discs.'},
+    {t:'p',text:'Long bones lengthen at growth plates near each end. In a chondrodystrophic dog that conversion runs early and stops early, so the legs finish short; the spine keeps its full length. This is not a defect that crept into the breed. It is the breed, selected for deliberately.'},
 
     {t:'keyfig',title:'One mutation, two outputs',
       items:[
@@ -36,7 +34,7 @@ module.exports = [
 
     {t:'h3',text:'What it does to the discs'},
 
-    {t:'p',text:'A healthy intervertebral disc is a tough outer ring around a soft, water-rich center that behaves like a hydraulic cushion. In a chondrodystrophic dog that center converts early to a drier, more brittle material that does not absorb load the same way.'},
+    {t:'p',text:'A healthy intervertebral disc is a tough ring around a water-rich center that works like a hydraulic cushion. In a chondrodystrophic dog it converts early to a drier, brittle material that no longer absorbs load.'},
 
     {t:'phases',title:'The clock on the discs',
       items:[
@@ -47,7 +45,7 @@ module.exports = [
 
     {t:'illus',name:'spine',caption:'A normal disc, and one that has extruded upward into the spinal cord. The gap it fills is narrower than the width of a pencil.'},
 
-    {t:'p',text:'Read that timeline again, because it changes what prevention means. The material in your dog’s back was already different before he was old enough to jump off anything. A disc episode at five is not the result of one bad landing. It is the result of a structure that has been changing since he was a puppy, meeting a load on a particular day.'},
+    {t:'p',text:'The material in his back was already different before he was old enough to jump off anything. A disc episode at five is not one bad landing; it is a structure changing since puppyhood, meeting a load.'},
 
     {t:'tiles',title:'What the breed carries',
       items:[
@@ -79,11 +77,8 @@ module.exports = [
       b:['Measurable tonight','The height of his chest off the floor, against the height of your couch, your bed, the lip of the car.'],
       note:'Treat the 2:1 figure as folklore, not as a measurement.'},
 
-    {t:'steps',items:[
-      ['Tonight','Measure his clearance','The height of his chest off the floor, standing square.','2 MIN'],
-      ['Then the drops','Measure what he jumps off','Your couch, your bed, the lip of the car.','3 MIN'],
-      ['Divide','Read the multiple','For a miniature that couch is four or five times his standing clearance. He will still get up there. The question is what the landing costs.','1 MIN']
-    ]},
+    {t:'plate',name:'drop',title:'Clearance against the drop',tag:'MEASURE BOTH TONIGHT',
+      caption:'The height of his chest off the floor, standing square, against your couch, your bed, the lip of the car. For a miniature that couch is four or five times his standing clearance.'},
 
     {t:'h3',text:'The joints, and the way he moves'},
 
@@ -93,7 +88,7 @@ module.exports = [
         ['THE FAULT','Knuckling over','The AKC standard treats failure here as serious. <em>Knuckling over</em> of the front legs is an outright disqualification, not a fault to be weighed against something else.','a']
       ]},
 
-    {t:'p',text:'The gait you want is low, long and level, with the back holding a straight line while the legs do the work underneath it. Watch him from the side once a month. You will notice a change in the gait before you notice anything else.'},
+    {t:'p',text:'The gait you want is low, long and level, the back holding a straight line. Watch him from the side once a month.'},
 
     {t:'signals',title:'What you do not want to see',
       items:[
@@ -108,8 +103,6 @@ module.exports = [
       ]},
 
     {t:'h3',text:'Getting on and off things'},
-
-    {t:'p',text:'Going up is a scramble. Coming down is a drop, and the front legs absorb it. This is the part of ownership people get most confident about, usually in the direction of banning everything — and here the evidence does something unhelpful.'},
 
     {t:'duo',title:'Myth / what the survey found',
       a:['The instruction','Never let a dachshund on the furniture. It is the single most repeated piece of dachshund advice anywhere.'],
@@ -130,11 +123,9 @@ module.exports = [
         ['UNDER 30 MIN',28,'Associated with higher risk.','hot']
       ]},
 
-    {t:'p',text:'So the practical position is unglamorous. A ramp is a small one-time purchase, asks nothing of the dog, and removes the drop. Walking him properly has evidence behind it. Turning your living room into a series of prohibitions does not, and it costs you the exercise you were supposed to be giving him.'},
+    {t:'p',text:'A ramp is a small one-time purchase, asks nothing of the dog, and removes the drop. Walking him has evidence behind it. A living room full of prohibitions does not, and it costs him the exercise.'},
 
     {t:'h3',text:'What the body imposes on your week'},
-
-    {t:'p',text:'The skeleton makes a handful of decisions for you, permanently, and they are not negotiable by temperament or training. They are cheap to comply with. The cost of ignoring them arrives all at once, years later, on a weekday afternoon.'},
 
     {t:'check',title:'Five things the build decides, not you',
       items:[
@@ -160,21 +151,14 @@ module.exports = [
   sub:'three registries, and they do not agree on size',
   pages:3,
   blocks:[
-    {t:'first',text:'Ask a breeder working under the AKC how big your puppy will get and the answer comes in pounds. Ask one working under the FCI and it comes in centimeters of chest; under The Kennel Club the two sizes are two separate breeds. They are not disagreeing about the dog — they are measuring different things, and the gaps between the three systems are where most of the confusion in dachshund buying lives.'},
+    {t:'first',text:'Ask a breeder working under the AKC how big your puppy will get and the answer comes in pounds; under the FCI, in centimeters of chest. They are measuring different things.'},
 
-    {t:'decision',title:'Which rulebook is quoting you a size?',
-      items:[
-        ['Is the breeder working under the AKC?','The AKC sorts by weight, from 12 months of age.',
-          [['Yes → weight, two divisions',''],['No → question 2','o']]],
-        ['Is she working under The Kennel Club?','The KC registers Miniature and Standard as two separate breeds.',
-          [['Yes → two breeds, two registers',''],['No → question 3','o']]],
-        ['Then it is the FCI, or one of its member clubs.','The FCI sorts by chest circumference at 15 months.',
-          [['Three classes, Rabbit included','']]]
-      ]},
+    {t:'plate',name:'sizes',title:'Three rulebooks, three measures',tag:'AKC · KC · FCI',
+      caption:'The AKC and The Kennel Club weigh the dog. The FCI measures the chest at 15 months, because a burrow has a diameter and the widest part of him is what has to fit.'},
 
     {t:'h3',text:'What the AKC does'},
 
-    {t:'p',text:'The AKC divides dachshunds by <strong>weight</strong>, into <strong>two</strong> divisions and no more. A Standard is described as usually between 16 and 32 lb (7 to 14.5 kg). Miniature is a class division for dogs of 11 lb (5 kg) and under at 12 months and older. Note the wording: it is a show-class division, not a separate variety. On paper a miniature and a standard are the same dog, sorted at a weigh-in.'},
+    {t:'p',text:'The AKC divides by <strong>weight</strong>, into <strong>two</strong> divisions and no more, from 12 months and older: Miniature at 11 lb (5 kg) and under, Standard above it. A show-class division, not a separate variety.'},
 
     {t:'note',title:'What The Kennel Club does',
       paras:[
@@ -183,7 +167,7 @@ module.exports = [
 
     {t:'h3',text:'What the FCI does'},
 
-    {t:'p',text:'The FCI, which governs most of the rest of the world, divides by <strong>chest circumference at 15 months</strong>, into <strong>three</strong> classes: Standard above 37 to 47 cm (14.6 to 18.5 in), Miniature above 32 to 37 cm (12.6 to 14.6 in), and Rabbit — Kaninchen — at 27 to 32 cm (10.6 to 12.6 in). The logic is the job. A burrow has a diameter. What decides whether the dog fits is the widest part of him, which is his chest, not what he weighs. The tape measure is the test. The scale never was.'},
+    {t:'p',text:'The FCI, which governs most of the rest of the world, divides by <strong>chest circumference at 15 months</strong>, into <strong>three</strong> classes, Rabbit — Kaninchen — included. The tape measure is the test.'},
 
     {t:'evidence',badge:'myth',
       paras:[
@@ -215,7 +199,7 @@ module.exports = [
 
     {t:'h3',text:'Three coats, and what actually differs'},
 
-    {t:'p',text:'Smooth, Wirehaired and Longhaired are shown separately under the AKC. The wire is the one with the beard and eyebrows. Every breeder will tell you the wires are the clowns, the longs are the gentle ones and the smooths are the velcro dogs. Some of that will match your dog. None of it is documented.'},
+    {t:'p',text:'Smooth, Wirehaired and Longhaired are shown separately under the AKC. Every breeder will tell you the wires are the clowns and the longs the gentle ones. None of it is documented.'},
 
     {t:'cards',title:'Three coats, and what each one asks of you',
       items:[
@@ -233,7 +217,7 @@ module.exports = [
       roles:['b','g','s'],
       src:'DachsLife 2015 · British point prevalence · owner-reported · not a causal claim about coat type'},
 
-    {t:'p',text:'Nothing behavioral is documented for any of the three coats. Longhaired commands a modest price premium in most markets; Lafora disease is concentrated in Miniature Wirehaireds. So pick the coat for the grooming you are willing to do and the shedding you are willing to live with, and not for a temperament that has never been measured.'},
+    {t:'p',text:'Longhaired commands a modest price premium; Lafora disease is concentrated in Miniature Wirehaireds. Pick the coat for the grooming you are willing to do.'},
 
     {t:'p',text:'If you are drawn to a Miniature Wirehaired, ask about Lafora disease — the DNA test exists and is commercially available, and UK screening cut affected dogs from 10.4 percent in 2012 to 2.7 percent in 2017.'},
 
@@ -246,7 +230,7 @@ module.exports = [
         ['THE BACK','Close to double','Swedish insurance data put lifetime disc disease risk at 24.4 percent for miniatures against 13.0 percent for standards.','a']
       ]},
 
-    {t:'p',text:'Your vet needs a current number, not the one from his puppy visit. On the carrier, a miniature generally fits and a standard generally does not — that is reasoning from published carrier dimensions rather than an airline statement about the breed, and dimensions change, so check yours before you book. And the Swedish figure runs in the direction most buyers would not guess, which is why it belongs in the decision before the deposit rather than after it.'},
+    {t:'p',text:'Your vet needs a current number, not the one from his puppy visit. On the carrier, a miniature generally fits and a standard generally does not — reasoning from published carrier dimensions, not an airline statement about the breed. Check yours before you book.'},
 
     {t:'script',text:'the beard is charming for about a week. then it is a dishcloth that lives in your house.'}
   ]
@@ -259,7 +243,7 @@ module.exports = [
   sub:'the priciest patterns are the ones the club warns about',
   pages:2,
   blocks:[
-    {t:'first',text:'The Dachshund Club of America publishes a short list, and two things about it are worth more than the list itself. The first is an inconsistency the AKC standard never explains. The second is that the two patterns carrying the biggest price premiums are the two the parent club writes warnings about.'},
+    {t:'first',text:'The Dachshund Club of America publishes a short list of colors and patterns. Two things matter more than the list: an inconsistency the AKC standard never explains, and the two patterns carrying the biggest premiums are the two the club warns about.'},
 
     {t:'cards',title:'What the DCA accepts',
       items:[
@@ -267,7 +251,7 @@ module.exports = [
         ['PATTERNS','Four of them','Dapple, Piebald, Sable and Brindle.','b']
       ]},
 
-    {t:'p',text:'Anything outside that list is a disqualification under the AKC standard, which reads simply “colors or patterns other than those specified.”'},
+    {t:'p',text:'Anything outside that list is a disqualification under the AKC standard: “colors or patterns other than those specified.”'},
 
     {t:'h3',text:'The asymmetry nobody mentions'},
 
@@ -290,7 +274,7 @@ module.exports = [
 
     {t:'h3',text:'Blue, Isabella, and the coat that falls out'},
 
-    {t:'p',text:'Gray and Fawn are on the accepted list, and they are also the two the DCA singles out for caution. Behind that sits color dilution alopecia — genetic, recessive, and dachshunds are explicitly listed among the susceptible breeds.'},
+    {t:'p',text:'Gray and Fawn are on the accepted list and are the two the DCA singles out for caution. Behind that sits color dilution alopecia — genetic, recessive, dachshunds listed among the susceptible breeds.'},
 
     {t:'signals',title:'What the DCA cautions about in the dilutes',
       items:[
@@ -336,9 +320,9 @@ module.exports = [
   sub:'he was never supposed to be able to hear you',
   pages:2,
   blocks:[
-    {t:'first',text:'Picture the job. A dog goes into a hole in the ground, alone, after an animal heavier and better armed than he is, out of sight within seconds and out of earshot shortly after, with nobody to help him, correct him or call him off. Every decision down there was his, and the dogs that came back — the ones who kept going without instruction — are the dogs yours is descended from.'},
+    {t:'first',text:'A dog goes into a hole in the ground, alone, after an animal heavier and better armed than he is. Every decision down there was his. Yours is descended from the dogs that kept going without instruction.'},
 
-    {t:'p',text:'The AKC standard still asks for it in plain language: <em>“clever, lively and courageous to the point of rashness, persevering in above- and below-ground work, with all the senses well-developed.”</em> Shyness is a serious fault. That is a written request for a dog who does not check in with you before acting.'},
+    {t:'p',text:'The AKC standard still asks for it: <em>“clever, lively and courageous to the point of rashness, persevering in above- and below-ground work, with all the senses well-developed.”</em> Shyness is a serious fault.'},
 
     {t:'h3',text:'What that looks like in a living room'},
 
@@ -356,7 +340,7 @@ module.exports = [
         'A structurally weak recall. Everything above adds up to a dog whose default, under stimulation, is to continue.'
       ]},
 
-    {t:'p',text:'None of this is a behavior problem. It is a working dog doing the work in the only environment available to him, which is your house. The mismatch is not in the dog.'},
+    {t:'p',text:'None of this is a behavior problem. It is a working dog doing the work in the only environment available to him — your house.'},
 
     {t:'evidence',badge:'myth',
       paras:[
@@ -388,7 +372,7 @@ module.exports = [
 
     {t:'h3',text:'What it means for training him'},
 
-    {t:'p',text:'Three things follow, and Part IV does the work. First, the recall you want is built with management and long lines, not with a better cue — you are asking a dog to override the one trait he was selected for. Second, reward-based methods are not a preference here: the AVSAB position is that only reward-based methods should be used for all dog training, and the experimental evidence is one-directional.'},
+    {t:'p',text:'Three things follow, and Part IV does the work. First, recall is built with management and long lines, not a better cue. Second, the AVSAB position is that only reward-based methods should be used for all dog training.'},
 
     {t:'matrix',title:'Aversive schools against reward-based schools, measured',
       head:['Measured','Aversive methods','Reward-based methods'],
@@ -399,7 +383,7 @@ module.exports = [
       ],
       hi:[[0,2],[1,2],[2,2]]},
 
-    {t:'p',text:'Third, and least obvious: a dachshund who has been given something legitimate to be persistent about is an easier dog than one who has not. Do not try to train the tenacity out. Aim it.'},
+    {t:'p',text:'Third: a dachshund given something legitimate to be persistent about is easier than one who has not. Do not train the tenacity out. Aim it.'},
 
     {t:'script',text:'he is not ignoring you. he has made a decision and it was not the one you wanted.'},
 
@@ -416,13 +400,16 @@ module.exports = [
   sub:'including the answer where you do not get one',
   pages:2,
   blocks:[
-    {t:'first',text:'This is the only section in the book with an outcome that ends the transaction. A dachshund is the fifth most registered breed in AKC data, up from sixth in 2024, and popularity is a poor proxy for fit. Answer the following honestly, in private, before a puppy is in front of you and honesty gets expensive.'},
+    {t:'first',text:'This is the only section with an outcome that ends the transaction. A dachshund is the fifth most registered breed in AKC data, up from sixth in 2024, and popularity is a poor proxy for fit.'},
 
     {t:'keyfig',title:'Two costs, before you score anything',
       items:[
         ['OVER FIFTEEN YEARS','3 to 7×','What owners guess a dachshund costs. One US neurology practice quotes all-in IVDD surgery, consult through rehab, at the order of a lifetime of routine care.'],
         ['THE CHEAPER PATH','4 weeks','Of strict rest, in a confined space around three by four feet (1 by 1.2 m), with three ten-minute leashed bathroom breaks a day. Somebody has to be there to do them.']
       ]},
+
+    {t:'plate',name:'crate',title:'Four weeks, at this size',tag:'3 × 4 FT',
+      caption:'What strict rest actually looks like. Question one is asking whether somebody can be home to run it.'},
 
     {t:'tool',n:3,title:'Twelve questions, scored',
       intro:'Score each answer 0, 1 or 2 as marked. Add them up. Maximum 24. There is no partial credit and no averaging with your partner — if you disagree on a question, take the lower score, because the lower score is the one that will be true at 6 a.m. on a Tuesday.'},
@@ -461,7 +448,7 @@ module.exports = [
         'Anyone scoring 0 on question 1 or question 2 should treat the total as capped at 17, whatever the other answers say. Those two carry the crisis.'
       ]},
 
-    {t:'p',text:'We do not get paid more if you buy a dachshund. The book is worth what it costs only if it is willing to tell you the thing a breeder will not.'},
+    {t:'p',text:'We do not get paid more if you buy a dachshund. The book is worth its price only if it tells you the thing a breeder will not.'},
 
     {t:'remember',items:[
       ['One mutation, two consequences','The FGF4 retrogene that gives the breed its short legs is the same variant that degenerates the discs. Around 93 percent of dachshunds carry two copies. You cannot shop around it.'],

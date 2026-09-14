@@ -13,26 +13,43 @@ author: {
   title: 'Why this book exists',
   paras: [
 
-    'This started as a reading list, not a book. I had three questions about a dachshund — what a disc episode actually costs, whether the furniture ban does anything, and when to spay a female of this breed. A month later I had forty tabs open and no answer I would have put my name to.',
+    'This started as a reading list, not a book. Three questions about a dachshund — what a disc episode costs, whether the furniture ban does anything, when to spay a female of this breed. A month later: forty tabs open, and no answer I would have put my name to.',
 
-    'The free material is the first problem. The top twenty search results give you the same eight facts, reworded and uncited, copied forward from each other until the origin is gone. Where a number appears it has no source attached. Where the evidence is mixed, the mixture has been ironed flat, because a clean sentence performs better than an honest one.',
+    'The research exists. It is simply not where owners look. DachsLife 2015 put questions to the owners of 2,031 dachshunds and was analyzed at the Royal Veterinary College. The lifetime risk figures come from Swedish insurance records. The back-scoring schemes are Danish and British. Owner guides rarely cite any of it, and the fragments that reach you arrive stripped of the caveats that made them worth reading.',
 
-    'The paid material fails differently. Most dachshund books in English are written by nobody in particular and read like the blogs with a cover price. The serious exception is narrow by design: the best English-language book on disc disease is British, and written for the owner of a dog already diagnosed. That is one chapter of an ownership, not the whole of it.',
+    'So this book follows one rule, and the rest of it falls out of that rule.'
 
-    'And the research does exist. It is simply not where owners look. DachsLife 2015 put questions to the owners of 2,031 dachshunds and was analyzed at the Royal Veterinary College. The lifetime risk figures come from Swedish insurance records. The radiographic back-scoring schemes are Danish and British. It is the research most owner guides never cite, and the fragments that do reach an owner arrive stripped of the caveats that made them worth reading.',
+  ],
+  /* le problème, en trois blocs */
+  problem: [
+    ['The free material', 'The top twenty search results give you the same eight facts, reworded and uncited, copied forward until the origin is gone. Where the evidence is mixed, the mixture has been ironed flat — a clean sentence performs better than an honest one.'],
+    ['The paid material', 'Most dachshund books in English are written by nobody in particular and read like the blogs with a cover price. The serious exception is narrow by design: written for the owner of a dog already diagnosed.'],
+    ['The research', 'British, Swedish and Danish, and almost never quoted to the people it was meant for.']
+  ],
+  /* la règle, en quatre points */
+  rule: [
+    'Every number carries its source, in the sentence or in the block beside it.',
+    'Settled evidence is marked settled. Disputed evidence is marked contested, and you get both positions with names attached.',
+    'A claim that does not survive contact with the data is marked myth, and you get the study that broke it.',
+    'Where a figure could not be verified, it is not in the book. The gaps are printed, not papered over.'
+  ],
+  /* ce qui va vous contrarier */
+  contradict: [
+    'The furniture ban.',
+    'The story about weight and the back.',
+    'The five-minutes-per-month walking rule.',
+    'The timing of the spay.',
+    'The DNA test a breeder offered as proof.'
+  ],
+  closing: [
+    'Each of those is set against the best available evidence, and in each case the evidence is weaker, or points differently, than the advice implies. None of it has been softened.',
 
-    'So this book follows one rule. Every number carries its source, in the sentence or in the block beside it. Where the evidence is settled, the page says settled. Where competent people disagree, it says contested, and you get both positions with names attached. Where a claim everybody repeats does not survive contact with the data, it says myth, and you get the study that broke it. The bibliography at the back is not decoration. It is the part you are meant to check.',
-
-    'The same rule means the gaps are printed rather than papered over. There is no dataset from most countries, and none at all from many. Every prevalence figure in this book is Swedish, British or Danish, and the book says which, every time — which is what makes it usable no matter where you live. Where a figure could not be verified, it is not in the book.',
-
-    'You should know in advance that several pages here will contradict something you were told by somebody who meant well. The furniture ban. The story about weight and the back. The five-minutes-per-month walking rule. The timing of the spay. The DNA test a breeder offered as proof. Each is set against the best available evidence, and in each case the evidence is weaker, or points differently, than the advice implies. I have not softened any of it.',
-
-    'That is not an instruction to argue with your veterinarian. It is an instruction to bring the section and the source with you and ask. A good professional will engage with a citation and tell you what they see in your dog that the study did not measure. That conversation is what the book is for.',
-
-    'The limit, plainly. This is not veterinary advice and it does not replace an examination. I am not your dog’s veterinarian, I have not seen him, and nothing in these pages is a diagnosis, a prescription, or a reason to wait. Part V contains a protocol whose first instruction is to pick up the phone. Use the manual to ask better questions of the person with their hands on your dog — not to avoid needing one.',
-
-    'One more disclosure, since the rest of this book is built on showing its work. The photographs are generated, not shot. Every one was made with an image model, directed and then checked against the breed standard before it earned its place — and several were thrown out for showing the wrong breed, or a hold that would hurt a dog. None of them is a photograph of a real animal, and none of them is evidence of anything. The figures and the studies carry the argument; the pictures are there to show you what a thing looks like. The diagrams, the spine drawing and the body-condition silhouettes are our own.'
-
+    'That is not an instruction to argue with your veterinarian. It is an instruction to bring the section and the source with you and ask. A good professional will engage with a citation and tell you what they see in your dog that the study did not measure. That conversation is what the book is for.'
+  ],
+  limits: [
+    ['Not veterinary advice', 'This does not replace an examination. Nothing here is a diagnosis, a prescription, or a reason to wait. Part V opens with an instruction to pick up the phone.'],
+    ['The photographs are generated', 'Directed with an image model, then checked against the breed standard. None is a photograph of a real animal, and none is evidence of anything. The diagrams, the spine drawing and the body-condition silhouettes are ours.'],
+    ['The figures carry the argument', 'Not the pictures. Every one of them is in the bibliography at the back, which is the part you are meant to check.']
   ]
 },
 
@@ -42,21 +59,21 @@ author: {
 howto: {
   title: 'How to use this manual',
   paras: [
-    'The book runs in eight parts, roughly in the order a dachshund arrives in a life: what the breed is, how to buy one, the first month, training, the back, health and food, a real life, and the last years. Each part ends with five things to remember and three questions with answers at the back. You can read it straight through, and most people do once. After that it is a reference.',
+    'Eight parts, in the order a dachshund arrives in a life: what the breed is, how to buy one, the first month, training, the back, health and food, a real life, the last years. Each part ends with a Checkpoint — what you should now be able to do, and the mistakes to avoid. Read it straight through once. After that it is a reference.',
 
-    'The main column carries the argument. The narrow outer column carries the evidence blocks, the notes, the red flags and the handwriting. Every section is written so the main column still makes sense if you ignore the outer one entirely — the side blocks add the source, the caveat and the practical detail, but they never hold a step you cannot afford to miss.',
+    'Every page is built out of the same handful of blocks, and each one tells you how much weight to put on what it holds. Learn the eight below and you can skim any page in the book and know what you are looking at.',
 
-    'Two sections do not wait their turn. Read <strong>5.4</strong> and <strong>5.5</strong> before you need them, because the first hour of a disc episode is not the hour to be reading about disc episodes. If you have just been handed a diagnosis, start at <strong>5.6</strong> and work backward. If you have not bought a dog yet, start at <strong>2.3</strong> and take Tool 4 with you.'
+    'Two sections do not wait their turn: read 5.4 and 5.5 before you need them. The first hour of a disc episode is not the hour to be reading about disc episodes.'
   ],
   modules: [
-    ['What the evidence says', 'The badged block. It appears where a claim is genuinely disputed and gives you the finding, the study behind it and a verdict. At most two in any section, because if everything is contested nothing is.'],
-    ['Note', 'The sand panel. Practical detail that would slow the main text down, and the place where a practice is tied to the country it comes from, so you can tell what applies to you.'],
-    ['Red flag', 'The oxblood panel. It appears only where the dog is at risk and something has to happen now. If you see one on a page, read it before you finish the page.'],
-    ['Tool', 'A numbered, self-contained instrument — a checklist, a script, a scorecard, a calendar, a log. There are twenty-four. They are the pages you will print, photograph or hand to somebody else.'],
-    ['Red-flag protocol steps', 'A numbered sequence with a time or a trigger down the left-hand side. Work it in order. In the emergency sections the order is the content.'],
-    ['Checklist', 'Tick boxes, written to be used standing up — in a kennel driveway, a waiting room, or the pet-food aisle with a bag in your hand.'],
-    ['Margin note', 'Handwriting in the outer column. A personal aside, not a summary. Nothing in one is needed to follow the argument, and nothing in one is a source.'],
-    ['Photograph', 'A captioned image. Where a caption carries an instruction — how to lift him, what a 4 out of 9 looks like — the instruction is in the main text as well.']
+    ['What the evidence says', 'The badged block. A claim that is genuinely disputed, the study behind it, and a verdict. At most two in a section — if everything is contested, nothing is.'],
+    ['Red flag', 'Red list, × markers. The dog is at risk and something has to happen now. If you see one on a page, read it before you finish the page.'],
+    ['Green list', 'Black ✓ markers. What good looks like, and what to do rather than what to fear.'],
+    ['Tool', 'A numbered instrument — a checklist, a script, a scorecard, a calendar, a log. There are twenty-four, and they are the pages you will print or hand to somebody else.'],
+    ['Key figure', 'One number, large, with its source under it. If a figure is worth remembering it is set like this.'],
+    ['Matrix / decision', 'A grid or a branch. Read the row that matches your dog, or follow the branch to the end. The highlighted cell is the answer.'],
+    ['Phases', 'A numbered sequence with a time or a trigger on each step. Work it in order — in the emergency sections the order is the content.'],
+    ['Plate', 'A drawn diagram. Where a plate carries an instruction — how to lift him, what a 4 out of 9 looks like — the instruction is in the text as well.']
   ],
   levels: [
     ['Settled', 'A named body or a body of evidence agrees, and no serious counter-position exists. You can act on it without hedging. Example: AAHA moved leptospirosis to its core vaccine list in 2024, for all dogs regardless of size.'],

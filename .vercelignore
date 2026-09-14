@@ -1,2 +1,4 @@
 node_modules
 book
+_generator/dist
+_generator/flat

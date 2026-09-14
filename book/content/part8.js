@@ -8,7 +8,7 @@ module.exports = [
 /* ───────────────────────── 8.1 ───────────────────────── */
 { id:'8.1', title:'What changes after eight', sub:'old is not a diagnosis', pages:2, blocks:[
 
-  {t:'first',text:'Somewhere around eight or nine you will notice he takes the last step more slowly, sleeps through the mail, and stands in the kitchen for a second before deciding where he was going. Most of what happens next is ordinary aging and needs no treatment, but some of it is treatable and gets missed, because “he’s just getting old” is the sentence under which a painful joint, a rotten tooth and a treatable disease all quietly disappear. Age is not a diagnosis — it is the reason to look harder.'},
+  {t:'first',text:'Somewhere around eight or nine he takes the last step more slowly and stands in the kitchen a second before deciding where he was going. Most of that is ordinary aging — but “he’s just getting old” is also the sentence under which a painful joint, a rotten tooth and a treatable disease disappear. Age is not a diagnosis; it is the reason to look harder.'},
 
   {t:'keyfig',title:'The single change with the best return',items:[
     ['FROM ABOUT EIGHT','Twice a year','Two veterinary visits rather than one. Everything below is what you are watching for between them.'],
@@ -17,7 +17,7 @@ module.exports = [
 
   {t:'h3',text:'Sight and hearing'},
 
-  {t:'p',text:'The lens hardens with age and the pupil takes on a bluish haze. That is usually not a cataract, it dims vision rather than removing it, and a dog copes with it well until you rearrange the furniture. Hearing goes first at the high frequencies, which is why the recall word stops working before the door does.'},
+  {t:'p',text:'The lens hardens with age and the pupil takes on a bluish haze — usually not a cataract, and it dims vision rather than removing it. Hearing goes first at the high frequencies, which is why the recall word fails before the door does.'},
 
   {t:'signals',title:'Three adaptations, made before he needs them',role:'g',items:[
     'Train a hand signal for “come” while he can still see you clearly',
@@ -27,11 +27,11 @@ module.exports = [
 
   {t:'h3',text:'Teeth'},
 
-  {t:'p',text:'By this age, dental disease is the most common thing that hurts and the most commonly ignored, because the dog keeps eating through it. Bad breath is not an old-dog feature; it is a finding. What is on offer at a grooming salon is not a substitute — the American Veterinary Dental College states that access below the gumline “is impossible in an unanesthetized patient,” and that scraping visible tartar “has little effect on a pet’s health, and provides a false sense of accomplishment.” A cleaning under anesthesia is not a cheap procedure anywhere, and the range is wide; ask your clinic for its figure in your local currency. If the worry is the anesthesia, ask your veterinarian about pre-anesthetic bloodwork and monitoring rather than skipping the procedure.'},
+  {t:'p',text:'By this age dental disease is the most common thing that hurts and the most commonly ignored, because the dog keeps eating through it. Bad breath is not an old-dog feature; it is a finding. What a grooming salon offers is not a substitute: the American Veterinary Dental College states that access below the gumline “is impossible in an unanesthetized patient.” If the anesthesia is the worry, ask about pre-anesthetic bloodwork and monitoring rather than skipping the procedure.'},
 
   {t:'h3',text:'Sleep, and the head'},
 
-  {t:'p',text:'Older dachshunds sleep more in the day and less at night. That much is ordinary. What you are watching for is the pattern that is not simple sleep.'},
+  {t:'p',text:'Older dachshunds sleep more in the day and less at night. That much is ordinary.'},
 
   {t:'signals',title:'Not sleep — the signs of canine cognitive dysfunction',items:[
     'Pacing after dark',
@@ -42,11 +42,11 @@ module.exports = [
     'Losing house-training that was solid for a decade'
   ],role:'g'},
 
-  {t:'p',text:'Canine cognitive dysfunction is a recognized veterinary diagnosis with management options, and the options work better early. Raise it as a specific question rather than mentioning in passing that he seems confused.'},
+  {t:'p',text:'Canine cognitive dysfunction is a recognized veterinary diagnosis with management options, and they work better early. Raise it as a specific question rather than mentioning that he seems confused.'},
 
   {t:'h3',text:'Muscle'},
 
-  {t:'p',text:'Muscle mass falls with age, and it falls faster in a dog who is doing less. On this breed it shows first over the hindquarters and along the topline, and it is the change that matters most, because muscle is the only support his spine was ever going to get. Run your hands over him monthly. A back that feels bonier while the waist is getting thicker is muscle being traded for fat, which is the worst version of a stable number on the scale.'},
+  {t:'p',text:'Muscle mass falls with age, faster in a dog who is doing less, and on this breed it shows first over the hindquarters and along the topline. It matters most, because muscle is the only support his spine was ever going to get. A back that feels bonier while the waist thickens is muscle traded for fat.'},
 
   {t:'h3',text:'The spine, later'},
 
@@ -62,7 +62,7 @@ module.exports = [
     'An eight-year-old who has never had an episode is past the middle of that window rather than approaching it. It does not make him immune, and it says nothing about the stiffness and wear described below. It does mean the thing you have spent eight years fearing is now less likely than it was at five.'
   ],source:'ACVS, intervertebral disc disease · Brown et al., PNAS 2017 · figures British and Swedish; no country has a dataset of its own'},
 
-  {t:'p',text:'What he has instead is an older back: stiffer, less well muscled, slower to warm up, and attached to hips and stifles that have their own opinions. That tends to show as a gradual reluctance — the step he now trots around, the slower start on a cold morning, the sofa he stopped trying for — rather than as the sudden collapse of a five-year-old. Gradual is easy to explain away, which is the trap. Treat any new reluctance as a question for the veterinarian, not as a milestone.'},
+  {t:'p',text:'What he has instead is an older back: stiffer, less well muscled, slower to warm up. It shows as gradual reluctance — the step he now trots around, the sofa he stopped trying for — not the sudden collapse of a five-year-old. Treat any new reluctance as a question for the veterinarian.'},
 
   {t:'flag',title:'Sudden is still sudden',paras:[
     'A lower risk of an acute episode is not no risk. A hunched back, a yelp on being lifted, wobbling or crossing hind legs, dragging a paw, or an unwillingness to stand at all is an emergency at nine exactly as it was at four.',
@@ -81,11 +81,13 @@ module.exports = [
     ['WARMTH','A bed on the floor where the family sits','Out of the draft. Older dogs feel the cold sooner, and this body type was already feeling it sooner than most.','s']
   ]},
 
-  {t:'p',text:'On walks, keep the daily total and change its shape. Three short outings beat one long one: he warms up slowly, stiffens when he stops, and does better with frequent, gentle movement than with a single expedition. Let him set the pace and let him sniff. Scent work outlasts speed, eyes and ears, and it is the last piece of his job he gives up.'},
+  {t:'plate',name:'ramp',title:'Where the ramp has to go',tag:'8.2',caption:'A ramp works only on the side of the sofa he already uses. Put it where he goes up and down, not where it looks tidy.'},
+
+  {t:'p',text:'Keep the daily total and change its shape. Three short outings beat one long one: he warms up slowly and stiffens when he stops. Let him sniff — scent work outlasts speed, eyes and ears, and it is the last piece of his job he gives up.'},
 
   {t:'h3',text:'The bowl'},
 
-  {t:'p',text:'Less movement and less muscle means fewer calories for the same dog. Do the arithmetic rather than eyeballing it.'},
+  {t:'p',text:'Less movement and less muscle means fewer calories for the same dog.'},
 
   {t:'keyfig',title:'The arithmetic, for a 16-pound (7 kg) dachshund',items:[
     ['RESTING ENERGY REQUIREMENT','70 × kg^0.75','Body weight in kilograms, to the power 0.75. Seven kilograms comes out at 301.'],
@@ -94,11 +96,7 @@ module.exports = [
 
   {t:'p',text:'Individual variation runs up to fifty percent either way, so the number is a starting point and the body is the instrument. Treats stay at or under a tenth of the day’s calories.'},
 
-  {t:'gauge',title:'Body condition, on the 1–9 scale',items:[
-    ['Lean 1–3',20,'Below the target.','mid'],
-    ['Ideal 4–5',50,'Where you steer. Score him on the scale rather than eyeballing him.',''],
-    ['Heavy 7–9',85,'Above the target, on a dog who has to get his own chest off the floor.','hot']
-  ]},
+  {t:'plate',name:'bcs',title:'Where you steer him',tag:'1–9 SCALE',caption:'Score him on the nine-point scale rather than eyeballing him: 1 to 3 is under the target, 4 to 5 is where you steer, 7 to 9 is over — on a dog who has to get his own chest off the floor.'},
 
   {t:'note',title:'The case for keeping him lean',paras:[
     'Restricting calories by 25% added about <strong>1.8 years</strong> of median lifespan in a lifetime study of 48 Labradors. Not a dachshund study, and not about backs — but it is the strongest evidence here that a lean dog lives longer than a fat one.',
@@ -109,9 +107,7 @@ module.exports = [
 /* ───────────────────────── 8.3 ───────────────────────── */
 { id:'8.3', title:'Spotting pain early', sub:'he will not tell you, he will just do less', pages:1, blocks:[
 
-  {t:'p',text:'Acute pain is loud. Chronic pain is not. A dog with a slowly worsening joint does not limp dramatically or cry — he edits his life around it, drops the activities that hurt, and looks to you like a dog who is calming down with age. By the time an owner says “he’s slowing down,” the dog has usually been managing something for months.'},
-
-  {t:'p',text:'The signs are behavioral before they are physical, and they are ordinary enough to be dismissed one at a time. It is the accumulation that tells you.'},
+  {t:'p',text:'Acute pain is loud. Chronic pain is not — a dog with a slowly worsening joint does not limp or cry; he edits his life around it and looks like a dog calming down with age. The signs are ordinary enough to be dismissed one at a time; it is the accumulation that tells you.'},
 
   {t:'signals',title:'Eight signs, each one easy to explain away alone',items:[
     'Hesitating before a step, a jump or the car — and taking the long way around instead',
@@ -133,17 +129,17 @@ module.exports = [
     'Note one line: what he did easily this month that he did not do last month, or the reverse'
   ]},
 
-  {t:'p',text:'The video is the part people skip and the part that works. Change at this speed is invisible day to day and obvious across six clips, and a thirty-second film of a hind end that has started to swing is worth more to your veterinarian than anything you can describe in an exam room. Bring the clips. Bring the weights. And ask the direct question — “is he in pain?” — rather than reporting that he seems to be slowing down, because the second one invites the answer you are trying to rule out.'}
+  {t:'p',text:'The video is the part people skip and the part that works: change at this speed is invisible day to day and obvious across six clips. Bring the clips and the weights, and ask the direct question — “is he in pain?” — rather than reporting that he is slowing down, which invites the answer you are trying to rule out.'}
 ]},
 
 /* ───────────────────────── 8.4 ───────────────────────── */
 { id:'8.4', title:'Deciding, being there, and after', sub:'the last thing you will do well for him', pages:2, blocks:[
 
-  {t:'p',text:'This section exists because the decision is almost always made badly, and it is made badly for a structural reason: it gets made in the worst hour, by an exhausted person, on the floor of a clinic at eleven at night. The way to avoid that is to do the thinking early, on an ordinary afternoon, while there is nothing to decide.'},
+  {t:'p',text:'The decision is usually made in the worst hour — by an exhausted person, on a clinic floor at eleven at night. Do the thinking early instead, on an ordinary afternoon, while there is nothing to decide.'},
 
   {t:'h3',text:'Assessing, before you need to'},
 
-  {t:'p',text:'Ask your veterinarian for a quality-of-life scale. Several are in routine use, they are short, and the point of one is not the total — it is that it forces you to score the same categories every week rather than re-deciding from scratch each morning.'},
+  {t:'p',text:'Ask your veterinarian for a quality-of-life scale. Several are in routine use and they are short; the point is not the total but that you score the same categories every week. Eight weekly scores tell you what no single day can: which way the line is going, and how fast. Owners who keep one almost never say afterward that they left it too long.'},
 
   {t:'signals',title:'What a scale asks you to score, every week',role:'g',items:[
     'Pain',
@@ -155,13 +151,11 @@ module.exports = [
     'Whether he still does anything he chooses to do for its own sake'
   ]},
 
-  {t:'p',text:'Score it weekly and write it down. A file of eight weekly scores tells you something no single day can: which way the line is going, and how fast. Owners who keep one are rarely surprised by the answer, and almost never say afterward that they left it too long.'},
-
-  {t:'p',text:'Decide in advance what your limits are, in plain terms, and say them out loud to someone. Three bad days in a row. He stops eating what he loves. He cannot get himself outside to eliminate. He no longer greets anyone. Written down on an ordinary afternoon, those are clear-eyed. Invented at midnight, they are negotiable, and they will be negotiated.'},
+  {t:'p',text:'Decide your limits in advance, in plain terms, and say them out loud to someone. Three bad days in a row. He stops eating what he loves. He cannot get himself outside. Written down on an ordinary afternoon they are clear-eyed; invented at midnight they are negotiable.'},
 
   {t:'h3',text:'The conversation'},
 
-  {t:'p',text:'The conversation with a veterinarian usually goes better than people expect, and it is entirely acceptable to open it long before it is needed. Ask directly: is he in pain we are not controlling, what would you do if he were yours, and what does the next three months most likely look like. Most veterinarians will not raise euthanasia first. Most will answer honestly and with relief when you do, because they have spent their careers watching families wait too long and rarely watching one act too soon.'},
+  {t:'p',text:'The conversation usually goes better than people expect, and you may open it long before it is needed. Ask directly: is he in pain we are not controlling, what would you do if he were yours, what do the next three months look like. Most veterinarians will not raise it first, and most answer with relief when you do.'},
 
   {t:'signals',title:'Ask these in the same conversation, so nothing has to be decided on the day',role:'g',items:[
     'Whether they offer home visits',
@@ -173,19 +167,19 @@ module.exports = [
 
   {t:'h3',text:'The day'},
 
-  {t:'p',text:'What happens is straightforward, and knowing it in advance takes most of the fear out of the room. A catheter is usually placed in a foreleg. He is given a sedative first, and over a few minutes he becomes deeply sleepy — many dogs fall asleep in the arms of the person holding them, which is the part owners remember. Then the second injection, an overdose of anesthetic, is given through the catheter. It works very quickly and he is unconscious before anything else happens. Your veterinarian will listen to his chest and tell you when he has gone.'},
+  {t:'p',text:'A catheter is usually placed in a foreleg and a sedative given first; over a few minutes he becomes deeply sleepy, and many dogs fall asleep in the arms of the person holding them. The second injection, an overdose of anesthetic, is given through the catheter and works very quickly. Your veterinarian will listen to his chest and tell you when he has gone.'},
 
-  {t:'p',text:'A few things are normal and unnerving if you have not been warned. His eyes usually stay open. There may be a last deep breath, or a twitch, after his heart has stopped; neither is awareness. His bladder or bowels may empty. Bring his own blanket, feed him whatever you like beforehand, and hold whichever part of him you always hold. Children can be present, and generally do better present than waiting at home with a guess. You can also decide you cannot be in the room, and that choice is yours to make without anybody’s commentary.'},
+  {t:'p',text:'A few things are normal and unnerving if you have not been warned. His eyes usually stay open; there may be a last deep breath or a twitch after his heart has stopped, and neither is awareness; his bladder or bowels may empty. Bring his own blanket and hold whichever part of him you always hold. Children do better present than waiting at home with a guess, and you may decide you cannot be in the room.'},
 
   {t:'h3',text:'Aftercare'},
 
-  {t:'p',text:'You will be asked about aftercare, so decide before the day. Communal cremation with no ashes returned, private cremation with ashes returned, or home burial where local law allows it. Those are the options and there is no correct one.'},
+  {t:'p',text:'You will be asked about aftercare, so decide before the day: communal cremation with no ashes returned, private cremation with ashes returned, or home burial where local law allows it. There is no correct one.'},
 
   {t:'h3',text:'After'},
 
-  {t:'p',text:'Grief for a dog is real grief, and it is routinely apologized for by people who would not apologize for any other kind. Expect it to be worse in the small mechanics of the day than in the large moments: the bowl, the hour you always walked, the sound at the door. With this breed it also tends to be a physical absence — twelve or fifteen years of a specific weight against your leg on the couch, gone.'},
+  {t:'p',text:'Grief for a dog is real grief, routinely apologized for by people who would not apologize for any other kind. Expect it worse in the small mechanics of the day than in the large moments: the bowl, the hour you always walked, the sound at the door. With this breed it is also a physical absence — twelve or fifteen years of a specific weight against your leg, gone.'},
 
-  {t:'p',text:'There is no schedule for it and no schedule for the next dog. Some people bring one home in a month and some never do. Neither is a verdict on the one you lost.'},
+  {t:'p',text:'There is no schedule for it, and none for the next dog. Some people bring one home in a month and some never do. Neither is a verdict on the one you lost.'},
 
   {t:'script',text:'do the thinking on an ordinary afternoon. that is the whole trick'}
 ]},

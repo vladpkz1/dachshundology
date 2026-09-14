@@ -1,7 +1,7 @@
 (function(){
 const D=window.DATA, out=document.getElementById('out');
 const MM=96/25.4, esc=s=>String(s==null?'':s);
-const MARGIN=new Set(['evidence','note','flag','brief','script','photo']);
+const MARGIN=new Set([]); /* pleine page : plus de colonne de marge */
 
 /* ---------- block renderers ---------- */
 function R(b){
@@ -37,6 +37,11 @@ function R(b){
         ${(b.paras||[]).map(p=>`<p>${esc(p)}</p>`).join('')}</div>`;
     case 'script': return `<div class="script" style="font-size:11.6pt;color:var(--camel);line-height:1.38">${esc(b.text)}</div>`;
     case 'photo':{ const src=D.have[b.n];
+      if(b.bleed) return `<div style="height:${b.h||'100%'};overflow:hidden;background:var(--fill)">${src
+        ? `<img src="${src}" style="width:100%;height:100%;object-fit:cover;display:block">`
+        : `<div style="width:100%;height:100%;background:var(--fill);display:flex;align-items:center;
+             justify-content:center;padding:8mm;text-align:center;font-family:var(--text);font-size:8pt;
+             letter-spacing:.14em;text-transform:uppercase;color:var(--grey)">${esc(b.note||'')}</div>`}</div>`;
       return `<figure><div style="border:1px solid var(--brass);padding:1.4mm;background:var(--paper)">
         <div style="height:${b.h||'42mm'};overflow:hidden">${src
           ? `<img src="${src}" style="width:100%;height:100%;object-fit:cover;display:block">`
@@ -60,6 +65,12 @@ function R(b){
          <div><h3>${esc(t)}</h3><p style="margin-top:1.2mm;font-size:9.8pt;line-height:15pt">${esc(x)}</p></div></div>`).join('')}</div>`;
 
     /* ─── grammaire de modules ─── */
+    case 'plate':{ const g=(D.PLATES||{})[b.name]; if(!g) return '';
+      return `<div class="plate${b.wide?' wide':''}">
+        <div class="ph"><span>${esc(b.title||'Plate')}</span><span>${esc(b.tag||'')}</span></div>
+        <div class="pb">${g}</div>
+        ${b.caption?`<div class="pc">${esc(b.caption)}</div>`:''}</div>`; }
+
     case 'tiles':{ const it=b.items||[], n=Math.min(4,Math.max(2,it.length));
       const role=['g','s','','b'];
       return `<div class="mod">${b.title?`<div class="modh${b.acc?' acc':''}">${esc(b.title)}</div>`:''}
@@ -126,18 +137,20 @@ function R(b){
 let pages=[], cur=null;
 function newPage(part,secId,solo){
   const el=document.createElement('section'); el.className='page';
-  el.innerHTML=`<div class="pad">
-    <div class="rh"><span class="l">${part.n} · ${part.title}</span><span class="r">${secId||''}</span></div>
-    <div class="rule">${D.rule}</div>
-    <div class="body${solo?' solo':''}"><div class="main"></div><div class="marg"></div></div>
-    <div class="folio"><span>${part.title}</span><b></b><span>Dachshundology</span></div>
+  el.innerHTML=`<div class="sheet">
+    <div class="hdr"><span>${part.n} · ${part.title}</span><span class="r" data-sec>${secId||''}</span></div>
+    <div class="pad2">
+      <div class="body${solo?' solo':''}"><div class="main"></div><div class="marg"></div></div>
+    </div>
+    <div class="ftr folio"><span>Dachshundology</span><b></b><span>${part.title}</span></div>
   </div>`;
   out.appendChild(el);
   const o={el, part, solo:!!solo, main:el.querySelector('.main'), marg:el.querySelector('.marg'),
-           body:el.querySelector('.body'), pad:el.querySelector('.pad'), rh:el.querySelector('.rh .r')};
+           body:el.querySelector('.body'), pad:el.querySelector('.pad2'), rh:el.querySelector('[data-sec]')};
   pages.push(o); cur=o; return o;
 }
-const avail=o=>o.pad.getBoundingClientRect().bottom - o.body.getBoundingClientRect().top;
+const SAFE=18;   /* garde-fou bas de page : rien ne touche le bandeau de pied */
+const avail=o=>o.pad.getBoundingClientRect().bottom - o.body.getBoundingClientRect().top - SAFE;
 const fillOf=o=>o.main.scrollHeight/avail(o);
 function node(html){
   const t=String(html).trimStart();
@@ -147,9 +160,14 @@ function node(html){
     return w.querySelector('td,th'); }
   if(/^<li[\s>]/i.test(t)){ const w=document.createElement('ul'); w.innerHTML=t; return w.querySelector('li'); }
   const w=document.createElement('div'); w.innerHTML=t; return w.firstElementChild; }
+/* un titre ne doit jamais rester seul en bas de page : on lui demande
+   d'emporter au moins trois lignes de ce qui suit (keep-with-next). */
+const isHead=el=>!!el && (el.tagName==='H3' || el.tagName==='H2'
+  || /(^|\s)(sechead|kicker|modh|toolhead)(\s|$)/.test(el.className||''));
 function tryAppend(col,el,o){
   col.appendChild(el);
-  if(col.scrollHeight>avail(o)+1){
+  const need = isHead(el) ? 118 : 0;
+  if(col.scrollHeight+need>avail(o)+1){
     if(col.children.length>1){ col.removeChild(el); return false; }
     return true; // seul bloc : on l'accepte même s'il déborde
   }
@@ -207,14 +225,18 @@ function flowInto(o){
       <div class="rule">${D.rule}</div>
       ${first?`<div class="sechead"><h2>${o.title}</h2>${o.sub?`<div class="script" style="font-size:14.5pt;color:var(--camel);margin-top:2mm">${o.sub}</div>`:''}</div>`:'<div style="height:7mm"></div>'}
       <div class="matter"${o.cols?' style="columns:'+o.cols+';column-gap:9mm"':''}${o.width?' style="max-width:'+o.width+'"':''}></div>
-      <div class="folio"><span>${o.head||''}</span><b></b><span>Dachshundology</span></div>
+      <div class="folio flow"><span>${o.head||''}</span><b></b><span>Dachshundology</span></div>
     </div>`;
     out.appendChild(el);
     const rec={el, matter:true, pad:el.querySelector('.pad'), box:el.querySelector('.matter'), app:o.app};
     pages.push(rec); return rec;
   };
   let pg=mk(true); const firstPage=pg;
-  const availM=r=>r.pad.getBoundingClientRect().bottom - r.box.getBoundingClientRect().top;
+  const availM=r=>{
+    const f=r.el.querySelector('.folio');
+    const bottom = f ? f.getBoundingClientRect().top : r.pad.getBoundingClientRect().bottom;
+    return bottom - r.box.getBoundingClientRect().top - 10;   /* respiration avant le folio */
+  };
   o.items.forEach(html=>{
     const el=node(html); if(!el) return;
     pg.box.appendChild(el);
@@ -335,8 +357,8 @@ D.book.forEach((part,pi)=>{
   const cp=(D.CHECKPOINTS||{})[part.slug];
   if(cp){
     const el=document.createElement('section'); el.className='page cp';
-    el.innerHTML=`<div class="pad">
-      <div class="rh"><span class="l">${part.n} · ${part.title}</span><span class="r">Checkpoint</span></div>
+    el.innerHTML=`<div class="sheet"><div class="hdr"><span>${part.n} · ${part.title}</span><span class="r">Checkpoint</span></div>
+      <div class="pad2">
       <div class="cp">
         <div class="cp-k">End of Part ${part.n}</div>
         <h2>Checkpoint</h2>
@@ -350,7 +372,8 @@ D.book.forEach((part,pi)=>{
         ${cp.next?`<div class="cp-next"><div class="k">Next</div>
           <div><h4>${esc(cp.next[0])}</h4><p>${esc(cp.next[1])}</p></div></div>`:''}
       </div>
-      <div class="folio"><span>${part.title}</span><b></b><span>Dachshundology</span></div>
+      </div>
+      <div class="ftr folio"><span>Dachshundology</span><b></b><span>${part.title}</span></div>
     </div>`;
     out.appendChild(el); pages.push({el, part, checkpoint:true});
   }

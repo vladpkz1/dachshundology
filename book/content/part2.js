@@ -11,9 +11,7 @@ module.exports = [
   sub: 'five doors, and only two of them open onto a whelping box',
   pages: 3,
   blocks: [
-    {t:'first', text:'There are five doors into the puppy market: a breeder, a broker, an online marketplace, a pet store, a rescue. At eight weeks old the dog behind each door looks the same — same ears, same feet, same smell. The paperwork is not the same, the price is not the same, and the odds are not the same.'},
-
-    {t:'lede', text:'Learning to tell the doors apart is the single highest-value hour you will spend before the dog arrives.'},
+    {t:'first',text:'Five doors open onto the puppy market: a breeder, a broker, an online marketplace, a pet store, a rescue. At eight weeks old the dog behind each looks the same. The paperwork is not, the price is not, and the odds are not.'},
 
     {t:'h3', text:'The five doors'},
 
@@ -24,8 +22,6 @@ module.exports = [
       ['Pet store','Retail. Supplied by brokers and commercial kennels, banned outright in a growing list of jurisdictions','The store, not the origin'],
       ['Rescue','A foster network or shelter placing dogs it did not breed','Temperament in a home, health as far as the vet got'],
     ], hi:[[0,2]], note:'A broker site and a breeder site can be indistinguishable on a phone. The difference shows up the moment you ask to come over.'},
-
-    {t:'p', text:'The distinction that matters is not kind-hearted versus greedy. It is whether the person selling you the dog was standing there when it was born. A breeder can show you the dam, the room, the other littermates, and the vaccination card in the same visit. A broker cannot show you any of it, because none of it happened where he lives. Everything in this part is built to force that distinction into the open early, while it is still cheap to walk away.'},
 
     {t:'decision', title:'Which door are you standing at?', items:[
       ['Can you come to the place the litter was born and meet the dam?','Not a video call. The US regulator does not count photos or video as face to face.',
@@ -45,7 +41,7 @@ module.exports = [
       'The same logic holds elsewhere: the trading license a seller advertises tells you how he sells, not how he breeds. Ask your own regulator which license his operation needs, and what it certifies.',
     ], source:'USDA/APHIS regulatory guidance, via AKC (2022 update)'},
 
-    {t:'p', text:'The online marketplace needs separating out, because buyers routinely misread it. A listings platform is not a seller. It whelps nothing, owns nothing, examines nothing, and in most cases verifies nothing beyond a payment method. Its asking prices are the lowest of the four commercial channels, which is exactly why it is where a first-time buyer starts looking and where the fraud concentrates. The listing is an advertisement written by a stranger. Treat it as the beginning of an investigation, never as a description.'},
+    {t:'p',text:'The online marketplace prices lowest of the four commercial channels, which is where a first-time buyer starts looking and where the fraud concentrates. The listing is an advertisement written by a stranger.'},
 
     {t:'signals', title:'How a broker listing reads', items:[
       'Several litters available now, in more than one color, sometimes in more than one breed.',
@@ -57,18 +53,14 @@ module.exports = [
       'A deposit “holds” the puppy within twenty-four hours.',
     ],role:'g'},
 
-    {t:'p', text:'Every element of that is a solution to one problem: the seller cannot let you stand in the room where the litter was born.'},
-
     {t:'tiles', title:'Retail is closing', items:[
       ['10','US states','Ban puppy sales in pet stores outright. California was first, in 2017; Colorado’s ban took effect in 2026; Delaware became the tenth.'],
       ['530','US localities','In 31 states, with bans of their own.'],
     ], src:'Check what your own jurisdiction permits'},
 
-    {t:'p', text:'The direction of travel is one-way, and it tells you what legislators concluded about where store puppies come from.'},
-
     {t:'h3', text:'The scam layer sitting on top of all of it'},
 
-    {t:'p', text:'Puppy fraud is not a rare misfortune. It is a standing industry with seasonal peaks, and dachshunds — fifth on the AKC’s US popularity list — are a preferred product because demand is high and buyers travel. The Better Business Bureau tracks it in the US; find your own country’s equivalent.'},
+    {t:'p',text:'Puppy fraud is a standing industry with seasonal peaks, and dachshunds are a preferred product. The Better Business Bureau tracks it in the US; find your own country’s equivalent.'},
 
     {t:'matrix', title:'Puppy fraud reports, BBB Scam Tracker', head:['Year','Reports','Median loss (2022 = 100)'], rows:[
       ['2022','680','100'],
@@ -77,7 +69,7 @@ module.exports = [
       ['2025 (through September)','1,632','80'],
     ], hi:[[1,1]], note:'Individual losses of three to six times the median appear in the same US file.'},
 
-    {t:'p', text:'Read the 2023 line against 2022. Reports quadrupled in a year. Then they fell — which is not the same as the fraud falling, only the reporting. Demand explains part of the pattern: the dachshund moved to fifth on the AKC’s US popularity ranking for 2025, up from sixth, displacing the poodle from the top five. Popularity is a supply signal, and both the honest and the dishonest read it.'},
+    {t:'p',text:'Reports quadrupled between 2022 and 2023, then fell — which is not the same as the fraud falling, only the reporting. The dachshund moved to fifth on the AKC’s US popularity ranking for 2025, up from sixth. Popularity is a supply signal both the honest and the dishonest read.'},
 
     {t:'keyfig', title:'Why those counts are not the size of the problem', items:[
       ['EVER REPORT','4.8%','Of mass-market fraud victims, on FTC data cited by the BBB. The reported numbers are roughly one twentieth of reality.'],
@@ -102,7 +94,7 @@ module.exports = [
   sub: 'the price tells you less than the receipt does',
   pages: 3,
   blocks: [
-    {t:'first', text:'A dachshund puppy can cost several times what another costs in the same country, whatever your currency, and the number alone tells you almost nothing. One price buys a health-screened litter from a woman with five years of show records; the same buys a truck-delivered puppy from a kennel you will never see. This section is about reading the price apart.'},
+    {t:'first',text:'A dachshund puppy can cost several times what another costs in the same country, and the number alone tells you almost nothing. One price buys a health-screened litter; the same buys a truck-delivered puppy you will never see.'},
 
     {t:'h3', text:'The bands, as they actually stand'},
 
@@ -113,7 +105,7 @@ module.exports = [
       ['Rescue / adoption','Lowest overall, and by a long way'],
     ], hi:[[1,1]], note:'Prices vary hugely by country and region; read the order of the bands, not the numbers. US bands: iHeartDogs, March 2026, updated September 2026.'},
 
-    {t:'p', text:'Look at where those bands sit relative to each other. The marketplace band and the breeder band overlap across a wide stretch, and that overlap is where most dachshunds are actually sold. Inside it, <strong>price cannot tell a breeder from a broker.</strong> It never could. A broker pricing at the top of the marketplace band reads as a bargain breeder; a breeder pricing low because she does not need the money reads as suspicious. Buyers who use price as a proxy for quality get this exactly backwards about half the time.'},
+    {t:'p',text:'The marketplace band and the breeder band overlap across a wide stretch, and that overlap is where most dachshunds are actually sold. Inside it, <strong>price cannot tell a breeder from a broker.</strong>'},
 
     {t:'evidence', badge:'myth', paras:[
       '<strong>“You get what you pay for” is the most expensive sentence in the puppy market.</strong>',
@@ -138,16 +130,14 @@ module.exports = [
       ['THE WARNED ONES','Dapple and dilute','Dapple carries the largest premium of all — roughly double the longhaired premium. Wirehaired commands one of its own. Dapple is a different matter, and so is dilute.','a'],
     ]},
 
-    {t:'p', text:'The Dachshund Club of America, the breed’s US parent club, warns that dapple bred to dapple produces roughly <strong>25 percent double-dapple puppies</strong>, which “are more likely to carry health issues such as deafness, reduced eye size or missing eyes.” Red dapples can be visually ambiguous, so accidental dapple-to-dapple matings are a real and documented risk. Dilutes — blue and isabella — are on the accepted color list, but the DCA warns in the same breath of thin coats, skin sensitivity, vaccine failures and reduced lifespan. Color dilution alopecia is genetic, recessive, lists the dachshund as susceptible, shows from around six months, and is not curable.'},
+    {t:'p',text:'The Dachshund Club of America warns that dapple bred to dapple produces roughly <strong>25 percent double-dapple puppies</strong>, “more likely to carry health issues such as deafness, reduced eye size or missing eyes.” Red dapples can be visually ambiguous, so accidental matings are a documented risk. Dilutes — blue and isabella — are accepted, but the DCA warns of thin coats, skin sensitivity, vaccine failures and reduced lifespan. Color dilution alopecia is genetic, recessive, lists the dachshund as susceptible, shows from around six months, and is not curable.'},
 
     {t:'keyfig', title:'Geography, and the trap inside it', items:[
       ['REGIONAL SPREAD','+50%','The dearest US regions run half as much again as the cheapest. A gap like that tempts buyers into long-distance purchases — precisely the transaction that forfeits the one check that works.'],
       ['WHAT IT COSTS YOU','Six hours','Driving six hours each way to see a litter is cheap. Shipping a puppy you have never seen, to save the difference, is how the median fraud loss happens.'],
     ]},
 
-    {t:'p', text:'The last legitimate premium is the one nobody itemizes: the breeder who answers the phone in year three. Support is worth more than any single test result, because it is the difference between a bad night and an emergency-clinic visit where the examination alone is billed before anyone touches the dog. A breeder who has produced forty dachshunds has seen the thing frightening you at 11 p.m. She will tell you whether it waits until morning. That service does not appear on an invoice and cannot be bought later.'},
-
-    {t:'p', text:'So the market pays its two largest premiums for the two patterns the breed’s own parent club warns about. That is the perverse incentive at the center of dachshund pricing, and once you have seen it you cannot unsee it in a listing.'},
+    {t:'p',text:'The last legitimate premium is the one nobody itemizes: the breeder who answers the phone in year three. She has seen the thing frightening you at 11 p.m. and will tell you whether it waits until morning.'},
 
     {t:'matrix', title:'Year one, built from components', head:['Line','Relative to the purchase price','Source'], rows:[
       ['The dog','A rescue costs roughly a fifth of a breeder puppy','—'],
@@ -161,7 +151,7 @@ module.exports = [
       'Hold this next to it: Synchrony puts the lifetime cost of a dog over fifteen years far above what dog owners typically guess. The guess is off by a factor of three to seven.',
     ]},
 
-    {t:'p', text:'A last note on deposits. A deposit is normal, and a waitlist is a good sign — it means the litters are planned rather than produced. Urgency is the one sales tool that works on everybody, which is why it is the one every bad seller reaches for first.'},
+    {t:'p',text:'A deposit is normal and a waitlist is a good sign — the litters are planned rather than produced. Urgency is the one sales tool that works on everybody.'},
 
     {t:'signals', title:'A deposit that is not normal', items:[
       'Taken before you have seen anything.',
@@ -180,14 +170,14 @@ module.exports = [
   sub: 'a good one answers all of them, then starts asking you',
   pages: 3,
   blocks: [
-    {t:'first', text:'You are not being rude. You are buying an animal that will live with you for a decade and a half, from a stranger, usually on the strength of a phone call and some photographs. A breeder worth your money has been waiting for someone to ask properly, and the ones who bristle are telling you something early, which is a kindness.'},
+    {t:'first',text:'You are not being rude. You are buying an animal that will live with you for a decade and a half, from a stranger, on the strength of a phone call and some photographs.'},
 
     {t:'cards', title:'Two conversations, not one', items:[
       ['CALL ONE','On the phone, before the puppies','Questions one through eleven: the dam, the screens, the line, and what has gone wrong. Refusal costs you nothing but a Tuesday evening.',''],
       ['CALL TWO','At the house, in the room','You ask the rest, and watch how the answers match what is in front of you.','b'],
     ]},
 
-    {t:'p', text:'Splitting them matters, because the first call is the only point at which you are still capable of leaving.'},
+    {t:'p',text:'Splitting them matters, because the first call is the only point at which you are still capable of leaving.'},
 
     {t:'tool', n:4, title:'The Twenty-Two Questions', intro:'Ask them in any order, across two conversations if you like. Write the answers down while you are still in the car — memory reorganizes itself in favor of the puppy you have just held.'},
 
@@ -216,7 +206,7 @@ module.exports = [
       'What do you want to know about me?',
     ]},
 
-    {t:'p', text:'Question twenty-two is the one that grades the other twenty-one. A breeder who has spent nine weeks on a litter wants to know your work hours, your stairs, your children, your last dog and how it died. If she sends a puppy to anyone with a deposit, she will send one to anyone with a deposit — and one day that will be a person who returns him at fourteen months because he barks.'},
+    {t:'p',text:'Question twenty-two grades the other twenty-one. A breeder who has spent nine weeks on a litter wants to know your work hours, your stairs, your children, your last dog and how it died.'},
 
     {t:'check', title:'Count these on your side of the call', items:[
       'Your work hours, and who is home in the middle of the day.',
@@ -228,7 +218,7 @@ module.exports = [
       'Whether anyone in the house has strong feelings about barking.',
     ]},
 
-    {t:'p', text:'If she asks none of it, you are not being interviewed. You are being invoiced.'},
+    {t:'p',text:'If she asks none of it, you are not being interviewed. You are being invoiced.'},
 
     {t:'h3', text:'Six answers that end the conversation'},
 
@@ -241,9 +231,7 @@ module.exports = [
       ['“They’re registered, so they’re health tested.”','Registration is a pedigree record — at the AKC, at The Kennel Club, at any FCI member. Even Breeder of Merit status only certifies that screens are <em>performed</em>: a participation credential, not an audit.'],
     ]},
 
-    {t:'p', text:'Tone does the work here. You are not cross-examining anyone; you are asking a person about something she has spent nine weeks doing, and most breeders enjoy the conversation because almost nobody has it with them. Ask plainly and then stop talking. The useful information is in what comes after the pause — whether she volunteers the litter that went wrong, whether she corrects you when you get something backwards, whether she says “I don’t know” about anything at all. Certainty across twenty-two questions is not expertise. It is a script.'},
-
-    {t:'p', text:'None of the six requires expertise to catch. They require you to have written the questions down beforehand and to ask them before you meet the puppy, because after you meet the puppy your judgment is compromised and both of you know it.'},
+    {t:'p',text:'Ask plainly, then stop talking. The useful information is in what comes after the pause — whether she volunteers the litter that went wrong, whether she says “I don’t know” at all. Certainty across twenty-two questions is a script, not expertise.'},
 
     {t:'script', text:'ask twenty-two before you hold one'},
 
@@ -258,7 +246,7 @@ module.exports = [
   sub: 'three official tests, one useless one, and a scheme most countries do not run',
   pages: 3,
   blocks: [
-    {t:'first', text:'Say this out loud, because it changes what you can reasonably demand: the AKC parent-club health testing requirement for the dachshund is three items long. A patella evaluation, a cardiac exam, an ophthalmologist evaluation — and the KC and FCI equivalents are set by their own clubs, so ask which list applies where you are buying. Not the back, not the spine, nothing at all about the one condition that defines the breed.'},
+    {t:'first',text:'The AKC parent-club health testing requirement for the dachshund is three items long: a patella evaluation, a cardiac exam, an ophthalmologist evaluation. The KC and FCI equivalents are set by their own clubs, so ask which list applies where you buy.'},
 
     {t:'tool', n:5, title:'The Health-Testing Ask', intro:'What to request, in what order, and what each result actually rules out. Bring this to the first phone call, not the visit.'},
 
@@ -270,7 +258,7 @@ module.exports = [
       ['EYES','Ophthalmologist','A board-certified eye exam, not a glance from the family vet. On both parents.',''],
     ]},
 
-    {t:'p', text:'Three exams is a low bar, and a breeder who clears it has done what her national parent club asks and no more, under whichever registry she breeds. That is the honest framing. The good breeders you will meet go well past it, and they will tell you so without being asked. Ask for the certificates in the parents’ registered names with the examiners’ names printed on them. A breeder saying “yes, all clear” is a claim; paper is a record.'},
+    {t:'p',text:'Three exams is a low bar. Ask for the certificates in the parents’ registered names, with the examiners’ names printed on them: “yes, all clear” is a claim, paper is a record.'},
 
     {t:'matrix', title:'What each screen actually rules out', head:['Screen','What it describes','What it does not'], rows:[
       ['Patella evaluation','Two knees, on the day they were handled','Anything about the knees after that day'],
@@ -278,6 +266,9 @@ module.exports = [
       ['Ophthalmologist evaluation','Eyes on the date of the certificate','Most schemes require re-examination, so a certificate from four years ago describes a dog who no longer exists'],
       ['All three together','A floor','Nothing about the back — the disease that defines this breed and drives its costs'],
     ], hi:[[3,2]], note:'Be precise about this, because breeders and buyers both overstate it. Clear parents are a floor. They are not a forecast.'},
+
+    {t:'plate',name:'spine',title:'What no screen looks at',tag:'T12–T13',
+      caption:'Patella, cardiac and eyes are the whole official list. The back — the disease that defines this breed and drives its costs — is not on it.'},
 
     {t:'h3', text:'Tier two — the DNA panel'},
 
@@ -296,7 +287,7 @@ module.exports = [
       ['2.7%','Affected dogs, 2017'],
     ], roles:['b','g'], src:'UK screening; the DNA test is established and commercially available'},
 
-    {t:'p', text:'Lafora is the one to be immovable about. It is concentrated in miniature wirehaired dachshunds, and screening works. A miniature wire breeder who has not run it is either unaware of her own variety’s literature or hoping you are.'},
+    {t:'p',text:'Lafora is the one to be immovable about. It is concentrated in miniature wirehaired dachshunds, and screening works. A miniature wire breeder who has not run it is either unaware of her variety’s literature or hoping you are.'},
 
     {t:'duo', title:'What the CDDY test is sold as / what it can do',
       a:['Sold as','A screening tool. “CDDY clear” parents, advertised as a mark of a better back.'],
@@ -309,7 +300,7 @@ module.exports = [
       'So: a breeder who runs it has wasted some money. A breeder who advertises “CDDY clear” parents is selling you a result that, at a 0.98 allele frequency, should make you ask hard questions about what was actually tested. Neither tells you anything useful about this puppy’s back.',
     ], source:'Dachshund Health UK; Brown et al., PNAS 2017'},
 
-    {t:'p', text:'One habit is worth building now. Whatever a breeder hands you, look the parents up yourself in the public database under their registered names. A certificate is a photograph of a claim; a database entry is the claim as the registry holds it. Two minutes on a phone, in the driveway, settles more than an hour of conversation.'},
+    {t:'p',text:'Whatever a breeder hands you, look the parents up yourself in the public database under their registered names. A certificate is a photograph of a claim; a database entry is the claim as the registry holds it.'},
 
     {t:'h3', text:'Tier three — the test almost nobody runs'},
 
@@ -340,8 +331,6 @@ module.exports = [
       'The spinal radiograph question, asked even though the answer will almost certainly be no.',
     ]},
 
-    {t:'p', text:'Four items, short enough to say in one breath. A breeder who meets the first three and answers the fourth honestly is doing more than her national club requires of her.'},
-
     {t:'script', text:'the paper, in the parents’ names, with the examiner’s name on it'},
   ]
 },
@@ -353,7 +342,7 @@ module.exports = [
   sub: 'the law will refund you; it will not fix the dog',
   pages: 2,
   blocks: [
-    {t:'first', text:'Some markets have consumer laws written specifically for puppy sales — twenty-two US states have them, California, Florida, Illinois and Vermont among them. They share a shape worth knowing wherever you buy: a short window for infectious illness, a longer one for congenital or hereditary defects, and a remedy of refund, exchange, or reimbursement of veterinary costs. Ask your own seller, and your own consumer regulator, which of the three you are actually owed.'},
+    {t:'first',text:'Twenty-two US states have consumer laws written specifically for puppy sales. They share a shape worth knowing wherever you buy: a short window for infectious illness, a longer one for congenital or hereditary defects, and a remedy of refund, exchange, or reimbursement of veterinary costs.'},
 
     {t:'table', head:['State','Illness window','Congenital / hereditary','Remedy note'], rows:[
       ['California','15 days','1 year','Retention remedy up to <strong>150% of purchase price</strong>'],
@@ -367,9 +356,9 @@ module.exports = [
       ['LIMIT TWO','Remedies cap at the purchase price','California’s 150 percent provision is the generous outlier. At one specialty neurology practice an all-in IVDD surgery runs five to seven times the price of a mid-band puppy.','a'],
     ]},
 
-    {t:'p', text:'The first produces an awkward result: your legal protection is strongest against the channel you should not be buying from and weakest against the channel you should. If you buy from a small breeder, your protection is the contract, not the statute.'},
+    {t:'p',text:'Your legal protection is strongest against the channel you should not be buying from and weakest against the channel you should. From a small breeder, your protection is the contract, not the statute.'},
 
-    {t:'p', text:'The second is worse. PetMD puts spinal surgery lower than the specialty figure but still in multiples, and an MRI alone averages roughly a puppy’s price. A full refund does not touch it. The law returns your money. It does not return your dog, and it was never built to fund fifteen years of care.'},
+    {t:'p',text:'PetMD puts spinal surgery lower than the specialty figure but still in multiples, and an MRI alone averages roughly a puppy’s price. The law returns your money; it does not return your dog.'},
 
     {t:'h3', text:'What the contract has to contain'},
 
@@ -384,7 +373,7 @@ module.exports = [
       'A clause requiring you to return the dog in order to be paid is not a guarantee. It is a trade, and you will not make it.',
     ]},
 
-    {t:'p', text:'Your statutory rights are the weaker half of your protection. The stronger half is a policy bought before anything is wrong, and the purchase week is when it is worth the most. Part IV works through this properly; the point here is that the window opens on purchase day, not when you get round to it.'},
+    {t:'p',text:'Your statutory rights are the weaker half. The stronger half is a policy bought before anything is wrong, and the window opens on purchase day.'},
 
     {t:'phases', title:'The insurance clock, from purchase day', items:[
       ['Day 0','Policy bought, before anything is wrong'],
@@ -404,7 +393,7 @@ module.exports = [
       'The messages.',
     ]},
 
-    {t:'p', text:'If the dog develops something covered by your contract or by a statute where you live, the claim is won or lost on whether you can produce a date.'},
+    {t:'p',text:'If the dog develops something covered by your contract or by a statute where you live, the claim is won or lost on whether you can produce a date.'},
 
     {t:'script', text:'the contract is the protection; the statute is the backstop'},
   ]
@@ -417,7 +406,7 @@ module.exports = [
   sub: 'ten things to look at while you are being charmed',
   pages: 1,
   blocks: [
-    {t:'first', text:'Score it in the car, before you drive away, while you can still see the place. Ten criteria, zero to three each, thirty points available.'},
+    {t:'first',text:'Score it in the car, before you drive away, while you can still see the place. Ten criteria, zero to three each, thirty points available.'},
 
     {t:'tool', n:6, title:'The Kennel Visit Scorecard', intro:'0 = absent or refused · 1 = partial · 2 = adequate · 3 = what good looks like.'},
 
@@ -434,7 +423,7 @@ module.exports = [
       ['Other litters / breeds on site','Several litters, multiple breeds','One litter, one breed, one household'],
     ]},
 
-    {t:'p', text:'Score it alone, and score it fast — five minutes, from memory, before you discuss the visit with anyone. A visit is a social occasion, and social occasions are graded generously in hindsight. The scorecard exists to hold the numbers still while your goodwill catches up.'},
+    {t:'p',text:'Score it alone and fast — five minutes, from memory, before you discuss the visit with anyone. Social occasions are graded generously in hindsight.'},
 
     {t:'gauge', title:'Reading the score, out of thirty', items:[
       ['27–30',100,'Proceed. Expect to wait for a litter; that is a good sign, not an obstacle.',''],
@@ -448,7 +437,7 @@ module.exports = [
       'A zero on the certificates.',
     ]},
 
-    {t:'p', text:'A 28 built on a missing mother is a 0. And one visit, one scorecard: if you see three litters in a month, score all three and compare the sheets rather than the puppies. The puppies will all have been wonderful.'},
+    {t:'p',text:'A 28 built on a missing mother is a 0. If you see three litters in a month, compare the sheets rather than the puppies. The puppies will all have been wonderful.'},
 
     {t:'script', text:'score it in the car, not in the kitchen'},
   ]
@@ -461,7 +450,10 @@ module.exports = [
   sub: 'someone else raised him, and that cuts both ways',
   pages: 2,
   blocks: [
-    {t:'first', text:'A grown dachshund arrives with his temperament already visible. You can meet him, walk him, watch him with a stranger, and know within an hour most of what a puppy will take eight months to reveal. That is the trade: you give up the blank page and you get information.'},
+    {t:'first',text:'A grown dachshund arrives with his temperament already visible. You can meet him, walk him, watch him with a stranger, and know in an hour what a puppy takes eight months to reveal.'},
+
+    {t:'plate',name:'bcs',title:'What an adult shows you',tag:'SCORE 1–9',
+      caption:'Condition is one of the things you can read on the day. The target is 4 to 5 on the nine-point scale.'},
 
     {t:'table', head:['Rescue','Age','Fee'], rows:[
       ['Dachshund Rescue of North America','Under 1 year','Highest — the puppy fee'],
@@ -473,7 +465,7 @@ module.exports = [
       ['','8 years and over','Half'],
     ], note:'Coast to Coast states its fee includes the veterinary exam, vaccines, spay or neuter, parasite treatment, heartworm test and treatment, and microchip. Both are US groups; find the dachshund rescue for your own country and ask what its fee covers. Amounts differ everywhere; the pattern — fees falling with age — does not.'},
 
-    {t:'p', text:'Set that against the price of a puppy with a spay or neuter on top: together, several times any of these fees. An adoption fee is not a discount on a dog; it is a dog with the first round of veterinary spending already behind him.'},
+    {t:'p',text:'A puppy with a spay or neuter on top comes to several times any of these fees. An adoption fee is a dog with the first round of veterinary spending already behind him.'},
 
     {t:'h3', text:'What an unknown history actually changes'},
 
@@ -487,7 +479,7 @@ module.exports = [
       ['76%','Diagnosed at 4 to 8 years','Of cases. A five-year-old rescue is being adopted inside that window.'],
     ]},
 
-    {t:'p', text:'This is not an argument against adopting one. It is an argument for adopting one with insurance arranged before the paperwork is signed, and for reading Part IV before you do.'},
+    {t:'p',text:'This is not an argument against adopting one. It is an argument for adopting one with insurance arranged before the paperwork is signed.'},
 
     {t:'h3', text:'The first two weeks'},
 
@@ -515,7 +507,7 @@ module.exports = [
       'If this placement fails, what happens to him?',
     ]},
 
-    {t:'p', text:'Ask the last one plainly. A rescue that takes the dog back without argument is a rescue that placed him carefully, and you want to have heard the answer before you need it.'},
+    {t:'p',text:'Ask the last one plainly. A rescue that takes the dog back without argument is a rescue that placed him carefully.'},
 
     {t:'photo', n:14, note:'An adult smooth dachshund, grizzled muzzle, curled in an open crate in a quiet room, half in shadow, no person in frame.', caption:'The first fortnight is subtraction: fewer people, shorter outings, one quiet room he can leave.'},
 
