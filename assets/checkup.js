@@ -21,10 +21,10 @@ function division(){
     'dog is weighed. The FCI, standard 148, classifies by chest circumference measured at 15 months '+
     'into three sizes — standard, miniature and rabbit — which this tool does not measure. The same dog can be a '+
     'miniature under one system and not under another.';
-  if(S.months>=12 && S.weight<=11) return {name:'Miniature',note:'11 lb (5 kg) and under at 12 months or older.'+reg};
-  if(S.weight>=16 && S.weight<=32) return {name:'Standard',note:'The AKC puts the standard at roughly 16 to 32 lb (7 to 15 kg).'+reg};
-  if(S.months<12) return {name:'Too young to classify',note:'The miniature ceiling only applies from 12 months. Weigh again at his first birthday.'+reg};
-  return {name:'Between the two divisions',note:'Owners call this a “tweenie.” It has no official status — the AKC recognizes two divisions only.'+reg};
+  if(S.months>=12 && S.weight<=11) return {name:'Miniature',short:'11 lb (5 kg) and under at 12 months or older.',note:reg.trim()};
+  if(S.weight>=16 && S.weight<=32) return {name:'Standard',short:'The AKC puts the standard at roughly 16 to 32 lb (7 to 15 kg).',note:reg.trim()};
+  if(S.months<12) return {name:'Too young to classify',short:'The miniature ceiling only applies from 12 months. Weigh again at his first birthday.',note:reg.trim()};
+  return {name:'Between the two divisions',short:'Owners call this a “tweenie.” It has no official status — the AKC recognizes two divisions only.',note:reg.trim()};
 }
 function bcs(){
   var yes=['ribs','waist','tuck'].filter(function(k){return S[k]==='y';}).length;
@@ -122,6 +122,9 @@ function view(){
      (STEP<4?'<button class="btn" id="next">'+(STEP===3?'See the result':'Continue')+'</button>':
               '<button class="btn" id="restart">Start over</button>')+'</div>';
   root.innerHTML=h;
+  /* à l'étape résultats, l'outil sort de la colonne et prend toute la largeur */
+  var split=document.querySelector('.cu-split');
+  if(split) split.classList.toggle('done', STEP===4);
   bind();
 }
 function ageLabel(){ return S.months<24? S.months+' months' : (S.months/12).toFixed(S.months%12?1:0)+' years'; }
@@ -132,18 +135,21 @@ function results(){
   var d=division(), b=bcs(), R=rer(S.weight), M=R*merFactor(), cups=M/S.kcalCup, treats=M*0.10, m=money(), rk=risk();
   var out='<h3>Your dog’s numbers</h3>';
   out+='<div class="cu-grid">';
-  out+=tile(d.name,'Size — AKC weight division',d.note);
+  out+=tile(d.name,'Size — AKC weight division',d.short||d.note,d.short?d.note:'');
   out+=tile(b.band,'Body condition — '+b.verdict,b.text);
-  out+=tile(Math.round(M)+' kcal','A day, as a starting point','Resting need '+Math.round(R)+' kcal × '+merFactor().toFixed(1)+
-      '. Individual dogs vary by up to 50 percent either way. Adjust to the dog, not to this number.');
-  out+=tile(cups.toFixed(2)+' cups','At '+S.kcalCup+' kcal per cup','Split into two meals. Treats come out of this total, not on top of it. A cup is a volume, not a weight, and kcal per cup varies from food to food — use the figure printed on your own bag.');
+  out+=tile(Math.round(M)+' kcal','A day, as a starting point',
+      'Resting need '+Math.round(R)+' kcal × '+merFactor().toFixed(1)+'.',
+      'Individual dogs vary by up to 50 percent either way. Adjust to the dog in front of you, not to this number: if the ribs disappear, feed less; if they sharpen, feed more.');
+  out+=tile(cups.toFixed(2)+' cups','At '+S.kcalCup+' kcal per cup',
+      'Split into two meals. Treats come out of this total, not on top of it.',
+      'A cup is a volume, not a weight, and kcal per cup varies widely from food to food — use the figure printed on your own bag rather than this default.');
   out+=tile(Math.round(treats)+' kcal','Treat allowance','Ten percent of the day’s calories. Training rewards count.');
-  out+=tile('Four lines, one order','The budget, in your local currency',
-      'In order: '+m.order.join(', then ')+'. The last line is the one that moves the total — on the published '+
-      'US figures (Synchrony’s 2025 Lifetime of Care study against a US referral practice’s all-in surgical '+
-      'figure), a single surgical disc episode can come to roughly a quarter of everything else you will ever '+
-      'spend on the dog. No comparable figures are published outside the US, so use them for the ratio, not the '+
-      'amount: price each line in your own currency, and the order still does not move.');
+  out+=tile('Four lines','The budget, in your local currency',
+      'The last line is the one that moves the total.',
+      'In order: '+m.order.join(', then ')+'. On the published US figures — Synchrony’s 2025 Lifetime of Care study against a US referral practice’s '+
+      'all-in surgical figure — a single surgical disc episode can come to roughly a quarter of everything else '+
+      'you will ever spend on the dog. No comparable figures are published outside the US, so use them for the '+
+      'ratio, not the amount: price each line in your own currency, and the order still does not move.');
   out+='</div>';
   out+='<h3 style="margin-top:38px">What the evidence says about his back</h3>';
   out+='<p class="cu-help">This is not a diagnosis and it cannot predict an episode. It lists the levers that have published evidence behind them, and where you currently sit on each.</p>';
@@ -155,13 +161,22 @@ function results(){
        'enough that one episode can run to roughly a quarter of what the whole dog costs over a lifetime. Read '+
        'them for the shape of the bill rather than its size, and ask your own referral hospital what the '+
        'sequence costs before you need it — that is the arithmetic behind the insurance question above.</p></div>';
-  out+='<div class="cu-actions"><button class="btn ghost" id="copy">Copy this summary</button>'+
-       '<button class="btn ghost" id="print">Print it</button>'+
-       '<a class="btn" href="'+(window.BUY||'#')+'">Get the full manual</a></div>';
+  out+='<div class="cu-offer"><div>'+
+       '<h4>These six numbers fit on one page. The rest of it fills 195.</h4>'+
+       '<p>Vet-reviewed · every figure sourced · instant PDF · $45</p></div>'+
+       '<a class="btn" href="'+(window.BUY||'#')+'">Get the manual</a></div>'+
+       '<div class="cu-actions"><button class="btn ghost" id="copy">Copy this summary</button>'+
+       '<button class="btn ghost" id="print">Print it</button></div>';
   out+='<p class="cu-help" style="margin-top:22px">Educational only. It does not replace an examination, and no online tool can assess a spine.</p>';
   return out;
 }
-function tile(fig,lab,note){ return '<div class="cu-tile"><div class="fig">'+fig+'</div><div class="lab">'+lab+'</div><p>'+note+'</p></div>'; }
+/* La note courte reste visible ; tout ce qui dépasse passe derrière un dépliant,
+   sinon une tuile de 200 mots fait trois fois la hauteur de ses voisines. */
+function tile(fig,lab,note,more){
+  var out='<div class="cu-tile"><div class="fig">'+fig+'</div><div class="lab">'+lab+'</div><p>'+note+'</p>';
+  if(more) out+='<details><summary>The detail</summary><p>'+more+'</p></details>';
+  return out+'</div>';
+}
 
 function summaryText(){
   var d=division(),b=bcs(),R=rer(S.weight),M=R*merFactor();

@@ -54,6 +54,10 @@ const ALT={
  'questions-to-ask-a-dachshund-breeder':'A longhaired red dachshund standing in side profile against a studio backdrop',
  'how-much-does-a-dachshund-cost':'A dachshund asleep in a wire crate beside a bed, one lamp lit',
 };
+/* Les images d'ouverture sont l'élément le plus grand de la page : sans
+   préchargement le navigateur ne les découvre qu'après la CSS. */
+const _preloads=new Set();
+function heroPreload(name){ return `<link rel="preload" as="image" href="${asset('photos/'+name+'.jpg')}" fetchpriority="high">`; }
 function photo(name,{ratio='3 / 2',cls='',caption='',eager=false,alt=null}={}){
   return `<figure class="ph ${cls}" style="--ar:${ratio}">
   <img src="${asset('photos/'+name+'.jpg')}" alt="${esc(alt||ALT[name]||'')}"
@@ -61,7 +65,7 @@ function photo(name,{ratio='3 / 2',cls='',caption='',eager=false,alt=null}={}){
   ${caption?`<figcaption>${esc(caption)}</figcaption>`:''}</figure>`;
 }
 
-function layout({title,desc,url,body,schema=[],cls='',preload='',img=''}){
+function layout({title,desc,url,body,schema=[],cls='',preload='',img='',marquee=true,head=''}){
   const ld=schema.map(s=>`<script type="application/ld+json">${JSON.stringify(s)}</script>`).join('');
   return `<!doctype html><html lang="en"><head>
 <meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
@@ -70,28 +74,30 @@ function layout({title,desc,url,body,schema=[],cls='',preload='',img=''}){
 <link rel="canonical" href="${SITE}${url}">${PREVIEW?'\n<meta name="robots" content="noindex, nofollow">':''}
 <meta property="og:type" content="website"><meta property="og:site_name" content="Dachshundology">
 <meta property="og:title" content="${esc(title)}"><meta property="og:description" content="${esc(desc)}">
-<meta property="og:url" content="${SITE}${url}"><meta name="twitter:card" content="summary_large_image">${img?`\n<meta property="og:image" content="${SITE}${asset('photos/'+img+'.jpg')}"><meta name="twitter:image" content="${SITE}${asset('photos/'+img+'.jpg')}"><meta property="og:image:alt" content="${esc(ALT[img]||'')}">`:''}
+<meta property="og:url" content="${SITE}${url}"><meta name="twitter:card" content="summary_large_image">
+<meta property="og:image" content="${SITE}${img?asset('photos/'+img+'.jpg'):asset('og.jpg')}"><meta name="twitter:image" content="${SITE}${img?asset('photos/'+img+'.jpg'):asset('og.jpg')}"><meta property="og:image:width" content="${img?'1600':'1200'}"><meta property="og:image:height" content="${img?'1067':'630'}"><meta property="og:image:alt" content="${esc(img?(ALT[img]||''):'The cover of The Complete Dachshund Owner’s Manual: the title in heavy type on black beside a photograph of a red smooth-haired dachshund, over a red band reading “reviewed by a licensed veterinarian”')}">
 <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Archivo:wdth,wght@100,400..900&family=Inter+Tight:wght@400..700&display=swap">
 <link rel="stylesheet" href="${asset('site.css')}">${preload}
 <link rel="icon" href="${asset('favicon.svg')}" type="image/svg+xml">
-${ld}</head>
+${ld}${head}</head>
 <body class="${cls}">
+<a class="skip" href="#main">Skip to content</a>
 <header class="site"><div class="wrap bar">
   <a class="brandmark" href="/">${CREST}<span>Dachshundology</span></a>
   <nav>${NAV.map(([h,t])=>`<a href="${h}">${t}</a>`).join('')}
   <a class="cta-nav" href="/the-manual/">The manual</a></nav>
 </div></header>
 <div class="stripe">Instant download · 195 pages · vet-reviewed · every figure sourced</div>
-<div class="marq"><i>★</i><span>Stairs — the real answer</span><i>★</i><span>What a ramp actually does</span><i>★</i><span>The first sixty minutes</span><i>★</i><span>Mini or standard</span><i>★</i><span>Feed in calories, not cups</span><i>★</i><span>The 180-day clock</span><i>★</i></div>
-${body}
+${marquee?`<div class="marq"><i>★</i><span>Stairs — the real answer</span><i>★</i><span>What a ramp actually does</span><i>★</i><span>The first sixty minutes</span><i>★</i><span>Mini or standard</span><i>★</i><span>Feed in calories, not cups</span><i>★</i><span>The 180-day clock</span><i>★</i></div>`:''}
+<main id="main">${body}</main>
 <footer class="site"><div class="wrap">
   <div class="fgrid">
     <div><div class="brandmark" style="letter-spacing:.24em;color:var(--cream)">${CREST_C}<span>Dachshundology</span></div>
       <p style="margin-top:14px;max-width:34ch">The dachshund manual that shows its sources. Written in English for
       owners anywhere, built on the research most owner guides never cite.</p></div>
-    <div><h4>Read</h4><ul>${GUIDES.slice(0,4).map(g=>`<li><a href="/guides/${g.slug}/">${esc(g.h1)}</a></li>`).join('')}</ul></div>
-    <div><h4>More</h4><ul>${GUIDES.slice(4).map(g=>`<li><a href="/guides/${g.slug}/">${esc(g.h1)}</a></li>`).join('')}</ul></div>
+    <div><h4>Read</h4><ul>${GUIDES.slice(0,4).map(g=>`<li><a href="/guides/${g.slug}/">${esc(g.title)}</a></li>`).join('')}</ul></div>
+    <div><h4>More</h4><ul>${GUIDES.slice(4).map(g=>`<li><a href="/guides/${g.slug}/">${esc(g.title)}</a></li>`).join('')}</ul></div>
     <div><h4>The book</h4><ul>
       <li><a href="/the-manual/">What is inside</a></li><li><a href="/check-up/">The Check-Up</a></li>
       <li><a href="/sources/">Bibliography</a></li><li><a href="/about/">About &amp; editorial policy</a></li>
@@ -101,6 +107,33 @@ ${body}
     <span>Figures current as of September 2026.</span></div>
 </div></footer>
 </body></html>`;
+}
+
+/* ---------- pied de conversion ----------
+   Les pages sans offre propre (le hub, À propos, les sources) laissaient le
+   lecteur sans étape suivante. Une seule fin, réutilisée, avec le gratuit
+   avant le payant. */
+function nextStep({heading, lede}={}){
+  return `<section class="dark nextstep"><div class="wrap">
+    <h2>${esc(heading||'Two ways to go from here')}</h2>
+    <p class="ns-lede">${esc(lede||'One costs nothing and asks for no email. The other is the whole thing.')}</p>
+    <div class="ns-grid">
+      <a class="ns-card" href="/check-up/">
+        <div class="k">Free · no email</div>
+        <h3>The Dachshund Check-Up</h3>
+        <p>Five steps. His size division in all three registries, his body condition band, his calories in cups,
+        and the back-risk levers that have studies behind them.</p>
+        <span class="ns-go">Run it</span>
+      </a>
+      <a class="ns-card k" href="/the-manual/">
+        <div class="k">$${PRICE.replace('.00','')} · instant PDF</div>
+        <h3>The Complete Manual</h3>
+        <p>195 pages, 24 printable tools, one bibliography. Reviewed by a veterinarian, and every figure names
+        its study, its country and its year.</p>
+        <span class="ns-go">See what is inside</span>
+      </a>
+    </div>
+  </div></section>`;
 }
 
 /* ---------- schema helpers ---------- */
@@ -135,23 +168,57 @@ const slugify=s=>String(s).toLowerCase().replace(/[^a-z0-9]+/g,'-').replace(/^-|
 
 function guidePage(g){
   const url=`/guides/${g.slug}/`;
-  const body=`<div class="wrap"><div class="crumbs"><a href="/">Home</a> › <a href="/guides/">Guides</a> › ${esc(g.h1)}</div></div>
-<section style="padding-top:8px">
- <div class="wrap narrow">
-  <h1 style="font-size:clamp(32px,5vw,50px)">${esc(g.h1)}</h1>
+  /* L'encart Check-Up tombe au tiers de l'article, juste avant un titre —
+     jamais au milieu d'un raisonnement, et une seule fois par guide. */
+  const cut=(()=>{
+    const target=Math.floor(g.blocks.length/3);
+    for(let i=target;i<g.blocks.length;i++) if(g.blocks[i].t==='h2') return i;
+    return Math.min(target,g.blocks.length);
+  })();
+  const partA=g.blocks.slice(0,cut).map(blockHTML).join('\n');
+  const partB=g.blocks.slice(cut).map(blockHTML).join('\n');
+
+  const checkupCard=`<aside class="cu-invite">
+    <div class="k">Free · no email</div>
+    <h3>Where does <em>your</em> dog actually sit?</h3>
+    <p>Five steps and the Check-Up returns his size division in all three registries, his body condition band,
+    his daily calories in cups, and the back-risk levers that have studies behind them. Nothing is stored or sent.</p>
+    <a class="btn" href="/check-up/">Run the Check-Up</a>
+  </aside>`;
+
+  const body=`<div class="wrap"><div class="crumbs"><a href="/">Home</a> › <a href="/guides/">Guides</a> › ${esc(g.title)}</div></div>
+<div class="readbar" aria-hidden="true"><i></i></div>
+<section style="padding-top:8px"><div class="wrap"><div class="guide-grid">
+
+ <aside class="guide-rail">
+   <nav class="toc-rail" aria-label="On this page">
+     <div class="label">On this page</div>
+     <ol>${g.toc.map(t=>`<li><a href="#${slugify(t)}">${esc(t)}</a></li>`).join('')}</ol>
+   </nav>
+   <div class="rail-sell">
+     <div class="k">The long version</div>
+     <p>195 pages, 24 tools, every figure sourced.</p>
+     <a class="btn sm" href="/the-manual/">The manual — $${PRICE}</a>
+   </div>
+ </aside>
+
+ <div class="guide-body">
+  <h1 style="font-size:clamp(32px,4.6vw,48px)">${esc(g.h1)}</h1>
   <div class="sub">${esc(g.keyword)}</div>
   <p class="meta" style="margin-top:14px">Updated ${esc(g.updated)} · Every figure sourced · <a href="/about/">Editorial policy</a></p>
   ${photo(g.slug,{cls:'lead',eager:true})}
   <div class="answer" style="margin:28px 0"><strong>Short answer</strong>${esc(g.answer)}</div>
+  <details class="toc-mobile"><summary>On this page — ${g.toc.length} sections</summary>
+    <ol>${g.toc.map(t=>`<li><a href="#${slugify(t)}">${esc(t)}</a></li>`).join('')}</ol></details>
   <div class="facts"><div class="label">Key numbers</div><dl>
     ${g.facts.map(([l,v,s])=>`<dt>${l}</dt><dd>${v}</dd>`).join('')}
     <div class="src">Sources: ${[...new Set(g.facts.map(f=>f[2]))].join(' · ')}</div></dl></div>
-  <nav class="toc"><div class="label" style="color:var(--camel)">On this page</div>
-    <ol>${g.toc.map(t=>`<li><a href="#${slugify(t)}">${t}</a></li>`).join('')}</ol></nav>
-  <article>${g.blocks.map(blockHTML).join('\n')}</article>
+  <article>${partA}
+  ${checkupCard}
+  ${partB}</article>
 
   <div class="sell">
-    <div class="label" style="color:var(--camel)">The long version</div>
+    <div class="label" style="color:var(--sig-ink)">The long version</div>
     <h3 style="margin:8px 0 10px">The Complete Dachshund Owner’s Manual</h3>
     <p style="margin:0 0 18px">195 pages, 24 printable tools, and the full research trail behind every number on
     this page — including the twenty pages on the back that this guide only summarizes.</p>
@@ -163,11 +230,12 @@ function guidePage(g){
 
   <h2 style="margin-top:48px">Keep reading</h2>
   <div class="grid g3" style="margin-top:18px">${g.related.map(s=>{const r=GUIDES.find(x=>x.slug===s);
-    return r?`<a class="card" href="/guides/${r.slug}/"><div class="label">Guide</div><h3>${esc(r.h1)}</h3>
+    return r?`<a class="card" href="/guides/${r.slug}/"><div class="label">Guide</div><h3>${esc(r.title)}</h3>
       <p>${esc(r.metaDescription).slice(0,110)}…</p></a>`:''}).join('')}</div>
  </div>
-</section>`;
-  return layout({title:g.metaTitle, desc:g.metaDescription, url, body, img:g.slug,
+</div></div></section>`;
+  return layout({title:g.metaTitle, desc:g.metaDescription, url, body, img:g.slug, marquee:false,
+    head:heroPreload(g.slug)+`<script defer src="${asset('guide.js')}"></script>`,
     schema:[
       {"@context":"https://schema.org","@type":"Article",headline:g.h1,description:g.metaDescription,
        datePublished:'2026-09-12',dateModified:g.updated,inLanguage:'en-US',
@@ -180,4 +248,4 @@ function guidePage(g){
       crumbs([['Home','/'],['Guides','/guides/'],[g.h1,url]])
     ]});
 }
-module.exports={PREVIEW,layout,guidePage,photo,ALT,asset,fingerprint,assetList,GUIDES,SITE,BUY,PRICE,CREST,CREST_C,CREST_G,DACH,DACH_CREAM,W,DIST,esc,crumbs,ORG,WEBSITE,slugify,blockHTML};
+module.exports={PREVIEW,layout,guidePage,nextStep,heroPreload,photo,ALT,asset,fingerprint,assetList,GUIDES,SITE,BUY,PRICE,CREST,CREST_C,CREST_G,DACH,DACH_CREAM,W,DIST,esc,crumbs,ORG,WEBSITE,slugify,blockHTML};
